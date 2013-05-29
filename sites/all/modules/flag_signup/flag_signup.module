@@ -1,0 +1,531 @@
+<?php
+
+/**
+ * @file
+ * The Signup module manages signups to content via the flags module
+ *
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function flag_signup_menu() {
+  $items['flag-signup/%/%flag/%'] = array(
+    'title' => 'Signup',
+    'page callback' => 'flag_signup_page',
+    'page arguments' => array(1, 2, 3),
+    'access callback' => 'user_access',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+
+  // Use a signup path to still re-direct to standard confirmation page
+  $items['flag-signup/confirm/%/%flag/%'] = array(
+    'title' => 'Flag confirm',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('flag_confirm', 2, 3, 4),
+    'access callback' => 'user_access',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_flag_link().
+ *
+ * When Flag uses a link type provided by this module, it will call this
+ * implementation of hook_flag_link(). It returns a single link's attributes,
+ * using the same structure as hook_link(). Note that "title" is provided by
+ * the Flag configuration if not specified here.
+ *
+ * @param Flag $flag
+ *   The full flag object of for the flag link being generated.
+ * @param string $action
+ *   The action this link will perform. Either 'flag' or 'unflag'.
+ * @param int $content_id
+ *   The ID of the node, comment, user, or other object being flagged.
+ * @return array
+ *   An array defining properties of the link.
+ */
+function flag_signup_flag_link($flag, $action, $content_id) {
+
+  if ($flag->is_available($action, $content_id)) {
+    $token = flag_get_token($content_id);
+    return array(
+      'href' => 'flag-signup/' . ($flag->link_type == 'confirm' ? 'confirm/' : '') . "$action/$flag->name/$content_id",
+      'query' => drupal_get_destination() + ($flag->link_type == 'confirm' ? array() : array('token' => $token)),
+    );
+  }
+  else {
+    return array(
+      'title' => $flag->get_label('signup_booked'),
+    );
+  }
+}
+
+/**
+ * Menu callback for (un)flagging a node.
+ *
+ * The function is a modified version of the standard flag_page function
+ * - Handles errors differently
+ * - Displays different message
+ *
+ * @param string $action
+ *   Either 'flag' or 'unflag'.
+ * @param flag $flag
+ *   The flag object.
+ * @param int $content_id
+ *   The Content ID
+ * @return boolean
+ *   FALSE - not successful
+ */
+function flag_signup_page($action, $flag, $content_id) {
+  global $user;
+
+  // Shorten up the variables that affect the behavior of this page.
+  $js = isset($_REQUEST['js']);
+  $token = $_REQUEST['token'];
+
+  // Specifically $_GET to avoid getting the $_COOKIE variable by the same key.
+  $has_js = isset($_GET['has_js']);
+
+  // Check the flag token, then perform the flagging.
+  if (!flag_check_token($token, $content_id)) {
+    $error = t('Bad token. You seem to have followed an invalid link.');
+  }
+  elseif ($user->uid == 0 && !$has_js) {
+    $error = t('You must have JavaScript and cookies enabled in your browser to flag content.');
+  }
+  else {
+    $result = $flag->flag($action, $content_id);
+    if (!$result) {
+      // Here is the main difference to standard processing:
+      // - a FALSE from flag action does not necessarily mean a access denied error
+      // Check if un-authorized error vs flagging error
+      $error = $flag->get_label('signup_error', $content_id);
+    }
+  }
+
+  // If an error was received, set a message and exit.
+  if (isset($error)) {
+    if ($js) {
+      drupal_add_http_header('Content-Type', 'text/javascript; charset=utf-8');
+      print drupal_json_encode(array(
+                'status' => FALSE,
+                'errorMessage' => $error,
+              ));
+      exit;
+    }
+    else {
+      drupal_set_message($error, 'error');
+      return;
+    }
+  }
+
+
+  // If successful, return data according to the request type.
+  if ($js) {
+    drupal_add_http_header('Content-Type', 'text/javascript; charset=utf-8');
+    print drupal_json_encode(array(
+              'status' => TRUE,
+              'newLink' => $flag->theme($flag->is_flagged($content_id) ? 'unflag' : 'flag', $content_id, TRUE),
+              'contentId' => $content_id,
+              'contentType' => $flag->content_type,
+              'flagName' => $flag->name,
+              'flagStatus' => $flag->is_flagged($content_id) ? 'flagged' : 'unflagged',
+            ));
+    exit;
+  }
+  else {
+    drupal_set_message($flag->get_label($action . '_message', $content_id));
+    drupal_goto();
+  }
+}
+
+/*
+ * Implements drupal_alter hook for link types
+ *
+ * Redirect standard link types to this module so we can elangtly
+ * do an availability check via hook_flag_link
+ */
+
+function flag_signup_flag_link_types_alter(&$link_types) {
+  // Get standard link types
+  $base_link_types = array_keys(flag_flag_link_types());
+  foreach ($link_types as $key => $value) {
+    if (in_array($key, $base_link_types)) {
+      // Re-direct link output to this module
+      $link_types[$key]['module'] = 'flag_signup';
+    }
+  }
+}
+
+/**
+ * Implements hook_flag_definitions().
+ *
+ * Defines the flags this module implements.
+ *
+ * @return array
+ *   An "array of arrays", keyed by content-types. The 'handler' slot
+ *   should point to the PHP class implementing this flag.
+ */
+function flag_signup_flag_definitions() {
+  return array(
+    'signup' => array(
+      'title' => t('Signup'),
+      'description' => t('Enable signup to content'),
+      'handler' => 'flag_signup',
+    ),
+  );
+}
+
+/*
+ * Implements hook hook_info()
+ */
+function flag_signup_hook_info() {
+  $hooks = array(
+    'flag_signup_limit',
+    'flag_signup_availability_class',
+  );
+  return array_fill_keys($hooks, array('group' => 'flag_signup'));
+}
+
+/*
+ * Implements hook flag_signup_availability_class
+ */
+function flag_signup_flag_signup_availability_class() {
+  return array('flag_signup_availability_limit_2');
+}
+
+/**
+ * Helper function to return the current availability for a content
+ *
+ * @param string $flag_name
+ *   The the flag name.
+ * @param int $content_id
+ * @return int
+ *   Number of current signups available, 1 for unlimited signup
+ */
+function flag_signup_current_availability($flag_name, $content_id) {
+  $availability = 0;
+  $flag = flag_get_flag($flag_name);
+  // Does a flag with flag name exist at all?
+  if ($flag) {
+    // Double check content type to avoid unexpected errors
+    if ($flag->content_type == 'signup') {
+      $availability = $flag->get_current_availability($content_id);
+    }
+  }
+  return $availability;
+}
+
+/*
+ * Get a list of Availability objects to check
+ *
+ * @return array
+ *   Array of availability class names
+ */
+function flag_signup_get_availability_objects() {
+  $objects_array = module_invoke_all('flag_signup_availability_class');
+  return $objects_array;
+}
+
+/**
+ * Implements a signup flag based on a node flag
+ * 
+ * See Flag module for more information
+ */
+class flag_signup extends flag_node {
+
+  function options() {
+    $options = parent::options();
+    $options += array(
+      'signup_error' => '',
+    );
+    $objects = flag_signup_get_availability_objects();
+    foreach ($objects as $object_name) {
+      $options += $object_name::options();
+    }
+
+    return $options;
+  }
+
+  function options_form(&$form) {
+    parent::options_form($form);
+    $form['messages']['signup_error'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Singup error message'),
+      '#default_value' => $this->signup_error,
+      '#description' => t('Message displayed if signup was not successful.'),
+      '#access' => empty($this->locked['signup_error']),
+    );
+    $form['messages']['tokens_help'] += array(
+      '#weight' => 99,
+    );
+
+    // Disable global option: a signup has to be an a per-user base
+    $form['global']['#access'] = FALSE;
+
+    $objects = flag_signup_get_availability_objects();
+    foreach ($objects as $object_name) {
+      $form += $object_name::options_form($this);
+    }
+  }
+
+  /**
+   * Flags, or unflags, an item.
+   *
+   * @param string $action
+   *   Either 'flag' or 'unflag'.
+   * @param int $content_id
+   *   The ID of the item to flag or unflag.
+   * @param user $account
+   *   The user on whose behalf to flag. Leave empty for the current user.
+   * @param $skip_permission_check
+   *   Flag the item even if the $account user don't have permission to do so.
+   * @return
+   *   FALSE if some error occured (e.g., user has no permission, flag isn't
+   *   applicable to the item, etc.), TRUE otherwise.
+   */
+  function flag($action, $content_id, $account = NULL, $skip_permission_check = FALSE) {
+    if (!($this->is_available($action, $content_id, $account))) {
+      // Remove flag
+      $this->flag('unflag', $content_id, $account, $skip_permission_check);
+      // For signup flag link types return a FALSE
+      // If we do this on a standard link type, it will react with a confusing
+      // Not Authorized error
+      $base_link_types = array_keys(flag_flag_link_types());
+      if (in_array($this->get_link_type, $base_link_types)) {
+        return FALSE;
+      }
+    }
+    return parent::flag($action, $content_id, $account, $skip_permission_check);
+  }
+
+  /*
+   * Get the current number of available signups: total - signups
+   *
+   * @param int $content_id
+   *   The ID of the item to flag or unflag.
+   * @return int
+   *  count of available spots, will be 1 if availability is unlimited
+   */
+  function get_current_availability($content_id) {
+    $total = $this->get_availability($content_id);
+    // -1 would be unlimited availability so there is always 1 available
+    if ($total == -1) {
+      return 1;
+    }
+    $count = $this->get_count($content_id);
+    $available = $total - $count;
+    if ($available < 0) {
+      $available = 0;
+    }
+    return $available;
+  }
+
+  /*
+   * Get the total number of available signups
+   *
+   * @param int $content_id
+   *   The ID of the item
+   * @return int
+   *  count of total available spots, will be -1 if availability is unlimited
+   */
+  function get_availability($content_id) {
+    $availability = -1;
+    // Find the implementation with the highest availability
+    $objects = flag_signup_get_availability_objects();
+    foreach ($objects as $object_name) {
+      $object_availability = $object_name::get_availability($this, $content_id);
+      if ($object_availability > $availability) {
+        $availability = $object_availability;
+      }
+    }
+
+    // Execute custom hooks
+    $availability_array = module_invoke_all('flag_signup_limit', $this, $content_id, $availability);
+    if ($availability_array) {
+      $availability = 0;
+      foreach ($availability_array as $availability_item) {
+        if ($availability_item == -1) {
+          $availability = -1;
+        }
+        else {
+          $availability += $availability_item;
+        }
+      }
+    }
+
+    return $availability;
+  }
+
+  /*
+   * Check if there is availability for flagging
+   *
+   * @param string $action
+   *   Either 'flag' or 'unflag'.
+   * @param int $content_id
+   *   The ID of the item
+   * @param user $account
+   *   The user on whose behalf to flag. Leave empty for the current user.
+   * @return boolean
+   *   TRUE if there available spots.
+   */
+  function is_available($action, $content_id, $account = NULL) {
+
+    // We need a logged in user
+    global $user;
+
+    if (!isset($account)) {
+      $account = $user;
+    }
+    if (!$account) {
+      return FALSE; // No User, therefore not ready to be flagged
+    }
+
+    if ($this->_is_flagged($content_id, $account->uid, 0)) {
+      return TRUE; // A flagged object is always ready to be 'unflagged'
+    }
+
+    // Availability is if current availability is not 0
+    return ($this->get_current_availability($content_id) > 0);
+  }
+}
+
+/**
+ * Implements a class to check for availability
+ *
+ * Requires a derived class to work
+ */
+abstract class flag_signup_availability {
+
+  /*
+   * Extend available flag options
+   */
+  public static function options() {
+    return array();
+  }
+
+  public static function options_form($flag) {
+    return array();
+  }
+
+  /*
+   * Get the total number of available signups
+   *
+   * @param Flag $flag
+   *   The full flag object
+   * @param int $content_id
+   *   The ID of the item
+   * @return int
+   *  count of total available spots, will be -1 if availability is unlimited
+   */
+  public static function get_availability($flag, $content_id) {
+    return -1;
+  }
+}
+
+/**
+ * Implements a class to check for availability
+ *
+ * Checks with two Limit Parameters
+ */
+class flag_signup_availability_limit_2 extends flag_signup_availability {
+  /*
+   * Get the total number of available signups
+   *
+   * @param Flag $flag
+   *   The full flag object
+   * @param int $content_id
+   *   The ID of the item
+   * @return int
+   *  count of total available spots, will be -1 if availability is unlimited
+   */
+  public static function get_availability($flag, $content_id) {
+    $count_max = -1;
+    // Check limit?
+    if ($flag->signup_limit) {
+
+      // What is the maximum?
+      $count_max_1 = $flag->signup_limit_1;
+      $count_max_2 = $flag->signup_limit_2;
+
+      // Replace tokens
+      $count_max_1 = $flag->replace_tokens($count_max_1, array(), array('sanitize' => FALSE), $content_id);
+      $count_max_2 = $flag->replace_tokens($count_max_2, array(), array('sanitize' => FALSE), $content_id);
+
+      if (($count_max_1 == -1) && ($count_max_2 == -1)) {
+        $count_max = -1;
+      }
+      else {
+        if (($count_max_1 > -1) && ($count_max_1 < $count_max_2)) {
+          $count_max = $count_max_1;
+        }
+        else {
+          $count_max = $count_max_2;
+        }
+      }
+    }
+    return $count_max;
+  }
+
+  /*
+   * Extend available flag options
+   */
+  public static function options() {
+    $options = array(
+      'signup_limit' => 0, // Execute limit check
+      'signup_limit_1' => -1, // Limit 1
+      'signup_limit_2' => -1, // Limit 2 - lower of both limits that's not -1 will be used
+      'signup_booked' => '',
+    );
+    return $options;
+  }
+
+  /*
+   * Extend flag option form
+   *
+   * @param flag $flag
+   * @return array
+   */
+  public static function options_form($flag) {
+    $form['signup'] = array(
+      '#type' => 'fieldset',
+      '#title' => t('Signup Options'),
+    );
+    $form['signup']['signup_limit'] = array(
+      '#type' => 'checkbox',
+      '#title' => t('Limit Number of Signups'),
+      '#description' => t('Limit the number of signups against content type. Set a limit for signups - the lower of both values will be utilized.<br/>Use token replacements for a limit by a field value.'),
+      '#default_value' => $flag->signup_limit,
+      '#access' => empty($flag->locked['signup_limit']),
+    );
+    $form['signup']['signup_limit_1'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Limit 1'),
+      '#default_value' => $flag->signup_limit_1,
+      '#description' => t('Set to -1 or leave blank for unlimited signup.'),
+      '#required' => TRUE,
+      '#access' => empty($flag->locked['signup_limit_1']),
+    );
+    $form['signup']['signup_limit_2'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Limit 2'),
+      '#default_value' => $flag->signup_limit_2,
+      '#description' => t('Set to -1 or leave blank for unlimited signup.'),
+      '#required' => TRUE,
+      '#access' => empty($flag->locked['signup_limit_2']),
+      );
+    $form['signup']['signup_booked'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Booked message'),
+      '#default_value' => $flag->signup_booked,
+      '#description' => t('Message displayed instead of link if content already booked out.'),
+      '#access' => empty($flag->locked['signup_booked']),
+    );
+
+    return $form;
+  }
+}
