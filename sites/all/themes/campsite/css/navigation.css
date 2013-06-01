@@ -57,8 +57,6 @@ li a.active {
 #navigation ul.links li,
 #navigation ul.menu li {
   /* A simple method to get navigation links to appear in one line. */
-  float: left;
-  /* LTR */
   padding: 0 10px 0 0;
   /* LTR */
   list-style-type: none;
@@ -68,7 +66,7 @@ li a.active {
 /*
  * Main menu and Secondary menu links
  */
-/* line 83, ../sass/navigation.scss */
+/* line 82, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
   /* LTR */

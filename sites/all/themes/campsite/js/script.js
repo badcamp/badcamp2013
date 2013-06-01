@@ -12,6 +12,30 @@
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
 (function ($, Drupal, window, document, undefined) {
 
+  Drupal.behaviors.mobileMenu = {
+    attach: function (context, settings) {
+         
+      $('#mobile-nav-button').bind('click', function() {
+          $(this).add('#page').toggleClass('open');
+      });
+
+      /**
+       * scrolls the window up, so as to 'hide' the addressbar in mobile safari
+       *
+       * TODO: add support for android browsers
+       */
+
+      if( window.addEventListener ){
+        window.addEventListener("load",function() {
+          setTimeout(function(){
+            window.scrollTo(0, 0);
+          }, 0);
+        });
+      }
+    } 
+  };
+
+
 
 // Place your code here.
 
