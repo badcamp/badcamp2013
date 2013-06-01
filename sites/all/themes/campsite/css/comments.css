@@ -3,7 +3,7 @@
  * Comment Styling
  */
 /* line 6, ../sass/partials/_header.scss */
-#logo a {
+#logo img {
   max-width: 100px;
 }
 

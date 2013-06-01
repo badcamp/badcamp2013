@@ -5,7 +5,7 @@
  * Style anything that isn't in the $content variable.
  */
 /* line 6, ../sass/partials/_header.scss */
-#logo a {
+#logo img {
   max-width: 100px;
 }
 

@@ -13,7 +13,7 @@
  * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
  */
 /* line 6, ../../sass/partials/_header.scss */
-#logo a {
+#logo img {
   max-width: 100px;
 }
 
