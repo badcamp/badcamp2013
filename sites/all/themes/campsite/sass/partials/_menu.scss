@@ -4,7 +4,13 @@
 
 
 #navigation {
-  position: relative;
+  position: static;
+  display: block;
+  padding: .4em 0;
+  margin: 1em 0;
+  border-top: 5px solid #333;
+  border-bottom: 1px solid #333;
+  height: 3em;
 }
 
 
@@ -13,7 +19,7 @@
   h2,
   a {
     font-size: 1.25em;
-    line-height: 1.66em;
+    line-height: 1.45em;
   }
   
   h2 {
