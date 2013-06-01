@@ -8,8 +8,6 @@
  */
 
 @import "base";
-@import "partials/header";            
-@import "partials/menu";
 
 /*
  * Body
@@ -86,7 +84,7 @@ body {
 }
 
 .region-header { /* Wrapper for any blocks placed in the header region */
-  clear: both; /* Clear the logo */
+  //clear: both; /* Clear the logo */
 }
 
 /*
@@ -238,3 +236,6 @@ span.field-label { /* The inline field label used by the Fences module */
 
 .region-bottom { /* Wrapper for any blocks placed in the page bottom region */
 }
+
+@import "partials/header";            
+@import "partials/menu";
