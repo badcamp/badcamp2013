@@ -11,6 +11,11 @@
   max-width: 100px;
 }
 
+/* line 7, ../sass/partials/_menu.scss */
+.admin-menu #navigation {
+  margin-top: 20px;
+}
+
 /*
  * Body
  */

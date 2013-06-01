@@ -7,6 +7,11 @@
   max-width: 100px;
 }
 
+/* line 7, ../sass/partials/_menu.scss */
+.admin-menu #navigation {
+  margin-top: 20px;
+}
+
 /* line 9, ../sass/comments.scss */
 .comments {
   /* Wrapper for the list of comments and its title */

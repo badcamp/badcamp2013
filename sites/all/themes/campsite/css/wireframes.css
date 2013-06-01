@@ -9,6 +9,11 @@
   max-width: 100px;
 }
 
+/* line 7, ../sass/partials/_menu.scss */
+.admin-menu #navigation {
+  margin-top: 20px;
+}
+
 /* line 19, ../sass/wireframes.scss */
 .with-wireframes #header,
 .with-wireframes #main,
