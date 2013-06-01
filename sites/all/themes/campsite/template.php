@@ -224,3 +224,16 @@ function STARTERKIT_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+
+// adds viewport tags for touch devices
+function campsite_preprocess_html(&$vars) {
+  $viewport = array(
+    '#tag' => 'meta', 
+    '#attributes' => array(
+      'name' => 'viewport', 
+      'content' => 'width=device-width, initial-scale=1',
+    ),
+  );
+  drupal_add_html_head($viewport, 'viewport');
+}
