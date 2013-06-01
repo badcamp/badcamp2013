@@ -1,0 +1,8 @@
+name = Taxonomy Term Reference CSS Class Field Formatter
+description = Format the value of a taxonomy term reference field to work nicely as a class name
+package = Custom
+core = 7.x
+version = 7.x-1.x
+
+;files[] =
+dependencies[] = taxonomy

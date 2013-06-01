@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Token integration for the CSS Class Field Formatter module.
+ */
+
+/**
+ * Implements hook_field_formatter_info().
+ */
+function term_ref_css_class_formatter_field_formatter_info() {
+  return array(
+    'css_class' => array(
+      'label' => t('CSS Class'),
+      'field types' => array('taxonomy_term_reference'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_formatter_view().
+ */
+function term_ref_css_class_formatter_field_formatter_view($entity_type, $entity, $field, $instance, $lang_code, $items, $display) {
+  $elements = array();
+  foreach ($items as $delta => $item) {
+    $term = taxonomy_term_load($item['tid']);
+    $term_lowered = strtolower($term->name);
+    $term_no_spaces = str_replace(' ','',$term_lowered);
+    $css_class = str_replace(array('&', '+', ','), '-',$term_no_spaces);
+    $elements[$delta] = array(
+      '#markup' => $css_class,
+    );
+  }
+  return $elements;
+}
