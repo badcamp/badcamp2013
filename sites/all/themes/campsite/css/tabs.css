@@ -7,6 +7,16 @@
  * Compare this with default CSS found in the system module's stylesheet (a copy
  * of which is in drupal7-reference.css.)
  */
+/* line 6, ../sass/partials/_header.scss */
+#logo img {
+  max-width: 100px;
+}
+
+/* line 7, ../sass/partials/_menu.scss */
+.admin-menu #navigation {
+  margin-top: 20px;
+}
+
 /*
  * Basic positioning styles shared by primary and secondary tabs.
  */

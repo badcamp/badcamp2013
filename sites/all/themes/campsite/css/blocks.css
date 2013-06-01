@@ -2,6 +2,16 @@
  * @file
  * Block Styling
  */
+/* line 6, ../sass/partials/_header.scss */
+#logo img {
+  max-width: 100px;
+}
+
+/* line 7, ../sass/partials/_menu.scss */
+.admin-menu #navigation {
+  margin-top: 20px;
+}
+
 /* line 9, ../sass/blocks.scss */
 .block {
   /* Block wrapper */

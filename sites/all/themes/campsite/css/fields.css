@@ -10,6 +10,16 @@
  *
  * http://drupal.org/project/fences
  */
+/* line 6, ../sass/partials/_header.scss */
+#logo img {
+  max-width: 100px;
+}
+
+/* line 7, ../sass/partials/_menu.scss */
+.admin-menu #navigation {
+  margin-top: 20px;
+}
+
 /*
  * Field wrappers when the Fences module is enabled.
  */
