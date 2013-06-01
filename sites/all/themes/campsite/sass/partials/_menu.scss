@@ -1,10 +1,54 @@
 //
-// Responsive menu gets it own partial, because it's kind of crazy.
+// Responsive menu gets its own partial, because it's kind of crazy.
 //
 
 
-.admin-menu {
-  #navigation {
-    margin-top: 20px;
+#navigation {
+  position: relative;
+}
+
+
+#navigation .block-menu-block { // the Main Menu's menu block
+
+  h2,
+  a {
+    font-size: 1.25em;
+    line-height: 1.66em;
   }
+  
+  h2 {
+    text-transform: uppercase;
+    float: left;
+  }
+
+  h2,
+  .menu-block-wrapper {
+    display: inline-block;
+  }
+
+
+  a {   
+
+    &:link {
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h2:after,
+  li:after {
+    content: "/";
+    display: inline-block;
+    width: 2em;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  li.last:after {
+    content: "";
+  }
+
 }

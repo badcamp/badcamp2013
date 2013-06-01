@@ -11,9 +11,47 @@
   max-width: 100px;
 }
 
-/* line 7, ../sass/partials/_menu.scss */
-.admin-menu #navigation {
-  margin-top: 20px;
+/* line 6, ../sass/partials/_menu.scss */
+#navigation {
+  position: relative;
+}
+
+/* line 14, ../sass/partials/_menu.scss */
+#navigation .block-menu-block h2,
+#navigation .block-menu-block a {
+  font-size: 1.25em;
+  line-height: 1.66em;
+}
+/* line 19, ../sass/partials/_menu.scss */
+#navigation .block-menu-block h2 {
+  text-transform: uppercase;
+  float: left;
+}
+/* line 25, ../sass/partials/_menu.scss */
+#navigation .block-menu-block h2,
+#navigation .block-menu-block .menu-block-wrapper {
+  display: inline-block;
+}
+/* line 32, ../sass/partials/_menu.scss */
+#navigation .block-menu-block a:link {
+  text-decoration: none;
+}
+/* line 36, ../sass/partials/_menu.scss */
+#navigation .block-menu-block a:hover {
+  text-decoration: underline;
+}
+/* line 42, ../sass/partials/_menu.scss */
+#navigation .block-menu-block h2:after,
+#navigation .block-menu-block li:after {
+  content: "/";
+  display: inline-block;
+  width: 2em;
+  text-align: center;
+  font-weight: normal;
+}
+/* line 50, ../sass/partials/_menu.scss */
+#navigation .block-menu-block li.last:after {
+  content: "";
 }
 
 /*
