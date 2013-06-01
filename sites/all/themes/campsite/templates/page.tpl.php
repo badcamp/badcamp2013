@@ -77,6 +77,7 @@
   <header id="header" role="banner">
 
     <div id="navigation">
+      <div id="mobile-nav-button">&equiv;</div>
       <?php print render($page['navigation']); ?>
     </div><!-- /#navigation -->
 
