@@ -314,8 +314,8 @@ span.field-label {
   display: block;
   padding: .4em 0;
   margin: 1em 0;
-  border-top: 5px solid #333;
-  border-bottom: 1px solid #333;
+  border-top: 5px solid #333333;
+  border-bottom: 1px solid #333333;
   height: 3em;
 }
 
@@ -335,15 +335,19 @@ span.field-label {
 #navigation .block-menu-block .menu-block-wrapper {
   display: inline-block;
 }
-/* line 38, ../sass/partials/_menu.scss */
+/* line 36, ../sass/partials/_menu.scss */
+#navigation .block-menu-block a {
+  color: #333333;
+}
+/* line 39, ../sass/partials/_menu.scss */
 #navigation .block-menu-block a:link {
   text-decoration: none;
 }
-/* line 42, ../sass/partials/_menu.scss */
+/* line 43, ../sass/partials/_menu.scss */
 #navigation .block-menu-block a:hover {
   text-decoration: underline;
 }
-/* line 48, ../sass/partials/_menu.scss */
+/* line 49, ../sass/partials/_menu.scss */
 #navigation .block-menu-block h2:after,
 #navigation .block-menu-block li:after {
   content: "/";
@@ -352,7 +356,7 @@ span.field-label {
   text-align: center;
   font-weight: normal;
 }
-/* line 56, ../sass/partials/_menu.scss */
+/* line 57, ../sass/partials/_menu.scss */
 #navigation .block-menu-block li.last:after {
   content: "";
 }

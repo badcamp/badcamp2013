@@ -8,8 +8,8 @@
   display: block;
   padding: .4em 0;
   margin: 1em 0;
-  border-top: 5px solid #333;
-  border-bottom: 1px solid #333;
+  border-top: 5px solid $dark;
+  border-bottom: 1px solid $dark;
   height: 3em;
 }
 
@@ -34,6 +34,7 @@
 
 
   a {   
+    color: $dark;
 
     &:link {
       text-decoration: none;
