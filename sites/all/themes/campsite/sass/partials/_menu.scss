@@ -76,7 +76,6 @@
     }
 
     ul.menu {
-      background: #aed;
       overflow: hidden;
       position: absolute;
       top: 0;
@@ -88,6 +87,13 @@
     li {
       display: block;
       float: none;
+      padding: .5em 1em;
+      border-bottom: 1px solid $dark;
+      
+      &.last {
+        border: 0;
+      }
+
     }
   }
 
@@ -98,13 +104,11 @@
   }
 
   #page.open {
-    
-    #navigation ul.menu {
-    }
-
     -webkit-transform: translate3d(250px, 0, 0);
 
-    // left: 250px;
+    #navigation ul.menu {
+      
+    }
   }
 }
 
