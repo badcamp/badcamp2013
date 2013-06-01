@@ -21,6 +21,7 @@ description = The official BADCamp 2013 site theme. It's black, blue, and very r
 
 core        = 7.x
 base theme  = zen
+version     = 0.1-alpha
 
 
 
