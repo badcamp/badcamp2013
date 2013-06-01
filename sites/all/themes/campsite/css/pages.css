@@ -283,7 +283,7 @@ span.field-label {
 #block-menu-block-1 .block-title {
   font-size: 1em;
   line-height: 52px;
-  border-bottom: 4px solid #000;
+  border-bottom: 4px solid black;
   color: #26a6de;
 }
 /* line 20, ../sass/partials/_header.scss */
@@ -295,7 +295,7 @@ span.field-label {
 /* line 24, ../sass/partials/_header.scss */
 #block-menu-block-1 .menu li {
   list-style: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid black;
 }
 /* line 27, ../sass/partials/_header.scss */
 #block-menu-block-1 .menu li.last {
@@ -312,7 +312,7 @@ span.field-label {
 #navigation {
   position: static;
   display: block;
-  padding: .4em 0;
+  padding: 0.4em 0;
   margin: 1em 0;
 }
 
@@ -425,4 +425,39 @@ span.field-label {
   li.last:after {
     content: "";
   }
+}
+
+/* line 5, ../sass/partials/_panels.scss */
+h2.pane-title:after {
+  content: "/.";
+  display: inline-block;
+  text-align: center;
+  width: 1.4em;
+}
+
+/* line 13, ../sass/partials/_panels.scss */
+.pane-sponsors-panel-pane-1 {
+  margin-top: 1em;
+  border-top: 1px solid black;
+}
+/* line 16, ../sass/partials/_panels.scss */
+.pane-sponsors-panel-pane-1 .pane-title {
+  margin: 0;
+  color: #08a5e1;
+}
+/* line 20, ../sass/partials/_panels.scss */
+.pane-sponsors-panel-pane-1 .views-row {
+  float: left;
+  margin-right: 4%;
+  width: 21%;
+}
+/* line 24, ../sass/partials/_panels.scss */
+.pane-sponsors-panel-pane-1 .views-row img {
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+}
+/* line 30, ../sass/partials/_panels.scss */
+.pane-sponsors-panel-pane-1 .views-row-last {
+  margin-right: 0;
 }
