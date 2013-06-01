@@ -92,5 +92,8 @@ $indent-amount: 30px;
 @import "compass/typography/vertical_rhythm"; // Helps set up a vertical rhythm.
 @import "zen";              // Add the Zen Grids responsive layout mixins.
 
+@import "partials/custom";           // Import our custom mixins
 @import "partials/colors";           // Import color scheme variable definitions
-@import "partials/custom";           // Import our custom mixins last.
+@import "partials/header";            
+@import "partials/menu";
+

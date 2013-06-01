@@ -10,6 +10,11 @@
  *
  * http://drupal.org/project/fences
  */
+/* line 6, ../sass/partials/_header.scss */
+#logo a {
+  max-width: 100px;
+}
+
 /*
  * Field wrappers when the Fences module is enabled.
  */

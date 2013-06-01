@@ -1,4 +1,9 @@
 /* normalize-rtl.css - RTL language extension of normalize.scss. */
+/* line 6, ../sass/partials/_header.scss */
+#logo a {
+  max-width: 100px;
+}
+
 /* =============================================================================
    Lists
    ========================================================================== */

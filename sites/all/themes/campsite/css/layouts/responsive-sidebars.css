@@ -8,6 +8,11 @@
  *
  * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
  */
+/* line 6, ../../sass/partials/_header.scss */
+#logo a {
+  max-width: 100px;
+}
+
 /*
  * Center the page.
  */

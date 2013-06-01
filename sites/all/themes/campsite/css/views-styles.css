@@ -2,6 +2,11 @@
  * @file
  * Views Styling
  */
+/* line 6, ../sass/partials/_header.scss */
+#logo a {
+  max-width: 100px;
+}
+
 /*
  * Views' admin tabs
  *
