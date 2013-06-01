@@ -9,16 +9,6 @@
    Also: @see http://meiert.com/en/blog/20080419/reset-style-sheets-are-bad/
          @see http://snook.ca/archives/html_and_css/no_css_reset/
    ========================================================================== */
-/* line 6, ../sass/partials/_header.scss */
-#logo img {
-  max-width: 100px;
-}
-
-/* line 7, ../sass/partials/_menu.scss */
-.admin-menu #navigation {
-  margin-top: 20px;
-}
-
 /* =============================================================================
    HTML5 display definitions
    ========================================================================== */

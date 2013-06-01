@@ -2,16 +2,6 @@
  * @file
  * RTL companion for the pages.css file.
  */
-/* line 6, ../sass/partials/_header.scss */
-#logo img {
-  max-width: 100px;
-}
-
-/* line 7, ../sass/partials/_menu.scss */
-.admin-menu #navigation {
-  margin-top: 20px;
-}
-
 /*
  * Header
  */
