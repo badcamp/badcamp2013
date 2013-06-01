@@ -283,7 +283,7 @@ span.field-label {
 #block-menu-block-1 .block-title {
   font-size: 1em;
   line-height: 52px;
-  border-bottom: 4px solid black;
+  border-bottom: 4px solid #000;
   color: #26a6de;
 }
 /* line 20, ../sass/partials/_header.scss */
@@ -295,7 +295,7 @@ span.field-label {
 /* line 24, ../sass/partials/_header.scss */
 #block-menu-block-1 .menu li {
   list-style: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000;
 }
 /* line 27, ../sass/partials/_header.scss */
 #block-menu-block-1 .menu li.last {
@@ -312,7 +312,7 @@ span.field-label {
 #navigation {
   position: static;
   display: block;
-  padding: 0.4em 0;
+  padding: .4em 0;
   margin: 1em 0;
 }
 
@@ -364,10 +364,22 @@ span.field-label {
   #mobile-nav-button {
     float: left;
     font-size: 2em;
-    background: #aed;
+    background: #26a6df;
+    width: 1.2em;
+    text-align: center;
   }
 
-  /* line 67, ../sass/partials/_menu.scss */
+  /* line 69, ../sass/partials/_menu.scss */
+  #navigation {
+    margin: 0 0 1em 0;
+    background: #333333;
+  }
+  /* line 73, ../sass/partials/_menu.scss */
+  #navigation h2 {
+    margin-left: .5em;
+    color: #fff;
+  }
+  /* line 78, ../sass/partials/_menu.scss */
   #navigation ul.menu {
     background: #aed;
     overflow: hidden;
@@ -377,56 +389,52 @@ span.field-label {
     width: 250px;
     margin: 0;
   }
-  /* line 76, ../sass/partials/_menu.scss */
-  #navigation ul.menu li {
+  /* line 88, ../sass/partials/_menu.scss */
+  #navigation li {
     display: block;
     float: none;
   }
 
   /* mobile menu transitions */
-  /* line 84, ../sass/partials/_menu.scss */
+  /* line 96, ../sass/partials/_menu.scss */
   #mobile-nav-button.open {
     background: #d00;
   }
 
-  /* line 88, ../sass/partials/_menu.scss */
+  /* line 100, ../sass/partials/_menu.scss */
   #page.open {
     -webkit-transform: translate3d(250px, 0, 0);
   }
 }
 @media all and (min-width: 820px) {
-  /* line 101, ../sass/partials/_menu.scss */
+  /* line 113, ../sass/partials/_menu.scss */
   #mobile-nav-button {
     display: none;
   }
 
-  /* line 105, ../sass/partials/_menu.scss */
+  /* line 117, ../sass/partials/_menu.scss */
   #navigation {
     border-top: 5px solid #333333;
     border-bottom: 1px solid #333333;
   }
-
-  /* line 111, ../sass/partials/_menu.scss */
-  ul.menu li {
+  /* line 122, ../sass/partials/_menu.scss */
+  #navigation ul.menu li {
     float: left;
   }
-
-  /* line 117, ../sass/partials/_menu.scss */
-  h2:after,
-  li:after {
+  /* line 129, ../sass/partials/_menu.scss */
+  #navigation h2:after,
+  #navigation li:after {
     content: "/";
     display: inline-block;
     width: 2em;
     text-align: center;
     font-weight: normal;
   }
-
-  /* line 125, ../sass/partials/_menu.scss */
-  li.last:after {
+  /* line 137, ../sass/partials/_menu.scss */
+  #navigation li.last:after {
     content: "";
   }
 }
-
 /* line 5, ../sass/partials/_panels.scss */
 h2.pane-title:after {
   content: "/.";
@@ -438,7 +446,7 @@ h2.pane-title:after {
 /* line 13, ../sass/partials/_panels.scss */
 .pane-sponsors-panel-pane-1 {
   margin-top: 1em;
-  border-top: 1px solid black;
+  border-top: 1px solid #000;
 }
 /* line 16, ../sass/partials/_panels.scss */
 .pane-sponsors-panel-pane-1 .pane-title {
@@ -454,7 +462,7 @@ h2.pane-title:after {
 /* line 24, ../sass/partials/_panels.scss */
 .pane-sponsors-panel-pane-1 .views-row img {
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #000;
   padding: 10px;
 }
 /* line 30, ../sass/partials/_panels.scss */
