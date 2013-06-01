@@ -11,4 +11,27 @@
 // Header Sub-Menu
 #block-menu-block-1 {
   float: right;
+  .block-title {
+    font-size: 1em;
+    line-height: 52px;
+    border-bottom: 4px solid #000;
+    color: rgb(38, 166, 222);
+  }
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      border-bottom: 1px solid #000;
+      &.last {
+        border-bottom: 0;
+      }
+    }
+    a {
+      line-height: 42px;
+      display: block;
+      text-decoration: none;
+    }
+  }
 }

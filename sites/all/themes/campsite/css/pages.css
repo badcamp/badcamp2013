@@ -273,6 +273,34 @@ span.field-label {
 #block-menu-block-1 {
   float: right;
 }
+/* line 14, ../sass/partials/_header.scss */
+#block-menu-block-1 .block-title {
+  font-size: 1em;
+  line-height: 52px;
+  border-bottom: 4px solid black;
+  color: #26a6de;
+}
+/* line 20, ../sass/partials/_header.scss */
+#block-menu-block-1 .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 24, ../sass/partials/_header.scss */
+#block-menu-block-1 .menu li {
+  list-style: none;
+  border-bottom: 1px solid black;
+}
+/* line 27, ../sass/partials/_header.scss */
+#block-menu-block-1 .menu li.last {
+  border-bottom: 0;
+}
+/* line 31, ../sass/partials/_header.scss */
+#block-menu-block-1 .menu a {
+  line-height: 42px;
+  display: block;
+  text-decoration: none;
+}
 
 /* line 7, ../sass/partials/_menu.scss */
 .admin-menu #navigation {
