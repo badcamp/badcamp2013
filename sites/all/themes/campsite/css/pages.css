@@ -46,8 +46,6 @@ body {
 /* line 55, ../sass/pages.scss */
 #logo {
   /* Wrapping link for logo */
-  float: left;
-  /* LTR */
   margin: 0;
   padding: 0;
 }
@@ -270,38 +268,75 @@ span.field-label {
   /* Wrapper for any blocks placed in the page bottom region */
 }
 
-/* line 6, ../sass/partials/_header.scss */
+/* line 5, ../sass/partials/_header.scss */
+#logo {
+  display: inline-block;
+}
+/* line 8, ../sass/partials/_header.scss */
 #logo img {
-  max-width: 100px;
+  max-width: 85px;
+}
+@media all and (min-width: 700px) {
+  /* line 8, ../sass/partials/_header.scss */
+  #logo img {
+    max-width: 100px;
+  }
 }
 
-/* line 12, ../sass/partials/_header.scss */
+@media all and (min-width: 700px) {
+  /* line 18, ../sass/partials/_header.scss */
+  #logo-name-and-slogan {
+    max-width: 50%;
+    padding-right: 1em;
+    float: left;
+  }
+  /* line 24, ../sass/partials/_header.scss */
+  #logo-name-and-slogan #logo {
+    float: left;
+    min-height: 220px;
+    margin-right: 1em;
+  }
+  /* line 34, ../sass/partials/_header.scss */
+  #logo-name-and-slogan h1 {
+    font-size: 4em;
+    line-height: 1em;
+    letter-spacing: -1px;
+  }
+  /* line 40, ../sass/partials/_header.scss */
+  #logo-name-and-slogan h2 {
+    margin-top: 1em;
+    font-weight: normal;
+    line-height: 1.33em;
+  }
+}
+
+/* line 51, ../sass/partials/_header.scss */
 #block-menu-block-1 {
   float: right;
 }
-/* line 14, ../sass/partials/_header.scss */
+/* line 53, ../sass/partials/_header.scss */
 #block-menu-block-1 .block-title {
   font-size: 1em;
   line-height: 52px;
   border-bottom: 4px solid #000;
   color: #26a6de;
 }
-/* line 20, ../sass/partials/_header.scss */
+/* line 59, ../sass/partials/_header.scss */
 #block-menu-block-1 .menu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 24, ../sass/partials/_header.scss */
+/* line 63, ../sass/partials/_header.scss */
 #block-menu-block-1 .menu li {
   list-style: none;
   border-bottom: 1px solid #000;
 }
-/* line 27, ../sass/partials/_header.scss */
+/* line 66, ../sass/partials/_header.scss */
 #block-menu-block-1 .menu li.last {
   border-bottom: 0;
 }
-/* line 31, ../sass/partials/_header.scss */
+/* line 70, ../sass/partials/_header.scss */
 #block-menu-block-1 .menu a {
   line-height: 42px;
   display: block;
