@@ -43,31 +43,32 @@ function badcamp_panels_events_content_type_render($subtype, $conf, $panel_args,
   $block->delta   = 'highlights';
   $block->title   = t('Events at a glance');
 
-  $block->content  = '<div class="event-one">';
-  $block->content .= '  <h3>' . check_plain($conf['one-title']) . '</h3>';
-  $block->content .= '  <p>' . check_plain($conf['one-blurb']) . '</p>';
-  $block->content .= '</div>';
-  $block->content .= '<div class="event-two">';
-  $block->content .= '  <h3>' . check_plain($conf['two-title']) . '</h3>';
-  $block->content .= '  <p>' . check_plain($conf['two-blurb']) . '</p>';
-  $block->content .= '</div>';
-  $block->content .= '<div class="event-three">';
-  $block->content .= '  <h3>' . check_plain($conf['three-title']) . '</h3>';
-  $block->content .= '  <p>' . check_plain($conf['three-blurb']) . '</p>';
-  $block->content .= '</div>';
-
-  $block->content .= '<div class="event-four">';
-  $block->content .= '  <h3>' . check_plain($conf['four-title']) . '</h3>';
-  $block->content .= '  <p>' . check_plain($conf['four-blurb']) . '</p>';
-  $block->content .= '</div>';
-  $block->content .= '<div class="event-five">';
-  $block->content .= '  <h3>' . check_plain($conf['five-title']) . '</h3>';
-  $block->content .= '  <p>' . check_plain($conf['five-blurb']) . '</p>';
-  $block->content .= '</div>';
-  $block->content .= '<div class="event-six">';
-  $block->content .= '  <h3>' . check_plain($conf['six-title']) . '</h3>';
-  $block->content .= '  <p>' . check_plain($conf['six-blurb']) . '</p>';
-  $block->content .= '</div>';
+  $block->content  = '<ul>';
+  $block->content  .= ' <li class="event-one">';
+  $block->content .= '   <h3>' . check_plain($conf['one-title']) . '</h3>';
+  $block->content .= '   <p>' . check_plain($conf['one-blurb']) . '</p>';
+  $block->content .= ' </li>';
+  $block->content .= ' <li class="event-two">';
+  $block->content .= '   <h3>' . check_plain($conf['two-title']) . '</h3>';
+  $block->content .= '   <p>' . check_plain($conf['two-blurb']) . '</p>';
+  $block->content .= ' </li>';
+  $block->content .= ' <li class="event-three">';
+  $block->content .= '   <h3>' . check_plain($conf['three-title']) . '</h3>';
+  $block->content .= '   <p>' . check_plain($conf['three-blurb']) . '</p>';
+  $block->content .= ' </li>';
+  $block->content .= ' <li class="event-four">';
+  $block->content .= '   <h3>' . check_plain($conf['four-title']) . '</h3>';
+  $block->content .= '   <p>' . check_plain($conf['four-blurb']) . '</p>';
+  $block->content .= ' </li>';
+  $block->content .= ' <li class="event-five">';
+  $block->content .= '   <h3>' . check_plain($conf['five-title']) . '</h3>';
+  $block->content .= '   <p>' . check_plain($conf['five-blurb']) . '</p>';
+  $block->content .= ' </li>';
+  $block->content .= ' <li class="event-six">';
+  $block->content .= '   <h3>' . check_plain($conf['six-title']) . '</h3>';
+  $block->content .= '   <p>' . check_plain($conf['six-blurb']) . '</p>';
+  $block->content .= ' </li>';
+  $block->content .= '</ul>';
 
   return $block;
 }
