@@ -38,6 +38,107 @@ function badcamp_images_image_default_styles() {
     ),
   );
 
+  $styles['sponsor_large']['effects'] = array(
+    0 => array(
+      'label' => 'Scale',
+      'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+      'effect callback' => 'image_scale_effect',
+      'dimensions callback' => 'image_scale_dimensions',
+      'form callback' => 'image_scale_form',
+      'summary theme' => 'image_scale_summary',
+      'module' => 'image',
+      'name' => 'image_scale',
+      'data' => array(
+        'width' => '255',
+        'height' => '255',
+        'upscale' => 0,
+      ),
+      'weight' => '1',
+    ),
+    1 => array(
+      'label' => 'Underlay (background)',
+      'help' => 'Choose the file image you wish to use as an background, and position the processed image on it.',
+      'effect callback' => 'canvasactions_canvas2file_image',
+      'form callback' => 'canvasactions_canvas2file_form',
+      'module' => 'imagecache_canvasactions',
+      'name' => 'canvasactions_canvas2file',
+      'data' => array(
+        'xpos' => 'center',
+        'ypos' => 'center',
+        'alpha' => '100',
+        'path' => 'sites/all/modules/custom/badcamp_images/bg-white.png',
+        'dimensions' => 'background',
+      ),
+      'weight' => '2',
+    ),
+    2 => array(
+      'label' => 'Crop',
+      'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
+      'effect callback' => 'image_crop_effect',
+      'dimensions callback' => 'image_resize_dimensions',
+      'form callback' => 'image_crop_form',
+      'summary theme' => 'image_crop_summary',
+      'module' => 'image',
+      'name' => 'image_crop',
+      'data' => array(
+        'width' => '255',
+        'height' => '255',
+        'anchor' => 'center-center',
+      ),
+      'weight' => '3',
+    ),
+  );
+  $styles['sponsor_small']['effects'] = array(
+    0 => array(
+      'label' => 'Scale',
+      'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+      'effect callback' => 'image_scale_effect',
+      'dimensions callback' => 'image_scale_dimensions',
+      'form callback' => 'image_scale_form',
+      'summary theme' => 'image_scale_summary',
+      'module' => 'image',
+      'name' => 'image_scale',
+      'data' => array(
+        'width' => '120',
+        'height' => '120',
+        'upscale' => 0,
+      ),
+      'weight' => '1',
+    ),
+    1 => array(
+      'label' => 'Underlay (background)',
+      'help' => 'Choose the file image you wish to use as an background, and position the processed image on it.',
+      'effect callback' => 'canvasactions_canvas2file_image',
+      'form callback' => 'canvasactions_canvas2file_form',
+      'module' => 'imagecache_canvasactions',
+      'name' => 'canvasactions_canvas2file',
+      'data' => array(
+        'xpos' => 'center',
+        'ypos' => 'center',
+        'alpha' => '100',
+        'path' => 'sites/all/modules/custom/badcamp_images/bg-white.png',
+        'dimensions' => 'background',
+      ),
+      'weight' => '2',
+    ),
+    2 => array(
+      'label' => 'Crop',
+      'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
+      'effect callback' => 'image_crop_effect',
+      'dimensions callback' => 'image_resize_dimensions',
+      'form callback' => 'image_crop_form',
+      'summary theme' => 'image_crop_summary',
+      'module' => 'image',
+      'name' => 'image_crop',
+      'data' => array(
+        'width' => '120',
+        'height' => '120',
+        'anchor' => 'center-center',
+      ),
+      'weight' => '3',
+    ),
+  );
+
   return $styles;
 }
 
