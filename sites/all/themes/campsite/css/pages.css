@@ -381,7 +381,6 @@ span.field-label {
   }
   /* line 78, ../sass/partials/_menu.scss */
   #navigation ul.menu {
-    background: #aed;
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -389,39 +388,45 @@ span.field-label {
     width: 250px;
     margin: 0;
   }
-  /* line 88, ../sass/partials/_menu.scss */
+  /* line 87, ../sass/partials/_menu.scss */
   #navigation li {
     display: block;
     float: none;
+    padding: .5em 1em;
+    border-bottom: 1px solid #333333;
+  }
+  /* line 93, ../sass/partials/_menu.scss */
+  #navigation li.last {
+    border: 0;
   }
 
   /* mobile menu transitions */
-  /* line 96, ../sass/partials/_menu.scss */
+  /* line 102, ../sass/partials/_menu.scss */
   #mobile-nav-button.open {
     background: #d00;
   }
 
-  /* line 100, ../sass/partials/_menu.scss */
+  /* line 106, ../sass/partials/_menu.scss */
   #page.open {
     -webkit-transform: translate3d(250px, 0, 0);
   }
 }
 @media all and (min-width: 820px) {
-  /* line 113, ../sass/partials/_menu.scss */
+  /* line 117, ../sass/partials/_menu.scss */
   #mobile-nav-button {
     display: none;
   }
 
-  /* line 117, ../sass/partials/_menu.scss */
+  /* line 121, ../sass/partials/_menu.scss */
   #navigation {
     border-top: 5px solid #333333;
     border-bottom: 1px solid #333333;
   }
-  /* line 122, ../sass/partials/_menu.scss */
+  /* line 126, ../sass/partials/_menu.scss */
   #navigation ul.menu li {
     float: left;
   }
-  /* line 129, ../sass/partials/_menu.scss */
+  /* line 133, ../sass/partials/_menu.scss */
   #navigation h2:after,
   #navigation li:after {
     content: "/";
@@ -430,7 +435,7 @@ span.field-label {
     text-align: center;
     font-weight: normal;
   }
-  /* line 137, ../sass/partials/_menu.scss */
+  /* line 141, ../sass/partials/_menu.scss */
   #navigation li.last:after {
     content: "";
   }
