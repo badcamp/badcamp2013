@@ -1,0 +1,70 @@
+<?php
+/**
+ * @file
+ * All image styles for the BADCamp site, exported to code.
+ */
+
+/**
+ * Implements hook_image_default_styles().
+ * Provide custom image styles for the NEW CPR site. 
+ */
+function badcamp_images_image_default_styles() {
+  $styles = array();
+
+  $styles['highlight'] = array(
+    'effects' => array(
+      array(
+        'name' => 'image_scale_and_crop', 
+        'data' => array(
+          'width' => 550,
+          'height' => 188,
+          'upscale' => 1,
+        ),
+        'weight' => 0,
+      ),
+    ),
+  );
+  $styles['headshot'] = array(
+    'effects' => array(
+      array(
+        'name' => 'image_scale_and_crop', 
+        'data' => array(
+          'width' => 175,
+          'height' => 175,
+          'upscale' => 0,
+        ),
+        'weight' => 0,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
+ * Implements hook_default_image_styles_alter().
+ *
+ * Alter the default image styles for use on the NEW CPR site.
+ */
+function badcamp_images_image_styles_alter(&$styles) {
+  // Check that we only affect a default style.
+  if ($styles['thumbnail']['storage'] == IMAGE_STORAGE_DEFAULT) {
+    // Change the size of the thumbnail image.
+    $styles['thumbnail']['effects'][0]['name'] = 'image_scale_and_crop';
+    $styles['thumbnail']['effects'][0]['data'] = array(
+      'width' => 55,
+      'height' => 55,
+      'upscale' => 0,
+    );
+  }
+
+  if ($styles['medium']['storage'] == IMAGE_STORAGE_DEFAULT) {
+    // Change the size of the medium image.
+    $styles['medium']['effects'][0]['name'] = 'image_scale_and_crop';
+    $styles['medium']['effects'][0]['data'] = array(
+      'width' => 412,
+      'height' => 484,
+      'upscale' => 0,
+    );
+  }
+}
