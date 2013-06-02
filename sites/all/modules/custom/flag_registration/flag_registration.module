@@ -1,0 +1,44 @@
+<?php
+
+/**
+	* Implements hook_flag_access(). Sets a maximum number of flags per event node
+	*/
+function flag_registration_flag_access($flag, $entity_id, $action, $account) {
+	//Only control access if flag type is registration
+	if ($flag->name = 'registration'){	
+		
+		//Load the node to get field_max_registration
+		$node = node_load($entity_id);
+		$maxcount = $node->field_max_registration['und'][0]['value'];
+		$count = $flag->get_count($entity_id);
+		
+		// No limit if field_max_registration is set to -1
+		if ($maxcount == -1) {
+			return;
+		}
+		//Otherwise limit registration to max_registration
+		elseif ($count >= $maxcount) {
+				//Only limit the flaging action so people can still unflag if max is hit
+				if ($action == 'flag'){
+						return false;
+				}
+		}
+		else 
+			return;
+	}
+}
+
+/**
+ * Preprocess function for flag link displays.
+ */
+function flag_registration_preprocess_flag(&$variables) {
+		$id = $variables['content_id'];
+		$node = node_load($id);
+		$maxcount = $node->field_max_registration['und'][0]['value'];
+		$count = $variables['flag']->get_count($id);
+		if ($count >= $maxcount) {
+      // Make the flag link say plain text.
+      $variables['link_href'] = '';
+      $variables['link_text'] = 'Sold out';
+		}
+}
