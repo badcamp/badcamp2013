@@ -1,6 +1,0 @@
-name = Flag Signup
-description = "Allow users to sign up for content via the flag module"
-package = Flags
-dependencies[] = flag
-core = 7.x
-version = "7.x-1.x-dev"

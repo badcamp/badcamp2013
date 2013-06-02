@@ -3,10 +3,49 @@
 //
 
 #logo {
+  display: inline-block;
+
   img {
-    max-width: 100px;
+    max-width: 85px;
+
+    @media all and (min-width: 700px) {
+      max-width: 100px;
+    }
   }
 }
+
+
+#logo-name-and-slogan {
+  @media all and (min-width: 700px) {
+    max-width: 50%;
+    padding-right: 1em;
+    float: left;
+    
+    #logo {
+      float: left;
+      min-height: 220px;
+      margin-right: 1em;
+    }
+
+    .name-and-slogan {
+    }
+
+ 
+    h1 {
+      font-size: 4em;
+      line-height: 1em;
+      letter-spacing: -1px;
+    }
+
+    h2 {
+      margin-top: 1em;
+      font-weight: normal;
+      line-height: 1.33em;
+    }
+
+  }
+}
+
 
 // Header Sub-Menu
 #block-menu-block-1 {
