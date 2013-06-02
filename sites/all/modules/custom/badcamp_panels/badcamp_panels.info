@@ -6,3 +6,4 @@ version = 7.x-1.0
 
 dependencies[] = page_manager
 dependencies[] = panels
+dependencies[] = fieldable_panels_panes
