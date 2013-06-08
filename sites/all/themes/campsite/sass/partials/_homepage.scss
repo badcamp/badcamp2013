@@ -8,12 +8,14 @@
   #content {
     @include zen-grid-container();
     $zen-column-count: 4;
+    // $zen-gutter-width: 10px;
   }
 
 
-  /* Highlighst and Facts blocks */
+  /* Highlighst and Facts panes */
   
   .pane-facts {
+  
     .pane-content > div {
       float: left;
       width: 33%;
@@ -25,7 +27,7 @@
     h3 {
       font-size: 3em;
       
-      @media all and (max-width: 400px) {
+      @media all and (max-width: 6 00px) {
         font-size: 2em;
       }
       
@@ -45,10 +47,12 @@
   @media all and (min-width: 900px) {     
     .pane-highlights {          
       @include zen-grid-item(2,1);
+      padding-right: 10px; // for the little gap-toothed look from the comp :)
     }
     
     .pane-facts {
       @include zen-grid-item(2,3);
+      padding-left: 10px;
     }
     
     .pane-speakers-panel-pane-1 {
@@ -59,11 +63,20 @@
  
  
  
- /* Events at a glace block */
- 
- 
- 
- 
- 
-  
+  /* Events at a glance pane */
+
+  .pane-events {
+    
+    ul {
+      @include naked-list;
+            
+      // **** REFACTOR THIS ****
+      li { 
+        width: 33%;
+        float: left;
+        min-height: 225px;
+        padding-right: 1em;
+      }
+    }
+  } 
 }
