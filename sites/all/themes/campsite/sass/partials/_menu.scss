@@ -29,7 +29,6 @@
     text-transform: uppercase;
     float: left;
     border: none;
-    color: $dark;
   }
 
   h2,
@@ -39,14 +38,8 @@
 
 
   a {   
-    color: $dark;
-
     &:link {
       text-decoration: none;
-    }
-
-    &:hover {
-      text-decoration: underline;
     }
   }
 }
@@ -61,19 +54,24 @@
   }
 
   #mobile-nav-button {
-    float: left;
+    position: absolute;
+    left: 0;
     font-size: 2em;
     background: $blue;
     width: 1.2em;
+    height: 40px;
     text-align: center;
   }
 
   #navigation {
     margin: 0 0 1em 0;
     background: $dark;
+    padding: 0;
+    height: 40px;
 
     h2 {
-      margin-left: .5em;
+      margin-left: 2em;
+      margin-top: 3px;
       color: #fff;
     }
 
@@ -89,13 +87,28 @@
     li {
       display: block;
       float: none;
-      padding: .5em 1em;
-      border-bottom: 1px solid $dark;
+      // padding: .5em 1em;
+      // border-bottom: 1px solid $dark;
       
       &.last {
         border: 0;
       }
-
+    }
+    
+    a {
+      display: block;
+      padding: .5em 1em;
+      color: #fff;
+    
+      &:hover {
+        text-decoration: none;
+        background: $dark;
+      }
+    
+      &:before {
+        content: "-";
+        float: right;
+      }
     }
   }
 
@@ -124,6 +137,10 @@
     border-top: 5px solid $dark;
     border-bottom: 1px solid $dark;
 
+    h2 {
+      color: $dark;
+    }
+
     ul.menu {
       li {
         float: left;
@@ -142,6 +159,14 @@
   
     li.last:after {
       content: "";
+    }
+    
+    a {
+      color: $dark;
+            
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
