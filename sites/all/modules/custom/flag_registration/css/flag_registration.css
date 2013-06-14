@@ -1,0 +1,17 @@
+.flag-registration .unflag-action,
+.flag-registration .flag-action{
+	padding: 5px;
+	border-radius: 2px;
+}
+
+.flag-registration .unflag-action{
+	background-image:url('images/checkbox.png');
+	background-repeat: no-repeat;
+	background-position:top left;
+	background-color:green;
+	padding-left:31px;
+}
+
+.flag-registration .flag-action{
+	background:gray;
+}

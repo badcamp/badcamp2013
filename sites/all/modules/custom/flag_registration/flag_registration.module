@@ -4,41 +4,74 @@
 	* Implements hook_flag_access(). Sets a maximum number of flags per event node
 	*/
 function flag_registration_flag_access($flag, $entity_id, $action, $account) {
-	//Only control access if flag type is registration
-	if ($flag->name = 'registration'){	
+		//Only control access if flag type is registration
+		if ($flag->name = 'registration'){	
+			//Load the node to get field_max_registration
+			$node = node_load($entity_id);
+			$maxcount = $node->field_max_registration['und'][0]['value'];
+			$count = $flag->get_count($entity_id);
 		
-		//Load the node to get field_max_registration
-		$node = node_load($entity_id);
-		$maxcount = $node->field_max_registration['und'][0]['value'];
-		$count = $flag->get_count($entity_id);
+			// No limit if field_max_registration is set to -1
+			if ($maxcount == -1) {
+				return;
+			}
 		
-		// No limit if field_max_registration is set to -1
-		if ($maxcount == -1) {
-			return;
-		}
-		//Otherwise limit registration to max_registration
-		elseif ($count >= $maxcount) {
+			//Otherwise limit registration to max_registration
+			elseif ($count >= $maxcount) {
 				//Only limit the flaging action so people can still unflag if max is hit
 				if ($action == 'flag'){
 						return false;
-				}
+			}
 		}
-		else 
+		else { 
 			return;
+		}
 	}
+	
 }
 
 /**
  * Preprocess function for flag link displays.
  */
 function flag_registration_preprocess_flag(&$variables) {
+		//Make flags that are at or above max say "Sold out"
 		$id = $variables['content_id'];
 		$node = node_load($id);
 		$maxcount = $node->field_max_registration['und'][0]['value'];
 		$count = $variables['flag']->get_count($id);
 		if ($count >= $maxcount) {
-      // Make the flag link say plain text.
+      // Make the flag link plain text.
       $variables['link_href'] = '';
       $variables['link_text'] = 'Sold out';
 		}
 }
+
+/**
+ * Implementation of hook_form_alter()
+ */
+function flag_registration_form_alter(&$form, &$form_state, $form_id) {
+	// Remove unhelpful help text
+	$form['account']['name']['#description'] = "";
+	$form['account']['mail']['#description'] = "";
+	
+	// Hide non-required fields for initial signup
+	$path = 'signup';
+  if (current_path() == $path && user_is_anonymous()) {
+			unset($form['field_drupal_username']);
+			unset($form['field_twitter_handle']);
+			unset($form['field_facebook_profile']);
+			unset($form['field_interest_jobs']);	
+	}
+	
+	// After user registers, try and get their money
+	 if ($form_id == 'user_register_form') {
+    $form['#submit'][] = 'flag_registration_user_login_form_submit';
+  }
+}
+
+function flag_registration_user_login_form_submit($form, &$form_state){
+    //Redirects to sponsorship pag on login.
+  $form_state['redirect'] = 'individual-sponor';
+}
+
+drupal_add_css(drupal_get_path('module', 'flag_registration') .'/css/flag_registration.css');

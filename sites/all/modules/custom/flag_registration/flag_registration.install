@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Installs the sulair custom module.
+ */
+
+
+/**
+ * Implements of hook_install().
+ */
+function flag_registration_install(){
+	// Increase module weight to overwrite user module.
+  db_update('system')
+    ->fields(array(
+      'weight' => 65,
+    ))
+    ->condition('type', 'module')
+    ->condition('name', 'flag_registration')
+    ->execute();
+}
