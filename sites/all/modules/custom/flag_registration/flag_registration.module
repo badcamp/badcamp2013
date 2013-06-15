@@ -77,7 +77,7 @@ function flag_registration_form_alter(&$form, &$form_state, $form_id) {
 
 function flag_registration_user_login_form_submit($form, &$form_state){
     //Redirects to sponsorship pag on login.
-  $form_state['redirect'] = 'individual-sponor';
+  $form_state['redirect'] = 'individual-sponsor';
 }
 
 drupal_add_css(drupal_get_path('module', 'flag_registration') .'/css/flag_registration.css');
