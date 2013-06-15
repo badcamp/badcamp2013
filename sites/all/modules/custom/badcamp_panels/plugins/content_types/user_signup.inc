@@ -5,6 +5,7 @@
 $plugin = array(
   'single' => TRUE,
   'title' => t('User registration form'),
+  'category' => t('User registration'),
   'no title override' => TRUE,
   'icon' => 'icon.png',
   'description' => t('User Registration form'),
