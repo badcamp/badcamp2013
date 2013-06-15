@@ -1,4 +1,9 @@
 /* normalize-rtl.css - RTL language extension of normalize.scss. */
+/* line 10, ../sass/partials/_colors.scss */
+#content p {
+  color: #ccc;
+}
+
 /* =============================================================================
    Lists
    ========================================================================== */

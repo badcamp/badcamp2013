@@ -2,6 +2,11 @@
  * @file
  * Views Styling
  */
+/* line 10, ../sass/partials/_colors.scss */
+#content p {
+  color: #ccc;
+}
+
 /*
  * Views' admin tabs
  *

@@ -6,6 +6,11 @@
  * miscellaneous Drupal elements that appear in the $content variable, such as
  * ul.links, .pager, .more-link, etc.
  */
+/* line 10, ../sass/partials/_colors.scss */
+#content p {
+  color: #ccc;
+}
+
 /* line 12, ../sass/pages.scss */
 * {
   box-sizing: border-box;
@@ -506,7 +511,7 @@ span.field-label {
     text-decoration: underline;
   }
 }
-/* line 5, ../sass/partials/_panels.scss */
+/* line 6, ../sass/partials/_panels.scss */
 h2.pane-title:after {
   content: "/.";
   display: inline-block;
@@ -514,55 +519,55 @@ h2.pane-title:after {
   width: 1.4em;
 }
 
-/* line 13, ../sass/partials/_panels.scss */
+/* line 14, ../sass/partials/_panels.scss */
 .pane-sponsors-panel-pane-1 {
   margin-top: 1em;
   border-top: 1px solid #000;
 }
-/* line 16, ../sass/partials/_panels.scss */
+/* line 17, ../sass/partials/_panels.scss */
 .pane-sponsors-panel-pane-1 .pane-title {
   margin: 0;
   color: #08a5e1;
 }
-/* line 20, ../sass/partials/_panels.scss */
+/* line 21, ../sass/partials/_panels.scss */
 .pane-sponsors-panel-pane-1 .views-row {
   float: left;
   margin-right: 4%;
   width: 21%;
 }
-/* line 24, ../sass/partials/_panels.scss */
+/* line 25, ../sass/partials/_panels.scss */
 .pane-sponsors-panel-pane-1 .views-row img {
   width: 100%;
   border: 1px solid #000;
   padding: 10px;
 }
-/* line 30, ../sass/partials/_panels.scss */
+/* line 31, ../sass/partials/_panels.scss */
 .pane-sponsors-panel-pane-1 .views-row-last {
   margin-right: 0;
 }
 
-/* line 40, ../sass/partials/_panels.scss */
+/* line 41, ../sass/partials/_panels.scss */
 #main {
   background: #222222;
   color: #fff;
 }
 
-/* line 51, ../sass/partials/_panels.scss */
+/* line 52, ../sass/partials/_panels.scss */
 h2 {
   color: #26a6df;
   border-bottom: 1px solid #bbb;
 }
 
-/* line 61, ../sass/partials/_panels.scss */
+/* line 62, ../sass/partials/_panels.scss */
 .region-footer img {
   padding: 1em;
 }
-/* line 66, ../sass/partials/_panels.scss */
+/* line 67, ../sass/partials/_panels.scss */
 .region-footer h2 {
   border: none;
 }
 @media all and (max-width: 700px) {
-  /* line 75, ../sass/partials/_panels.scss */
+  /* line 76, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 50%;
@@ -576,7 +581,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 79, ../sass/partials/_panels.scss */
+  /* line 80, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 50%;
@@ -590,7 +595,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 83, ../sass/partials/_panels.scss */
+  /* line 84, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     clear: left;
     float: left;
@@ -605,7 +610,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 88, ../sass/partials/_panels.scss */
+  /* line 89, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-4 {
     clear: left;
     float: left;
@@ -631,7 +636,7 @@ h2 {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 102, ../sass/partials/_panels.scss */
+  /* line 103, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 25%;
@@ -645,7 +650,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 106, ../sass/partials/_panels.scss */
+  /* line 107, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 25%;
@@ -659,7 +664,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 110, ../sass/partials/_panels.scss */
+  /* line 111, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     float: left;
     width: 25%;
@@ -673,7 +678,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 114, ../sass/partials/_panels.scss */
+  /* line 115, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .view-row-4 {
     float: left;
     width: 25%;
@@ -692,6 +697,7 @@ h2 {
 /* line 6, ../sass/partials/_homepage.scss */
 .front {
   /* Highlighst and Facts panes */
+  /* Featured Attendees pane */
   /* Events at a glance pane */
 }
 /* line 52, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
@@ -717,7 +723,7 @@ h2 {
   line-height: 1em;
   margin: 0;
 }
-@media all and (max-width: 6 0px) {
+@media all and (max-width: 600px) {
   /* line 27, ../sass/partials/_homepage.scss */
   .front .pane-facts h3 {
     font-size: 2em;
@@ -765,16 +771,26 @@ h2 {
     clear: left;
   }
 }
-/* line 70, ../sass/partials/_homepage.scss */
+/* line 68, ../sass/partials/_homepage.scss */
+.front .view-id-speakers .views-row {
+  float: left;
+}
+/* line 82, ../sass/partials/_homepage.scss */
+.front .pane-events {
+  clear: both;
+}
+/* line 86, ../sass/partials/_homepage.scss */
 .front .pane-events ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
-/* line 74, ../sass/partials/_homepage.scss */
-.front .pane-events ul li {
-  width: 33%;
-  float: left;
-  min-height: 225px;
-  padding-right: 1em;
+@media all and (min-width: 700px) {
+  /* line 90, ../sass/partials/_homepage.scss */
+  .front .pane-events ul li {
+    width: 33%;
+    float: left;
+    min-height: 225px;
+    padding-right: 1em;
+  }
 }

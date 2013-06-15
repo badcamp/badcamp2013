@@ -2,6 +2,11 @@
  * @file
  * Comment Styling
  */
+/* line 10, ../sass/partials/_colors.scss */
+#content p {
+  color: #ccc;
+}
+
 /* line 9, ../sass/comments.scss */
 .comments {
   /* Wrapper for the list of comments and its title */

@@ -4,6 +4,11 @@
  *
  * Add wireframes to the basic layout elements.
  */
+/* line 10, ../sass/partials/_colors.scss */
+#content p {
+  color: #ccc;
+}
+
 /* line 19, ../sass/wireframes.scss */
 .with-wireframes #header,
 .with-wireframes #main,

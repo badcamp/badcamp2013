@@ -10,6 +10,11 @@
  *
  * http://drupal.org/project/fences
  */
+/* line 10, ../sass/partials/_colors.scss */
+#content p {
+  color: #ccc;
+}
+
 /*
  * Field wrappers when the Fences module is enabled.
  */

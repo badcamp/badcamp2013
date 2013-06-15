@@ -27,7 +27,7 @@
     h3 {
       font-size: 3em;
       
-      @media all and (max-width: 6 00px) {
+      @media all and (max-width: 600px) {
         font-size: 2em;
       }
       
@@ -61,21 +61,39 @@
   }
  
  
+  /* Featured Attendees pane */
+  
+  .view-id-speakers {
+    
+    .views-row {
+      float: left;
+
+    }
+    
+    
+    
+  }
+  
+ 
  
  
   /* Events at a glance pane */
 
   .pane-events {
     
+    clear: both;
+    
     ul {
       @include naked-list;
             
       // **** REFACTOR THIS ****
       li { 
-        width: 33%;
-        float: left;
-        min-height: 225px;
-        padding-right: 1em;
+        @media all and (min-width: 700px) {
+          width: 33%;
+          float: left;
+          min-height: 225px;
+          padding-right: 1em;
+        }
       }
     }
   } 

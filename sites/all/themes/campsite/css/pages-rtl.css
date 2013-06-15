@@ -2,6 +2,11 @@
  * @file
  * RTL companion for the pages.css file.
  */
+/* line 10, ../sass/partials/_colors.scss */
+#content p {
+  color: #ccc;
+}
+
 /*
  * Header
  */

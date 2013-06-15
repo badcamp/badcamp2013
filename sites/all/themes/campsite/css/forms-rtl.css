@@ -2,6 +2,11 @@
  * @file
  * RTL companion for the forms.css file.
  */
+/* line 10, ../sass/partials/_colors.scss */
+#content p {
+  color: #ccc;
+}
+
 /*
  * Drupal's default login form block
  */

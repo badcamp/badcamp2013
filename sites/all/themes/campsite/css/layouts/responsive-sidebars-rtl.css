@@ -12,6 +12,11 @@
  *
  * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
  */
+/* line 10, ../../sass/partials/_colors.scss */
+#content p {
+  color: #ccc;
+}
+
 /*
  * Center the page.
  */
