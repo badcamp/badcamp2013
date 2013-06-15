@@ -1,3 +1,6 @@
 name = Flag Registration
-description = Customizations to the flag module
+description = BADCamp custom registration system built off Flag Module
+dependencies[] = flag
 core = 7.x
+version = 7.x-1.0
+package = BADCamp

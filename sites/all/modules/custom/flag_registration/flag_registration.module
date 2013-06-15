@@ -1,7 +1,8 @@
 <?php
 
 /**
-	* Implements hook_flag_access(). Sets a maximum number of flags per event node
+	* Implements hook_flag_access().
+	* Sets a maximum number of flags per event node
 	*/
 function flag_registration_flag_access($flag, $entity_id, $action, $account) {
 		//Only control access if flag type is registration
@@ -35,11 +36,16 @@ function flag_registration_flag_access($flag, $entity_id, $action, $account) {
  */
 function flag_registration_preprocess_flag(&$variables) {
 		//Make flags that are at or above max say "Sold out"
+	//	dsm($variables);
 		$id = $variables['content_id'];
 		$node = node_load($id);
 		$maxcount = $node->field_max_registration['und'][0]['value'];
 		$count = $variables['flag']->get_count($id);
-		if ($count >= $maxcount) {
+		
+		// Only says 'Sold out' if they aren't already registered.
+		$status = $variables['status'];
+		$not_registered = strpos($status, 'unflagged');
+		if ($count >= $maxcount  && $not_registered !== FALSE ) {
       // Make the flag link plain text.
       $variables['link_href'] = '';
       $variables['link_text'] = 'Sold out';

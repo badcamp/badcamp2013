@@ -1,0 +1,13 @@
+diff --git a/sites/all/modules/contrib/flag/flag.module b/sites/all/modules/contrib/flag/flag.module
+index dcbc858..15900d3 100644
+--- a/sites/all/modules/contrib/flag/flag.module
++++ b/sites/all/modules/contrib/flag/flag.module
+@@ -953,7 +953,7 @@ function flag_page($action, $flag, $content_id) {
+   else {
+     $result = $flag->flag($action, $content_id);
+     if (!$result) {
+-      $error = t('You are not allowed to flag, or unflag, this content.');
++      $error = t('Sorry this event is sold out!');
+     }
+   }
+ 

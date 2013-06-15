@@ -953,7 +953,7 @@ function flag_page($action, $flag, $content_id) {
   else {
     $result = $flag->flag($action, $content_id);
     if (!$result) {
-      $error = t('You are not allowed to flag, or unflag, this content.');
+      $error = t('Sorry this event is sold out!');
     }
   }
 
