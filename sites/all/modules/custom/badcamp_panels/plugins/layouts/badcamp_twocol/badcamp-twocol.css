@@ -1,0 +1,30 @@
+.badcamp-2col { 
+/*  overflow: hidden;  */
+}
+
+.badcamp-2col .panel-col-first { 
+  float: left;
+  width: 898px;
+}
+
+.badcamp-2col .panel-col-first .inside { 
+  margin: 0 34px 1em 0;
+}
+
+.badcamp-2col .panel-col-last { 
+  float: left; 
+  width: 278px; 
+}
+
+.badcamp-2col .panel-col-last .inside { 
+  margin: 0 0 1em 0;
+}
+
+#panels-edit-display .panel-pane,
+#panels-edit-display .helperclass {
+  margin: .5em;
+}
+
+.badcamp-2col .panel-separator {
+  margin: 0 0 1em 0;
+}
