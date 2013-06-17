@@ -7,7 +7,7 @@ $plugin = array(
   'title' => t('Training Introduction'),
   'icon' => 'icon.png',
   'description' => t('Training Introduction'),
-  'category' => t('Events'),
+  'category' => t('Taxonomy term'),
   'edit text' => t('Configure'),
   'defaults' => array('description' => ''),
 );

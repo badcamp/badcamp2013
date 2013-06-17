@@ -7,7 +7,7 @@ $plugin = array(
   'title' => t('Summit Introduction'),
   'icon' => 'icon.png',
   'description' => t('Summit Introduction'),
-  'category' => t('Events'),
+  'category' => t('Taxonomy term'),
   'edit text' => t('Configure'),
   'defaults' => array('description' => ''),
 );
