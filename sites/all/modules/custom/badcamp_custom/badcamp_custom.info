@@ -1,0 +1,6 @@
+name = BADCamp customizations
+description = Form alters, menu alters, and other customizations for BADCamp.
+package = BADCamp
+core = 7.x
+version = 7.x-1.0
+

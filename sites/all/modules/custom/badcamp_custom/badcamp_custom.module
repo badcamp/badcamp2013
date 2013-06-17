@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Form alters, menu alters, and other customizations for BADCamp.
+ */
+
+/**
+ * Implements hook_form_alter().
+*/
+function badcamp_custom_form_alter(&$form, &$form_state, $form_id) {
+  //dpm($form_id);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function badcamp_custom_form_taxonomy_form_term_alter(&$form, &$form_state) {
+  dpm($form['#vocabulary']->vid);
+  if ($form['#vocabulary']->vid == 8) {
+    // Change the label, since there's no UI for this.
+    $form['description']['#title'] = t('Address/Location');
+    // Change the format too.
+    $form['description']['#format'] = 'plain_text';
+  }
+}
