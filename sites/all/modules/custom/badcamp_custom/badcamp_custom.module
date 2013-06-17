@@ -16,8 +16,8 @@ function badcamp_custom_form_alter(&$form, &$form_state, $form_id) {
  * Implements hook_form_FORM_ID_alter().
  */
 function badcamp_custom_form_taxonomy_form_term_alter(&$form, &$form_state) {
-  dpm($form['#vocabulary']->vid);
-  if ($form['#vocabulary']->vid == 8) {
+  // Only change venue forms.
+  if ($form['#vocabulary']->vid == 10) {
     // Change the label, since there's no UI for this.
     $form['description']['#title'] = t('Address/Location');
     // Change the format too.
