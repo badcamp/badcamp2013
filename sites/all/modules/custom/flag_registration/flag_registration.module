@@ -46,10 +46,15 @@ function flag_registration_preprocess_flag(&$variables) {
     $maxcount = $node->field_max_registration['und'][0]['value'];
     $count = $variables['flag']->get_count($id);
 
+	// If there is no max, return
+    if ($maxcount == -1) {
+        return;
+    }
+	
     // Only says 'Sold out' if they aren't already registered.
     $status = $variables['status'];
     $not_registered = strpos($status, 'unflagged');
-    if ($count >= $maxcount  && $not_registered !== FALSE ) {
+    if ($count >= $maxcount && $not_registered !== FALSE ) {
       // Make the flag link plain text.
       $variables['link_href'] = '';
       $variables['link_text'] = 'Sold out';
@@ -64,10 +69,16 @@ function flag_registration_form_alter(&$form, &$form_state, $form_id) {
 	// Remove unhelpful help text
 	$form['account']['name']['#description'] = "";
 	$form['account']['mail']['#description'] = "";
+	$form['account']['pass']['#description'] = "";
+	
+
+	// Change field length
+	$form['account']['name']['#maxlength'] = '30';
+	$form['actions']['submit']['#value'] = t('Continute');
 	
 	// Hide non-required fields for initial signup
 	$path = 'signup';
-  if (current_path() == $path && user_is_anonymous()) {
+  	if (current_path() == $path && user_is_anonymous()) {
 			unset($form['field_drupal_username']);
 			unset($form['field_twitter_handle']);
 			unset($form['field_facebook_profile']);
@@ -75,7 +86,8 @@ function flag_registration_form_alter(&$form, &$form_state, $form_id) {
 	}
 	
 	// After user registers, try and get their money
-	 if ($form_id == 'user_register_form') {
+	 if ($form_id == 'user_register_form' && current_path() == $path) {
+
     $form['#submit'][] = 'flag_registration_user_login_form_submit';
   }
 }
@@ -85,4 +97,21 @@ function flag_registration_user_login_form_submit($form, &$form_state){
   $form_state['redirect'] = 'individual-sponsor';
 }
 
+/**
+ * Disable password strength checker.
+ */
+
+/**
+ * Implements hook_element_info_alter().
+ */
+function flag_registration_element_info_alter(&$types) {
+  if (isset($types['password_confirm']['#process']) && (($position = array_search('user_form_process_password_confirm', $types['password_confirm']['#process'])) !== FALSE)) {
+    unset($types['password_confirm']['#process'][$position]);
+  }
+}
+
+
+
+
 drupal_add_css(drupal_get_path('module', 'flag_registration') .'/css/flag_registration.css');
+drupal_add_js(drupal_get_path('module', 'flag_registration') .'/js/flag_registration.js');
