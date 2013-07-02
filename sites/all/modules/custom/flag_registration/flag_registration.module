@@ -82,7 +82,7 @@ function flag_registration_form_alter(&$form, &$form_state, $form_id) {
 			unset($form['field_drupal_username']);
 			unset($form['field_twitter_handle']);
 			unset($form['field_facebook_profile']);
-			unset($form['field_interest_jobs']);	
+			//unset($form['field_interest_jobs']);
 	}
 	
 	// After user registers, try and get their money

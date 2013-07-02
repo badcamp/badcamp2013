@@ -72,9 +72,11 @@
 
 <div id="page">
 
-
-
   <header id="header" role="banner">
+
+    <div id="usermenu">
+      <?php print render($page['usermenu']); ?>
+    </div><!-- /#usermenu -->
 
     <div id="navigation">
       <div id="mobile-nav-button">&equiv;</div>
