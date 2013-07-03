@@ -1,0 +1,10 @@
+Why do we use a PATCHES.txt file instead of keeping useless patch files in version control?
+- patch files usually won't apply again after the module has been updated
+- you should never blindly apply a patch without first checking the issue where you first got it
+  - it may already be incorporated
+  - something may have been wrong with it
+  - something may have changed that makes the patch nolonger the correct solution to the problem
+- less code to keep track of
+- trains you not to make any customizations (or have custom patches) for contrib modules
+  - if you need to change something, open a feature request and post a patch there
+    - other people will probably need to change that thing too, so make it configurable
