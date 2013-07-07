@@ -15,3 +15,100 @@
 .flag-registration .flag-action{
 	background:gray;
 }
+
+#user-register-form input.username,
+#user-register-form input#edit-mail,
+#user-register-form input.password-field,
+#user-register-form input.password-confirm,
+#user-register-form input#edit-field-first-name-und-0-value,
+#user-register-form input#edit-field-last-name-und-0-value{
+	width:16em;
+	border:0;
+	background:gray;
+	border-bottom:1px solid black;
+	height:30px;
+}
+
+#user-register-form .form-submit{
+	background: gray;
+	border: 0;
+	padding: 8px;
+	color: yellow;
+	width: 102px;
+	text-align: left;
+	float:right;
+}
+
+#user-register-form .form-item .form-required{
+	display:none;
+}
+
+.field-name-field-first-name,
+.form-item-name,
+.form-item-pass-pass1{
+	float:left;
+}
+
+.field-name-field-last-name,
+.form-item-mail,
+.form-item-pass-pass2{
+	float:right;
+}
+
+.field-name-field-first-name,
+.field-name-field-interest-jobs,
+.form-item-status,
+.form-item-field-drupal-username-und-0-value{
+	clear:both;
+}
+
+.pane-user-signup,
+.registration-steps,
+.signup .messages{
+	max-width:600px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#user-register-form .form-item{
+	margin: 0.5em 0;
+}
+
+
+.registration-steps .registration{
+	float:left;
+	text-align: center;
+	width: 50px;
+}
+
+.registration-steps .step-number{
+	background: gray;
+	width: 50px;
+	text-align: center;
+	border-radius: 50px;
+	height: 50px;
+	padding: 12px;
+	font-size:35px;
+}
+
+.registration-steps .step-number.active{
+  background: blue;
+}
+
+.registration-steps .registration.two{
+	margin:0 37%;
+}
+
+.sponsorship-level{
+	float:left;
+	width:20%;
+}
+
+.sponsorship-level .amount{
+	font-size:30px;
+}
+
+#individual-sponsor .pane-custom,
+#event-request .panel-pane{
+	clear:both;
+}

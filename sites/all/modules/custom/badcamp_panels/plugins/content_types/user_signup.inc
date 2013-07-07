@@ -6,7 +6,7 @@ $plugin = array(
   'single' => TRUE,
   'title' => t('User registration form'),
   'category' => t('User registration'),
-  'no title override' => TRUE,
+  'no title override' => FALSE,
   'icon' => 'icon.png',
   'description' => t('User Registration form'),
 );
@@ -17,7 +17,7 @@ $plugin = array(
 function badcamp_panels_user_signup_content_type_render($subtype, $conf, $panel_args, $context) {
   // Build the content type block.
   $block = new stdClass();
-  $block->title   = t('User registration form');
+  $block->title   = t('');
 
 	$form = drupal_get_form('user_register_form');
 
