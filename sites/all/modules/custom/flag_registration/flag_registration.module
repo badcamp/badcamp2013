@@ -70,8 +70,7 @@ function flag_registration_form_alter(&$form, &$form_state, $form_id) {
 	$form['account']['name']['#description'] = "";
 	$form['account']['mail']['#description'] = "";
 	$form['account']['pass']['#description'] = "";
-	$form['actions']['submit']['#value'] = t('Continute');
-	
+		
 	// Hide non-required fields for initial signup
 	$path = 'signup';
   	if (current_path() == $path && user_is_anonymous()) {
@@ -85,6 +84,7 @@ function flag_registration_form_alter(&$form, &$form_state, $form_id) {
 	 if ($form_id == 'user_register_form' && current_path() == $path) {
 
     $form['#submit'][] = 'flag_registration_user_login_form_submit';
+		$form['actions']['submit']['#value'] = t('Continute');
   }
 }
 

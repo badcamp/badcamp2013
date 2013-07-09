@@ -24,7 +24,7 @@
 #user-register-form input#edit-field-last-name-und-0-value{
 	width:16em;
 	border:0;
-	background:gray;
+	background:#E9F0FB;
 	border-bottom:1px solid black;
 	height:30px;
 }
@@ -58,7 +58,8 @@
 .field-name-field-first-name,
 .field-name-field-interest-jobs,
 .form-item-status,
-.form-item-field-drupal-username-und-0-value{
+.form-item-field-drupal-username-und-0-value,
+.field-name-field-interest-volunteering{
 	clear:both;
 }
 
@@ -82,7 +83,7 @@
 }
 
 .registration-steps .step-number{
-	background: gray;
+	background: #E1E6ED;
 	width: 50px;
 	text-align: center;
 	border-radius: 50px;
@@ -92,7 +93,7 @@
 }
 
 .registration-steps .step-number.active{
-  background: blue;
+  background: #20A4DE;
 }
 
 .registration-steps .registration.two{
