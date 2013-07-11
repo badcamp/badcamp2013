@@ -2,6 +2,47 @@
 // Header design elements 
 //
 
+/* Header  */
+#header {
+  background: #E4E3FF url('../images/bg-header-sanfrancisco-v1.jpg') no-repeat bottom center;
+  padding: 0;
+  max-width: 100%;
+
+  .header-innner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+}
+
+/* User Menu / Login */
+#usermenu {
+  // display: none; // temp
+
+  background: #000;
+  color: #FFF;
+
+  &:after {
+    @extend %clearfix-after;
+  }
+
+  #block-user-login {
+    width: 50%;
+    float: right;
+  }
+}
+
+// User login: what you see at the top of the site 
+#user-login-form {
+  .first-name, .form-item-name, .form-item-pass-pass1 { 
+    float: none;
+  }
+}
+
+
+
+
+
 #logo {
   display: inline-block;
 
@@ -75,3 +116,4 @@
     }
   }
 }
+

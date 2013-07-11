@@ -6,6 +6,16 @@
  * miscellaneous Drupal elements that appear in the $content variable, such as
  * ul.links, .pager, .more-link, etc.
  */
+/* Custom clearfix. I use this for extending */
+/* line 69, ../sass/partials/_custom.scss */
+#usermenu:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
 /* line 10, ../sass/partials/_colors.scss */
 #content p {
   color: #ccc;
@@ -279,41 +289,71 @@ span.field-label {
   /* Wrapper for any blocks placed in the page bottom region */
 }
 
-/* line 5, ../sass/partials/_header.scss */
+/* Header  */
+/* line 6, ../sass/partials/_header.scss */
+#header {
+  background: #e4e3ff url("../images/bg-header-sanfrancisco-v1.jpg") no-repeat bottom center;
+  padding: 0;
+  max-width: 100%;
+}
+/* line 11, ../sass/partials/_header.scss */
+#header .header-innner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* User Menu / Login */
+/* line 19, ../sass/partials/_header.scss */
+#usermenu {
+  background: #000;
+  color: #FFF;
+}
+/* line 29, ../sass/partials/_header.scss */
+#usermenu #block-user-login {
+  width: 50%;
+  float: right;
+}
+
+/* line 37, ../sass/partials/_header.scss */
+#user-login-form .first-name, #user-login-form .form-item-name, #user-login-form .form-item-pass-pass1 {
+  float: none;
+}
+
+/* line 46, ../sass/partials/_header.scss */
 #logo {
   display: inline-block;
 }
-/* line 8, ../sass/partials/_header.scss */
+/* line 49, ../sass/partials/_header.scss */
 #logo img {
   max-width: 85px;
 }
 @media all and (min-width: 700px) {
-  /* line 8, ../sass/partials/_header.scss */
+  /* line 49, ../sass/partials/_header.scss */
   #logo img {
     max-width: 100px;
   }
 }
 
 @media all and (min-width: 700px) {
-  /* line 18, ../sass/partials/_header.scss */
+  /* line 59, ../sass/partials/_header.scss */
   #logo-name-and-slogan {
     max-width: 50%;
     padding-right: 1em;
     float: left;
   }
-  /* line 24, ../sass/partials/_header.scss */
+  /* line 65, ../sass/partials/_header.scss */
   #logo-name-and-slogan #logo {
     float: left;
     min-height: 220px;
     margin-right: 1em;
   }
-  /* line 34, ../sass/partials/_header.scss */
+  /* line 75, ../sass/partials/_header.scss */
   #logo-name-and-slogan h1 {
     font-size: 4em;
     line-height: 1em;
     letter-spacing: -1px;
   }
-  /* line 40, ../sass/partials/_header.scss */
+  /* line 81, ../sass/partials/_header.scss */
   #logo-name-and-slogan h2 {
     margin-top: 1em;
     font-weight: normal;
@@ -322,33 +362,33 @@ span.field-label {
   }
 }
 
-/* line 52, ../sass/partials/_header.scss */
+/* line 93, ../sass/partials/_header.scss */
 #block-menu-block-1 {
   float: right;
 }
-/* line 54, ../sass/partials/_header.scss */
+/* line 95, ../sass/partials/_header.scss */
 #block-menu-block-1 .block-title {
   font-size: 1em;
   line-height: 52px;
   border-bottom: 4px solid #000;
   color: #26a6de;
 }
-/* line 60, ../sass/partials/_header.scss */
+/* line 101, ../sass/partials/_header.scss */
 #block-menu-block-1 .menu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 64, ../sass/partials/_header.scss */
+/* line 105, ../sass/partials/_header.scss */
 #block-menu-block-1 .menu li {
   list-style: none;
   border-bottom: 1px solid #000;
 }
-/* line 67, ../sass/partials/_header.scss */
+/* line 108, ../sass/partials/_header.scss */
 #block-menu-block-1 .menu li.last {
   border-bottom: 0;
 }
-/* line 71, ../sass/partials/_header.scss */
+/* line 112, ../sass/partials/_header.scss */
 #block-menu-block-1 .menu a {
   line-height: 42px;
   display: block;

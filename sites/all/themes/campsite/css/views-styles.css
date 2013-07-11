@@ -2,6 +2,7 @@
  * @file
  * Views Styling
  */
+/* Custom clearfix. I use this for extending */
 /* line 10, ../sass/partials/_colors.scss */
 #content p {
   color: #ccc;
