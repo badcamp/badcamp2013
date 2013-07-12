@@ -7,7 +7,7 @@
  * ul.links, .pager, .more-link, etc.
  */
 /* Custom clearfix. I use this for extending */
-/* line 69, ../sass/partials/_custom.scss */
+/* line 79, ../sass/partials/_custom.scss */
 #usermenu:after {
   content: ".";
   visibility: hidden;
@@ -479,7 +479,7 @@ span.field-label {
   /* line 66, ../sass/partials/_menu.scss */
   #navigation {
     margin: 0 0 1em 0;
-    background: #222222;
+    background: #1c1c1c;
     padding: 0;
     height: 40px;
   }
@@ -516,7 +516,7 @@ span.field-label {
   /* line 103, ../sass/partials/_menu.scss */
   #navigation a:hover {
     text-decoration: none;
-    background: #222222;
+    background: #1c1c1c;
   }
   /* line 108, ../sass/partials/_menu.scss */
   #navigation a:before {
@@ -543,12 +543,12 @@ span.field-label {
 
   /* line 136, ../sass/partials/_menu.scss */
   #navigation {
-    border-top: 5px solid #222222;
-    border-bottom: 1px solid #222222;
+    border-top: 5px solid #1c1c1c;
+    border-bottom: 1px solid #1c1c1c;
   }
   /* line 140, ../sass/partials/_menu.scss */
   #navigation h2 {
-    color: #222222;
+    color: #1c1c1c;
   }
   /* line 145, ../sass/partials/_menu.scss */
   #navigation ul.menu li {
@@ -569,7 +569,7 @@ span.field-label {
   }
   /* line 164, ../sass/partials/_menu.scss */
   #navigation a {
-    color: #222222;
+    color: #1c1c1c;
   }
   /* line 167, ../sass/partials/_menu.scss */
   #navigation a:hover {
@@ -581,15 +581,7 @@ span.field-label {
   overflow: hidden;
 }
 
-/* line 9, ../sass/partials/_panels.scss */
-h2.pane-title:after {
-  content: "/.";
-  display: inline-block;
-  text-align: center;
-  width: 1.4em;
-}
-
-/* line 18, ../sass/partials/_panels.scss */
+/* line 11, ../sass/partials/_panels.scss */
 #block-views-sponsors-block-1 h2 {
   margin-left: -50%;
   padding-left: 50%;
@@ -600,24 +592,24 @@ h2.pane-title:after {
   font-size: 1.17em;
 }
 
-/* line 31, ../sass/partials/_panels.scss */
+/* line 24, ../sass/partials/_panels.scss */
 #main {
-  background: #222222;
+  background: #1c1c1c;
   color: #fff;
 }
 
-/* line 36, ../sass/partials/_panels.scss */
+/* line 29, ../sass/partials/_panels.scss */
 h2 {
   color: #26a6df;
   border-bottom: 1px solid #bbb;
 }
 
 /* responsive Slider ( mainly the one found on home page ) */
-/* line 51, ../sass/partials/_panels.scss */
+/* line 44, ../sass/partials/_panels.scss */
 .views_slideshow_liquidcarousel_main .liquid .wrapper ul li {
   min-height: 325px;
 }
-/* line 55, ../sass/partials/_panels.scss */
+/* line 48, ../sass/partials/_panels.scss */
 .views_slideshow_liquidcarousel_main .liquid .speaker-name {
   font-size: 1em;
   border-bottom: 1px solid #797878;
@@ -625,7 +617,7 @@ h2 {
   margin-bottom: 5px;
   font-weight: bold;
 }
-/* line 67, ../sass/partials/_panels.scss */
+/* line 60, ../sass/partials/_panels.scss */
 .views_slideshow_liquidcarousel_main .previous,
 .views_slideshow_liquidcarousel_main .next {
   height: 207px;
@@ -634,31 +626,37 @@ h2 {
   white-space: nowrap;
   width: 37px;
 }
-/* line 75, ../sass/partials/_panels.scss */
+/* line 68, ../sass/partials/_panels.scss */
 .views_slideshow_liquidcarousel_main .previous {
   background: #333333 url("../images/arrow-left.png") no-repeat center center;
 }
-/* line 79, ../sass/partials/_panels.scss */
+/* line 72, ../sass/partials/_panels.scss */
 .views_slideshow_liquidcarousel_main .next {
   background: #333333 url("../images/arrow-right.png") no-repeat center center;
 }
 
-/* line 89, ../sass/partials/_panels.scss */
+/* line 77, ../sass/partials/_panels.scss */
+h2 {
+  color: #26a6df;
+  border-bottom: 1px solid #555;
+}
+
+/* line 86, ../sass/partials/_panels.scss */
 .region-footer .views-field-title {
   margin: 1.5em 1em 0 1em;
   border-bottom: 1px solid #000;
 }
-/* line 92, ../sass/partials/_panels.scss */
+/* line 89, ../sass/partials/_panels.scss */
 .region-footer .views-field-title a {
   font-weight: bold;
   color: #000;
   text-decoration: none;
 }
-/* line 99, ../sass/partials/_panels.scss */
+/* line 96, ../sass/partials/_panels.scss */
 .region-footer img {
   padding: 0 1em 1em 1em;
 }
-/* line 103, ../sass/partials/_panels.scss */
+/* line 100, ../sass/partials/_panels.scss */
 .region-footer h2 {
   border: none;
 }
@@ -672,7 +670,7 @@ h2 {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 113, ../sass/partials/_panels.scss */
+  /* line 110, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 50%;
@@ -686,7 +684,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 117, ../sass/partials/_panels.scss */
+  /* line 114, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 50%;
@@ -700,7 +698,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 121, ../sass/partials/_panels.scss */
+  /* line 118, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     clear: left;
     float: left;
@@ -715,7 +713,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 126, ../sass/partials/_panels.scss */
+  /* line 123, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-4 {
     clear: left;
     float: left;
@@ -741,7 +739,7 @@ h2 {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 138, ../sass/partials/_panels.scss */
+  /* line 135, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 25%;
@@ -755,7 +753,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 142, ../sass/partials/_panels.scss */
+  /* line 139, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 25%;
@@ -769,7 +767,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 146, ../sass/partials/_panels.scss */
+  /* line 143, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     float: left;
     width: 25%;
@@ -783,7 +781,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 150, ../sass/partials/_panels.scss */
+  /* line 147, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .view-row-4 {
     float: left;
     width: 25%;
