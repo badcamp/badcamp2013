@@ -38,6 +38,44 @@ h2 {
   border-bottom: 1px solid #bbb;
 }
 
+/* responsive Slider ( mainly the one found on home page ) */
+
+.view-id-speakers {
+
+}
+
+.views_slideshow_liquidcarousel_main {
+
+  .liquid {
+    // min-height: 207px;
+    .wrapper ul li {
+      min-height: 325px;
+    }
+  }
+
+
+  // nav controls
+  .previous,
+  .next {
+    height: 207px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 37px;
+  }
+
+  .previous {
+    background: #333 url('../images/arrow-left.png') no-repeat center center;
+  }
+  
+  .next {
+    background: #333 url('../images/arrow-right.png') no-repeat center center;
+  }
+
+}
+
+
+
 // Footer
 .region-footer {
   .views-field-title {
