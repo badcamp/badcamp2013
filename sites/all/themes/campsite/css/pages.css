@@ -424,7 +424,7 @@ span.field-label {
 #navigation {
   position: static;
   display: block;
-  padding: 0.4em 0;
+  padding: .4em 0;
   margin: 1em 0;
 }
 
@@ -510,7 +510,7 @@ span.field-label {
   /* line 98, ../sass/partials/_menu.scss */
   #navigation a {
     display: block;
-    padding: 0.5em 1em;
+    padding: .5em 1em;
     color: #fff;
   }
   /* line 103, ../sass/partials/_menu.scss */
@@ -609,13 +609,13 @@ h2.pane-title:after {
 /* line 36, ../sass/partials/_panels.scss */
 h2 {
   color: #26a6df;
-  border-bottom: 1px solid #bbbbbb;
+  border-bottom: 1px solid #bbb;
 }
 
 /* line 43, ../sass/partials/_panels.scss */
 .region-footer .views-field-title {
   margin: 1.5em 1em 0 1em;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000;
 }
 /* line 46, ../sass/partials/_panels.scss */
 .region-footer .views-field-title a {
