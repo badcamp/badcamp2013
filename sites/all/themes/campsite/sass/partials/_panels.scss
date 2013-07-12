@@ -2,6 +2,9 @@
 // Panels-specific layout code
 //
 
+#page {
+  overflow: hidden;
+}
 
 h2.pane-title:after {
   content: "/.";
@@ -11,28 +14,17 @@ h2.pane-title:after {
 }
 
 // Top Sponsors
-.pane-sponsors-panel-pane-1 {
-  margin-top: 1em;
-  border-top: 1px solid #000;
-  .pane-title {
-    margin: 0;
-    color: rgb(8, 165, 225);
-  }
-  .views-row {
-    float: left;
-    margin-right: 4%;
-    width: 21%;
-    img {
-      width: 100%;
-      border: 1px solid #000;
-      padding: 10px;
-    }
-  }
-  .views-row-last {
-    margin-right: 0;
+#block-views-sponsors-block-1 {
+  h2 {
+    margin-left: -50%;
+    padding-left: 50%;
+    margin-right: -50%;
+    padding-right: 50%;
+    color: #fff;
+    background-color: #aaa;
+    font-size: 1.17em;
   }
 }
-
 
 // Regions and their colors
 
@@ -48,10 +40,18 @@ h2 {
 
 // Footer
 .region-footer {
+  .views-field-title {
+    margin: 1.5em 1em 0 1em;
+    border-bottom: 1px solid #000;
+    a {
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+    }
+  }
 
   img {
-    // border: 1px solid #ddd;
-    padding: 1em;
+    padding: 0 1em 1em 1em;
   }
 
   h2 {

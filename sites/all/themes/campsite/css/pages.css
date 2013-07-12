@@ -576,7 +576,12 @@ span.field-label {
     text-decoration: underline;
   }
 }
-/* line 6, ../sass/partials/_panels.scss */
+/* line 5, ../sass/partials/_panels.scss */
+#page {
+  overflow: hidden;
+}
+
+/* line 9, ../sass/partials/_panels.scss */
 h2.pane-title:after {
   content: "/.";
   display: inline-block;
@@ -584,48 +589,43 @@ h2.pane-title:after {
   width: 1.4em;
 }
 
-/* line 14, ../sass/partials/_panels.scss */
-.pane-sponsors-panel-pane-1 {
-  margin-top: 1em;
-  border-top: 1px solid black;
-}
-/* line 17, ../sass/partials/_panels.scss */
-.pane-sponsors-panel-pane-1 .pane-title {
-  margin: 0;
-  color: #08a5e1;
-}
-/* line 21, ../sass/partials/_panels.scss */
-.pane-sponsors-panel-pane-1 .views-row {
-  float: left;
-  margin-right: 4%;
-  width: 21%;
-}
-/* line 25, ../sass/partials/_panels.scss */
-.pane-sponsors-panel-pane-1 .views-row img {
-  width: 100%;
-  border: 1px solid black;
-  padding: 10px;
-}
-/* line 31, ../sass/partials/_panels.scss */
-.pane-sponsors-panel-pane-1 .views-row-last {
-  margin-right: 0;
+/* line 18, ../sass/partials/_panels.scss */
+#block-views-sponsors-block-1 h2 {
+  margin-left: -50%;
+  padding-left: 50%;
+  margin-right: -50%;
+  padding-right: 50%;
+  color: #fff;
+  background-color: #aaa;
+  font-size: 1.17em;
 }
 
-/* line 39, ../sass/partials/_panels.scss */
+/* line 31, ../sass/partials/_panels.scss */
 #main {
   background: #222222;
   color: #fff;
 }
 
-/* line 44, ../sass/partials/_panels.scss */
+/* line 36, ../sass/partials/_panels.scss */
 h2 {
   color: #26a6df;
   border-bottom: 1px solid #bbbbbb;
 }
 
-/* line 52, ../sass/partials/_panels.scss */
+/* line 43, ../sass/partials/_panels.scss */
+.region-footer .views-field-title {
+  margin: 1.5em 1em 0 1em;
+  border-bottom: 1px solid black;
+}
+/* line 46, ../sass/partials/_panels.scss */
+.region-footer .views-field-title a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+/* line 53, ../sass/partials/_panels.scss */
 .region-footer img {
-  padding: 1em;
+  padding: 0 1em 1em 1em;
 }
 /* line 57, ../sass/partials/_panels.scss */
 .region-footer h2 {
