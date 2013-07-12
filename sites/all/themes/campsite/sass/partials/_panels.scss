@@ -2,6 +2,9 @@
 // Panels-specific layout code
 //
 
+#page {
+  overflow: hidden;
+}
 
 h2.pane-title:after {
   content: "/.";
@@ -11,30 +14,17 @@ h2.pane-title:after {
 }
 
 // Top Sponsors
-.pane-sponsors-panel-pane-1 {
-  margin-top: 1em;
-  border-top: 1px solid #000;
-  .pane-title {
-    margin: 0;
-    color: rgb(8, 165, 225);
-  }
-  .views-row {
-    float: left;
-    margin-right: 4%;
-    width: 21%;
-    img {
-      width: 100%;
-      border: 1px solid #000;
-      padding: 10px;
-    }
-  }
-  .views-row-last {
-    margin-right: 0;
+#block-views-sponsors-block-1 {
+  h2 {
+    margin-left: -50%;
+    padding-left: 50%;
+    margin-right: -50%;
+    padding-right: 50%;
+    color: #fff;
+    background-color: #aaa;
+    font-size: 1.17em;
   }
 }
-
-
-
 
 // Regions and their colors
 
@@ -43,12 +33,6 @@ h2.pane-title:after {
   color: #fff;
 }
 
-
-
-
-
-
-
 h2 {
   color: $blue;
   border-bottom: 1px solid #bbb;
@@ -56,60 +40,67 @@ h2 {
 
 // Footer
 .region-footer {
+  .views-field-title {
+    margin: 1.5em 1em 0 1em;
+    border-bottom: 1px solid #000;
+    a {
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+    }
+  }
 
   img {
-    // border: 1px solid #ddd;
-    padding: 1em;
+    padding: 0 1em 1em 1em;
   }
-  
+
   h2 {
     border: none;
   }
 
-@media all and (max-width: $breakpoint) {
-  .view-id-sponsors {
-  $zen-column-count: 2;
-  $zen-gutter-width: 0;
-  
-    .views-row-1 {
-      @include zen-grid-item(1,1);
-    }
-    
-    .views-row-2 {
-      @include zen-grid-item(1,2);
-    }
-    
-    .views-row-3 {
-      @include zen-clear();
-      @include zen-grid-item(1,1);
-    }
-    
-    .views-row-4 {
-      @include zen-clear();
-      @include zen-grid-item(1,2);
-    }
-    
-  }
-}
-
-  
-@media all and (min-width: $breakpoint) {
+  @media all and (max-width: $breakpoint) {
     .view-id-sponsors {
       @include zen-grid-container();
-      $zen-column-count: 4;
-      
+      $zen-column-count: 2;
+      $zen-gutter-width: 0;
+
       .views-row-1 {
         @include zen-grid-item(1,1);
       }
-      
+
       .views-row-2 {
         @include zen-grid-item(1,2);
       }
-      
+
+      .views-row-3 {
+        @include zen-clear();
+        @include zen-grid-item(1,1);
+      }
+
+      .views-row-4 {
+        @include zen-clear();
+        @include zen-grid-item(1,2);
+      }
+    }
+  }
+
+  @media all and (min-width: $breakpoint) {
+    .view-id-sponsors {
+      @include zen-grid-container();
+      $zen-column-count: 4;
+
+      .views-row-1 {
+        @include zen-grid-item(1,1);
+      }
+
+      .views-row-2 {
+        @include zen-grid-item(1,2);
+      }
+
       .views-row-3 {
         @include zen-grid-item(1,3);
       }
-      
+
       .view-row-4 {
         @include zen-grid-item(1,4);
       }
