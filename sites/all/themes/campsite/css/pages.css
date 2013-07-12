@@ -611,28 +611,37 @@ h2.pane-title:after {
   margin-right: 0;
 }
 
-/* line 41, ../sass/partials/_panels.scss */
+/* line 39, ../sass/partials/_panels.scss */
 #main {
   background: #222222;
   color: #fff;
 }
 
-/* line 52, ../sass/partials/_panels.scss */
+/* line 44, ../sass/partials/_panels.scss */
 h2 {
   color: #26a6df;
   border-bottom: 1px solid #bbbbbb;
 }
 
-/* line 60, ../sass/partials/_panels.scss */
+/* line 52, ../sass/partials/_panels.scss */
 .region-footer img {
   padding: 1em;
 }
-/* line 65, ../sass/partials/_panels.scss */
+/* line 57, ../sass/partials/_panels.scss */
 .region-footer h2 {
   border: none;
 }
 @media all and (max-width: 700px) {
-  /* line 74, ../sass/partials/_panels.scss */
+  /* line 52, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .region-footer .view-id-sponsors:before, .region-footer .view-id-sponsors:after {
+    content: "";
+    display: table;
+  }
+  /* line 56, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .region-footer .view-id-sponsors:after {
+    clear: both;
+  }
+  /* line 67, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 50%;
@@ -646,7 +655,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 78, ../sass/partials/_panels.scss */
+  /* line 71, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 50%;
@@ -660,7 +669,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 82, ../sass/partials/_panels.scss */
+  /* line 75, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     clear: left;
     float: left;
@@ -675,7 +684,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 87, ../sass/partials/_panels.scss */
+  /* line 80, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-4 {
     clear: left;
     float: left;
@@ -701,7 +710,7 @@ h2 {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 101, ../sass/partials/_panels.scss */
+  /* line 92, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 25%;
@@ -715,7 +724,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 105, ../sass/partials/_panels.scss */
+  /* line 96, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 25%;
@@ -729,7 +738,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 109, ../sass/partials/_panels.scss */
+  /* line 100, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     float: left;
     width: 25%;
@@ -743,7 +752,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 113, ../sass/partials/_panels.scss */
+  /* line 104, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .view-row-4 {
     float: left;
     width: 25%;
