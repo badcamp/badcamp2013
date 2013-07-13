@@ -80,6 +80,36 @@ h2 {
 }
 
 
+// User Menu
+
+#usermenu {
+  
+  // reset the login block styles
+  #block-user-login {
+    width: 100%;
+    float: none;
+  }
+
+  .form-item {
+    display: inline-block;
+  }
+
+  // we don't show the create new account link -- you can only create accounts
+  // through the registration interface.
+  .item-list {
+    display: none;
+  }
+  
+  #edit-actions {
+    margin: 0;
+  }
+  
+}
+
+
+
+
+
 
 // Footer
 .region-footer {

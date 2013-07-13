@@ -13,6 +13,11 @@
       $('#mobile-nav-button').bind('click', function() {
           $(this).add('#page').toggleClass('open');
       });
+      
+      // toggle open-closed states for user menu
+      $('#usermenu').bind('click', function()  {
+          $(this).add('#page').toggleClass('usermenu-visible');     
+      });
 
       /**
        * scrolls the window up, so as to 'hide' the addressbar in mobile safari
