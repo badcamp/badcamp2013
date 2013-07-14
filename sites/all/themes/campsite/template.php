@@ -237,3 +237,17 @@ function campsite_preprocess_html(&$vars) {
   );
   drupal_add_html_head($viewport, 'viewport');
 }
+
+// implements hook_form_FORM_ID_alter()
+function campsite_form_user_login_block_alter(&$form) {
+
+  // drupal_set_message('<pre>' . check_plain(var_export($form, TRUE)) . '</pre>');
+ 
+  // Remove the links provided by Drupal.
+  unset($form['links']);
+  
+  $form['name']['#attributes'] = array('placeholder' => 'Username');
+  $form['pass']['#attributes'] = array('placeholder' => 'Password');
+
+}
+
