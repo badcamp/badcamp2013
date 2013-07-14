@@ -305,55 +305,72 @@ span.field-label {
 /* User Menu / Login */
 /* line 19, ../sass/partials/_header.scss */
 #usermenu {
-  background: #000;
+  background: #1c1c1c;
   color: #FFF;
 }
-/* line 29, ../sass/partials/_header.scss */
+/* line 28, ../sass/partials/_header.scss */
 #usermenu #block-user-login {
   width: 50%;
   float: right;
 }
+/* line 32, ../sass/partials/_header.scss */
+#usermenu #block-user-login .form-submit {
+  border: none;
+  background: #888;
+  color: #fff;
+  padding: .33em .5em;
+}
+/* line 40, ../sass/partials/_header.scss */
+#usermenu label {
+  display: none;
+}
 
-/* line 37, ../sass/partials/_header.scss */
+/* line 45, ../sass/partials/_header.scss */
+.region-usermenu {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* line 54, ../sass/partials/_header.scss */
 #user-login-form .first-name, #user-login-form .form-item-name, #user-login-form .form-item-pass-pass1 {
   float: none;
 }
 
-/* line 46, ../sass/partials/_header.scss */
+/* line 63, ../sass/partials/_header.scss */
 #logo {
   display: inline-block;
 }
-/* line 49, ../sass/partials/_header.scss */
+/* line 66, ../sass/partials/_header.scss */
 #logo img {
   max-width: 85px;
 }
 @media all and (min-width: 700px) {
-  /* line 49, ../sass/partials/_header.scss */
+  /* line 66, ../sass/partials/_header.scss */
   #logo img {
     max-width: 100px;
   }
 }
 
 @media all and (min-width: 700px) {
-  /* line 59, ../sass/partials/_header.scss */
+  /* line 76, ../sass/partials/_header.scss */
   #logo-name-and-slogan {
     max-width: 50%;
     padding-right: 1em;
     float: left;
   }
-  /* line 65, ../sass/partials/_header.scss */
+  /* line 82, ../sass/partials/_header.scss */
   #logo-name-and-slogan #logo {
     float: left;
     min-height: 220px;
     margin-right: 1em;
   }
-  /* line 75, ../sass/partials/_header.scss */
+  /* line 92, ../sass/partials/_header.scss */
   #logo-name-and-slogan h1 {
     font-size: 4em;
     line-height: 1em;
     letter-spacing: -1px;
   }
-  /* line 81, ../sass/partials/_header.scss */
+  /* line 98, ../sass/partials/_header.scss */
   #logo-name-and-slogan h2 {
     margin-top: 1em;
     font-weight: normal;
@@ -362,49 +379,49 @@ span.field-label {
   }
 }
 
-/* line 92, ../sass/partials/_header.scss */
+/* line 109, ../sass/partials/_header.scss */
 #block-block-2 {
   width: 50%;
   float: left;
   margin: 5px 0 0 0;
 }
-/* line 96, ../sass/partials/_header.scss */
+/* line 113, ../sass/partials/_header.scss */
 #block-block-2 .block-title {
   font-size: 1em;
   line-height: 30px;
   border-bottom: 0;
 }
-/* line 101, ../sass/partials/_header.scss */
+/* line 118, ../sass/partials/_header.scss */
 #block-block-2 h2 {
   color: #000;
 }
-/* line 104, ../sass/partials/_header.scss */
+/* line 121, ../sass/partials/_header.scss */
 #block-block-2 p {
   margin-top: 0;
   margin-bottom: 1em;
   color: #666;
 }
 
-/* line 111, ../sass/partials/_header.scss */
+/* line 128, ../sass/partials/_header.scss */
 #block-menu-block-1 {
   width: 50%;
   float: left;
   margin-bottom: 0;
 }
-/* line 115, ../sass/partials/_header.scss */
+/* line 132, ../sass/partials/_header.scss */
 #block-menu-block-1 .menu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 119, ../sass/partials/_header.scss */
+/* line 136, ../sass/partials/_header.scss */
 #block-menu-block-1 .menu li {
   width: 32%;
   margin-right: 5px;
   float: left;
   list-style: none;
 }
-/* line 125, ../sass/partials/_header.scss */
+/* line 142, ../sass/partials/_header.scss */
 #block-menu-block-1 .menu a {
   background-image: url("../images/corner-arrow.png");
   background-repeat: no-repeat;

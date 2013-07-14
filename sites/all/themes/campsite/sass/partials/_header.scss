@@ -17,9 +17,8 @@
 
 /* User Menu / Login */
 #usermenu {
-  // display: none; // temp
 
-  background: #000;
+  background: $dark;
   color: #FFF;
 
   &:after {
@@ -29,7 +28,25 @@
   #block-user-login {
     width: 50%;
     float: right;
+    
+    .form-submit {
+      border: none;
+      background: #888;
+      color: #fff;
+      padding: .33em .5em;
+    }
   }
+  
+  label {
+    display: none;
+  }
+}
+
+.region-usermenu {
+  max-width: 1200px;
+  margin: auto;
+
+  
 }
 
 // User login: what you see at the top of the site 
