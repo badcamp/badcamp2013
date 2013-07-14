@@ -21,9 +21,17 @@
 
 // Regions and their colors
 
+.front {
+  #main {
+    background: $dark;
+    color: #fff;
+  }
+}
+
+
 #main {
-  background: $dark;
-  color: #fff;
+  background: #fff;
+  color: #555;
 }
 
 h2 {
@@ -78,37 +86,6 @@ h2 {
   color: $blue;
   border-bottom: 1px solid #555;
 }
-
-
-// User Menu
-
-#usermenu {
-  
-  // reset the login block styles
-  #block-user-login {
-    width: 100%;
-    float: none;
-  }
-
-  .form-item {
-    display: inline-block;
-  }
-
-  // we don't show the create new account link -- you can only create accounts
-  // through the registration interface.
-  .item-list {
-    display: none;
-  }
-  
-  #edit-actions {
-    margin: 0;
-  }
-  
-}
-
-
-
-
 
 
 // Footer

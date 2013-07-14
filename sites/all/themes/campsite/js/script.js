@@ -34,10 +34,11 @@
       }
     } 
   };
-  
+
+/*
   Drupal.behaviors.HTMLplaceholders = {
     
-    if(!Modernizr.input.placeholder){
+    if (!Modernizr.input.placeholder) {
 
     $('[placeholder]').focus(function() {
       var input = $(this);
@@ -62,5 +63,7 @@
     });
     
   }
+*/
+
 
 })(jQuery, Drupal, this, this.document);

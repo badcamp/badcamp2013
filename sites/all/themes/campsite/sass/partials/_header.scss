@@ -15,7 +15,7 @@
 
 }
 
-/* User Menu / Login */
+// User Menu
 #usermenu {
 
   background: $dark;
@@ -26,9 +26,7 @@
   }
 
   #block-user-login {
-    width: 50%;
-    float: right;
-    
+      
     .form-submit {
       border: none;
       background: #888;
@@ -40,14 +38,36 @@
   label {
     display: none;
   }
+  // reset the login block styles
+
+  #block-user-login {
+    width: 100%;
+    float: none;
+  }
+
+  .form-item {
+    //display: inline-block;
+  }
+
+  // we don't show the create new account link -- you can only create accounts
+  // through the registration interface.
+  .item-list {
+    display: none;
+  }
+  
+  #edit-actions {
+    margin: 0;
+  }
+  
+
+
 }
 
 .region-usermenu {
   max-width: 1200px;
   margin: auto;
-
-  
 }
+
 
 // User login: what you see at the top of the site 
 #user-login-form {
@@ -64,7 +84,7 @@
   display: inline-block;
 
   img {
-    max-width: 85px;
+    max-width: 55px;
 
     @media all and (min-width: 700px) {
       max-width: 100px;
@@ -74,6 +94,28 @@
 
 
 #logo-name-and-slogan {
+  h2 {
+    font-weight: bold;
+    color: #333;
+  }
+
+
+  @media all and (max-width: 700px) {
+  
+    margin: 0 10px;
+
+    #logo {
+      float: left;
+      padding-right: 5px;
+    }
+    
+    h1 {
+      letter-spacing: -1px;
+      font-size: 2em;
+      line-height: 1em;
+    }
+  }  
+
   @media all and (min-width: 700px) {
     max-width: 50%;
     padding-right: 1em;
@@ -122,6 +164,10 @@
     margin-top: 0;
     margin-bottom: 1em;
     color: #666;
+    
+    @media all and (max-width: 700px) {
+      display: none;
+    }
   }
 }
 
