@@ -212,15 +212,6 @@
  */
 $databases = array();
 
-$databases['default']['default'] = array(
-  'driver' => 'mysql',
-  'database' => 'badcamp2013',
-  'username' => 'root',
-  'password' => 'root',
-  'host' => 'localhost',
-  'prefix' => '',
-);
-
 /**
  * Access control for update.php script.
  *
@@ -570,3 +561,11 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  */
 # $conf['pressflow_smart_start'] = TRUE;
 
+/**
+ * Local settings for database, hash_salt, and anything else needed
+ */
+if (!isset($_SERVER['PANTHEON_ENVIRONMENT'])) {
+  if (file_exists(dirname(__FILE__) . '/local.settings.php')) {
+    require_once(dirname(__FILE__) . '/local.settings.php');
+  }
+}
