@@ -668,20 +668,82 @@ h2 {
   border-bottom: 1px solid #bbb;
 }
 
-/* responsive Slider ( mainly the one found on home page ) */
-/* line 52, ../sass/partials/_panels.scss */
-.views_slideshow_liquidcarousel_main .liquid .wrapper ul li {
-  min-height: 325px;
-}
-/* line 56, ../sass/partials/_panels.scss */
-.views_slideshow_liquidcarousel_main .liquid .speaker-name {
+/* 
+  Speakers, attendees etc. 
+  
+*/
+/* line 49, ../sass/partials/_panels.scss */
+.view-id-attendees .view-content .item-list .attendee-display-name, .views_slideshow_liquidcarousel_main .liquid .speaker-name {
   font-size: 1em;
   border-bottom: 1px solid #797878;
   padding-bottom: 6px;
   margin-bottom: 5px;
   font-weight: bold;
 }
-/* line 68, ../sass/partials/_panels.scss */
+
+/* line 61, ../sass/partials/_panels.scss */
+.view-id-attendees .view-content .item-list ul, .view-id-attendees .view-content .item-list ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 67, ../sass/partials/_panels.scss */
+.view-id-attendees .view-content .item-list ul li {
+  background: #EEE;
+  border-bottom: 1px solid #AAA;
+  float: left;
+  height: 325px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+/* line 75, ../sass/partials/_panels.scss */
+.view-id-attendees .view-content .item-list ul li img {
+  width: 100%;
+  height: auto;
+  max-height: 210px;
+  max-width: 210px;
+}
+/* line 83, ../sass/partials/_panels.scss */
+.view-id-attendees .view-content .item-list .attendee {
+  padding-right: 10px;
+}
+/* line 87, ../sass/partials/_panels.scss */
+.view-id-attendees .view-content .item-list .attendee-photo a {
+  display: block;
+  line-height: 0;
+  margin-bottom: 10px;
+}
+/* line 97, ../sass/partials/_panels.scss */
+.view-id-attendees .view-content .item-list li:nth-child(2n+2) .attendee {
+  padding-right: 0;
+}
+@media all and (min-width: 501px) and (max-width: 759px) {
+  /* line 104, ../sass/partials/_panels.scss */
+  .view-id-attendees .view-content .item-list ul li {
+    width: 33%;
+  }
+  /* line 107, ../sass/partials/_panels.scss */
+  .view-id-attendees .view-content .item-list li:nth-child(3n+3) .attendee {
+    padding-right: 0;
+  }
+}
+@media all and (min-width: 760px) {
+  /* line 114, ../sass/partials/_panels.scss */
+  .view-id-attendees .view-content .item-list ul li {
+    width: 20%;
+  }
+  /* line 117, ../sass/partials/_panels.scss */
+  .view-id-attendees .view-content .item-list li:nth-child(5n+5) .attendee {
+    padding-right: 0;
+  }
+}
+
+/* responsive Slider ( mainly the one found on home page ) */
+/* line 139, ../sass/partials/_panels.scss */
+.views_slideshow_liquidcarousel_main .liquid .wrapper ul li {
+  min-height: 325px;
+}
+/* line 151, ../sass/partials/_panels.scss */
 .views_slideshow_liquidcarousel_main .previous,
 .views_slideshow_liquidcarousel_main .next {
   height: 207px;
@@ -690,37 +752,37 @@ h2 {
   white-space: nowrap;
   width: 37px;
 }
-/* line 76, ../sass/partials/_panels.scss */
+/* line 159, ../sass/partials/_panels.scss */
 .views_slideshow_liquidcarousel_main .previous {
   background: #333333 url("../images/arrow-left.png") no-repeat center center;
 }
-/* line 80, ../sass/partials/_panels.scss */
+/* line 163, ../sass/partials/_panels.scss */
 .views_slideshow_liquidcarousel_main .next {
   background: #333333 url("../images/arrow-right.png") no-repeat center center;
 }
 
-/* line 85, ../sass/partials/_panels.scss */
+/* line 168, ../sass/partials/_panels.scss */
 h2 {
   color: #26a6df;
   border-bottom: 1px solid #555;
 }
 
-/* line 93, ../sass/partials/_panels.scss */
+/* line 176, ../sass/partials/_panels.scss */
 .region-footer .views-field-title {
   margin: 1.5em 1em 0 1em;
   border-bottom: 1px solid #000;
 }
-/* line 96, ../sass/partials/_panels.scss */
+/* line 179, ../sass/partials/_panels.scss */
 .region-footer .views-field-title a {
   font-weight: bold;
   color: #000;
   text-decoration: none;
 }
-/* line 103, ../sass/partials/_panels.scss */
+/* line 186, ../sass/partials/_panels.scss */
 .region-footer img {
   padding: 0 1em 1em 1em;
 }
-/* line 107, ../sass/partials/_panels.scss */
+/* line 190, ../sass/partials/_panels.scss */
 .region-footer h2 {
   border: none;
 }
@@ -734,7 +796,7 @@ h2 {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 117, ../sass/partials/_panels.scss */
+  /* line 200, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 50%;
@@ -748,7 +810,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 121, ../sass/partials/_panels.scss */
+  /* line 204, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 50%;
@@ -762,7 +824,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 125, ../sass/partials/_panels.scss */
+  /* line 208, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     clear: left;
     float: left;
@@ -777,7 +839,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 130, ../sass/partials/_panels.scss */
+  /* line 213, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-4 {
     clear: left;
     float: left;
@@ -803,7 +865,7 @@ h2 {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 142, ../sass/partials/_panels.scss */
+  /* line 225, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 25%;
@@ -817,7 +879,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 146, ../sass/partials/_panels.scss */
+  /* line 229, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 25%;
@@ -831,7 +893,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 150, ../sass/partials/_panels.scss */
+  /* line 233, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     float: left;
     width: 25%;
@@ -845,7 +907,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 154, ../sass/partials/_panels.scss */
+  /* line 237, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .view-row-4 {
     float: left;
     width: 25%;
