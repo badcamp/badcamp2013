@@ -689,33 +689,34 @@ h2 {
 }
 /* line 67, ../sass/partials/_panels.scss */
 .view-id-attendees .view-content .item-list ul li {
-  background: #EEE;
-  border-bottom: 1px solid #AAA;
+  border-bottom: 1px solid #999;
   float: left;
   height: 325px;
   margin-bottom: 20px;
   width: 50%;
 }
-/* line 75, ../sass/partials/_panels.scss */
+/* line 74, ../sass/partials/_panels.scss */
 .view-id-attendees .view-content .item-list ul li img {
   width: 100%;
   height: auto;
   max-height: 210px;
   max-width: 210px;
 }
-/* line 83, ../sass/partials/_panels.scss */
+/* line 82, ../sass/partials/_panels.scss */
 .view-id-attendees .view-content .item-list .attendee {
   padding-right: 10px;
 }
-/* line 87, ../sass/partials/_panels.scss */
+/* line 86, ../sass/partials/_panels.scss */
 .view-id-attendees .view-content .item-list .attendee-photo a {
   display: block;
   line-height: 0;
   margin-bottom: 10px;
 }
-/* line 97, ../sass/partials/_panels.scss */
-.view-id-attendees .view-content .item-list li:nth-child(2n+2) .attendee {
-  padding-right: 0;
+@media all and (max-width: 500px) {
+  /* line 97, ../sass/partials/_panels.scss */
+  .view-id-attendees .view-content .item-list li:nth-child(2n+2) .attendee {
+    padding-right: 0;
+  }
 }
 @media all and (min-width: 501px) and (max-width: 759px) {
   /* line 104, ../sass/partials/_panels.scss */

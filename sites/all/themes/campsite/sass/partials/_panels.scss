@@ -65,8 +65,7 @@ h2 {
     }
 
     ul li {
-      background: #EEE;
-      border-bottom: 1px solid #AAA;
+      border-bottom: 1px solid #999;
       float: left;
       height: 325px;
       margin-bottom: 20px;
@@ -94,10 +93,11 @@ h2 {
       @extend %speaker-name;
     }
 
-    li:nth-child(2n+2) .attendee {
-      padding-right: 0;
+    @media all and (max-width:500px) { 
+      li:nth-child(2n+2) .attendee {
+        padding-right: 0;
+      }
     }
-
 
     // show 3 up
     @media all and (min-width:501px) and (max-width: 759px) { 
