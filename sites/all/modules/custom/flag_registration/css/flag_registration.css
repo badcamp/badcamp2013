@@ -22,21 +22,21 @@
 #user-register-form input.password-confirm,
 #user-register-form input#edit-field-first-name-und-0-value,
 #user-register-form input#edit-field-last-name-und-0-value{
-	width:16em;
-	border:0;
-	background:#E9F0FB;
-	border-bottom:1px solid black;
-	height:30px;
+	width:21.6em;
+}
+
+.pane-user-signup #user-register-form{
+	margin-top:20px;
+}
+
+.field-type-list-boolean .form-item:not(.form-submit){
+	border-bottom:0;
 }
 
 #user-register-form .form-submit{
-	background: gray;
-	border: 0;
-	padding: 8px;
-	color: yellow;
-	width: 102px;
+	float: right;
+	width: 130px;
 	text-align: left;
-	float:right;
 }
 
 #user-register-form .form-item .form-required{
@@ -56,17 +56,27 @@
 }
 
 .field-name-field-first-name,
-.field-name-field-interest-jobs,
 .form-item-status,
 .form-item-field-drupal-username-und-0-value,
 .field-name-field-interest-volunteering{
 	clear:both;
 }
 
+.field-name-field-interest-jobs,
+.field-name-field-interest-volunteering{
+	float:left;
+	margin-right:35px;
+	margin-top:20px;
+}
+
+#user-register-form .form-type-password-confirm{
+	border:0;
+}
+
 .pane-user-signup,
 .registration-steps,
 .signup .messages{
-	max-width:600px;
+	max-width:730px;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -75,6 +85,12 @@
 	margin: 0.5em 0;
 }
 
+.registration-steps{
+	background:url('../css/images/signup-hr.png');
+	height: 100px;
+	background-position: center 24px;
+	background-repeat: no-repeat;
+}
 
 .registration-steps .registration{
 	float:left;
@@ -84,12 +100,19 @@
 
 .registration-steps .step-number{
 	background: #E1E6ED;
-	width: 50px;
+	width: 60px;
 	text-align: center;
 	border-radius: 50px;
-	height: 50px;
-	padding: 12px;
-	font-size:35px;
+	height: 60px;
+	padding: 16px;
+	font-size: 52px;
+	color: #fff;
+}
+
+.registration p{
+	margin: 13px 0;
+	width: 60px;
+	color:#666666;
 }
 
 .registration-steps .step-number.active{
@@ -97,7 +120,7 @@
 }
 
 .registration-steps .registration.two{
-	margin:0 37%;
+	margin: 0 39%;
 }
 
 .sponsorship-level{

@@ -32,6 +32,7 @@
 #main {
   background: #fff;
   color: #555;
+	padding-top:0;
 }
 
 h2 {
@@ -170,6 +171,16 @@ h2 {
   border-bottom: 1px solid #555;
 }
 
+#page-title{
+	margin-left: -50%;
+	padding-left: 50%;
+	margin-right: -50%;
+	padding-right: 50%;
+	color: #fff;
+	background-color: #313337;
+	font-size: 1.8em;
+	margin-bottom: 40px;
+}
 
 // Footer
 .region-footer {
