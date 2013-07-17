@@ -11,7 +11,7 @@
 	padding-left:21px;
 }
 
-.flag-registration .flag-action{
+.flag-registration .flag-processed.flag-action{
 	background-image:url('images/flag.png');
 	background-repeat: no-repeat;
 	background-position:center left;
