@@ -8,6 +8,11 @@
   color: #ccc;
 }
 
+/* line 15, ../sass/partials/_colors.scss */
+a {
+  color: #0077A5;
+}
+
 /* line 9, ../sass/comments.scss */
 .comments {
   /* Wrapper for the list of comments and its title */

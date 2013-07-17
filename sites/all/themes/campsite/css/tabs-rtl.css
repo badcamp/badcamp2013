@@ -8,6 +8,11 @@
   color: #ccc;
 }
 
+/* line 15, ../sass/partials/_colors.scss */
+a {
+  color: #0077A5;
+}
+
 /* line 11, ../sass/tabs-rtl.scss */
 ul.primary li,
 ul.secondary li {

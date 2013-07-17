@@ -5,27 +5,34 @@
 }
 
 .flag-registration .unflag-action{
-	background-image:url('images/checkbox.png');
+	background-image:url('images/unflag.png');
 	background-repeat: no-repeat;
-	background-position:top left;
-	background-color:green;
-	padding-left:31px;
+	background-position:center left;
+	padding-left:21px;
 }
 
 .flag-registration .flag-action{
-	background:gray;
+	background-image:url('images/flag.png');
+	background-repeat: no-repeat;
+	background-position:center left;
+	padding-left:21px;
 }
 
-#user-register-form input.username,
-#user-register-form input#edit-mail,
-#user-register-form input.password-field,
-#user-register-form input.password-confirm,
-#user-register-form input#edit-field-first-name-und-0-value,
-#user-register-form input#edit-field-last-name-und-0-value{
+.flag-registration a.flag-action,
+.flag-registration a.unflag-action{
+	color: #777777;
+}
+
+.signup #user-register-form input.username,
+.signup #user-register-form input#edit-mail,
+.signup #user-register-form input.password-field,
+.signup #user-register-form input.password-confirm,
+.signup #user-register-form input#edit-field-first-name-und-0-value,
+.signup #user-register-form input#edit-field-last-name-und-0-value{
 	width:21.6em;
 }
 
-.pane-user-signup #user-register-form{
+.pane-user-signup .signup #user-register-form{
 	margin-top:20px;
 }
 
@@ -33,43 +40,44 @@
 	border-bottom:0;
 }
 
-#user-register-form .form-submit{
+.signup #user-register-form .form-submit{
 	float: right;
 	width: 130px;
 	text-align: left;
+	margin-bottom:30px;
 }
 
-#user-register-form .form-item .form-required{
+.signup #user-register-form .form-item .form-required{
 	display:none;
 }
 
-.field-name-field-first-name,
-.form-item-name,
-.form-item-pass-pass1{
+.signup .field-name-field-first-name,
+.signup .form-item-name,
+.signup .form-item-pass-pass1{
 	float:left;
 }
 
-.field-name-field-last-name,
-.form-item-mail,
-.form-item-pass-pass2{
+.signup .field-name-field-last-name,
+.signup .form-item-mail,
+.signup .form-item-pass-pass2{
 	float:right;
 }
 
-.field-name-field-first-name,
-.form-item-status,
-.form-item-field-drupal-username-und-0-value,
-.field-name-field-interest-volunteering{
+.signup .field-name-field-first-name,
+.signup .form-item-status,
+.signup .form-item-field-drupal-username-und-0-value,
+.signup .field-name-field-interest-volunteering{
 	clear:both;
 }
 
-.field-name-field-interest-jobs,
-.field-name-field-interest-volunteering{
+.signup .field-name-field-interest-jobs,
+.signup .field-name-field-interest-volunteering{
 	float:left;
 	margin-right:35px;
 	margin-top:20px;
 }
 
-#user-register-form .form-type-password-confirm{
+.signup #user-register-form .form-type-password-confirm{
 	border:0;
 }
 
@@ -81,7 +89,7 @@
 	margin-right:auto;
 }
 
-#user-register-form .form-item{
+.signup #user-register-form .form-item{
 	margin: 0.5em 0;
 }
 
@@ -135,4 +143,68 @@
 #individual-sponsor .pane-custom,
 #event-request .panel-pane{
 	clear:both;
+}
+
+.pane-event-request-panel-pane-2 h2{
+	padding-left:20px;
+	color: #000;
+	background-color: #EDEEEF;
+	font-size: 1.17em;
+	border-bottom:0;
+	clear:both;
+}
+
+.pane-event-request-panel-pane-2 .item-list,
+.pane-event-request-panel-pane-2 .view-header{
+	width:255px;
+	float:left;
+	margin-right:30px;
+}
+
+#content .pane-event-request-panel-pane-2 .view-header p{
+	color: #990000;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.pane-event-request-panel-pane-2 h3{
+	border-bottom: solid 1px black;
+}
+
+.pane-event-request-panel-pane-2 .item-list ul li{
+	list-style: none;
+	margin-bottom:20px;
+}
+
+.pane-event-request-panel-pane-2 .item-list ul a{
+	text-decoration:none;
+}
+
+.pane-event-request-panel-pane-2 .item-list ul{
+	padding:0;
+	margin:0;
+}
+
+.pane-event-request-panel-pane-2 .views-field-title{
+	line-height:18px;
+}
+
+.pane-event-request-panel-pane-2 .view-footer{
+	display:none;
+}
+
+.pane-event-request-panel-pane-2.saturday-events .view-footer{
+	display: block;
+	float: right;
+	max-width: 40%;
+} 
+
+.pane-event-request-panel-pane-2.sunday-events .view-header .signup-limit,
+.pane-event-request-panel-pane-2.saturday-events .view-header .signup-limit{
+	display:none;
+}
+
+.pane-event-request-panel-pane-2.thursday-events .view-header .signup-no-limit,
+.pane-event-request-panel-pane-2.friday-events .view-header .signup-no-limit{
+	display:none;
 }

@@ -8,6 +8,11 @@
   color: #ccc;
 }
 
+/* line 15, ../sass/partials/_colors.scss */
+a {
+  color: #0077A5;
+}
+
 /* line 9, ../sass/navigation-rtl.scss */
 ul li.collapsed {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABNJREFUCB1j4GASYFJgcmD+A4IADUIDfIUMT4wAAAAASUVORK5CYII=');

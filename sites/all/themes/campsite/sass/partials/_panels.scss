@@ -182,6 +182,58 @@ h2 {
 	margin-bottom: 40px;
 }
 
+// Registration
+@media all and (max-width: $breakpoint) {
+	.field-name-field-first-name,
+	.form-item-name,
+	.form-item-pass-pass1{
+		float:none;
+	}
+
+	.field-name-field-last-name,
+	.form-item-mail,
+	.form-item-pass-pass2{
+		float:none;
+	}
+	
+	#user-register-form .form-item {
+		width:20em;
+	}
+	
+	#user-register-form input.username,
+	#user-register-form input#edit-mail,
+	#user-register-form input.password-field,
+	#user-register-form input.password-confirm,
+	#user-register-form input#edit-field-first-name-und-0-value,
+	#user-register-form input#edit-field-last-name-und-0-value{
+		width:20em;
+	}
+	.pane-user-signup, .registration-steps, .signup .messages{
+		margin-left:5%;
+		margin-right:5%;
+	}
+	
+	#user-register-form .form-submit{
+		float:none;
+		clear:both;
+	}
+	
+	.field-name-field-interest-jobs,
+	.field-name-field-interest-volunteering{
+		float:none;
+		margin-right:0;
+		margin-top:0;
+	}
+	
+	.registration-steps .registration.two {
+		margin: 0 22%;
+	}
+	
+	.registration-steps {
+		background:none;
+	}
+}
+	
 // Footer
 .region-footer {
   .views-field-title {

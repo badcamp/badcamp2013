@@ -16,6 +16,11 @@
   color: #ccc;
 }
 
+/* line 15, ../sass/partials/_colors.scss */
+a {
+  color: #0077A5;
+}
+
 /*
  * Field wrappers when the Fences module is enabled.
  */

@@ -21,6 +21,11 @@
   color: #ccc;
 }
 
+/* line 15, ../sass/partials/_colors.scss */
+a {
+  color: #0077A5;
+}
+
 /* line 12, ../sass/pages.scss */
 * {
   box-sizing: border-box;
@@ -782,22 +787,82 @@ h2 {
   margin-bottom: 40px;
 }
 
-/* line 187, ../sass/partials/_panels.scss */
+@media all and (max-width: 700px) {
+  /* line 189, ../sass/partials/_panels.scss */
+  .field-name-field-first-name,
+  .form-item-name,
+  .form-item-pass-pass1 {
+    float: none;
+  }
+
+  /* line 195, ../sass/partials/_panels.scss */
+  .field-name-field-last-name,
+  .form-item-mail,
+  .form-item-pass-pass2 {
+    float: none;
+  }
+
+  /* line 199, ../sass/partials/_panels.scss */
+  #user-register-form .form-item {
+    width: 20em;
+  }
+
+  /* line 208, ../sass/partials/_panels.scss */
+  #user-register-form input.username,
+  #user-register-form input#edit-mail,
+  #user-register-form input.password-field,
+  #user-register-form input.password-confirm,
+  #user-register-form input#edit-field-first-name-und-0-value,
+  #user-register-form input#edit-field-last-name-und-0-value {
+    width: 20em;
+  }
+
+  /* line 211, ../sass/partials/_panels.scss */
+  .pane-user-signup, .registration-steps, .signup .messages {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /* line 216, ../sass/partials/_panels.scss */
+  #user-register-form .form-submit {
+    float: none;
+    clear: both;
+  }
+
+  /* line 222, ../sass/partials/_panels.scss */
+  .field-name-field-interest-jobs,
+  .field-name-field-interest-volunteering {
+    float: none;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  /* line 228, ../sass/partials/_panels.scss */
+  .registration-steps .registration.two {
+    margin: 0 22%;
+  }
+
+  /* line 232, ../sass/partials/_panels.scss */
+  .registration-steps {
+    background: none;
+  }
+}
+/* line 239, ../sass/partials/_panels.scss */
 .region-footer .views-field-title {
   margin: 1.5em 1em 0 1em;
   border-bottom: 1px solid #000;
 }
-/* line 190, ../sass/partials/_panels.scss */
+/* line 242, ../sass/partials/_panels.scss */
 .region-footer .views-field-title a {
   font-weight: bold;
   color: #000;
   text-decoration: none;
 }
-/* line 197, ../sass/partials/_panels.scss */
+/* line 249, ../sass/partials/_panels.scss */
 .region-footer img {
   padding: 0 1em 1em 1em;
 }
-/* line 201, ../sass/partials/_panels.scss */
+/* line 253, ../sass/partials/_panels.scss */
 .region-footer h2 {
   border: none;
 }
@@ -811,7 +876,7 @@ h2 {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 211, ../sass/partials/_panels.scss */
+  /* line 263, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 50%;
@@ -825,7 +890,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 215, ../sass/partials/_panels.scss */
+  /* line 267, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 50%;
@@ -839,7 +904,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 219, ../sass/partials/_panels.scss */
+  /* line 271, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     clear: left;
     float: left;
@@ -854,7 +919,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 224, ../sass/partials/_panels.scss */
+  /* line 276, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-4 {
     clear: left;
     float: left;
@@ -880,7 +945,7 @@ h2 {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 236, ../sass/partials/_panels.scss */
+  /* line 288, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 25%;
@@ -894,7 +959,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 240, ../sass/partials/_panels.scss */
+  /* line 292, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 25%;
@@ -908,7 +973,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 244, ../sass/partials/_panels.scss */
+  /* line 296, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     float: left;
     width: 25%;
@@ -922,7 +987,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 248, ../sass/partials/_panels.scss */
+  /* line 300, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .view-row-4 {
     float: left;
     width: 25%;

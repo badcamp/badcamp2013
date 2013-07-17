@@ -10,6 +10,11 @@
   color: #ccc;
 }
 
+/* line 15, ../sass/partials/_colors.scss */
+a {
+  color: #0077A5;
+}
+
 @media print {
   /* line 14, ../sass/print.scss */
   a:link,

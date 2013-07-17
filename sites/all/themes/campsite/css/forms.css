@@ -8,6 +8,11 @@
   color: #ccc;
 }
 
+/* line 15, ../sass/partials/_colors.scss */
+a {
+  color: #0077A5;
+}
+
 /* line 8, ../sass/forms.scss */
 input:not([type=submit]):not([type=file]) {
   border: none;

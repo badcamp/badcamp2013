@@ -10,6 +10,11 @@
   color: #ccc;
 }
 
+/* line 15, ../sass/partials/_colors.scss */
+a {
+  color: #0077A5;
+}
+
 /* line 11, ../sass/nodes.scss */
 .node {
   /* Node wrapper */
