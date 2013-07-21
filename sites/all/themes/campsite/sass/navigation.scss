@@ -132,27 +132,37 @@ li a.active {
 	}
 	
 	.event-details-menu a{
-		text-weight:600;
+		font-weight:600;
 	}
 	
 	.panel-panel{
 		margin:17px;
 	}
 	
-	.panel-col-first{
-		
-	}
-	
-	.panel-col-last{
-		
-	}
-	
-	.panel-3col-33{
-		width:800px;
-		
-	 .panel-col-first {
-		 float: left;
-		 width: 20%;
-		}
-	}
 }
+
+#mini-panel-event_details_dropdown_menu{
+		
+		&.panel-3col-33{
+			width:800px;
+			
+			.panel-col-first{
+ 			 width: 20%;
+			}
+	
+			.panel-col-last{
+ 			 width: 20%;
+			}
+	
+			.panel-col {
+			 width: 44%;
+			 	
+			 	li{
+			   width: 45%;
+			   margin: .5em 2%;
+			   float:left;
+				}
+			}
+		}	
+}
+	

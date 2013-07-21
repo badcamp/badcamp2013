@@ -118,18 +118,32 @@ li a.active {
 }
 /* line 134, ../sass/navigation.scss */
 .menu-minipanels .event-details-menu a {
-  text-weight: 600;
+  font-weight: 600;
 }
 /* line 138, ../sass/navigation.scss */
 .menu-minipanels .panel-panel {
   margin: 17px;
 }
-/* line 150, ../sass/navigation.scss */
-.menu-minipanels .panel-3col-33 {
+
+/* line 146, ../sass/navigation.scss */
+#mini-panel-event_details_dropdown_menu.panel-3col-33 {
   width: 800px;
 }
-/* line 153, ../sass/navigation.scss */
-.menu-minipanels .panel-3col-33 .panel-col-first {
-  float: left;
+/* line 149, ../sass/navigation.scss */
+#mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col-first {
   width: 20%;
+}
+/* line 153, ../sass/navigation.scss */
+#mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col-last {
+  width: 20%;
+}
+/* line 157, ../sass/navigation.scss */
+#mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col {
+  width: 44%;
+}
+/* line 160, ../sass/navigation.scss */
+#mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col li {
+  width: 45%;
+  margin: .5em 2%;
+  float: left;
 }
