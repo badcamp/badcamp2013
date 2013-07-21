@@ -190,6 +190,11 @@
 	max-width: 40%;
 } 
 
+.signup-limit,
+.signup-no-limit{
+	color:#990000;
+}
+
 .pane-event-request-panel-pane-2.sunday-events .view-header .signup-limit,
 .pane-event-request-panel-pane-2.saturday-events .view-header .signup-limit{
 	display:none;
