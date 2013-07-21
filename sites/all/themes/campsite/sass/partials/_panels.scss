@@ -234,6 +234,24 @@ h2 {
 	}
 }
 	
+// Sponsors
+
+#sponsors-page{
+	.panel-pane{
+		clear:both;
+	}
+	
+	.view-sponsors{
+	clear:both;
+	
+ 		.views-row{
+			float:left;
+			width:20%;
+			margin:10px;
+		}
+	}
+}
+
 // Footer
 .region-footer {
   .views-field-title {
