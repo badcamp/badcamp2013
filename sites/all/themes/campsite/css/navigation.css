@@ -90,3 +90,46 @@ li a.active {
  * Drupal core has limited ways in which it can display its menus. To get around
  * these limitations, see http://drupal.org/project/menu_block
  */
+/*
+ *  Minipanel Menus
+ */
+/* line 111, ../sass/navigation.scss */
+.menu-minipanels p {
+  margin: 0;
+}
+/* line 115, ../sass/navigation.scss */
+.menu-minipanels ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 119, ../sass/navigation.scss */
+.menu-minipanels ul li.leaf {
+  list-style: none;
+}
+/* line 124, ../sass/navigation.scss */
+.menu-minipanels a {
+  color: #000;
+  text-decoration: none;
+}
+/* line 129, ../sass/navigation.scss */
+.menu-minipanels h2 {
+  margin: 0;
+  font-size: 16px;
+}
+/* line 134, ../sass/navigation.scss */
+.menu-minipanels .event-details-menu a {
+  text-weight: 600;
+}
+/* line 138, ../sass/navigation.scss */
+.menu-minipanels .panel-panel {
+  margin: 17px;
+}
+/* line 150, ../sass/navigation.scss */
+.menu-minipanels .panel-3col-33 {
+  width: 800px;
+}
+/* line 153, ../sass/navigation.scss */
+.menu-minipanels .panel-3col-33 .panel-col-first {
+  float: left;
+  width: 20%;
+}

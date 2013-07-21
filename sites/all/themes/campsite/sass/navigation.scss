@@ -99,3 +99,60 @@ li a.active {
 
 .block-menu-block {
 }
+
+
+/*
+ *  Minipanel Menus
+ */
+
+
+.menu-minipanels{
+	
+	p{
+		margin:0;
+	}
+	
+	ul{
+		padding:0;
+		margin:0;
+	
+	 li.leaf{
+		list-style:none;
+		}
+	}
+	
+	a{
+		color:#000;
+		text-decoration:none;
+	}
+	
+	h2{
+		margin:0;
+		font-size:16px;
+	}
+	
+	.event-details-menu a{
+		text-weight:600;
+	}
+	
+	.panel-panel{
+		margin:17px;
+	}
+	
+	.panel-col-first{
+		
+	}
+	
+	.panel-col-last{
+		
+	}
+	
+	.panel-3col-33{
+		width:800px;
+		
+	 .panel-col-first {
+		 float: left;
+		 width: 20%;
+		}
+	}
+}
