@@ -93,55 +93,76 @@ li a.active {
 /*
  *  Minipanel Menus
  */
-/* line 111, ../sass/navigation.scss */
+/* line 108, ../sass/navigation.scss */
+.qtip {
+  padding-top: 10px !important;
+}
+
+/* line 114, ../sass/navigation.scss */
 .menu-minipanels p {
   margin: 0;
 }
-/* line 115, ../sass/navigation.scss */
+/* line 118, ../sass/navigation.scss */
 .menu-minipanels ul {
   padding: 0;
   margin: 0;
 }
-/* line 119, ../sass/navigation.scss */
+/* line 122, ../sass/navigation.scss */
 .menu-minipanels ul li.leaf {
   list-style: none;
 }
-/* line 124, ../sass/navigation.scss */
+/* line 126, ../sass/navigation.scss */
+.menu-minipanels ul li {
+  list-style: none;
+}
+/* line 131, ../sass/navigation.scss */
 .menu-minipanels a {
   color: #000;
   text-decoration: none;
 }
-/* line 129, ../sass/navigation.scss */
+/* line 136, ../sass/navigation.scss */
 .menu-minipanels h2 {
   margin: 0;
   font-size: 16px;
 }
-/* line 134, ../sass/navigation.scss */
+/* line 141, ../sass/navigation.scss */
 .menu-minipanels .event-details-menu a {
   font-weight: 600;
 }
-/* line 138, ../sass/navigation.scss */
+/* line 145, ../sass/navigation.scss */
 .menu-minipanels .panel-panel {
   margin: 17px;
 }
 
-/* line 146, ../sass/navigation.scss */
+/* line 153, ../sass/navigation.scss */
 #mini-panel-event_details_dropdown_menu.panel-3col-33 {
   width: 800px;
 }
-/* line 149, ../sass/navigation.scss */
+/* line 156, ../sass/navigation.scss */
 #mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col-first {
   width: 25%;
 }
-/* line 153, ../sass/navigation.scss */
+/* line 158, ../sass/navigation.scss */
+#mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col-first .inside {
+  margin: 0;
+}
+/* line 163, ../sass/navigation.scss */
 #mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col-last {
   width: 20%;
 }
-/* line 157, ../sass/navigation.scss */
+/* line 165, ../sass/navigation.scss */
+#mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col-last .inside {
+  margin: 0;
+}
+/* line 170, ../sass/navigation.scss */
 #mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col {
   width: 37%;
 }
-/* line 160, ../sass/navigation.scss */
+/* line 172, ../sass/navigation.scss */
+#mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col .inside {
+  margin: 0;
+}
+/* line 176, ../sass/navigation.scss */
 #mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col li {
   width: 45%;
   margin: 1px 2% 1px 0;

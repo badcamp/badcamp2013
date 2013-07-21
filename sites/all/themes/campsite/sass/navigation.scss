@@ -105,6 +105,9 @@ li a.active {
  *  Minipanel Menus
  */
 
+.qtip{
+	padding-top: 10px !important;
+}
 
 .menu-minipanels{
 	
@@ -118,6 +121,10 @@ li a.active {
 	
 	 li.leaf{
 		list-style:none;
+		}
+		
+		li{
+		  list-style:none;
 		}
 	}
 	
@@ -147,15 +154,24 @@ li a.active {
 			width:800px;
 			
 			.panel-col-first{
- 			 width: 25%;
+ 			 width: 25%; 
+				.inside{
+				 	margin:0;
+				}
 			}
 	
 			.panel-col-last{
  			 width: 20%;
+		 		.inside{
+			 	 margin:0;
+				}
 			}
 	
 			.panel-col {
 			 width: 37%;
+		 		.inside{
+					margin:0;
+				}
 			 	
 			 	li{
 			   width: 45%;
