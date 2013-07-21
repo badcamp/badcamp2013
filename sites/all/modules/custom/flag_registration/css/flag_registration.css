@@ -131,15 +131,6 @@
 	margin: 0 39%;
 }
 
-.sponsorship-level{
-	float:left;
-	width:20%;
-}
-
-.sponsorship-level .amount{
-	font-size:30px;
-}
-
 #individual-sponsor .pane-custom,
 #event-request .panel-pane{
 	clear:both;
@@ -207,4 +198,66 @@
 .pane-event-request-panel-pane-2.thursday-events .view-header .signup-no-limit,
 .pane-event-request-panel-pane-2.friday-events .view-header .signup-no-limit{
 	display:none;
+}
+
+.submit-button.step-two{
+	width:40px;
+}
+
+#content #event-request p,
+#content #individual-sponsor p{
+	color:#777777;
+}
+
+#content #individual-sponsor p.rewards{
+	margin:0;
+	color:#777777;
+}
+
+.next-button{
+	margin-bottom:80px;
+}
+
+.sponsorship-level h4{
+	font-weight:600;
+	border-bottom:1px solid black;
+}
+
+#content #individual-sponsor .sponsorship-level p.amount{
+	font-size:52px;
+	color:#26A6DF;
+	font-weight:600;
+	margin: 20px 0;
+}
+
+.sponsorship-level{
+	float:left;
+	width:23%;
+	margin-right:30px;
+	min-width:200px;
+}
+
+.sponsorship-level.last{
+	margin-right:0;
+}
+
+#individual-sponsor .next-button{
+	border-top:solid 1px black;
+	margin-bottom:100px;
+}
+
+.sponsorship-level ol{
+	padding:0 20px;
+	margin:0 0 20px;
+}
+.individual-sponsor-info h1{
+	margin:20px 0 10px;
+	text-align:center;
+}
+
+.individual-sponsor-info p{
+	text-align:center;
+	margin:0 auto;
+	max-width:800px;
+	margin-bottom:30px;
 }

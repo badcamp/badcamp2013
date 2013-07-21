@@ -84,7 +84,7 @@ function flag_registration_form_alter(&$form, &$form_state, $form_id) {
 	 if ($form_id == 'user_register_form' && current_path() == $path) {
 
     $form['#submit'][] = 'flag_registration_user_login_form_submit';
-		$form['actions']['submit']['#value'] = t('Continute');
+		$form['actions']['submit']['#value'] = t('Continue');
   }
 }
 
@@ -93,8 +93,21 @@ function flag_registration_user_login_form_submit($form, &$form_state){
     //Redirects to event signup page on login.
 	$path = 'signup';
   	if (current_path() == $path){
- 	   $form_state['redirect'] = 'event-request';
+ 	   $form_state['redirect'] = 'event-request-registration';
 	}
+}
+
+/**
+ * Implements hook_menu_alter().
+ *
+ */
+
+function flag_registration_menu_alter(&$items) {
+  $items["user/register"]["page callback"] = "flag_registration_user_register_override";
+}
+
+function flag_registration_user_register_override() {
+  drupal_goto("signup");
 }
 
 /**

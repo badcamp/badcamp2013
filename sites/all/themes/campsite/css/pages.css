@@ -789,31 +789,31 @@ h2 {
 
 @media all and (max-width: 700px) {
   /* line 189, ../sass/partials/_panels.scss */
-  .field-name-field-first-name,
-  .form-item-name,
-  .form-item-pass-pass1 {
+  .signup .field-name-field-first-name,
+  .signup .form-item-name,
+  .signup .form-item-pass-pass1 {
     float: none;
   }
 
   /* line 195, ../sass/partials/_panels.scss */
-  .field-name-field-last-name,
-  .form-item-mail,
-  .form-item-pass-pass2 {
+  .signup .field-name-field-last-name,
+  .signup .form-item-mail,
+  .signup .form-item-pass-pass2 {
     float: none;
   }
 
   /* line 199, ../sass/partials/_panels.scss */
-  #user-register-form .form-item {
+  .signup #user-register-form .form-item {
     width: 20em;
   }
 
   /* line 208, ../sass/partials/_panels.scss */
-  #user-register-form input.username,
-  #user-register-form input#edit-mail,
-  #user-register-form input.password-field,
-  #user-register-form input.password-confirm,
-  #user-register-form input#edit-field-first-name-und-0-value,
-  #user-register-form input#edit-field-last-name-und-0-value {
+  .signup #user-register-form input.username,
+  .signup #user-register-form input#edit-mail,
+  .signup #user-register-form input.password-field,
+  .signup #user-register-form input.password-confirm,
+  .signup #user-register-form input#edit-field-first-name-und-0-value,
+  .signup #user-register-form input#edit-field-last-name-und-0-value {
     width: 20em;
   }
 
@@ -824,14 +824,14 @@ h2 {
   }
 
   /* line 216, ../sass/partials/_panels.scss */
-  #user-register-form .form-submit {
+  .signup #user-register-form .form-submit {
     float: none;
     clear: both;
   }
 
   /* line 222, ../sass/partials/_panels.scss */
-  .field-name-field-interest-jobs,
-  .field-name-field-interest-volunteering {
+  .signup .field-name-field-interest-jobs,
+  .signup .field-name-field-interest-volunteering {
     float: none;
     margin-right: 0;
     margin-top: 0;

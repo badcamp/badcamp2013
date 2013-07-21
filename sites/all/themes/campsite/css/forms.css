@@ -197,16 +197,16 @@ td.menu-disabled {
   background: #ccc;
 }
 
-/* line 181, ../sass/forms.scss */
-#user-register-form .form-submit {
+/* line 182, ../sass/forms.scss */
+#user-register-form .form-submit,
+a.submit-button {
   background-image: url("../images/corner-arrow.png");
   background-repeat: no-repeat;
   background-position: top right;
   background-color: rgba(110, 110, 110, 0.8);
   font-weight: bold;
   color: #f4f596;
-  line-height: 41px;
-  padding: 0 0 0 10px;
+  padding: 10px;
   display: block;
   text-decoration: none;
   white-space: nowrap;

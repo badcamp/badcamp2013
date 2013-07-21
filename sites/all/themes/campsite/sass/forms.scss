@@ -178,15 +178,15 @@ td.menu-disabled {
   background: #ccc;
 }
 
-#user-register-form .form-submit{
+#user-register-form .form-submit,
+a.submit-button{
 	background-image: url('../images/corner-arrow.png');
 	background-repeat: no-repeat;
 	background-position: top right;
 	background-color: rgba(110, 110, 110, 0.8);
 	font-weight: bold;
 	color: rgb(244, 245, 150);
-	line-height: 41px;
-	padding: 0 0 0 10px;
+	padding: 10px;
 	display: block;
 	text-decoration: none;
 	white-space: nowrap;
