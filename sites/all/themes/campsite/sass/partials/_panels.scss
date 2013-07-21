@@ -246,8 +246,16 @@ h2 {
 	
  		.views-row{
 			float:left;
-			width:20%;
 			margin:10px;
+			
+			.views-field-title{
+				text-align:center;
+				
+				a{
+				color:#000;
+				text-decoration:none;
+				}
+			}
 		}
 	}
 }
