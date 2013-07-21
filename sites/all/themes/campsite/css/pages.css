@@ -1041,7 +1041,11 @@ h2 {
 .front #content:after {
   clear: both;
 }
-/* line 19, ../sass/partials/_homepage.scss */
+/* line 13, ../sass/partials/_homepage.scss */
+.front #content p {
+  color: #ccc;
+}
+/* line 23, ../sass/partials/_homepage.scss */
 .front .pane-facts .pane-content > div {
   float: left;
   width: 33%;
@@ -1049,26 +1053,26 @@ h2 {
   height: 150px;
   overflow: hidden;
 }
-/* line 27, ../sass/partials/_homepage.scss */
+/* line 31, ../sass/partials/_homepage.scss */
 .front .pane-facts h3 {
   font-size: 3em;
   line-height: 1em;
   margin: 0;
 }
 @media all and (max-width: 600px) {
-  /* line 27, ../sass/partials/_homepage.scss */
+  /* line 31, ../sass/partials/_homepage.scss */
   .front .pane-facts h3 {
     font-size: 2em;
   }
 }
-/* line 38, ../sass/partials/_homepage.scss */
+/* line 42, ../sass/partials/_homepage.scss */
 .front .pane-facts p {
   font-size: .85em;
   margin: 0;
   min-height: 100px;
 }
 @media all and (min-width: 900px) {
-  /* line 48, ../sass/partials/_homepage.scss */
+  /* line 52, ../sass/partials/_homepage.scss */
   .front .pane-highlights {
     float: left;
     width: 50%;
@@ -1083,7 +1087,7 @@ h2 {
     word-wrap: break-word;
     padding-right: 10px;
   }
-  /* line 53, ../sass/partials/_homepage.scss */
+  /* line 57, ../sass/partials/_homepage.scss */
   .front .pane-facts {
     float: left;
     width: 50%;
@@ -1098,27 +1102,27 @@ h2 {
     word-wrap: break-word;
     padding-left: 10px;
   }
-  /* line 58, ../sass/partials/_homepage.scss */
+  /* line 62, ../sass/partials/_homepage.scss */
   .front .pane-speakers-panel-pane-1 {
     clear: left;
   }
 }
-/* line 68, ../sass/partials/_homepage.scss */
+/* line 72, ../sass/partials/_homepage.scss */
 .front .view-id-speakers .views-row {
   float: left;
 }
-/* line 82, ../sass/partials/_homepage.scss */
+/* line 86, ../sass/partials/_homepage.scss */
 .front .pane-events {
   clear: both;
 }
-/* line 86, ../sass/partials/_homepage.scss */
+/* line 90, ../sass/partials/_homepage.scss */
 .front .pane-events ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 @media all and (min-width: 700px) {
-  /* line 90, ../sass/partials/_homepage.scss */
+  /* line 94, ../sass/partials/_homepage.scss */
   .front .pane-events ul li {
     width: 33%;
     float: left;

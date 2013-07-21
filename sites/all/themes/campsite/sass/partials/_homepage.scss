@@ -9,6 +9,10 @@
     @include zen-grid-container();
     $zen-column-count: 4;
     // $zen-gutter-width: 10px;
+		
+		p{
+			color:#ccc;
+		}
   }
 
 
