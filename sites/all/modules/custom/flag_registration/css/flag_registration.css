@@ -276,7 +276,8 @@ height:126px;
 	text-align:center;
 }
 
-.individual-sponsor-info p{
+.individual-sponsor-info p,
+#event-request p.info{
 	text-align:center;
 	margin:0 auto;
 	max-width:800px;
