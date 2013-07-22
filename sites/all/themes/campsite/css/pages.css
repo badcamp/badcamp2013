@@ -966,22 +966,48 @@ ul.primary.tabs {
   list-style: none;
 }
 
-/* line 347, ../sass/partials/_panels.scss */
+/* line 348, ../sass/partials/_panels.scss */
+.view-summits-by-day h3 {
+  border-bottom: solid 1px #777777;
+  clear: both;
+}
+/* line 353, ../sass/partials/_panels.scss */
+.view-summits-by-day h4 {
+  margin: 10px 0;
+}
+/* line 356, ../sass/partials/_panels.scss */
+.view-summits-by-day .item-list ul {
+  padding: 0;
+  margin: 0 0 10px;
+}
+/* line 359, ../sass/partials/_panels.scss */
+.view-summits-by-day .item-list ul li {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 45%;
+  margin: 1px 2% 1px 0;
+  float: left;
+}
+
+/* line 374, ../sass/partials/_panels.scss */
 .region-footer .views-field-title {
   margin: 1.5em 1em 0 1em;
   border-bottom: 1px solid #000;
 }
-/* line 350, ../sass/partials/_panels.scss */
+/* line 377, ../sass/partials/_panels.scss */
 .region-footer .views-field-title a {
   font-weight: bold;
   color: #000;
   text-decoration: none;
 }
-/* line 357, ../sass/partials/_panels.scss */
+/* line 384, ../sass/partials/_panels.scss */
 .region-footer img {
   padding: 0 1em 1em 1em;
 }
-/* line 361, ../sass/partials/_panels.scss */
+/* line 388, ../sass/partials/_panels.scss */
 .region-footer h2 {
   border: none;
 }
@@ -995,7 +1021,7 @@ ul.primary.tabs {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 371, ../sass/partials/_panels.scss */
+  /* line 398, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 50%;
@@ -1009,7 +1035,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 375, ../sass/partials/_panels.scss */
+  /* line 402, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 50%;
@@ -1023,7 +1049,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 379, ../sass/partials/_panels.scss */
+  /* line 406, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     clear: left;
     float: left;
@@ -1038,7 +1064,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 384, ../sass/partials/_panels.scss */
+  /* line 411, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-4 {
     clear: left;
     float: left;
@@ -1064,7 +1090,7 @@ ul.primary.tabs {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 396, ../sass/partials/_panels.scss */
+  /* line 423, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 25%;
@@ -1078,7 +1104,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 400, ../sass/partials/_panels.scss */
+  /* line 427, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 25%;
@@ -1092,7 +1118,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 404, ../sass/partials/_panels.scss */
+  /* line 431, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     float: left;
     width: 25%;
@@ -1106,7 +1132,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 408, ../sass/partials/_panels.scss */
+  /* line 435, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .view-row-4 {
     float: left;
     width: 25%;

@@ -342,6 +342,33 @@ ul.primary.tabs{
 		}
 }
 
+// Summit and training landing pages
+
+.view-summits-by-day{
+	h3{
+		border-bottom:solid 1px #777777;
+		clear:both;
+	}
+	
+	h4{
+		margin:10px 0;
+	}
+ .item-list ul{
+	padding:0;
+	margin:0 0 10px;
+	 li{
+		 background:none;
+		 border:0;
+		 padding:0;
+		 margin:0;
+		 list-style:none;
+	   width: 45%;
+	   margin: 1px 2% 1px 0;
+	   float:left;
+	 }
+	}
+}
+
 // Footer
 .region-footer {
   .views-field-title {
