@@ -444,6 +444,11 @@ ul.primary.tabs{
 		text-align: center;
 		font-size: 15px;
 		line-height: 16px;
+		color:#000;
+		
+		&:hover{
+			text-decoration:none;
+		}
 	}
 	
 	//Business+Community
