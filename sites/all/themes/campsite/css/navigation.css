@@ -130,45 +130,46 @@ li a.active {
 .menu-minipanels h2 {
   margin: 0;
   font-size: 16px;
+  color: #000;
 }
-/* line 141, ../sass/navigation.scss */
+/* line 142, ../sass/navigation.scss */
 .menu-minipanels .event-details-menu a {
   font-weight: 600;
 }
-/* line 145, ../sass/navigation.scss */
+/* line 146, ../sass/navigation.scss */
 .menu-minipanels .panel-panel {
   margin: 17px;
 }
 
-/* line 153, ../sass/navigation.scss */
+/* line 154, ../sass/navigation.scss */
 #mini-panel-event_details_dropdown_menu.panel-3col-33 {
   width: 800px;
 }
-/* line 156, ../sass/navigation.scss */
+/* line 157, ../sass/navigation.scss */
 #mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col-first {
   width: 25%;
 }
-/* line 158, ../sass/navigation.scss */
+/* line 159, ../sass/navigation.scss */
 #mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col-first .inside {
   margin: 0;
 }
-/* line 163, ../sass/navigation.scss */
+/* line 164, ../sass/navigation.scss */
 #mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col-last {
   width: 20%;
 }
-/* line 165, ../sass/navigation.scss */
+/* line 166, ../sass/navigation.scss */
 #mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col-last .inside {
   margin: 0;
 }
-/* line 170, ../sass/navigation.scss */
+/* line 171, ../sass/navigation.scss */
 #mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col {
   width: 37%;
 }
-/* line 172, ../sass/navigation.scss */
+/* line 173, ../sass/navigation.scss */
 #mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col .inside {
   margin: 0;
 }
-/* line 176, ../sass/navigation.scss */
+/* line 177, ../sass/navigation.scss */
 #mini-panel-event_details_dropdown_menu.panel-3col-33 .panel-col li {
   width: 45%;
   margin: 1px 2% 1px 0;
