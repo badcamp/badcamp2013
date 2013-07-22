@@ -192,3 +192,8 @@ a.submit-button{
 	white-space: nowrap;
 	overflow: hidden;
 }
+
+#user-register-form .form-submit:hover,
+a.submit-button:hover{
+	background-color:#000;
+}

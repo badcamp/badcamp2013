@@ -212,3 +212,9 @@ a.submit-button {
   white-space: nowrap;
   overflow: hidden;
 }
+
+/* line 197, ../sass/forms.scss */
+#user-register-form .form-submit:hover,
+a.submit-button:hover {
+  background-color: #000;
+}
