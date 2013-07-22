@@ -367,6 +367,164 @@ ul.primary.tabs{
 	}
 }
 
+// Exposed Sessions Tracks
+
+#proposed-sessions h3{
+	padding: 4px 20px;
+	margin-bottom: 30px;
+	color: #000;
+	background-color: #EDEEEF;
+	font-size: 1.17em;
+	border-bottom: 0;
+	clear: both;
+}
+
+#proposed-sessions h2{
+	margin:10px;
+}
+
+.view-id-session_schedule ul{
+	margin:0;
+	padding:0;
+	li{
+		list-style:none;
+		clear:both;
+		border-bottom: solid 1px;
+		margin: 10px 0 20px 0;
+		min-height: 120px;
+		
+		.views-label-field-speakers-1{
+			font-weight:600;
+		}
+		
+		 .views-field{
+			 display:block;
+			 margin:5px 0;
+		 }
+		.views-field-field-track-1,
+		.views-field-field-skill-level{
+			float:left;
+			margin-right:10px;
+		}
+		
+		.views-field-title{
+			font-weight:bold;
+		}
+		
+		a{
+			color:#000;
+			text-decoration:underline;
+			margin:0 0 5px;
+		}
+	}
+}
+.views-widget-filter-field_track_tid{
+	
+	.form-item:not(.form-submit) {
+	border-bottom: 0;
+	}
+	
+	.form-type-bef-link{
+		float:left;
+	}
+	
+	#edit-field-track-tid-17 a,
+	#edit-field-track-tid-18 a,
+	#edit-field-track-tid-46 a,
+	#edit-field-track-tid-20 a,
+	#edit-field-track-tid-29 a,
+	#edit-field-track-tid-19 a{
+		background: #fff url('../images/session-icons.png') no-repeat;
+		margin: 20px;
+		padding: 20px;
+		display: block;
+		height: 100px;
+		padding: 80px 0px 0;
+		width: 100px;
+		text-align: center;
+		font-size: 15px;
+		line-height: 16px;
+	}
+	
+	//Business+Community
+	#edit-field-track-tid-17{
+		a{
+		background-position: 61% 119%;
+		}
+		
+		&:hover a,
+		&.selected a{
+			background-position: 61% 0%;
+		}
+	}
+	
+	//Code+Develop
+	#edit-field-track-tid-18{
+		a{
+		background-position: 82% 119%;
+		}
+		
+		&:hover a,
+		&.selected a{
+			background-position: 82% 0%;
+		}
+		
+	}
+	
+	//Core Converstation
+	#edit-field-track-tid-46{ 
+		a{
+		background-position: 101.8% 119.5%;
+		}
+		
+		&:hover a,
+		&.selected a{
+			background-position: 100% 0%;
+		}
+	}
+
+	
+	//Design, Theme + UX
+	#edit-field-track-tid-20{
+		a{
+		background-position: -3% 119%;
+		}
+		
+		&:hover a,
+		&.selected a{
+			background-position: -3% 0%;
+		}
+	}
+
+	
+	//Devops +Performance
+	#edit-field-track-tid-19{
+		a{
+		background-position: 17% 119%;
+		}
+		
+		&:hover a,
+		&.selected a{
+			background-position: 17% 0%;
+		}
+	}
+
+	
+	//Site building + using drupal
+	#edit-field-track-tid-29{
+		a{
+		background-position: 39% 119%;
+		}
+		
+		&:hover a,
+		&.selected a{
+			background-position: 39% 0%;
+		}
+	}
+
+	
+}
+
 // Footer
 .region-footer {
   .views-field-title {
