@@ -290,7 +290,7 @@ h2 {
 }
 
 #user-profile-view .field-item{
-	width:600px;
+	max-width:600px;
 }
 
 #user-profile-view .field{
@@ -306,6 +306,11 @@ h2 {
 
 #user-profile-view h2{
 	color:#000;
+}
+
+#user-profile-view .field-name-field-title-role{
+	border: 0;
+	margin-top: -30px;
 }
 
 ul.primary.tabs a:link{
