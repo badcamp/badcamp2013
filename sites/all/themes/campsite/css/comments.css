@@ -11,6 +11,12 @@
 /* line 15, ../sass/partials/_colors.scss */
 a {
   color: #0077A5;
+  text-decoration: none;
+}
+
+/* line 20, ../sass/partials/_colors.scss */
+a:hover {
+  text-decoration: underline;
 }
 
 /* line 9, ../sass/comments.scss */

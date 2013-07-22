@@ -24,6 +24,12 @@
 /* line 15, ../sass/partials/_colors.scss */
 a {
   color: #0077A5;
+  text-decoration: none;
+}
+
+/* line 20, ../sass/partials/_colors.scss */
+a:hover {
+  text-decoration: underline;
 }
 
 /* line 12, ../sass/pages.scss */
@@ -503,6 +509,10 @@ span.field-label {
   text-decoration: none;
   white-space: nowrap;
   overflow: hidden;
+}
+/* line 205, ../sass/partials/_header.scss */
+#block-menu-block-1 .menu a:hover {
+  background-color: #000;
 }
 
 /* line 6, ../sass/partials/_menu.scss */
