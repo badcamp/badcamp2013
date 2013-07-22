@@ -569,3 +569,25 @@ if (!isset($_SERVER['PANTHEON_ENVIRONMENT'])) {
     require_once(dirname(__FILE__) . '/local.settings.php');
   }
 }
+
+/**
+ * Required Pantheon redis settings.
+ */
+if (defined('PANTHEON_ENVIRONMENT')) {
+  # Use Redis for caching.
+  $conf['redis_client_interface'] = 'PhpRedis';
+  $conf['cache_backends'][] = 'sites/all/modules/contrib/redis/redis.autoload.inc';
+  $conf['cache_default_class'] = 'Redis_Cache';
+  $conf['cache_prefix'] = array('default' => 'pantheon-redis');
+  # Do not use Redis for cache_form (no performance difference).
+  $conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
+}
+
+/**
+ * Optional Pantheon redis settings.
+ */
+if (defined('PANTHEON_ENVIRONMENT')) {
+  # High performance - no hook_boot(), no hook_exit(), ignores Drupal IP blacklists.
+  $conf['page_cache_without_database'] = TRUE;
+  $conf['page_cache_invoke_hooks'] = FALSE;
+}
