@@ -870,22 +870,103 @@ h2 {
   text-decoration: none;
 }
 
-/* line 265, ../sass/partials/_panels.scss */
+/* line 267, ../sass/partials/_panels.scss */
+.icon-flickr,
+.icon-twitter,
+.icon-facebook {
+  background-repeat: no-repeat;
+  display: inline-block;
+  overflow: hidden;
+  width: 0;
+  height: 27px;
+  padding-left: 27px;
+}
+
+/* line 276, ../sass/partials/_panels.scss */
+.icon-flickr {
+  background-image: url("../images/flickr-icon.png");
+}
+
+/* line 280, ../sass/partials/_panels.scss */
+.icon-twitter {
+  background-image: url("../images/twitter-icon.png");
+}
+
+/* line 284, ../sass/partials/_panels.scss */
+.icon-facebook {
+  background-image: url("../images/facebook-icon.png");
+}
+
+/* line 288, ../sass/partials/_panels.scss */
+#user-profile-view .field-label {
+  width: 190px;
+}
+
+/* line 292, ../sass/partials/_panels.scss */
+#user-profile-view .field-item {
+  width: 600px;
+}
+
+/* line 296, ../sass/partials/_panels.scss */
+#user-profile-view .field {
+  border-top: solid 1px #DDDDDD;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+/* line 302, ../sass/partials/_panels.scss */
+#user-profile-view .field-name-field-featured-headshot {
+  border-top: 0;
+  padding: 0;
+}
+
+/* line 307, ../sass/partials/_panels.scss */
+#user-profile-view h2 {
+  color: #000;
+}
+
+/* line 311, ../sass/partials/_panels.scss */
+ul.primary.tabs a:link {
+  background: none;
+  border: 0;
+}
+
+/* line 316, ../sass/partials/_panels.scss */
+ul.primary.tabs a.active {
+  border-bottom: solid 5px #CA4D00;
+}
+
+/* line 320, ../sass/partials/_panels.scss */
+ul.primary.tabs li {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 327, ../sass/partials/_panels.scss */
+ul.primary.tabs {
+  border-bottom: solid 1px #000;
+  padding: 0;
+  margin: 20px 0;
+}
+
+/* line 335, ../sass/partials/_panels.scss */
 .region-footer .views-field-title {
   margin: 1.5em 1em 0 1em;
   border-bottom: 1px solid #000;
 }
-/* line 268, ../sass/partials/_panels.scss */
+/* line 338, ../sass/partials/_panels.scss */
 .region-footer .views-field-title a {
   font-weight: bold;
   color: #000;
   text-decoration: none;
 }
-/* line 275, ../sass/partials/_panels.scss */
+/* line 345, ../sass/partials/_panels.scss */
 .region-footer img {
   padding: 0 1em 1em 1em;
 }
-/* line 279, ../sass/partials/_panels.scss */
+/* line 349, ../sass/partials/_panels.scss */
 .region-footer h2 {
   border: none;
 }
@@ -899,7 +980,7 @@ h2 {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 289, ../sass/partials/_panels.scss */
+  /* line 359, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 50%;
@@ -913,7 +994,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 293, ../sass/partials/_panels.scss */
+  /* line 363, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 50%;
@@ -927,7 +1008,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 297, ../sass/partials/_panels.scss */
+  /* line 367, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     clear: left;
     float: left;
@@ -942,7 +1023,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 302, ../sass/partials/_panels.scss */
+  /* line 372, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-4 {
     clear: left;
     float: left;
@@ -968,7 +1049,7 @@ h2 {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 314, ../sass/partials/_panels.scss */
+  /* line 384, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 25%;
@@ -982,7 +1063,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 318, ../sass/partials/_panels.scss */
+  /* line 388, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 25%;
@@ -996,7 +1077,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 322, ../sass/partials/_panels.scss */
+  /* line 392, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     float: left;
     width: 25%;
@@ -1010,7 +1091,7 @@ h2 {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 326, ../sass/partials/_panels.scss */
+  /* line 396, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .view-row-4 {
     float: left;
     width: 25%;
