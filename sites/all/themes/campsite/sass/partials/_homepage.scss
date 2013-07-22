@@ -77,9 +77,31 @@
     
     
   }
-  
+
+/* Event highlight */
+	
+#content .highlight-text p{
+ 	 color:#fff;
+	 padding:0;
+	 margin:0;
+}
+
+	.highlight-photo{
+		background: url(../images/home-page-summit-banner.png);
+		width: 580px;
+		background-repeat: no-repeat;
+		height: 200px;
+	}
  
- 
+	.highlight-text{
+		margin-left: 274px;
+		width: 265px;
+		padding:10px;
+		color:#fff;
+			h3{
+				color:#fff;
+			}
+	}
  
   /* Events at a glance pane */
 
