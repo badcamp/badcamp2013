@@ -90,9 +90,14 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#title' => t('Title'),
     '#default_value' => $conf['one-title'],
   );
+  $form['one']['one-link'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Link to'),
+    '#default_value' => $conf['one-link'],
+  );
   $form['one']['one-blurb'] = array(
     '#type' => 'textarea',
-    '#rows' => 3,
+    '#rows' => 2,
     '#maxlength' => 200,
     '#title' => t('Description'),
     '#default_value' => $conf['one-blurb'],
@@ -107,9 +112,14 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#title' => t('Title'),
     '#default_value' => $conf['two-title'],
   );
+  $form['two']['two-link'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Link to'),
+    '#default_value' => $conf['two-link'],
+  );
   $form['two']['two-blurb'] = array(
     '#type' => 'textarea',
-    '#rows' => 3,
+    '#rows' => 2,
     '#maxlength' => 200,
     '#title' => t('Description'),
     '#default_value' => $conf['two-blurb'],
@@ -124,9 +134,14 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#title' => t('Title'),
     '#default_value' => $conf['three-title'],
   );
+  $form['three']['three-link'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Link to'),
+    '#default_value' => $conf['three-link'],
+  );
   $form['three']['three-blurb'] = array(
     '#type' => 'textarea',
-    '#rows' => 3,
+    '#rows' => 2,
     '#maxlength' => 200,
     '#title' => t('Description'),
     '#default_value' => $conf['three-blurb'],
@@ -141,9 +156,14 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#title' => t('Title'),
     '#default_value' => $conf['four-title'],
   );
+  $form['four']['four-link'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Link to'),
+    '#default_value' => $conf['four-link'],
+  );
   $form['four']['four-blurb'] = array(
     '#type' => 'textarea',
-    '#rows' => 3,
+    '#rows' => 2,
     '#maxlength' => 200,
     '#title' => t('Description'),
     '#default_value' => $conf['four-blurb'],
@@ -158,9 +178,14 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#title' => t('Title'),
     '#default_value' => $conf['five-title'],
   );
+  $form['five']['five-link'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Link to'),
+    '#default_value' => $conf['five-link'],
+  );
   $form['five']['five-blurb'] = array(
     '#type' => 'textarea',
-    '#rows' => 3,
+    '#rows' => 2,
     '#maxlength' => 200,
     '#title' => t('Description'),
     '#default_value' => $conf['five-blurb'],
@@ -175,9 +200,14 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#title' => t('Title'),
     '#default_value' => $conf['six-title'],
   );
+  $form['six']['six-link'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Link to'),
+    '#default_value' => $conf['six-link'],
+  );
   $form['six']['six-blurb'] = array(
     '#type' => 'textarea',
-    '#rows' => 3,
+    '#rows' => 2,
     '#maxlength' => 200,
     '#title' => t('Description'),
     '#default_value' => $conf['six-blurb'],
