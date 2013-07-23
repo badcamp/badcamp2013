@@ -49,12 +49,12 @@ function badcamp_panels_events_content_type_render($subtype, $conf, $panel_args,
   $block->delta   = 'highlights';
   $block->title   = t('Events at a glance');
 
-  $link_one = l(check_plain($conf['one-title']), check_plain($conf['one-link']));
-  $link_two = l(check_plain($conf['two-title']), check_plain($conf['two-link']));
-  $link_three = l(check_plain($conf['three-title']), check_plain($conf['three-link']));
-  $link_four = l(check_plain($conf['four-title']), check_plain($conf['four-link']));
-  $link_five = l(check_plain($conf['five-title']), check_plain($conf['five-link']));
-  $link_six = l(check_plain($conf['six-title']), check_plain($conf['six-link']));
+  $link_one = l($conf['one-title'], check_plain($conf['one-link']));
+  $link_two = l($conf['two-title'], check_plain($conf['two-link']));
+  $link_three = l($conf['three-title'], check_plain($conf['three-link']));
+  $link_four = l($conf['four-title'], check_plain($conf['four-link']));
+  $link_five = l($conf['five-title'], check_plain($conf['five-link']));
+  $link_six = l($conf['six-title'], check_plain($conf['six-link']));
 
   $block->content  = '<ul>';
   $block->content  .= ' <li class="event-one">';
