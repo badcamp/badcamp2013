@@ -107,6 +107,7 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('Link to'),
     '#default_value' => $conf['one-link'],
+    '#required' => TRUE,
   );
   $form['one']['one-blurb'] = array(
     '#type' => 'textarea',
@@ -129,6 +130,7 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('Link to'),
     '#default_value' => $conf['two-link'],
+    '#required' => TRUE,
   );
   $form['two']['two-blurb'] = array(
     '#type' => 'textarea',
@@ -151,6 +153,7 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('Link to'),
     '#default_value' => $conf['three-link'],
+    '#required' => TRUE,
   );
   $form['three']['three-blurb'] = array(
     '#type' => 'textarea',
@@ -173,6 +176,7 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('Link to'),
     '#default_value' => $conf['four-link'],
+    '#required' => TRUE,
   );
   $form['four']['four-blurb'] = array(
     '#type' => 'textarea',
@@ -195,6 +199,7 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('Link to'),
     '#default_value' => $conf['five-link'],
+    '#required' => TRUE,
   );
   $form['five']['five-blurb'] = array(
     '#type' => 'textarea',
@@ -217,6 +222,7 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('Link to'),
     '#default_value' => $conf['six-link'],
+    '#required' => TRUE,
   );
   $form['six']['six-blurb'] = array(
     '#type' => 'textarea',
