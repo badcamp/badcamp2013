@@ -1,10 +1,10 @@
 /*
-Syntax error: Undefined variable: "$timeline-bg-entry".
-        on line 70 of /var/www/dev/badcamp/sites/all/themes/campsite/sass/partials/_timeline.scss
+Syntax error: Undefined variable: "$bg-entry".
+        on line 109 of /var/www/dev/badcamp/sites/all/themes/campsite/sass/partials/_timeline.scss
         from line 269 of /var/www/dev/badcamp/sites/all/themes/campsite/sass/pages.scss
 
 Backtrace:
-/var/www/dev/badcamp/sites/all/themes/campsite/sass/partials/_timeline.scss:70
+/var/www/dev/badcamp/sites/all/themes/campsite/sass/partials/_timeline.scss:109
 /var/www/dev/badcamp/sites/all/themes/campsite/sass/pages.scss:269
 /var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/script/variable.rb:49:in `_perform'
 /var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/script/node.rb:40:in `perform'
@@ -12,11 +12,18 @@ Backtrace:
 /var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/script/funcall.rb:99:in `map'
 /var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/script/funcall.rb:99:in `_perform'
 /var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/script/node.rb:40:in `perform'
-/var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/script/list.rb:70:in `_perform'
-/var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/script/list.rb:70:in `map'
-/var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/script/list.rb:70:in `_perform'
-/var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/script/node.rb:40:in `perform'
 /var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:298:in `visit_prop'
+/var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+/var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:320:in `visit_rule'
 /var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
 /var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
@@ -106,4 +113,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$timeline-bg-entry\".\A         on line 70 of /var/www/dev/badcamp/sites/all/themes/campsite/sass/partials/_timeline.scss\A         from line 269 of /var/www/dev/badcamp/sites/all/themes/campsite/sass/pages.scss"; }
+  content: "Syntax error: Undefined variable: \"$bg-entry\".\A         on line 109 of /var/www/dev/badcamp/sites/all/themes/campsite/sass/partials/_timeline.scss\A         from line 269 of /var/www/dev/badcamp/sites/all/themes/campsite/sass/pages.scss"; }
