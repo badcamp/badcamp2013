@@ -1482,7 +1482,7 @@ ul.primary.tabs {
 }
 /* line 38, ../sass/partials/_homepage.scss */
 .front .pane-facts h3 {
-  font-size: 72px;
+  font-size: 50px;
   color: #fff;
   line-height: 1em;
   margin: 0;
@@ -1553,44 +1553,45 @@ ul.primary.tabs {
 /* line 102, ../sass/partials/_homepage.scss */
 .front .highlight-photo {
   background: url(../images/home-page-summit-banner.png);
-  width: 580px;
+  background-size: 100%;
+  width: 100%;
   background-repeat: no-repeat;
-  height: 200px;
+  min-height: 200px;
 }
-/* line 109, ../sass/partials/_homepage.scss */
+/* line 110, ../sass/partials/_homepage.scss */
 .front .highlight-text {
-  margin-left: 294px;
-  width: 265px;
+  float: right;
+  width: 50%;
   padding: 10px;
   color: #fff;
 }
-/* line 114, ../sass/partials/_homepage.scss */
+/* line 116, ../sass/partials/_homepage.scss */
 .front .highlight-text h3 {
   color: #fff;
 }
-/* line 122, ../sass/partials/_homepage.scss */
+/* line 124, ../sass/partials/_homepage.scss */
 .front .pane-events {
   clear: both;
 }
-/* line 126, ../sass/partials/_homepage.scss */
+/* line 128, ../sass/partials/_homepage.scss */
 .front .pane-events h3 {
   color: #fff;
   text-decoration: underline;
   font-weight: 400;
   font-size: 20px;
 }
-/* line 132, ../sass/partials/_homepage.scss */
+/* line 134, ../sass/partials/_homepage.scss */
 .front .pane-events p {
   margin: 0;
 }
-/* line 135, ../sass/partials/_homepage.scss */
+/* line 137, ../sass/partials/_homepage.scss */
 .front .pane-events ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 @media all and (min-width: 700px) {
-  /* line 139, ../sass/partials/_homepage.scss */
+  /* line 141, ../sass/partials/_homepage.scss */
   .front .pane-events ul li {
     width: 33%;
     float: left;
@@ -1598,7 +1599,7 @@ ul.primary.tabs {
     padding-right: 1em;
   }
 }
-/* line 150, ../sass/partials/_homepage.scss */
+/* line 152, ../sass/partials/_homepage.scss */
 .front #footer {
   margin-top: 0px;
 }
