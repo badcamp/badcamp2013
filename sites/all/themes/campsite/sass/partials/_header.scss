@@ -21,11 +21,31 @@
 // User Menu
 #usermenu {
 
+  @include zen-grid-container();
+
+  font-size: 1em;
   background: $dark;
   color: #FFF;
 
   &:after {
     @extend %clearfix-after;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 1.2em;
+  }
+  
+  .form-item {
+    border: none;
+  }
+  
+  input {
+    width: 100%;
+    
+    &.form-submit {
+      width: auto;
+    }
   }
 
   #block-user-login {
@@ -62,6 +82,32 @@
     margin: 0;
   }
   
+  
+  @media all and (min-width: 600px) and (max-width: 960px) {
+    $zen-column-count: 2;
+    
+    #block-block-3 {
+      @include zen-grid-item(1,1);
+    }
+    
+    #block-user-login {
+      @include zen-grid-item(1,2);
+    }
+  }
+  
+  
+  
+  @media all and (min-width: 960px) {
+    $zen-column-count: 5;
+    
+    #block-block-3 {
+      @include zen-grid-item(2,2);
+    }
+    
+    #block-user-login {
+      @include zen-grid-item(2,4);
+    }
+  }
 
 
 }
