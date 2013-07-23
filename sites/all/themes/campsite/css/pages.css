@@ -995,35 +995,60 @@ ul.primary.tabs {
   list-style: none;
 }
 
-/* line 344, ../sass/partials/_panels.scss */
-.view-summits-by-day.landing-page h3 {
-  border-bottom: solid 1px #777777;
-  clear: both;
-  padding-top: 20px;
-  margin-bottom: 10px;
+/* line 346, ../sass/partials/_panels.scss */
+.view-summits-by-day.landing-page .views-field-title,
+.view-summits-by-day.landing-page .views-field-field-summary {
+  float: left;
+  width: 570px;
 }
 /* line 351, ../sass/partials/_panels.scss */
+.view-summits-by-day.landing-page .views-field-field-summary {
+  margin-bottom: 30px;
+}
+/* line 355, ../sass/partials/_panels.scss */
+.view-summits-by-day.landing-page .views-field-field-venue-1 {
+  float: left;
+  margin-top: -22px;
+  margin-left: 30px;
+}
+/* line 360, ../sass/partials/_panels.scss */
+.view-summits-by-day.landing-page h3 {
+  padding: 4px 20px;
+  margin-bottom: 30px;
+  color: #000;
+  background-color: #EDEEEF;
+  font-size: 1.17em;
+  border-bottom: 0;
+  clear: both;
+}
+/* line 370, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page h4 {
   margin: 10px 0 0;
+  font-weight: 600;
+  margin-top: 30px;
 }
-/* line 354, ../sass/partials/_panels.scss */
+/* line 374, ../sass/partials/_panels.scss */
+.view-summits-by-day.landing-page h4 a {
+  color: black;
+  text-decoration: underline;
+}
+/* line 379, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page .item-list ul {
   padding: 0;
   margin: 0 0 10px;
 }
-/* line 357, ../sass/partials/_panels.scss */
+/* line 382, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page .item-list ul li {
   background: none;
   border: 0;
   padding: 0;
   margin: 0;
   list-style: none;
-  width: 45%;
-  margin: 1px 2% 1px 0;
-  float: left;
+  border-bottom: solid 1px black;
+  clear: both;
 }
 
-/* line 372, ../sass/partials/_panels.scss */
+/* line 396, ../sass/partials/_panels.scss */
 #proposed-sessions h3 {
   padding: 4px 20px;
   margin-bottom: 30px;
@@ -1034,17 +1059,17 @@ ul.primary.tabs {
   clear: both;
 }
 
-/* line 382, ../sass/partials/_panels.scss */
+/* line 406, ../sass/partials/_panels.scss */
 #proposed-sessions h2 {
   margin: 10px 0;
 }
 
-/* line 386, ../sass/partials/_panels.scss */
+/* line 410, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul {
   margin: 0;
   padding: 0;
 }
-/* line 389, ../sass/partials/_panels.scss */
+/* line 413, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li {
   list-style: none;
   clear: both;
@@ -1052,43 +1077,43 @@ ul.primary.tabs {
   margin: 10px 0 20px 0;
   min-height: 120px;
 }
-/* line 396, ../sass/partials/_panels.scss */
+/* line 420, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li .views-label-field-speakers-1 {
   font-weight: 600;
 }
-/* line 400, ../sass/partials/_panels.scss */
+/* line 424, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li .views-field {
   display: block;
   margin: 5px 0;
 }
-/* line 405, ../sass/partials/_panels.scss */
+/* line 429, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li .views-field-field-track-1,
 .view-id-session_schedule ul li .views-field-field-skill-level {
   float: left;
   margin-right: 10px;
 }
-/* line 410, ../sass/partials/_panels.scss */
+/* line 434, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li .views-field-title {
   font-weight: bold;
   max-width: 500px;
   line-height: 20px;
 }
-/* line 416, ../sass/partials/_panels.scss */
+/* line 440, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li a {
   color: #000;
   text-decoration: underline;
   margin: 0 0 5px;
 }
 
-/* line 425, ../sass/partials/_panels.scss */
+/* line 449, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid .form-item:not(.form-submit) {
   border-bottom: 0;
 }
-/* line 429, ../sass/partials/_panels.scss */
+/* line 453, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid .form-type-bef-link {
   float: left;
 }
-/* line 438, ../sass/partials/_panels.scss */
+/* line 462, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-17 a,
 .views-widget-filter-field_track_tid #edit-field-track-tid-18 a,
 .views-widget-filter-field_track_tid #edit-field-track-tid-46 a,
@@ -1107,7 +1132,7 @@ ul.primary.tabs {
   line-height: 16px;
   color: #000;
 }
-/* line 451, ../sass/partials/_panels.scss */
+/* line 475, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-17 a:hover,
 .views-widget-filter-field_track_tid #edit-field-track-tid-18 a:hover,
 .views-widget-filter-field_track_tid #edit-field-track-tid-46 a:hover,
@@ -1116,71 +1141,71 @@ ul.primary.tabs {
 .views-widget-filter-field_track_tid #edit-field-track-tid-19 a:hover {
   text-decoration: none;
 }
-/* line 458, ../sass/partials/_panels.scss */
+/* line 482, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-17 a {
   background-position: 61% 119%;
 }
-/* line 463, ../sass/partials/_panels.scss */
+/* line 487, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-17:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-17.selected a {
   background-position: 61% 0%;
 }
-/* line 470, ../sass/partials/_panels.scss */
+/* line 494, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-18 a {
   background-position: 82% 119%;
 }
-/* line 475, ../sass/partials/_panels.scss */
+/* line 499, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-18:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-18.selected a {
   background-position: 82% 0%;
 }
-/* line 483, ../sass/partials/_panels.scss */
+/* line 507, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-46 a {
   background-position: 101.8% 119.5%;
 }
-/* line 488, ../sass/partials/_panels.scss */
+/* line 512, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-46:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-46.selected a {
   background-position: 100% 0%;
 }
-/* line 496, ../sass/partials/_panels.scss */
+/* line 520, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-20 a {
   background-position: -3% 119%;
 }
-/* line 501, ../sass/partials/_panels.scss */
+/* line 525, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-20:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-20.selected a {
   background-position: -3% 0%;
 }
-/* line 509, ../sass/partials/_panels.scss */
+/* line 533, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-19 a {
   background-position: 17% 119%;
 }
-/* line 514, ../sass/partials/_panels.scss */
+/* line 538, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-19:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-19.selected a {
   background-position: 17% 0%;
 }
-/* line 522, ../sass/partials/_panels.scss */
+/* line 546, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-29 a {
   background-position: 39% 119%;
 }
-/* line 527, ../sass/partials/_panels.scss */
+/* line 551, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-29:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-29.selected a {
   background-position: 39% 0%;
 }
 
-/* line 537, ../sass/partials/_panels.scss */
+/* line 561, ../sass/partials/_panels.scss */
 .region-footer .views-field-title {
   margin: 1.5em 1em 0 1em;
   border-bottom: 1px solid #000;
 }
-/* line 540, ../sass/partials/_panels.scss */
+/* line 564, ../sass/partials/_panels.scss */
 .region-footer .views-field-title a {
   font-weight: bold;
   color: #000;
   text-decoration: none;
 }
-/* line 547, ../sass/partials/_panels.scss */
+/* line 571, ../sass/partials/_panels.scss */
 .region-footer img {
   padding: 0 1em 1em 1em;
 }
-/* line 551, ../sass/partials/_panels.scss */
+/* line 575, ../sass/partials/_panels.scss */
 .region-footer h2 {
   border: none;
 }
@@ -1194,7 +1219,7 @@ ul.primary.tabs {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 561, ../sass/partials/_panels.scss */
+  /* line 585, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 50%;
@@ -1208,7 +1233,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 565, ../sass/partials/_panels.scss */
+  /* line 589, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 50%;
@@ -1222,7 +1247,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 569, ../sass/partials/_panels.scss */
+  /* line 593, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     clear: left;
     float: left;
@@ -1237,7 +1262,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 574, ../sass/partials/_panels.scss */
+  /* line 598, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-4 {
     clear: left;
     float: left;
@@ -1263,7 +1288,7 @@ ul.primary.tabs {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 586, ../sass/partials/_panels.scss */
+  /* line 610, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 25%;
@@ -1277,7 +1302,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 590, ../sass/partials/_panels.scss */
+  /* line 614, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 25%;
@@ -1291,7 +1316,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 594, ../sass/partials/_panels.scss */
+  /* line 618, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     float: left;
     width: 25%;
@@ -1305,7 +1330,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 598, ../sass/partials/_panels.scss */
+  /* line 622, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .view-row-4 {
     float: left;
     width: 25%;
