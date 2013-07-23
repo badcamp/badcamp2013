@@ -106,7 +106,7 @@ $timeline-bg-entry: rgb(80,80,80);
     }
 
     &:hover {
-      background: lighten($bg-entry,10%);
+      background: lighten($timeline-bg-entry,10%);
       color: white;
       
       a {
@@ -128,7 +128,7 @@ $timeline-bg-entry: rgb(80,80,80);
         display: block;
         content: ' ';
         height: 6px; width: 6px;
-        background: lighten($timline-bg-entry,30%);
+        background: lighten($timeline-bg-entry,30%);
         border-radius: 50%;
         position:absolute;
         left: -5%;
