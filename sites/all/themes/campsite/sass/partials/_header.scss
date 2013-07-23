@@ -26,9 +26,16 @@
   font-size: 1em;
   background: $dark;
   color: #FFF;
+  padding-top: .5em;
+
+  height: 10px;
+  overflow: hidden;
 
   &:after {
-    @extend %clearfix-after;
+    // this is the fakey button which triggers the whole shebang to move
+       
+    // eric put this here, i'm gonna leave it just in case
+    // @extend %clearfix-after;
   }
 
   h2 {
@@ -81,10 +88,14 @@
   #edit-actions {
     margin: 0;
   }
-  
-  
+    
   @media all and (min-width: 600px) and (max-width: 960px) {
     $zen-column-count: 2;
+    
+    &.usermenu-visible {
+      height: 300px;
+      overflow: hidden;
+    }
     
     #block-block-3 {
       @include zen-grid-item(1,1);
@@ -99,6 +110,10 @@
   
   @media all and (min-width: 960px) {
     $zen-column-count: 5;
+
+    &.usermenu-visible{
+      height: 270px;
+    }
     
     #block-block-3 {
       @include zen-grid-item(2,2);
@@ -108,9 +123,8 @@
       @include zen-grid-item(2,4);
     }
   }
-
-
 }
+
 
 .region-usermenu {
   max-width: 1200px;
