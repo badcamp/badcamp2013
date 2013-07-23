@@ -23,13 +23,21 @@
     .pane-content > div {
       float: left;
       width: 33%;
-      padding-right: 1em;
+      padding:0 20px;
       height: 150px;
       overflow: hidden;
+			border-right:solid 1px #797878;
     }
     
+		div .fact-one{
+			padding-left:0;
+		}
+		div .fact-three{
+			border-right:0;
+		}
     h3 {
-      font-size: 3em;
+      font-size: 72px;
+			color:#fff;
       
       @media all and (max-width: 600px) {
         font-size: 2em;
@@ -40,9 +48,10 @@
     }
     
     p {
-      font-size: .85em;
+      font-size: 18px;
       margin: 0;
       min-height: 100px;
+			color:#fff;
     }
     
   }  
@@ -56,7 +65,7 @@
     
     .pane-facts {
       @include zen-grid-item(2,3);
-      padding-left: 10px;
+      padding-left: 30px;
     }
     
     .pane-speakers-panel-pane-1 {
@@ -67,6 +76,10 @@
  
   /* Featured Attendees pane */
   
+	.pane-speakers-panel-pane-1{
+		padding-top:10px;
+	}
+	
   .view-id-speakers {
     
     .views-row {
@@ -94,7 +107,7 @@
 	}
  
 	.highlight-text{
-		margin-left: 274px;
+		margin-left: 294px;
 		width: 265px;
 		padding:10px;
 		color:#fff;
@@ -105,10 +118,20 @@
  
   /* Events at a glance pane */
 
+
   .pane-events {
     
     clear: both;
     
+		h3{
+			color: #fff;
+			text-decoration: underline;
+			font-weight: 400;
+			font-size: 20px;
+		}
+		p{
+			margin:0;
+		}
     ul {
       @include naked-list;
             
@@ -122,5 +145,10 @@
         }
       }
     }
-  } 
+  }
+	
+	#footer {
+	margin-top: 0px;
+	}
+	 
 }

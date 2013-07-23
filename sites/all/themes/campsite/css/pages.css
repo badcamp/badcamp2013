@@ -694,13 +694,13 @@ span.field-label {
 
 /* line 25, ../sass/partials/_panels.scss */
 .front #main {
-  background: #1c1c1c;
+  background: #000;
   color: #fff;
 }
 /* line 30, ../sass/partials/_panels.scss */
 .front h2,
 .front h3 {
-  color: #26a6df;
+  color: #7EC0D6;
 }
 
 /* line 36, ../sass/partials/_panels.scss */
@@ -1345,30 +1345,41 @@ ul.primary.tabs {
 .front .pane-facts .pane-content > div {
   float: left;
   width: 33%;
-  padding-right: 1em;
+  padding: 0 20px;
   height: 150px;
   overflow: hidden;
+  border-right: solid 1px #797878;
 }
-/* line 31, ../sass/partials/_homepage.scss */
+/* line 32, ../sass/partials/_homepage.scss */
+.front .pane-facts div .fact-one {
+  padding-left: 0;
+}
+/* line 35, ../sass/partials/_homepage.scss */
+.front .pane-facts div .fact-three {
+  border-right: 0;
+}
+/* line 38, ../sass/partials/_homepage.scss */
 .front .pane-facts h3 {
-  font-size: 3em;
+  font-size: 72px;
+  color: #fff;
   line-height: 1em;
   margin: 0;
 }
 @media all and (max-width: 600px) {
-  /* line 31, ../sass/partials/_homepage.scss */
+  /* line 38, ../sass/partials/_homepage.scss */
   .front .pane-facts h3 {
     font-size: 2em;
   }
 }
-/* line 42, ../sass/partials/_homepage.scss */
+/* line 50, ../sass/partials/_homepage.scss */
 .front .pane-facts p {
-  font-size: .85em;
+  font-size: 18px;
   margin: 0;
   min-height: 100px;
+  color: #fff;
 }
 @media all and (min-width: 900px) {
-  /* line 52, ../sass/partials/_homepage.scss */
+  /* line 61, ../sass/partials/_homepage.scss */
   .front .pane-highlights {
     float: left;
     width: 50%;
@@ -1383,7 +1394,7 @@ ul.primary.tabs {
     word-wrap: break-word;
     padding-right: 10px;
   }
-  /* line 57, ../sass/partials/_homepage.scss */
+  /* line 66, ../sass/partials/_homepage.scss */
   .front .pane-facts {
     float: left;
     width: 50%;
@@ -1396,57 +1407,76 @@ ul.primary.tabs {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    padding-left: 10px;
+    padding-left: 30px;
   }
-  /* line 62, ../sass/partials/_homepage.scss */
+  /* line 71, ../sass/partials/_homepage.scss */
   .front .pane-speakers-panel-pane-1 {
     clear: left;
   }
 }
-/* line 72, ../sass/partials/_homepage.scss */
+/* line 79, ../sass/partials/_homepage.scss */
+.front .pane-speakers-panel-pane-1 {
+  padding-top: 10px;
+}
+/* line 85, ../sass/partials/_homepage.scss */
 .front .view-id-speakers .views-row {
   float: left;
 }
-/* line 83, ../sass/partials/_homepage.scss */
+/* line 96, ../sass/partials/_homepage.scss */
 .front #content .highlight-text p {
   color: #fff;
   padding: 0;
   margin: 0;
 }
-/* line 89, ../sass/partials/_homepage.scss */
+/* line 102, ../sass/partials/_homepage.scss */
 .front .highlight-photo {
   background: url(../images/home-page-summit-banner.png);
   width: 580px;
   background-repeat: no-repeat;
   height: 200px;
 }
-/* line 96, ../sass/partials/_homepage.scss */
+/* line 109, ../sass/partials/_homepage.scss */
 .front .highlight-text {
-  margin-left: 274px;
+  margin-left: 294px;
   width: 265px;
   padding: 10px;
   color: #fff;
 }
-/* line 101, ../sass/partials/_homepage.scss */
+/* line 114, ../sass/partials/_homepage.scss */
 .front .highlight-text h3 {
   color: #fff;
 }
-/* line 108, ../sass/partials/_homepage.scss */
+/* line 122, ../sass/partials/_homepage.scss */
 .front .pane-events {
   clear: both;
 }
-/* line 112, ../sass/partials/_homepage.scss */
+/* line 126, ../sass/partials/_homepage.scss */
+.front .pane-events h3 {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 20px;
+}
+/* line 132, ../sass/partials/_homepage.scss */
+.front .pane-events p {
+  margin: 0;
+}
+/* line 135, ../sass/partials/_homepage.scss */
 .front .pane-events ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 @media all and (min-width: 700px) {
-  /* line 116, ../sass/partials/_homepage.scss */
+  /* line 139, ../sass/partials/_homepage.scss */
   .front .pane-events ul li {
     width: 33%;
     float: left;
     min-height: 225px;
     padding-right: 1em;
   }
+}
+/* line 150, ../sass/partials/_homepage.scss */
+.front #footer {
+  margin-top: 0px;
 }
