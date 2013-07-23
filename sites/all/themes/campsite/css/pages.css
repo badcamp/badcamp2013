@@ -314,10 +314,15 @@ span.field-label {
 /*
  * Footer
  */
+/* line 254, ../sass/pages.scss */
+#footer {
+  margin-top: 50px;
+}
+
 /*
  * Page bottom
  */
-/* line 261, ../sass/pages.scss */
+/* line 262, ../sass/pages.scss */
 .region-bottom {
   /* Wrapper for any blocks placed in the page bottom region */
 }
