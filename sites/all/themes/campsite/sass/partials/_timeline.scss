@@ -1,0 +1,164 @@
+$timeline-text-color: rgb(77, 77, 77);
+$timeline-bg-entry: rgb(80,80,80);
+
+.timeline-border {
+  margin: 50px auto;
+  max-width: 700px;
+  overflow:hidden;
+  height: auto;
+  position: relative;
+
+  .line {
+    position: absolute;
+    width: 1px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEElEQVQIW2NMTEz8z8gABAAPKwIlXWq1kgAAAABJRU5ErkJggg==);    
+    height: 100%;
+    left: 49.9%;
+    z-index: 5;
+  }
+  
+
+  .day {
+    position:relative;
+    float: left;
+    clear: both;
+    margin: 75px auto;
+    text-align:center;
+    width: 100%;
+    z-index: 10;
+    //color: white;
+
+    &.first {
+      margin-top: 0px !important;
+    }
+
+    span {
+      //border-radius: 50px;
+      background: #fff;
+      font-size: 1.25em;
+      font-weight: bold;
+      //max-width: 200px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  
+  /* 
+    elements 1,(2),3,(4), etc.
+    elements in brackets inherit these properties, some are overridden below (2n)
+    beginning at 0
+  */
+  .event {
+    position:relative;
+    // text-align:center;
+    float: right;
+    clear: right; 
+    width: 45%;
+    margin: 10px 2.5%;
+    
+    /* I want 40%, and not 45%! */
+    box-sizing: border-box;
+    
+    // border-radius: 5px;
+    list-style-type: none;
+    display: block;
+    padding: 1em;
+    background: white;
+    z-index: 15;
+    
+    color: $timeline-text-color;
+    border: 1px solid lighten($timeline-bg-entry,30%);
+    text-decoration: none;
+
+    -webkit-transition: background .15s linear;
+    -moz-transition: background .15s linear;
+    -ms-transition: background .15s linear;
+    -o-transition: background .15s linear;
+    transition: background .15s linear;
+    
+    &.featured {
+      width: 95% !important;
+      text-align: center;
+      
+      @media all and (max-width: 700px) {
+        width: 100% !important;
+      }
+      
+      background: lighten(#ccc,11%);
+      
+      &:after, &:before {
+        display: none;
+      }
+    }
+    
+    @media all and (max-width: 600px) {
+      width: 100%;
+      margin: 0 0 1em 0;
+    }    
+    
+    &.offset-first {
+       margin-top: -1.5em;
+    }
+    
+    img {
+      margin-top: 10px;
+      max-width: 100%;
+    }
+
+    &:hover {
+      background: lighten($timeline-bg-entry,10%);
+      color: white;
+      
+      a {
+        color: white;
+      }
+
+      &:after {
+        background: $timeline-bg-entry;
+      }
+    }
+    
+    &:nth-child(2n) {
+      float: left;
+      clear: left; 
+    }
+      
+    &:after {      
+      @media all and (min-width: 650px) {
+        display: block;
+        content: ' ';
+        height: 6px; width: 6px;
+        background: lighten($timeline-bg-entry,30%);
+        border-radius: 50%;
+        position:absolute;
+        left: -5%;
+        top: 1.5em;
+        border: 2px solid white;
+      }
+    }
+      
+    &:nth-child(2n):after {
+      right: -5%;
+      /* reset the standard declaration I defined before*/
+      left: auto;
+    }    
+  }
+  
+  .bookend {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: bold;
+    color: #3c3;
+  }
+  
+  .bookend-bottom {
+    padding: 3em;
+    clear: both;
+    z-index: 10;
+  }
+  
+}
+
