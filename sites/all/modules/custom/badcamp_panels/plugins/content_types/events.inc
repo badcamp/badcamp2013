@@ -12,16 +12,22 @@ $plugin = array(
   'edit text' => t('Configure'),
   'defaults' => array(
     'one-title' => '',
+    'one-link' => '',
     'one-blurb' => '',
     'two-title' => '',
+    'two-link' => '',
     'two-blurb' => '',
     'three-title' => '',
+    'three-link' => '',
     'three-blurb' => '',
     'four-title' => '',
+    'four-link' => '',
     'four-blurb' => '',
     'five-title' => '',
+    'five-link' => '',
     'five-blurb' => '',
     'six-title' => '',
+    'six-link' => '',
     'six-blurb' => '',
   ),
 );
@@ -43,29 +49,36 @@ function badcamp_panels_events_content_type_render($subtype, $conf, $panel_args,
   $block->delta   = 'highlights';
   $block->title   = t('Events at a glance');
 
+  $link_one = l($conf['one-title'], check_plain($conf['one-link']));
+  $link_two = l($conf['two-title'], check_plain($conf['two-link']));
+  $link_three = l($conf['three-title'], check_plain($conf['three-link']));
+  $link_four = l($conf['four-title'], check_plain($conf['four-link']));
+  $link_five = l($conf['five-title'], check_plain($conf['five-link']));
+  $link_six = l($conf['six-title'], check_plain($conf['six-link']));
+
   $block->content  = '<ul>';
   $block->content  .= ' <li class="event-one">';
-  $block->content .= '   <h3>' . check_plain($conf['one-title']) . '</h3>';
+  $block->content .= '   <h3>' . $link_one . '</h3>';
   $block->content .= '   <p>' . check_plain($conf['one-blurb']) . '</p>';
   $block->content .= ' </li>';
   $block->content .= ' <li class="event-two">';
-  $block->content .= '   <h3>' . check_plain($conf['two-title']) . '</h3>';
+  $block->content .= '   <h3>' . $link_two . '</h3>';
   $block->content .= '   <p>' . check_plain($conf['two-blurb']) . '</p>';
   $block->content .= ' </li>';
   $block->content .= ' <li class="event-three">';
-  $block->content .= '   <h3>' . check_plain($conf['three-title']) . '</h3>';
+  $block->content .= '   <h3>' . $link_three . '</h3>';
   $block->content .= '   <p>' . check_plain($conf['three-blurb']) . '</p>';
   $block->content .= ' </li>';
   $block->content .= ' <li class="event-four">';
-  $block->content .= '   <h3>' . check_plain($conf['four-title']) . '</h3>';
+  $block->content .= '   <h3>' . $link_four . '</h3>';
   $block->content .= '   <p>' . check_plain($conf['four-blurb']) . '</p>';
   $block->content .= ' </li>';
   $block->content .= ' <li class="event-five">';
-  $block->content .= '   <h3>' . check_plain($conf['five-title']) . '</h3>';
+  $block->content .= '   <h3>' . $link_five . '</h3>';
   $block->content .= '   <p>' . check_plain($conf['five-blurb']) . '</p>';
   $block->content .= ' </li>';
   $block->content .= ' <li class="event-six">';
-  $block->content .= '   <h3>' . check_plain($conf['six-title']) . '</h3>';
+  $block->content .= '   <h3>' . $link_six . '</h3>';
   $block->content .= '   <p>' . check_plain($conf['six-blurb']) . '</p>';
   $block->content .= ' </li>';
   $block->content .= '</ul>';
@@ -94,6 +107,7 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('Link to'),
     '#default_value' => $conf['one-link'],
+    '#required' => TRUE,
   );
   $form['one']['one-blurb'] = array(
     '#type' => 'textarea',
@@ -116,6 +130,7 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('Link to'),
     '#default_value' => $conf['two-link'],
+    '#required' => TRUE,
   );
   $form['two']['two-blurb'] = array(
     '#type' => 'textarea',
@@ -138,6 +153,7 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('Link to'),
     '#default_value' => $conf['three-link'],
+    '#required' => TRUE,
   );
   $form['three']['three-blurb'] = array(
     '#type' => 'textarea',
@@ -160,6 +176,7 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('Link to'),
     '#default_value' => $conf['four-link'],
+    '#required' => TRUE,
   );
   $form['four']['four-blurb'] = array(
     '#type' => 'textarea',
@@ -182,6 +199,7 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('Link to'),
     '#default_value' => $conf['five-link'],
+    '#required' => TRUE,
   );
   $form['five']['five-blurb'] = array(
     '#type' => 'textarea',
@@ -204,6 +222,7 @@ function badcamp_panels_events_content_type_edit_form($form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('Link to'),
     '#default_value' => $conf['six-link'],
+    '#required' => TRUE,
   );
   $form['six']['six-blurb'] = array(
     '#type' => 'textarea',
