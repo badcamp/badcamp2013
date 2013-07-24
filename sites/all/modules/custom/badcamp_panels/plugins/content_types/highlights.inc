@@ -30,10 +30,11 @@ function badcamp_panels_highlights_content_type_render($subtype, $conf, $panel_a
   $block->delta   = 'highlights';
   $block->title   = t('Event highlights');
 
+  $block->content  = '';
   if (isset($conf['link'])) {
     $block->content .= '<a href="' . check_plain($conf['link']) . '" >';
   }
-  $block->content  = '<div class="highlight-photo">';
+  $block->content .= '<div class="highlight-photo">';
   $block->content .= '  <div class="highlight-text">';
   $block->content .= '    <h3>' . check_plain($conf['heading']) . '</h3>';
   $block->content .= '    <p>' . check_plain($conf['subheading']) . '</p>';
@@ -42,7 +43,6 @@ function badcamp_panels_highlights_content_type_render($subtype, $conf, $panel_a
   if (isset($conf['link'])) {
     $block->content .= '</a>';
   }
-
 
   return $block;
 }
