@@ -10,7 +10,7 @@ $plugin = array(
   'description' => t('Event highlights'),
   'category' => t('Home page'),
   'edit text' => t('Configure'),
-  'defaults' => array('heading' => '', 'subheading' => ''),
+  'defaults' => array('heading' => '', 'subheading' => '', 'link' => ''),
 );
 
 /**
