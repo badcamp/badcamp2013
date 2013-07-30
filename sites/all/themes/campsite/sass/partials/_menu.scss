@@ -44,6 +44,20 @@
   }
 }
 
+#page {
+  /* 
+    When mobile nav is open, overflow some elements
+    that have negative margin that impedees into the mobile 
+    navigation. 
+   */
+  &.open {
+    #content,
+    #footer {
+      overflow: hidden;
+    }
+  }
+}
+
 
 @media all and (max-width: 820px) {
   

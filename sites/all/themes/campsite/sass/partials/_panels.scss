@@ -3,7 +3,9 @@
 //
 
 #page {
-  overflow: hidden;
+  // clearfix instead of overflow hidden. 
+  // overflow hidden causes mobile menu not to show. 
+  @extend .clearfix; 
 }
 
 // Top Sponsors
