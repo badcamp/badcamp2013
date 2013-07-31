@@ -85,7 +85,7 @@
         <?php print render($page['navigation']); ?>
       </div><!-- /#navigation -->
 
-      <?php if ($site_name || $site_slogan): ?>
+      <?php if ($site_name || $site_slogan || $logo): ?>
         <hgroup id="logo-name-and-slogan">
           <?php if ($logo): ?>
             <div id="logo">

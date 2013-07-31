@@ -147,10 +147,10 @@
   display: inline-block;
 
   img {
-    max-width: 55px;
+    max-width: 100%;
 
     @media all and (min-width: 700px) {
-      max-width: 100px;
+      max-width: 500px;
     }
   }
 }
@@ -187,7 +187,7 @@
     #logo {
       float: left;
       min-height: 220px;
-      margin-right: 1em;
+      margin-right: 4.03em;
     }
 
     .name-and-slogan {
@@ -229,12 +229,21 @@
     color: #666;
     
     @media all and (max-width: 700px) {
-      display: none;
+      color:#000;
+      font-weight:600;
+      line-height:24px;
     }
+  }
+ @media all and (max-width: 700px) {
+      width:70%;
+      margin-left:119px;
+      border-top: 1px solid;
+      margin-top: 20px;
   }
 }
 
 #block-menu-block-1 {
+  display:none;
   width: 50%;
   float: left;
   margin-bottom: 0;
@@ -266,8 +275,12 @@
 			background-color:#000;
 		}
   }
+  @media all and (min-width: 700px) {
+    display:block;
+  }
 }
 #top-navigation{
+  display:none;
   height: 14px;
   margin-top: -7px;
   margin-left: 0;
@@ -283,6 +296,9 @@
       float:left;
     }
   }
+  @media all and (min-width: 700px) {
+    display:block;
+    }
 
 }
 
