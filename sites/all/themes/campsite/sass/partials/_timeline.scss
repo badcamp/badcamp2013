@@ -73,9 +73,12 @@ $timeline-bg-entry: rgb(80,80,80);
     text-decoration: none;
 
     // Cheap way to 3d a box shadow :P HURP DURP
-    @for $i from 1 through 5 {
-      @include box-shadow(#{$i}px #{$i}px 0 #535353);
-    }
+    $box-shadow-color: #535353;
+    @include box-shadow(1px 1px 0 $box-shadow-color,
+                        2px 2px 0 $box-shadow-color,
+                        3px 3px 0 $box-shadow-color,
+                        4px 4px 0 $box-shadow-color,
+                        5px 5px 0 $box-shadow-color);
 
     -webkit-transition: background .15s cubic-bezier(0.250, 0.100, 0.250, 1.000);
     -moz-transition: background .15s cubic-bezier(0.250, 0.100, 0.250, 1.000);
