@@ -2,11 +2,12 @@ $timeline-text-color: rgb(77, 77, 77);
 $timeline-bg-entry: rgb(80,80,80);
 
 .timeline-border {
-  margin: 50px auto;
-  max-width: 700px;
-  overflow:hidden;
+  margin: 50px auto 100px auto;
+  padding: 70px 0 140px 0;
+  max-width: 930px;
   height: auto;
   position: relative;
+  &:after { @extend %clearfix-after;}
 
   .line {
     position: absolute;
@@ -14,6 +15,7 @@ $timeline-bg-entry: rgb(80,80,80);
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEElEQVQIW2NMTEz8z8gABAAPKwIlXWq1kgAAAABJRU5ErkJggg==);    
     height: 100%;
     left: 49.9%;
+    top: 0;
     z-index: 5;
   }
   
@@ -21,11 +23,11 @@ $timeline-bg-entry: rgb(80,80,80);
   .day {
     position:relative;
     float: left;
-    clear: both;
-    margin: 75px auto;
+    margin: 20px auto;
     text-align:center;
     width: 100%;
     z-index: 10;
+    font-size: 15px;
     //color: white;
 
     &.first {
@@ -54,7 +56,7 @@ $timeline-bg-entry: rgb(80,80,80);
     float: right;
     clear: right; 
     width: 45%;
-    margin: 10px 2.5%;
+    margin: 10px 0;
     
     /* I want 40%, and not 45%! */
     box-sizing: border-box;
@@ -67,23 +69,24 @@ $timeline-bg-entry: rgb(80,80,80);
     z-index: 15;
     
     color: $timeline-text-color;
-    border: 1px solid lighten($timeline-bg-entry,30%);
+    border: 1px solid #C1C1C1;
     text-decoration: none;
 
-    -webkit-transition: background .15s linear;
-    -moz-transition: background .15s linear;
-    -ms-transition: background .15s linear;
-    -o-transition: background .15s linear;
-    transition: background .15s linear;
+    // Cheap way to 3d a box shadow :P HURP DURP
+    @for $i from 1 through 5 {
+      @include box-shadow(#{$i}px #{$i}px 0 #535353);
+    }
+
+    -webkit-transition: background .15s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+    -moz-transition: background .15s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+    -ms-transition: background .15s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+    -o-transition: background .15s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+    transition: background .15s cubic-bezier(0.250, 0.100, 0.250, 1.000);
     
     &.featured {
-      width: 95% !important;
+      width: 100% ;
       text-align: center;
-      
-      @media all and (max-width: 700px) {
-        width: 100% !important;
-      }
-      
+
       background: lighten(#ccc,11%);
       
       &:after, &:before {
@@ -122,43 +125,118 @@ $timeline-bg-entry: rgb(80,80,80);
       float: left;
       clear: left; 
     }
-      
+    
+    &:before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      background: #333;
+      display: block;
+      left: -12.75%;
+      top: 35px;
+      position: absolute;
+      border: 3px solid #FFF;
+      @include border-radius(10px);
+    }
+
+    &:nth-child(2n):before {
+      right: -12.75%;
+      /* reset the standard declaration I defined before*/
+      left: auto;
+      top: 65px;
+    }
     &:after {      
       @media all and (min-width: 650px) {
         display: block;
         content: ' ';
-        height: 6px; width: 6px;
-        background: lighten($timeline-bg-entry,30%);
-        border-radius: 50%;
+        height: 1px; 
+        width: 9%;
+        background: #333;
         position:absolute;
-        left: -5%;
-        top: 1.5em;
-        border: 2px solid white;
+        left: -9%;
+        top: 41px;
       }
     }
       
+
     &:nth-child(2n):after {
-      right: -5%;
+      right: -9%;
       /* reset the standard declaration I defined before*/
       left: auto;
+      top: 71px;
+      width: 7.5%;
     }    
   }
   
   .bookend {
-    width: 100%;
-    display: block;
-    text-align: center;
-    margin-bottom: 1em;
-    font-size: 2em;
+    font-size: 26px;
     font-weight: bold;
-    color: #3c3;
+    color: #009933;
+    position: absolute;
+    z-index:100;
+    
+    @media screen and (max-width: 615px){
+      text-align: center;
+      width: 100%;
+      span {
+        display: block;
+        background:#FFF;
+      }
+    }
+
+
   }
-  
+
+  .bookend-top {
+    top: -.5em;
+  }
   .bookend-bottom {
-    padding: 3em;
-    clear: both;
     z-index: 10;
+    bottom: -.5em;
+    color: #FF0000;
+
   }
+
+  @media all and (min-width: 616px) {
+    .bookend {
+      font-size: 26px;
+      font-weight: bold;
+      color: #009933;
+      position: absolute;
+      z-index:100;
+
+      &:after {
+        content: "";
+        width: 11px;
+        height: 11px;
+        background: #000;
+        display: block;
+        position: absolute;
+        border-radius: 10px;
+        
+      }
+    }
+
+    .bookend-top {
+      top: -.5em;
+      right: 52%;
+      &:after {
+        top: .25em;
+        right: -15.15%;
+      }
+    }
+    .bookend-bottom {
+      z-index: 10;
+      bottom: -.5em;
+      left:52.35%;
+      color: #FF0000;
+      &:after {
+        top: .25em;
+        left: -15.15%;
+      }
+    }
+  }
+
   
 }
 
