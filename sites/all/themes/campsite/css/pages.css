@@ -1317,7 +1317,7 @@ ul.primary.tabs {
 
 \*-------------------------------------------*/
 /* line 576, ../sass/partials/_panels.scss */
-.pane-center-styled-content .pane-title, .pane-full-width-content .pane-title {
+.pane-center-styled-content .pane-title, .center-title-only .pane-title, .pane-full-width-content .pane-title {
   text-align: center;
   border: none;
   font-size: 43px;
@@ -1326,7 +1326,7 @@ ul.primary.tabs {
   line-height: 1.25em;
 }
 /* line 70, ../sass/partials/_custom.scss */
-.pane-center-styled-content .pane-title:after, .pane-full-width-content .pane-title:after {
+.pane-center-styled-content .pane-title:after, .center-title-only .pane-title:after, .pane-full-width-content .pane-title:after {
   content: "/.";
   display: inline-block;
   text-align: center;

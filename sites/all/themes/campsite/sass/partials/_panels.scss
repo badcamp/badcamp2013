@@ -602,7 +602,7 @@ ul.primary.tabs{
 }
 
 .center-title-only {
-	@extend %center-styled-header-title;
+	@extend %center-styled-pane-title;
 }
 
 // Full width panes that need to stretch to the edge
