@@ -1344,7 +1344,7 @@ ul.primary.tabs {
 
 /* line 609, ../sass/partials/_panels.scss */
 .pane-full-width-content {
-  background: #000;
+  background-color: #000;
 }
 /* line 616, ../sass/partials/_panels.scss */
 .pane-full-width-content .pane-title {
@@ -1368,22 +1368,75 @@ ul.primary.tabs {
 }
 
 /* END PLUGIN PANE STYLES -------------------*/
-/* line 638, ../sass/partials/_panels.scss */
+/* line 634, ../sass/partials/_panels.scss */
+.about-facts {
+  background-image: url(../images/bg-facts.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding-bottom: 3em;
+}
+/* line 640, ../sass/partials/_panels.scss */
+.about-facts .pane-title {
+  margin-bottom: 1em;
+}
+/* line 646, ../sass/partials/_panels.scss */
+.about-facts .fact-one,
+.about-facts .fact-two,
+.about-facts .fact-three {
+  color: #FFF;
+}
+/* line 648, ../sass/partials/_panels.scss */
+.about-facts .fact-one h3,
+.about-facts .fact-two h3,
+.about-facts .fact-three h3 {
+  font-size: 76px;
+  line-height: 1em;
+  color: #FFF;
+}
+/* line 655, ../sass/partials/_panels.scss */
+.about-facts .fact-one:before {
+  content: "Connect";
+}
+/* line 658, ../sass/partials/_panels.scss */
+.about-facts .fact-two:before {
+  content: "Learn";
+}
+/* line 661, ../sass/partials/_panels.scss */
+.about-facts .fact-three:before {
+  content: "Inspire";
+}
+@media screen and (min-width: 768px) {
+  /* line 670, ../sass/partials/_panels.scss */
+  .about-facts .fact-one,
+  .about-facts .fact-two,
+  .about-facts .fact-three {
+    width: 33.33333%;
+    float: left;
+  }
+}
+@media screen and (min-width: 1500px) {
+  /* line 634, ../sass/partials/_panels.scss */
+  .about-facts {
+    background-size: 100%;
+  }
+}
+
+/* line 686, ../sass/partials/_panels.scss */
 .region-footer .views-field-title {
   margin: 1.5em 1em 0 1em;
   border-bottom: 1px solid #000;
 }
-/* line 641, ../sass/partials/_panels.scss */
+/* line 689, ../sass/partials/_panels.scss */
 .region-footer .views-field-title a {
   font-weight: bold;
   color: #000;
   text-decoration: none;
 }
-/* line 648, ../sass/partials/_panels.scss */
+/* line 696, ../sass/partials/_panels.scss */
 .region-footer img {
   padding: 0 1em 1em 1em;
 }
-/* line 652, ../sass/partials/_panels.scss */
+/* line 700, ../sass/partials/_panels.scss */
 .region-footer h2 {
   border: none;
 }
@@ -1397,7 +1450,7 @@ ul.primary.tabs {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 662, ../sass/partials/_panels.scss */
+  /* line 710, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 50%;
@@ -1411,7 +1464,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 666, ../sass/partials/_panels.scss */
+  /* line 714, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 50%;
@@ -1425,7 +1478,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 670, ../sass/partials/_panels.scss */
+  /* line 718, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     clear: left;
     float: left;
@@ -1440,7 +1493,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 675, ../sass/partials/_panels.scss */
+  /* line 723, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-4 {
     clear: left;
     float: left;
@@ -1466,7 +1519,7 @@ ul.primary.tabs {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 687, ../sass/partials/_panels.scss */
+  /* line 735, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 25%;
@@ -1480,7 +1533,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 691, ../sass/partials/_panels.scss */
+  /* line 739, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 25%;
@@ -1494,7 +1547,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 695, ../sass/partials/_panels.scss */
+  /* line 743, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     float: left;
     width: 25%;
@@ -1508,7 +1561,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 699, ../sass/partials/_panels.scss */
+  /* line 747, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .view-row-4 {
     float: left;
     width: 25%;

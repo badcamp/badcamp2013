@@ -610,7 +610,7 @@ ul.primary.tabs{
 	@extend %force-full-width;
 	@extend %center-styled-pane-title;
 	@extend %center-styled-pane-content;
-	background: #000;
+	background-color: #000;
 
 
 	.pane-title {
@@ -630,6 +630,54 @@ ul.primary.tabs{
 /* END PLUGIN PANE STYLES -------------------*/
 
 
+
+.about-facts {
+	background-image: url(../images/bg-facts.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	padding-bottom: 3em;
+
+	.pane-title {
+		margin-bottom: 1em;
+	}
+
+	.fact-one,
+	.fact-two,
+	.fact-three {
+		color: #FFF;
+		h3 { 
+			font-size: 76px;
+			line-height: 1em;
+			color: #FFF;
+		}
+	}
+
+	.fact-one:before {
+		content: "Connect";
+	}
+	.fact-two:before {
+		content: "Learn";
+	}
+	.fact-three:before {
+		content: "Inspire";
+	}
+
+
+
+	@media screen and (min-width: 768px) {
+		.fact-one,
+		.fact-two,
+		.fact-three {
+			width: 33.33333%;
+			float: left;
+		}
+	}
+
+
+	@media screen and (min-width: 1500px) {
+		background-size: 100%;
+	}
+}
 
 
 
