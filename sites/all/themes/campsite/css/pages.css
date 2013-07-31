@@ -362,8 +362,7 @@ span.field-label {
   font-size: 1em;
   background: #1c1c1c;
   color: #FFF;
-  padding-top: .5em;
-  height: 10px;
+  height: 0px;
   overflow: hidden;
 }
 /* line 52, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
@@ -628,6 +627,25 @@ span.field-label {
 /* line 265, ../sass/partials/_header.scss */
 #block-menu-block-1 .menu a:hover {
   background-color: #000;
+}
+
+/* line 270, ../sass/partials/_header.scss */
+#top-navigation {
+  height: 14px;
+  margin-top: -7px;
+  margin-left: 0;
+}
+/* line 275, ../sass/partials/_header.scss */
+#top-navigation ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 279, ../sass/partials/_header.scss */
+#top-navigation ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
 }
 
 /* line 6, ../sass/partials/_menu.scss */

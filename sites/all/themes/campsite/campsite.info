@@ -98,6 +98,7 @@ scripts[] = js/script.js
 ;   <?php print $header_top; ?>
 
 regions[usermenu]       = User menu/strip bar
+regions[top_navigation] = Top navigation bar
 regions[header]         = Header
 regions[navigation]     = Navigation bar
 regions[highlighted]    = Highlighted

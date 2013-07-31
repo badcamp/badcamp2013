@@ -8,19 +8,21 @@
  *
  * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
  */
-/* Custom clearfix. I use this for extending */
-/* line 10, ../../sass/partials/_colors.scss */
-#content p {
+/* 
+  This is used to pull the restricted width elements out to be more full width.
+ */
+/* line 9, ../../sass/partials/_colors.scss */
+body {
   color: #333333;
 }
 
-/* line 15, ../../sass/partials/_colors.scss */
+/* line 13, ../../sass/partials/_colors.scss */
 a {
   color: #0077A5;
   text-decoration: none;
 }
 
-/* line 20, ../../sass/partials/_colors.scss */
+/* line 18, ../../sass/partials/_colors.scss */
 a:hover {
   text-decoration: underline;
 }

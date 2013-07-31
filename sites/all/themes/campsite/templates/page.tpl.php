@@ -77,6 +77,9 @@
       <?php print render($page['usermenu']); ?>
     </div><!-- /#usermenu -->
     <div class="header-innner">
+      <div id="top-navigation">
+        <?php print render($page['top_navigation']); ?>
+      </div><!-- /#top-navigation -->
       <div id="navigation">
         <div id="mobile-nav-button">&equiv;</div>
         <?php print render($page['navigation']); ?>
