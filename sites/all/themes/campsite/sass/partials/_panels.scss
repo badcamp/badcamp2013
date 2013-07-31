@@ -170,15 +170,21 @@
 }
 
 #page-title{
-	margin-left: -50%;
-	padding-left: 50%;
-	margin-right: -50%;
-	padding-right: 50%;
+	@extend %force-full-width;
 	color: #fff;
 	background-color: #313337;
 	font-size: 1.8em;
 	margin-bottom: 40px;
 }
+
+/* Some pages we will hide the title but keep the title; i know this is acheap way. */
+
+#page-title {
+	.page-about & {
+		display: none;
+	}
+}
+
 
 // Registration
 @media all and (max-width: $breakpoint) {
@@ -558,6 +564,75 @@ ul.primary.tabs{
 	
 }
 
+
+/*-------------------------------------------*\
+
+	Plugin Pane Styles
+
+\*-------------------------------------------*/
+
+// Extenders to abstract usages
+%center-styled-pane-title {
+	.pane-title {
+		text-align: center;
+		border: none;
+		font-size: 43px;
+		margin: 0;
+		padding: 1em 0 0 0;
+		line-height: 1.25em;
+		@include darius-decoration;
+	}
+}
+
+%center-styled-pane-content {
+	.pane-content {
+		text-align: center;
+		p {
+			margin: 0 0 1.5em;
+		}
+	}
+}
+
+
+
+.pane-center-styled-content {
+	@extend %center-styled-pane-title;
+	@extend %center-styled-pane-content;
+
+}
+
+.center-title-only {
+	@extend %center-styled-header-title;
+}
+
+// Full width panes that need to stretch to the edge
+.pane-full-width-content {
+	@extend %force-full-width;
+	@extend %center-styled-pane-title;
+	@extend %center-styled-pane-content;
+	background: #000;
+
+
+	.pane-title {
+		color: #7EBFD6;
+		@include darius-decoration;
+	}
+
+	.pane-content {
+		color: #FFF;
+		font-size: 18px;
+		p {
+			font-weight: 100;
+		}
+	}
+}
+
+/* END PLUGIN PANE STYLES -------------------*/
+
+
+
+
+
 // Footer
 .region-footer {
   .views-field-title {
@@ -627,3 +702,5 @@ ul.primary.tabs{
     }    
   }
 }
+
+

@@ -6,19 +6,29 @@
  * miscellaneous Drupal elements that appear in the $content variable, such as
  * ul.links, .pager, .more-link, etc.
  */
-/* Custom clearfix. I use this for extending */
-/* line 10, ../sass/partials/_colors.scss */
-#content p {
+/* 
+  This is used to pull the restricted width elements out to be more full width.
+ */
+/* line 81, ../sass/partials/_custom.scss */
+#page-title, .pane-full-width-content {
+  margin-left: -50%;
+  padding-left: 50%;
+  margin-right: -50%;
+  padding-right: 50%;
+}
+
+/* line 9, ../sass/partials/_colors.scss */
+body {
   color: #333333;
 }
 
-/* line 15, ../sass/partials/_colors.scss */
+/* line 13, ../sass/partials/_colors.scss */
 a {
   color: #0077A5;
   text-decoration: none;
 }
 
-/* line 20, ../sass/partials/_colors.scss */
+/* line 18, ../sass/partials/_colors.scss */
 a:hover {
   text-decoration: underline;
 }
@@ -915,37 +925,39 @@ span.field-label {
 
 /* line 172, ../sass/partials/_panels.scss */
 #page-title {
-  margin-left: -50%;
-  padding-left: 50%;
-  margin-right: -50%;
-  padding-right: 50%;
   color: #fff;
   background-color: #313337;
   font-size: 1.8em;
   margin-bottom: 40px;
 }
 
+/* Some pages we will hide the title but keep the title; i know this is acheap way. */
+/* line 183, ../sass/partials/_panels.scss */
+.page-about #page-title {
+  display: none;
+}
+
 @media all and (max-width: 700px) {
-  /* line 187, ../sass/partials/_panels.scss */
+  /* line 193, ../sass/partials/_panels.scss */
   .signup .field-name-field-first-name,
   .signup .form-item-name,
   .signup .form-item-pass-pass1 {
     float: none;
   }
 
-  /* line 193, ../sass/partials/_panels.scss */
+  /* line 199, ../sass/partials/_panels.scss */
   .signup .field-name-field-last-name,
   .signup .form-item-mail,
   .signup .form-item-pass-pass2 {
     float: none;
   }
 
-  /* line 197, ../sass/partials/_panels.scss */
+  /* line 203, ../sass/partials/_panels.scss */
   .signup #user-register-form .form-item {
     width: 20em;
   }
 
-  /* line 206, ../sass/partials/_panels.scss */
+  /* line 212, ../sass/partials/_panels.scss */
   .signup #user-register-form input.username,
   .signup #user-register-form input#edit-mail,
   .signup #user-register-form input.password-field,
@@ -955,19 +967,19 @@ span.field-label {
     width: 20em;
   }
 
-  /* line 209, ../sass/partials/_panels.scss */
+  /* line 215, ../sass/partials/_panels.scss */
   .pane-user-signup, .registration-steps, .signup .messages {
     margin-left: 5%;
     margin-right: 5%;
   }
 
-  /* line 214, ../sass/partials/_panels.scss */
+  /* line 220, ../sass/partials/_panels.scss */
   .signup #user-register-form .form-submit {
     float: none;
     clear: both;
   }
 
-  /* line 220, ../sass/partials/_panels.scss */
+  /* line 226, ../sass/partials/_panels.scss */
   .signup .field-name-field-interest-jobs,
   .signup .field-name-field-interest-volunteering {
     float: none;
@@ -975,40 +987,40 @@ span.field-label {
     margin-top: 0;
   }
 
-  /* line 226, ../sass/partials/_panels.scss */
+  /* line 232, ../sass/partials/_panels.scss */
   .registration-steps .registration.two {
     margin: 0 22%;
   }
 
-  /* line 230, ../sass/partials/_panels.scss */
+  /* line 236, ../sass/partials/_panels.scss */
   .registration-steps {
     background: none;
   }
 }
-/* line 238, ../sass/partials/_panels.scss */
+/* line 244, ../sass/partials/_panels.scss */
 #sponsors-page .panel-pane {
   clear: both;
 }
-/* line 242, ../sass/partials/_panels.scss */
+/* line 248, ../sass/partials/_panels.scss */
 #sponsors-page .view-sponsors {
   clear: both;
 }
-/* line 245, ../sass/partials/_panels.scss */
+/* line 251, ../sass/partials/_panels.scss */
 #sponsors-page .view-sponsors .views-row {
   float: left;
   margin: 10px;
 }
-/* line 249, ../sass/partials/_panels.scss */
+/* line 255, ../sass/partials/_panels.scss */
 #sponsors-page .view-sponsors .views-row .views-field-title {
   text-align: center;
 }
-/* line 252, ../sass/partials/_panels.scss */
+/* line 258, ../sass/partials/_panels.scss */
 #sponsors-page .view-sponsors .views-row .views-field-title a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 265, ../sass/partials/_panels.scss */
+/* line 271, ../sass/partials/_panels.scss */
 .icon-flickr,
 .icon-twitter,
 .icon-facebook {
@@ -1020,67 +1032,67 @@ span.field-label {
   padding-left: 27px;
 }
 
-/* line 274, ../sass/partials/_panels.scss */
+/* line 280, ../sass/partials/_panels.scss */
 .icon-flickr {
   background-image: url("../images/flickr-icon.png");
 }
 
-/* line 278, ../sass/partials/_panels.scss */
+/* line 284, ../sass/partials/_panels.scss */
 .icon-twitter {
   background-image: url("../images/twitter-icon.png");
 }
 
-/* line 282, ../sass/partials/_panels.scss */
+/* line 288, ../sass/partials/_panels.scss */
 .icon-facebook {
   background-image: url("../images/facebook-icon.png");
 }
 
-/* line 286, ../sass/partials/_panels.scss */
+/* line 292, ../sass/partials/_panels.scss */
 #user-profile-view .field-label {
   width: 190px;
 }
 
-/* line 290, ../sass/partials/_panels.scss */
+/* line 296, ../sass/partials/_panels.scss */
 #user-profile-view .field-item {
   max-width: 600px;
 }
 
-/* line 294, ../sass/partials/_panels.scss */
+/* line 300, ../sass/partials/_panels.scss */
 #user-profile-view .field {
   border-top: solid 1px #DDDDDD;
   padding-top: 10px;
   padding-bottom: 30px;
 }
 
-/* line 300, ../sass/partials/_panels.scss */
+/* line 306, ../sass/partials/_panels.scss */
 #user-profile-view .field-name-field-featured-headshot {
   border-top: 0;
   padding: 0;
 }
 
-/* line 305, ../sass/partials/_panels.scss */
+/* line 311, ../sass/partials/_panels.scss */
 #user-profile-view h2 {
   color: #000;
 }
 
-/* line 309, ../sass/partials/_panels.scss */
+/* line 315, ../sass/partials/_panels.scss */
 #user-profile-view .field-name-field-title-role {
   border: 0;
   margin-top: -30px;
 }
 
-/* line 314, ../sass/partials/_panels.scss */
+/* line 320, ../sass/partials/_panels.scss */
 ul.primary.tabs a:link {
   background: none;
   border: 0;
 }
 
-/* line 319, ../sass/partials/_panels.scss */
+/* line 325, ../sass/partials/_panels.scss */
 ul.primary.tabs a.active {
   border-bottom: solid 5px #CA4D00;
 }
 
-/* line 323, ../sass/partials/_panels.scss */
+/* line 329, ../sass/partials/_panels.scss */
 ul.primary.tabs li {
   background: none;
   border: 0;
@@ -1088,39 +1100,39 @@ ul.primary.tabs li {
   margin: 0;
 }
 
-/* line 330, ../sass/partials/_panels.scss */
+/* line 336, ../sass/partials/_panels.scss */
 ul.primary.tabs {
   border-bottom: solid 1px #000;
   padding: 0;
   margin: 20px 0;
 }
 
-/* line 336, ../sass/partials/_panels.scss */
+/* line 342, ../sass/partials/_panels.scss */
 .view-camp-user-social-media-links .item-list ul {
   padding: 0;
 }
-/* line 338, ../sass/partials/_panels.scss */
+/* line 344, ../sass/partials/_panels.scss */
 .view-camp-user-social-media-links .item-list ul li {
   list-style: none;
 }
 
-/* line 348, ../sass/partials/_panels.scss */
+/* line 354, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page .views-field-title,
 .view-summits-by-day.landing-page .views-field-field-summary {
   float: left;
   width: 570px;
 }
-/* line 353, ../sass/partials/_panels.scss */
+/* line 359, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page .views-field-field-summary {
   margin-bottom: 30px;
 }
-/* line 357, ../sass/partials/_panels.scss */
+/* line 363, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page .views-field-field-venue-1 {
   float: left;
   margin-top: -22px;
   margin-left: 30px;
 }
-/* line 362, ../sass/partials/_panels.scss */
+/* line 368, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page h3 {
   padding: 4px 20px;
   margin-bottom: 30px;
@@ -1130,23 +1142,23 @@ ul.primary.tabs {
   border-bottom: 0;
   clear: both;
 }
-/* line 372, ../sass/partials/_panels.scss */
+/* line 378, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page h4 {
   margin: 10px 0 0;
   font-weight: 600;
   margin-top: 30px;
 }
-/* line 376, ../sass/partials/_panels.scss */
+/* line 382, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page h4 a {
   color: black;
   text-decoration: underline;
 }
-/* line 381, ../sass/partials/_panels.scss */
+/* line 387, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page .item-list ul {
   padding: 0;
   margin: 0 0 10px;
 }
-/* line 384, ../sass/partials/_panels.scss */
+/* line 390, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page .item-list ul li {
   background: none;
   border: 0;
@@ -1157,7 +1169,7 @@ ul.primary.tabs {
   clear: both;
 }
 
-/* line 398, ../sass/partials/_panels.scss */
+/* line 404, ../sass/partials/_panels.scss */
 #proposed-sessions h3 {
   padding: 4px 20px;
   margin-bottom: 30px;
@@ -1168,17 +1180,17 @@ ul.primary.tabs {
   clear: both;
 }
 
-/* line 408, ../sass/partials/_panels.scss */
+/* line 414, ../sass/partials/_panels.scss */
 #proposed-sessions h2 {
   margin: 10px 0;
 }
 
-/* line 412, ../sass/partials/_panels.scss */
+/* line 418, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul {
   margin: 0;
   padding: 0;
 }
-/* line 415, ../sass/partials/_panels.scss */
+/* line 421, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li {
   list-style: none;
   clear: both;
@@ -1186,43 +1198,43 @@ ul.primary.tabs {
   margin: 10px 0 20px 0;
   min-height: 120px;
 }
-/* line 422, ../sass/partials/_panels.scss */
+/* line 428, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li .views-label-field-speakers-1 {
   font-weight: 600;
 }
-/* line 426, ../sass/partials/_panels.scss */
+/* line 432, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li .views-field {
   display: block;
   margin: 5px 0;
 }
-/* line 431, ../sass/partials/_panels.scss */
+/* line 437, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li .views-field-field-track-1,
 .view-id-session_schedule ul li .views-field-field-skill-level {
   float: left;
   margin-right: 10px;
 }
-/* line 436, ../sass/partials/_panels.scss */
+/* line 442, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li .views-field-title {
   font-weight: bold;
   max-width: 500px;
   line-height: 20px;
 }
-/* line 442, ../sass/partials/_panels.scss */
+/* line 448, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li a {
   color: #000;
   text-decoration: underline;
   margin: 0 0 5px;
 }
 
-/* line 451, ../sass/partials/_panels.scss */
+/* line 457, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid .form-item:not(.form-submit) {
   border-bottom: 0;
 }
-/* line 455, ../sass/partials/_panels.scss */
+/* line 461, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid .form-type-bef-link {
   float: left;
 }
-/* line 464, ../sass/partials/_panels.scss */
+/* line 470, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-17 a,
 .views-widget-filter-field_track_tid #edit-field-track-tid-18 a,
 .views-widget-filter-field_track_tid #edit-field-track-tid-46 a,
@@ -1241,7 +1253,7 @@ ul.primary.tabs {
   line-height: 16px;
   color: #000;
 }
-/* line 477, ../sass/partials/_panels.scss */
+/* line 483, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-17 a:hover,
 .views-widget-filter-field_track_tid #edit-field-track-tid-18 a:hover,
 .views-widget-filter-field_track_tid #edit-field-track-tid-46 a:hover,
@@ -1250,71 +1262,128 @@ ul.primary.tabs {
 .views-widget-filter-field_track_tid #edit-field-track-tid-19 a:hover {
   text-decoration: none;
 }
-/* line 484, ../sass/partials/_panels.scss */
+/* line 490, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-17 a {
   background-position: 61% 119%;
 }
-/* line 489, ../sass/partials/_panels.scss */
+/* line 495, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-17:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-17.selected a {
   background-position: 61% 0%;
 }
-/* line 496, ../sass/partials/_panels.scss */
+/* line 502, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-18 a {
   background-position: 82% 119%;
 }
-/* line 501, ../sass/partials/_panels.scss */
+/* line 507, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-18:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-18.selected a {
   background-position: 82% 0%;
 }
-/* line 509, ../sass/partials/_panels.scss */
+/* line 515, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-46 a {
   background-position: 101.8% 119.5%;
 }
-/* line 514, ../sass/partials/_panels.scss */
+/* line 520, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-46:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-46.selected a {
   background-position: 100% 0%;
 }
-/* line 522, ../sass/partials/_panels.scss */
+/* line 528, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-20 a {
   background-position: -3% 119%;
 }
-/* line 527, ../sass/partials/_panels.scss */
+/* line 533, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-20:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-20.selected a {
   background-position: -3% 0%;
 }
-/* line 535, ../sass/partials/_panels.scss */
+/* line 541, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-19 a {
   background-position: 17% 119%;
 }
-/* line 540, ../sass/partials/_panels.scss */
+/* line 546, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-19:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-19.selected a {
   background-position: 17% 0%;
 }
-/* line 548, ../sass/partials/_panels.scss */
+/* line 554, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-29 a {
   background-position: 39% 119%;
 }
-/* line 553, ../sass/partials/_panels.scss */
+/* line 559, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-29:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-29.selected a {
   background-position: 39% 0%;
 }
 
-/* line 563, ../sass/partials/_panels.scss */
+/*-------------------------------------------*\
+
+	Plugin Pane Styles
+
+\*-------------------------------------------*/
+/* line 576, ../sass/partials/_panels.scss */
+.pane-center-styled-content .pane-title, .pane-full-width-content .pane-title {
+  text-align: center;
+  border: none;
+  font-size: 43px;
+  margin: 0;
+  padding: 1em 0 0 0;
+  line-height: 1.25em;
+}
+/* line 70, ../sass/partials/_custom.scss */
+.pane-center-styled-content .pane-title:after, .pane-full-width-content .pane-title:after {
+  content: "/.";
+  display: inline-block;
+  text-align: center;
+  width: 1.4em;
+}
+
+/* line 588, ../sass/partials/_panels.scss */
+.pane-center-styled-content .pane-content, .pane-full-width-content .pane-content {
+  text-align: center;
+}
+/* line 590, ../sass/partials/_panels.scss */
+.pane-center-styled-content .pane-content p, .pane-full-width-content .pane-content p {
+  margin: 0 0 1.5em;
+}
+
+/* line 609, ../sass/partials/_panels.scss */
+.pane-full-width-content {
+  background: #000;
+}
+/* line 616, ../sass/partials/_panels.scss */
+.pane-full-width-content .pane-title {
+  color: #7EBFD6;
+}
+/* line 70, ../sass/partials/_custom.scss */
+.pane-full-width-content .pane-title:after {
+  content: "/.";
+  display: inline-block;
+  text-align: center;
+  width: 1.4em;
+}
+/* line 621, ../sass/partials/_panels.scss */
+.pane-full-width-content .pane-content {
+  color: #FFF;
+  font-size: 18px;
+}
+/* line 624, ../sass/partials/_panels.scss */
+.pane-full-width-content .pane-content p {
+  font-weight: 100;
+}
+
+/* END PLUGIN PANE STYLES -------------------*/
+/* line 638, ../sass/partials/_panels.scss */
 .region-footer .views-field-title {
   margin: 1.5em 1em 0 1em;
   border-bottom: 1px solid #000;
 }
-/* line 566, ../sass/partials/_panels.scss */
+/* line 641, ../sass/partials/_panels.scss */
 .region-footer .views-field-title a {
   font-weight: bold;
   color: #000;
   text-decoration: none;
 }
-/* line 573, ../sass/partials/_panels.scss */
+/* line 648, ../sass/partials/_panels.scss */
 .region-footer img {
   padding: 0 1em 1em 1em;
 }
-/* line 577, ../sass/partials/_panels.scss */
+/* line 652, ../sass/partials/_panels.scss */
 .region-footer h2 {
   border: none;
 }
@@ -1328,7 +1397,7 @@ ul.primary.tabs {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 587, ../sass/partials/_panels.scss */
+  /* line 662, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 50%;
@@ -1342,7 +1411,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 591, ../sass/partials/_panels.scss */
+  /* line 666, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 50%;
@@ -1356,7 +1425,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 595, ../sass/partials/_panels.scss */
+  /* line 670, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     clear: left;
     float: left;
@@ -1371,7 +1440,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 600, ../sass/partials/_panels.scss */
+  /* line 675, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-4 {
     clear: left;
     float: left;
@@ -1397,7 +1466,7 @@ ul.primary.tabs {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 612, ../sass/partials/_panels.scss */
+  /* line 687, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 25%;
@@ -1411,7 +1480,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 616, ../sass/partials/_panels.scss */
+  /* line 691, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 25%;
@@ -1425,7 +1494,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 620, ../sass/partials/_panels.scss */
+  /* line 695, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     float: left;
     width: 25%;
@@ -1439,7 +1508,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 624, ../sass/partials/_panels.scss */
+  /* line 699, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .view-row-4 {
     float: left;
     width: 25%;
