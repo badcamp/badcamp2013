@@ -15,8 +15,8 @@
       });
       
       // toggle open-closed states for user menu
-      $('#usermenu').bind('click', function()  {
-          $(this).add('#page').toggleClass('usermenu-visible');     
+      $('.user-account-link').add('.user-menu-toggler').bind('click', function()  {
+          $('#usermenu').add('#page').toggleClass('usermenu-visible');
       });
 
       /**
