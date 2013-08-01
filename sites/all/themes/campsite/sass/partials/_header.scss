@@ -28,7 +28,7 @@
   color: #FFF;
   //padding-top: .5em;
 
-  height: 0px;
+  height: 10px;
   overflow: hidden;
 
   &:after {
@@ -36,6 +36,11 @@
        
     // eric put this here, i'm gonna leave it just in case
     // @extend %clearfix-after;
+    
+    display: block;
+    height: 25px;
+    background: #aed;
+    width: 100%;
   }
 
   h2 {
@@ -93,7 +98,7 @@
     $zen-column-count: 2;
     
     &.usermenu-visible {
-      height: 300px;
+      //height: 300px;
       overflow: hidden;
     }
     
@@ -296,7 +301,7 @@
       float:left;
     }
   }
-  @media all and (min-width: 700px) {
+  @media all and (min-width: 820px) {
     display:block;
     }
 
