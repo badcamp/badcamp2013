@@ -1714,20 +1714,25 @@ ul.primary.tabs {
   }
 }
 /* line 79, ../sass/partials/_homepage.scss */
+.front .pane-attendees-panel-pane-2 {
+  clear: both;
+  padding-top: 20px;
+}
+/* line 84, ../sass/partials/_homepage.scss */
 .front .pane-speakers-panel-pane-1 {
   padding-top: 10px;
 }
-/* line 85, ../sass/partials/_homepage.scss */
+/* line 90, ../sass/partials/_homepage.scss */
 .front .view-id-speakers .views-row {
   float: left;
 }
-/* line 96, ../sass/partials/_homepage.scss */
+/* line 101, ../sass/partials/_homepage.scss */
 .front #content .highlight-text p {
   color: #fff;
   padding: 0;
   margin: 0;
 }
-/* line 102, ../sass/partials/_homepage.scss */
+/* line 107, ../sass/partials/_homepage.scss */
 .front .highlight-photo {
   background: url(../images/home-page-summit-banner.png);
   background-size: 100%;
@@ -1735,40 +1740,40 @@ ul.primary.tabs {
   background-repeat: no-repeat;
   min-height: 200px;
 }
-/* line 110, ../sass/partials/_homepage.scss */
+/* line 115, ../sass/partials/_homepage.scss */
 .front .highlight-text {
   float: right;
   width: 50%;
   padding: 10px;
   color: #fff;
 }
-/* line 116, ../sass/partials/_homepage.scss */
+/* line 121, ../sass/partials/_homepage.scss */
 .front .highlight-text h3 {
   color: #fff;
 }
-/* line 124, ../sass/partials/_homepage.scss */
+/* line 129, ../sass/partials/_homepage.scss */
 .front .pane-events {
   clear: both;
 }
-/* line 128, ../sass/partials/_homepage.scss */
+/* line 133, ../sass/partials/_homepage.scss */
 .front .pane-events h3 {
   color: #fff;
   text-decoration: underline;
   font-weight: 400;
   font-size: 20px;
 }
-/* line 134, ../sass/partials/_homepage.scss */
+/* line 139, ../sass/partials/_homepage.scss */
 .front .pane-events p {
   margin: 0;
 }
-/* line 137, ../sass/partials/_homepage.scss */
+/* line 142, ../sass/partials/_homepage.scss */
 .front .pane-events ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 @media all and (min-width: 700px) {
-  /* line 141, ../sass/partials/_homepage.scss */
+  /* line 146, ../sass/partials/_homepage.scss */
   .front .pane-events ul li {
     width: 33%;
     float: left;
@@ -1776,7 +1781,7 @@ ul.primary.tabs {
     padding-right: 1em;
   }
 }
-/* line 152, ../sass/partials/_homepage.scss */
+/* line 157, ../sass/partials/_homepage.scss */
 .front #footer {
   margin-top: 0px;
 }
