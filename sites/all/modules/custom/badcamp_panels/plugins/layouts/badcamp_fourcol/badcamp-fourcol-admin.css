@@ -1,0 +1,48 @@
+.badcamp-4col {
+/*  overflow: hidden;  */
+}
+
+.badcamp-4col .panel-col-first {
+  float: left;
+  width: 25%;
+}
+
+.badcamp-4col .panel-col-first .inside {
+  margin: 0 3em 1em 0;
+}
+
+.badcamp-4col .panel-col-second {
+     float: left;
+     width: 25%;
+ }
+
+.badcamp-4col .panel-col-second .inside {
+    margin: 0 3em 1em 0;
+}
+
+.badcamp-4col .panel-col-third {
+    float: left;
+    width: 25%;
+}
+
+.badcamp-4col .panel-col-third .inside {
+    margin: 0 3em 1em 0;
+}
+
+.badcamp-4col .panel-col-last {
+    float: left;
+    width: 24%;
+}
+
+.badcamp-4col .panel-col-last .inside {
+    margin: 0 0 1em 0;
+}
+
+#panels-edit-display .panel-pane,
+#panels-edit-display .helperclass {
+  margin: .5em;
+}
+
+.badcamp-4col .panel-separator {
+  margin: 0 0 1em 0;
+}
