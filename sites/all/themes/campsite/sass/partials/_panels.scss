@@ -567,6 +567,55 @@ ul.primary.tabs{
 
 /*-------------------------------------------*\
 
+	Job Board
+
+\*-------------------------------------------*/
+
+.view-job-opportunities .view-content {
+
+	ul {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	ul li {
+
+		list-style: none;
+		border-bottom: 1px solid #bbb;
+		display: block;
+		position: relative;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		&:after {
+			@extend %clearfix-after;
+		}
+	}
+
+
+	ul li .views-label { 
+		display: none;
+	}
+
+	ul li .views-field-field-image {
+		float: left;
+		width: 20%;
+		line-height: 1em;
+	}
+
+	ul li .views-field-title {
+		padding: 3em 0 0 0;
+		width: 80%;
+	}  
+}
+/* END JOB BOARD STYLES -------------------*/
+
+
+
+
+
+/*-------------------------------------------*\
+
 	Plugin Pane Styles
 
 \*-------------------------------------------*/
@@ -630,6 +679,33 @@ ul.primary.tabs{
 
 /* END PLUGIN PANE STYLES -------------------*/
 
+// Main About header
+.panel-pane.about-header .pane-content:after {
+	display: block;
+	content: "";
+	width: 100%;
+	min-height: 307px;
+	background: url('../images/about1.jpg') no-repeat top center;
+	@extend .pane-full-width-content;
+	// @media screen and (min-width: 1500px) {
+	// 	background-size: 100%;
+	// 	height: auto;
+	// }
+}
+
+// pane-venue-location Images
+.panel-pane.pane-venue-location > .pane-content:after {
+	display: block;
+	content: "";
+	width: 100%;
+	min-height: 369px;
+	background: url('../images/about2.jpg') no-repeat top center;
+	@extend .pane-full-width-content;
+	// @media screen and (min-width: 1500px) {
+	// 	background-size: 100%;
+	// 	height: auto;
+	// }
+}
 
 
 .about-facts {

@@ -10,7 +10,7 @@
   This is used to pull the restricted width elements out to be more full width.
  */
 /* line 81, ../sass/partials/_custom.scss */
-#page-title, .pane-full-width-content {
+#page-title, .pane-full-width-content, .panel-pane.about-header .pane-content:after, .panel-pane.pane-venue-location > .pane-content:after {
   margin-left: -50%;
   padding-left: 50%;
   margin-right: -50%;
@@ -18,7 +18,7 @@
 }
 
 /* line 92, ../sass/partials/_custom.scss */
-.timeline-border:after {
+.view-job-opportunities .view-content ul li:after, .timeline-border:after {
   content: ".";
   visibility: hidden;
   display: block;
@@ -1392,11 +1392,48 @@ ul.primary.tabs {
 
 /*-------------------------------------------*\
 
-	Plugin Pane Styles
+	Job Board
 
 \*-------------------------------------------*/
 /* line 576, ../sass/partials/_panels.scss */
-.pane-center-styled-content .pane-title, .center-title-only .pane-title, .pane-full-width-content .pane-title {
+.view-job-opportunities .view-content ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 582, ../sass/partials/_panels.scss */
+.view-job-opportunities .view-content ul li {
+  list-style: none;
+  border-bottom: 1px solid #bbb;
+  display: block;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+/* line 596, ../sass/partials/_panels.scss */
+.view-job-opportunities .view-content ul li .views-label {
+  display: none;
+}
+/* line 600, ../sass/partials/_panels.scss */
+.view-job-opportunities .view-content ul li .views-field-field-image {
+  float: left;
+  width: 20%;
+  line-height: 1em;
+}
+/* line 606, ../sass/partials/_panels.scss */
+.view-job-opportunities .view-content ul li .views-field-title {
+  padding: 3em 0 0 0;
+  width: 80%;
+}
+
+/* END JOB BOARD STYLES -------------------*/
+/*-------------------------------------------*\
+
+	Plugin Pane Styles
+
+\*-------------------------------------------*/
+/* line 625, ../sass/partials/_panels.scss */
+.pane-center-styled-content .pane-title, .center-title-only .pane-title, .pane-full-width-content .pane-title, .panel-pane.about-header .pane-content:after .pane-title, .panel-pane.pane-venue-location > .pane-content:after .pane-title {
   text-align: center;
   border: none;
   font-size: 43px;
@@ -1405,66 +1442,84 @@ ul.primary.tabs {
   line-height: 1.25em;
 }
 /* line 70, ../sass/partials/_custom.scss */
-.pane-center-styled-content .pane-title:after, .center-title-only .pane-title:after, .pane-full-width-content .pane-title:after {
+.pane-center-styled-content .pane-title:after, .center-title-only .pane-title:after, .pane-full-width-content .pane-title:after, .panel-pane.about-header .pane-content:after .pane-title:after, .panel-pane.pane-venue-location > .pane-content:after .pane-title:after {
   content: "/.";
   display: inline-block;
   text-align: center;
   width: 1.4em;
 }
 
-/* line 588, ../sass/partials/_panels.scss */
-.pane-center-styled-content .pane-content, .pane-full-width-content .pane-content {
+/* line 637, ../sass/partials/_panels.scss */
+.pane-center-styled-content .pane-content, .pane-full-width-content .pane-content, .panel-pane.about-header .pane-content:after .pane-content, .panel-pane.pane-venue-location > .pane-content:after .pane-content {
   text-align: center;
 }
-/* line 590, ../sass/partials/_panels.scss */
-.pane-center-styled-content .pane-content p, .pane-full-width-content .pane-content p {
+/* line 639, ../sass/partials/_panels.scss */
+.pane-center-styled-content .pane-content p, .pane-full-width-content .pane-content p, .panel-pane.about-header .pane-content:after .pane-content p, .panel-pane.pane-venue-location > .pane-content:after .pane-content p {
   margin: 0 0 1.5em;
 }
 
-/* line 610, ../sass/partials/_panels.scss */
-.pane-full-width-content {
+/* line 659, ../sass/partials/_panels.scss */
+.pane-full-width-content, .panel-pane.about-header .pane-content:after, .panel-pane.pane-venue-location > .pane-content:after {
   background-color: #000;
 }
-/* line 617, ../sass/partials/_panels.scss */
-.pane-full-width-content .pane-title {
+/* line 666, ../sass/partials/_panels.scss */
+.pane-full-width-content .pane-title, .panel-pane.about-header .pane-content:after .pane-title, .panel-pane.pane-venue-location > .pane-content:after .pane-title {
   color: #7EBFD6;
 }
 /* line 70, ../sass/partials/_custom.scss */
-.pane-full-width-content .pane-title:after {
+.pane-full-width-content .pane-title:after, .panel-pane.about-header .pane-content:after .pane-title:after, .panel-pane.pane-venue-location > .pane-content:after .pane-title:after {
   content: "/.";
   display: inline-block;
   text-align: center;
   width: 1.4em;
 }
-/* line 622, ../sass/partials/_panels.scss */
-.pane-full-width-content .pane-content {
+/* line 671, ../sass/partials/_panels.scss */
+.pane-full-width-content .pane-content, .panel-pane.about-header .pane-content:after .pane-content, .panel-pane.pane-venue-location > .pane-content:after .pane-content {
   color: #FFF;
   font-size: 18px;
 }
-/* line 625, ../sass/partials/_panels.scss */
-.pane-full-width-content .pane-content p {
+/* line 674, ../sass/partials/_panels.scss */
+.pane-full-width-content .pane-content p, .panel-pane.about-header .pane-content:after .pane-content p, .panel-pane.pane-venue-location > .pane-content:after .pane-content p {
   font-weight: 100;
 }
 
 /* END PLUGIN PANE STYLES -------------------*/
-/* line 635, ../sass/partials/_panels.scss */
+/* line 683, ../sass/partials/_panels.scss */
+.panel-pane.about-header .pane-content:after {
+  display: block;
+  content: "";
+  width: 100%;
+  min-height: 307px;
+  background: url("../images/about1.jpg") no-repeat top center;
+}
+
+/* line 697, ../sass/partials/_panels.scss */
+.panel-pane.pane-venue-location > .pane-content:after {
+  display: block;
+  content: "";
+  width: 100%;
+  min-height: 369px;
+  background: url("../images/about2.jpg") no-repeat top center;
+}
+
+/* line 711, ../sass/partials/_panels.scss */
 .about-facts {
   background-image: url(../images/bg-facts.jpg);
   background-repeat: no-repeat;
   background-position: bottom center;
   padding-bottom: 3em;
 }
-/* line 641, ../sass/partials/_panels.scss */
+/* line 717, ../sass/partials/_panels.scss */
 .about-facts .pane-title {
   margin-bottom: 1em;
 }
-/* line 647, ../sass/partials/_panels.scss */
+/* line 723, ../sass/partials/_panels.scss */
 .about-facts .fact-one,
 .about-facts .fact-two,
 .about-facts .fact-three {
   color: #FFF;
 }
-/* line 649, ../sass/partials/_panels.scss */
+/* line 725, ../sass/partials/_panels.scss */
 .about-facts .fact-one h3,
 .about-facts .fact-two h3,
 .about-facts .fact-three h3 {
@@ -1472,20 +1527,20 @@ ul.primary.tabs {
   line-height: 1em;
   color: #FFF;
 }
-/* line 656, ../sass/partials/_panels.scss */
+/* line 732, ../sass/partials/_panels.scss */
 .about-facts .fact-one:before {
   content: "Connect";
 }
-/* line 659, ../sass/partials/_panels.scss */
+/* line 735, ../sass/partials/_panels.scss */
 .about-facts .fact-two:before {
   content: "Learn";
 }
-/* line 662, ../sass/partials/_panels.scss */
+/* line 738, ../sass/partials/_panels.scss */
 .about-facts .fact-three:before {
   content: "Inspire";
 }
 @media screen and (min-width: 768px) {
-  /* line 671, ../sass/partials/_panels.scss */
+  /* line 747, ../sass/partials/_panels.scss */
   .about-facts .fact-one,
   .about-facts .fact-two,
   .about-facts .fact-three {
@@ -1494,28 +1549,28 @@ ul.primary.tabs {
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 635, ../sass/partials/_panels.scss */
+  /* line 711, ../sass/partials/_panels.scss */
   .about-facts {
     background-size: 100%;
   }
 }
 
-/* line 687, ../sass/partials/_panels.scss */
+/* line 763, ../sass/partials/_panels.scss */
 .region-footer .views-field-title {
   margin: 1.5em 1em 0 1em;
   border-bottom: 1px solid #000;
 }
-/* line 690, ../sass/partials/_panels.scss */
+/* line 766, ../sass/partials/_panels.scss */
 .region-footer .views-field-title a {
   font-weight: bold;
   color: #000;
   text-decoration: none;
 }
-/* line 697, ../sass/partials/_panels.scss */
+/* line 773, ../sass/partials/_panels.scss */
 .region-footer img {
   padding: 0 1em 1em 1em;
 }
-/* line 701, ../sass/partials/_panels.scss */
+/* line 777, ../sass/partials/_panels.scss */
 .region-footer h2 {
   border: none;
 }
@@ -1529,7 +1584,7 @@ ul.primary.tabs {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 711, ../sass/partials/_panels.scss */
+  /* line 787, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 50%;
@@ -1543,7 +1598,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 715, ../sass/partials/_panels.scss */
+  /* line 791, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 50%;
@@ -1557,7 +1612,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 719, ../sass/partials/_panels.scss */
+  /* line 795, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     clear: left;
     float: left;
@@ -1572,7 +1627,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 724, ../sass/partials/_panels.scss */
+  /* line 800, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-4 {
     clear: left;
     float: left;
@@ -1598,7 +1653,7 @@ ul.primary.tabs {
   .region-footer .view-id-sponsors:after {
     clear: both;
   }
-  /* line 736, ../sass/partials/_panels.scss */
+  /* line 812, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-1 {
     float: left;
     width: 25%;
@@ -1612,7 +1667,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 740, ../sass/partials/_panels.scss */
+  /* line 816, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-2 {
     float: left;
     width: 25%;
@@ -1626,7 +1681,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 744, ../sass/partials/_panels.scss */
+  /* line 820, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row-3 {
     float: left;
     width: 25%;
@@ -1640,7 +1695,7 @@ ul.primary.tabs {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 748, ../sass/partials/_panels.scss */
+  /* line 824, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .view-row-4 {
     float: left;
     width: 25%;
