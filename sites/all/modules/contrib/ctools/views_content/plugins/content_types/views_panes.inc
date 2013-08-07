@@ -139,7 +139,12 @@ function views_content_views_panes_content_type_render($subtype, $conf, $panel_a
   $view->set_display($display);
   views_content_views_panes_add_defaults($conf, $view);
 
-  if (!$view->display_handler->access($GLOBALS['user']) || !$view->display_handler->panel_pane_display) {
+if (
+      !$view->display_handler->access($GLOBALS['user']) 
+      || !isset($view->display_handler->panel_pane_display) 
+      || !$view->display_handler->panel_pane_display
+      
+  ) {
     return;
   }
 

@@ -3,7 +3,9 @@
 //
 
 #page {
-  overflow: hidden;
+  // clearfix instead of overflow hidden. 
+  // overflow hidden causes mobile menu not to show. 
+  @extend .clearfix; 
 }
 
 // Top Sponsors
@@ -168,15 +170,21 @@
 }
 
 #page-title{
-	margin-left: -50%;
-	padding-left: 50%;
-	margin-right: -50%;
-	padding-right: 50%;
+	@extend %force-full-width;
 	color: #fff;
 	background-color: #313337;
 	font-size: 1.8em;
 	margin-bottom: 40px;
 }
+
+/* Some pages we will hide the title but keep the title; i know this is acheap way. */
+
+#page-title {
+	.page-about & {
+		display: none;
+	}
+}
+
 
 // Registration
 @media all and (max-width: $breakpoint) {
@@ -391,6 +399,19 @@ ul.primary.tabs{
 	}
 }
 
+// Summit and Training node pages
+.pane-sponsors-panel-pane-5{
+	clear:both;
+}
+
+.view-display-id-panel_pane_5{
+	
+ 	.views-field-field-image{
+		float: left;
+		padding: 0 20px 0 0;	
+	}
+}
+
 // Exposed Sessions Tracks
 
 #proposed-sessions h3{
@@ -556,6 +577,200 @@ ul.primary.tabs{
 	
 }
 
+
+/*-------------------------------------------*\
+
+	Job Board
+
+\*-------------------------------------------*/
+
+.view-job-opportunities .view-content {
+
+	ul {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	ul li {
+
+		list-style: none;
+		border-bottom: 1px solid #bbb;
+		display: block;
+		position: relative;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		&:after {
+			@extend %clearfix-after;
+		}
+	}
+
+
+	ul li .views-label { 
+		display: none;
+	}
+
+	ul li .views-field-field-image {
+		float: left;
+		width: 20%;
+		line-height: 1em;
+	}
+
+	ul li .views-field-title {
+		padding: 3em 0 0 0;
+		width: 80%;
+	}  
+}
+/* END JOB BOARD STYLES -------------------*/
+
+
+
+
+
+/*-------------------------------------------*\
+
+	Plugin Pane Styles
+
+\*-------------------------------------------*/
+
+// Extenders to abstract usages
+%center-styled-pane-title {
+	.pane-title {
+		text-align: center;
+		border: none;
+		font-size: 43px;
+		margin: 0;
+		padding: 1em 0 0 0;
+		line-height: 1.25em;
+		@include darius-decoration;
+	}
+}
+
+%center-styled-pane-content {
+	.pane-content {
+		text-align: center;
+		p {
+			margin: 0 0 1.5em;
+		}
+	}
+}
+
+
+
+.pane-center-styled-content {
+	@extend %center-styled-pane-title;
+	@extend %center-styled-pane-content;
+
+}
+
+// use this class if you need to center titles 
+.center-title-only {
+	@extend %center-styled-pane-title;
+}
+
+// Full width panes that need to stretch to the edge
+.pane-full-width-content {
+	@extend %force-full-width;
+	@extend %center-styled-pane-title;
+	@extend %center-styled-pane-content;
+	background-color: #000;
+
+
+	.pane-title {
+		color: #7EBFD6;
+		@include darius-decoration;
+	}
+
+	.pane-content {
+		color: #FFF;
+		font-size: 18px;
+		p {
+			font-weight: 100;
+		}
+	}
+}
+
+/* END PLUGIN PANE STYLES -------------------*/
+
+// Main About header
+.panel-pane.about-header .pane-content:after {
+	display: block;
+	content: "";
+	width: 100%;
+	min-height: 307px;
+	background: url('../images/about1.jpg') no-repeat top center;
+	@extend .pane-full-width-content;
+	// @media screen and (min-width: 1500px) {
+	// 	background-size: 100%;
+	// 	height: auto;
+	// }
+}
+
+// pane-venue-location Images
+.panel-pane.pane-venue-location > .pane-content:after {
+	display: block;
+	content: "";
+	width: 100%;
+	min-height: 369px;
+	background: url('../images/about2.jpg') no-repeat top center;
+	@extend .pane-full-width-content;
+	// @media screen and (min-width: 1500px) {
+	// 	background-size: 100%;
+	// 	height: auto;
+	// }
+}
+
+
+.about-facts {
+	background-image: url(../images/bg-facts.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	padding-bottom: 3em;
+
+	.pane-title {
+		margin-bottom: 1em;
+	}
+
+	.fact-one,
+	.fact-two,
+	.fact-three {
+		color: #FFF;
+		h3 { 
+			font-size: 76px;
+			line-height: 1em;
+			color: #FFF;
+		}
+	}
+
+	.fact-one:before {
+		content: "Connect";
+	}
+	.fact-two:before {
+		content: "Learn";
+	}
+	.fact-three:before {
+		content: "Inspire";
+	}
+
+
+
+	@media screen and (min-width: 768px) {
+		.fact-one,
+		.fact-two,
+		.fact-three {
+			width: 33.33333%;
+			float: left;
+		}
+	}
+
+
+	@media screen and (min-width: 1500px) {
+		background-size: 100%;
+	}
+}
+
+
+
 // Footer
 .region-footer {
   .views-field-title {
@@ -625,3 +840,5 @@ ul.primary.tabs{
     }    
   }
 }
+
+

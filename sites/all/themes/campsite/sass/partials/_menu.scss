@@ -12,7 +12,7 @@
 
 #page {
   position: relative;
-  -webkit-transition: -webkit-transform 300ms ease;;
+  -webkit-transition: -webkit-transform 300ms ease;
   -webkit-transform: translate3d(0, 0, 0);
 
 }
@@ -40,6 +40,20 @@
   a {   
     &:link {
       text-decoration: none;
+    }
+  }
+}
+
+#page {
+  /* 
+    When mobile nav is open, overflow some elements
+    that have negative margin that impedees into the mobile 
+    navigation. 
+   */
+  &.open {
+    #content,
+    #footer {
+      overflow: hidden;
     }
   }
 }

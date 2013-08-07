@@ -75,7 +75,20 @@
   }
 }
 
-/* Custom clearfix. I use this for extending */
+/* 
+  This is used to pull the restricted width elements out to be more full width.
+ */
+%force-full-width {
+  margin-left: -50%;
+  padding-left: 50%;
+  margin-right: -50%;
+  padding-right: 50%;
+}
+
+
+
+
+// Custom clearfix. I use this for extending
 %clearfix-after {
   content: ".";
   visibility: hidden;
