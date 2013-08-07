@@ -226,3 +226,13 @@ a.submit-button {
 a.submit-button:hover {
   background-color: #000;
 }
+
+/* remove the broken throbbers */
+html.js input.form-autocomplete {
+  background-image: none;
+}
+
+/* hack to make author field look a bit better */
+.form-item-field-speakers-und-0-uid label {
+  display: none;
+}
