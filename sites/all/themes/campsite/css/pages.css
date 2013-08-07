@@ -1992,19 +1992,6 @@ ul.primary.tabs {
   margin-top: 10px;
   max-width: 100%;
 }
-/* line 114, ../sass/partials/_timeline.scss */
-.timeline-border .event:hover {
-  background: #6a6a6a;
-  color: white;
-}
-/* line 118, ../sass/partials/_timeline.scss */
-.timeline-border .event:hover a {
-  color: white;
-}
-/* line 122, ../sass/partials/_timeline.scss */
-.timeline-border .event:hover:after {
-  background: #505050;
-}
 /* line 127, ../sass/partials/_timeline.scss */
 .timeline-border .event:nth-child(2n) {
   float: left;
