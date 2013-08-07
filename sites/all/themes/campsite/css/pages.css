@@ -10,11 +10,15 @@
   This is used to pull the restricted width elements out to be more full width.
  */
 /* line 81, ../sass/partials/_custom.scss */
-#page-title, .pane-full-width-content, .panel-pane.about-header .pane-content:after, .panel-pane.pane-venue-location > .pane-content:after {
+.pane-full-width-content, .panel-pane.about-header .pane-content:after, .panel-pane.pane-venue-location > .pane-content:after {
   margin-left: -50%;
   padding-left: 50%;
   margin-right: -50%;
   padding-right: 50%;
+}
+/* removed from above, due to broken site */
+#page-title {
+  padding: 0 15px;
 }
 
 /* line 92, ../sass/partials/_custom.scss */
@@ -881,10 +885,13 @@ span.field-label {
 }
 /* line 13, ../sass/partials/_panels.scss */
 #block-views-sponsors-block-1 h2 {
+  padding: 0 15px;
+  /*
   margin-left: -50%;
   padding-left: 50%;
   margin-right: -50%;
   padding-right: 50%;
+  */
   color: #fff;
   background-color: #aaa;
   font-size: 1.17em;
