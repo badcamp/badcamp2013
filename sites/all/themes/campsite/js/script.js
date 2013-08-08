@@ -39,6 +39,28 @@
   Drupal.behaviors.campsite = {
     attach: function (context, settings) {
      $('.bootstrap-table table').addClass('table-bordered table table-striped');
+
+
+     //Thursday! Can't bind to mouseover or click because the handleer is attached to
+     // some arbitrary object (the document object) and not to the flag link. So here is my hack.
+     var $thursday_allflags = $('.thursday-events .flag-wrapper a');
+     var $thursday_unflagged = $('.thursday-events .flag-wrapper a:not(.unflag-action)');
+     if($thursday_allflags.hasClass('unflag-action')) {
+        $thursday_unflagged.hide();
+        $thursday_unflagged.removeAttr('href');
+     };
+
+     //Friday! Can't bind to mouseover or click because the handleer is attached to
+     // some arbitrary object (the document object) and not to the flag link. So here is my hack.
+     //on Friday, let everyone go to the party (flag-registration-52)
+    var $friday_allflags = $('.friday-events .flag-wrapper:not(.flag-registration-52) a');
+     var $friday_unflagged = $('.friday-events .flag-wrapper:not(.flag-registration-52) a:not(.unflag-action)');
+     if($friday_allflags.hasClass('unflag-action')) {
+        $friday_unflagged.hide();
+        $friday_unflagged.removeAttr('href');
+     };
+
+
     }
   }
 

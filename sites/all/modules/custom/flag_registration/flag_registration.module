@@ -123,7 +123,4 @@ function flag_registration_element_info_alter(&$types) {
   }
 }
 
-
-
-
 drupal_add_css(drupal_get_path('module', 'flag_registration') .'/css/flag_registration.css');
