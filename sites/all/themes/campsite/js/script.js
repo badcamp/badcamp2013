@@ -19,6 +19,7 @@
           $('#usermenu').add('#page').toggleClass('usermenu-visible');
       });
 
+
       /**
        * scrolls the window up, so as to 'hide' the addressbar in mobile safari
        *
@@ -34,6 +35,12 @@
       }
     } 
   };
+
+  Drupal.behaviors.campsite = {
+    attach: function (context, settings) {
+     $('.bootstrap-table table').addClass('table-bordered table table-striped');
+    }
+  }
 
 /*
   Drupal.behaviors.HTMLplaceholders = {

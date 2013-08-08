@@ -72,3 +72,290 @@ a:hover {
   -o-border-radius: 0 0 7px 7px;
   border-radius: 0 0 7px 7px;
 }
+
+/* line 49, ../sass/views-styles.scss */
+.bootstrap-table caption {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 30px;
+  border-bottom: solid 1px black;
+}
+/* line 55, ../sass/views-styles.scss */
+.bootstrap-table table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 61, ../sass/views-styles.scss */
+.bootstrap-table .table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* line 66, ../sass/views-styles.scss */
+.bootstrap-table .table th,
+.bootstrap-table .table td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+/* line 73, ../sass/views-styles.scss */
+.bootstrap-table .table th {
+  font-weight: bold;
+}
+/* line 76, ../sass/views-styles.scss */
+.bootstrap-table .table thead th {
+  vertical-align: bottom;
+}
+/* line 84, ../sass/views-styles.scss */
+.bootstrap-table .table caption + thead tr:first-child th,
+.bootstrap-table .table caption + thead tr:first-child td,
+.bootstrap-table .table colgroup + thead tr:first-child th,
+.bootstrap-table .table colgroup + thead tr:first-child td,
+.bootstrap-table .table thead:first-child tr:first-child th,
+.bootstrap-table .table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+/* line 87, ../sass/views-styles.scss */
+.bootstrap-table .table tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+/* line 90, ../sass/views-styles.scss */
+.bootstrap-table .table .table {
+  background-color: #ffffff;
+}
+/* line 94, ../sass/views-styles.scss */
+.bootstrap-table .table-condensed th,
+.bootstrap-table .table-condensed td {
+  padding: 4px 5px;
+}
+/* line 97, ../sass/views-styles.scss */
+.bootstrap-table .table-bordered {
+  border: 1px solid #dddddd;
+  border-collapse: separate;
+  *border-collapse: collapse;
+  border-left: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 107, ../sass/views-styles.scss */
+.bootstrap-table .table-bordered th,
+.bootstrap-table .table-bordered td {
+  border-left: 1px solid #dddddd;
+}
+/* line 118, ../sass/views-styles.scss */
+.bootstrap-table .table-bordered caption + thead tr:first-child th,
+.bootstrap-table .table-bordered caption + tbody tr:first-child th,
+.bootstrap-table .table-bordered caption + tbody tr:first-child td,
+.bootstrap-table .table-bordered colgroup + thead tr:first-child th,
+.bootstrap-table .table-bordered colgroup + tbody tr:first-child th,
+.bootstrap-table .table-bordered colgroup + tbody tr:first-child td,
+.bootstrap-table .table-bordered thead:first-child tr:first-child th,
+.bootstrap-table .table-bordered tbody:first-child tr:first-child th,
+.bootstrap-table .table-bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+/* line 123, ../sass/views-styles.scss */
+.bootstrap-table .table-bordered thead:first-child tr:first-child > th:first-child,
+.bootstrap-table .table-bordered tbody:first-child tr:first-child > td:first-child,
+.bootstrap-table .table-bordered tbody:first-child tr:first-child > th:first-child {
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-left-radius: 4px;
+}
+/* line 130, ../sass/views-styles.scss */
+.bootstrap-table .table-bordered thead:first-child tr:first-child > th:last-child,
+.bootstrap-table .table-bordered tbody:first-child tr:first-child > td:last-child,
+.bootstrap-table .table-bordered tbody:first-child tr:first-child > th:last-child {
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-right-radius: 4px;
+}
+/* line 139, ../sass/views-styles.scss */
+.bootstrap-table .table-bordered thead:last-child tr:last-child > th:first-child,
+.bootstrap-table .table-bordered tbody:last-child tr:last-child > td:first-child,
+.bootstrap-table .table-bordered tbody:last-child tr:last-child > th:first-child,
+.bootstrap-table .table-bordered tfoot:last-child tr:last-child > td:first-child,
+.bootstrap-table .table-bordered tfoot:last-child tr:last-child > th:first-child {
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-left-radius: 4px;
+}
+/* line 148, ../sass/views-styles.scss */
+.bootstrap-table .table-bordered thead:last-child tr:last-child > th:last-child,
+.bootstrap-table .table-bordered tbody:last-child tr:last-child > td:last-child,
+.bootstrap-table .table-bordered tbody:last-child tr:last-child > th:last-child,
+.bootstrap-table .table-bordered tfoot:last-child tr:last-child > td:last-child,
+.bootstrap-table .table-bordered tfoot:last-child tr:last-child > th:last-child {
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-bottom-right-radius: 4px;
+}
+/* line 153, ../sass/views-styles.scss */
+.bootstrap-table .table-bordered tfoot + tbody:last-child tr:last-child td:first-child {
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-bottom-left-radius: 0;
+}
+/* line 158, ../sass/views-styles.scss */
+.bootstrap-table .table-bordered tfoot + tbody:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  border-bottom-right-radius: 0;
+}
+/* line 166, ../sass/views-styles.scss */
+.bootstrap-table .table-bordered caption + thead tr:first-child th:first-child,
+.bootstrap-table .table-bordered caption + tbody tr:first-child td:first-child,
+.bootstrap-table .table-bordered colgroup + thead tr:first-child th:first-child,
+.bootstrap-table .table-bordered colgroup + tbody tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-left-radius: 4px;
+}
+/* line 174, ../sass/views-styles.scss */
+.bootstrap-table .table-bordered caption + thead tr:first-child th:last-child,
+.bootstrap-table .table-bordered caption + tbody tr:first-child td:last-child,
+.bootstrap-table .table-bordered colgroup + thead tr:first-child th:last-child,
+.bootstrap-table .table-bordered colgroup + tbody tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-right-radius: 4px;
+}
+/* line 180, ../sass/views-styles.scss */
+.bootstrap-table .table-striped tbody > tr:nth-child(odd) > td,
+.bootstrap-table .table-striped tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+/* line 184, ../sass/views-styles.scss */
+.bootstrap-table .table-hover tbody tr:hover > td,
+.bootstrap-table .table-hover tbody tr:hover > th {
+  background-color: #f5f5f5;
+}
+/* line 190, ../sass/views-styles.scss */
+.bootstrap-table table td[class*="span"],
+.bootstrap-table table th[class*="span"],
+.bootstrap-table .row-fluid table td[class*="span"],
+.bootstrap-table .row-fluid table th[class*="span"] {
+  display: table-cell;
+  float: none;
+  margin-left: 0;
+}
+/* line 196, ../sass/views-styles.scss */
+.bootstrap-table .table td.span1,
+.bootstrap-table .table th.span1 {
+  float: none;
+  width: 44px;
+  margin-left: 0;
+}
+/* line 202, ../sass/views-styles.scss */
+.bootstrap-table .table td.span2,
+.bootstrap-table .table th.span2 {
+  float: none;
+  width: 124px;
+  margin-left: 0;
+}
+/* line 208, ../sass/views-styles.scss */
+.bootstrap-table .table td.span3,
+.bootstrap-table .table th.span3 {
+  float: none;
+  width: 204px;
+  margin-left: 0;
+}
+/* line 214, ../sass/views-styles.scss */
+.bootstrap-table .table td.span4,
+.bootstrap-table .table th.span4 {
+  float: none;
+  width: 284px;
+  margin-left: 0;
+}
+/* line 220, ../sass/views-styles.scss */
+.bootstrap-table .table td.span5,
+.bootstrap-table .table th.span5 {
+  float: none;
+  width: 364px;
+  margin-left: 0;
+}
+/* line 226, ../sass/views-styles.scss */
+.bootstrap-table .table td.span6,
+.bootstrap-table .table th.span6 {
+  float: none;
+  width: 444px;
+  margin-left: 0;
+}
+/* line 232, ../sass/views-styles.scss */
+.bootstrap-table .table td.span7,
+.bootstrap-table .table th.span7 {
+  float: none;
+  width: 524px;
+  margin-left: 0;
+}
+/* line 238, ../sass/views-styles.scss */
+.bootstrap-table .table td.span8,
+.bootstrap-table .table th.span8 {
+  float: none;
+  width: 604px;
+  margin-left: 0;
+}
+/* line 244, ../sass/views-styles.scss */
+.bootstrap-table .table td.span9,
+.bootstrap-table .table th.span9 {
+  float: none;
+  width: 684px;
+  margin-left: 0;
+}
+/* line 250, ../sass/views-styles.scss */
+.bootstrap-table .table td.span10,
+.bootstrap-table .table th.span10 {
+  float: none;
+  width: 764px;
+  margin-left: 0;
+}
+/* line 256, ../sass/views-styles.scss */
+.bootstrap-table .table td.span11,
+.bootstrap-table .table th.span11 {
+  float: none;
+  width: 844px;
+  margin-left: 0;
+}
+/* line 262, ../sass/views-styles.scss */
+.bootstrap-table .table td.span12,
+.bootstrap-table .table th.span12 {
+  float: none;
+  width: 924px;
+  margin-left: 0;
+}
+/* line 267, ../sass/views-styles.scss */
+.bootstrap-table .table tbody tr.success > td {
+  background-color: #dff0d8;
+}
+/* line 270, ../sass/views-styles.scss */
+.bootstrap-table .table tbody tr.error > td {
+  background-color: #f2dede;
+}
+/* line 273, ../sass/views-styles.scss */
+.bootstrap-table .table tbody tr.warning > td {
+  background-color: #fcf8e3;
+}
+/* line 276, ../sass/views-styles.scss */
+.bootstrap-table .table tbody tr.info > td {
+  background-color: #d9edf7;
+}
+/* line 279, ../sass/views-styles.scss */
+.bootstrap-table .table-hover tbody tr.success:hover > td {
+  background-color: #d0e9c6;
+}
+/* line 282, ../sass/views-styles.scss */
+.bootstrap-table .table-hover tbody tr.error:hover > td {
+  background-color: #ebcccc;
+}
+/* line 285, ../sass/views-styles.scss */
+.bootstrap-table .table-hover tbody tr.warning:hover > td {
+  background-color: #faf2cc;
+}
+/* line 288, ../sass/views-styles.scss */
+.bootstrap-table .table-hover tbody tr.info:hover > td {
+  background-color: #c4e3f3;
+}
