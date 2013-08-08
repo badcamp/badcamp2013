@@ -24,3 +24,38 @@ function badcamp_custom_form_taxonomy_form_term_alter(&$form, &$form_state) {
     $form['description']['#format'] = 'plain_text';
   }
 }
+
+/**
+ * Get users count
+ * @returns: Number of users active on the site
+ */
+function badcamp_custom_get_users_count() {
+	$active_users = db_query("SELECT COUNT(uid) FROM {users} WHERE status=1")->fetchField();
+	return $active_users;
+}
+
+/**
+ * Implements hook_block_info()
+ */
+function badcamp_custom_block_info() {
+  $blocks['peeps'] = array(
+    'info' => t('Total Peeps'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function badcamp_custom_block_view($delta='') {
+  $block = array();
+ 
+  switch($delta) {
+    case 'peeps' :
+      $block['content'] =  badcamp_custom_get_users_count() . ' peeps are coming to badcamp!';
+      break;
+  }
+ 
+  return $block;
+}
