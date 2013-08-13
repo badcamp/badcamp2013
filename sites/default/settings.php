@@ -591,3 +591,15 @@ if (defined('PANTHEON_ENVIRONMENT')) {
   $conf['page_cache_without_database'] = TRUE;
   $conf['page_cache_invoke_hooks'] = FALSE;
 }
+
+// Redirect multiple subdomains to a single domain.
+if (isset($_SERVER['PANTHEON_ENVIRONMENT']) &&
+  $_SERVER['PANTHEON_ENVIRONMENT'] === 'live') {
+  if (in_array($_SERVER['HTTP_HOST'], array(
+    'badcamp.net',
+  ))) {
+    header('HTTP/1.0 301 Moved Permanently');
+    header('Location: http://2013.badcamp.net'. $_SERVER['REQUEST_URI']);
+    exit();
+  }
+}
