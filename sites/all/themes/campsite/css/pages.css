@@ -10,15 +10,11 @@
   This is used to pull the restricted width elements out to be more full width.
  */
 /* line 81, ../sass/partials/_custom.scss */
-.pane-full-width-content, .panel-pane.about-header .pane-content:after, .panel-pane.pane-venue-location > .pane-content:after {
+#page-title, .pane-full-width-content, .panel-pane.about-header .pane-content:after, .panel-pane.pane-venue-location > .pane-content:after {
   margin-left: -50%;
   padding-left: 50%;
   margin-right: -50%;
   padding-right: 50%;
-}
-/* removed from above, due to broken site */
-#page-title {
-  padding: 0 15px;
 }
 
 /* line 92, ../sass/partials/_custom.scss */
@@ -885,13 +881,10 @@ span.field-label {
 }
 /* line 13, ../sass/partials/_panels.scss */
 #block-views-sponsors-block-1 h2 {
-  padding: 0 15px;
-  /*
   margin-left: -50%;
   padding-left: 50%;
   margin-right: -50%;
   padding-right: 50%;
-  */
   color: #fff;
   background-color: #aaa;
   font-size: 1.17em;
@@ -1592,140 +1585,19 @@ ul.primary.tabs {
 .region-footer h2 {
   border: none;
 }
-@media all and (max-width: 700px) {
-  /* line 52, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
-  .region-footer .view-id-sponsors:before, .region-footer .view-id-sponsors:after {
-    content: "";
-    display: table;
-  }
-  /* line 56, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
-  .region-footer .view-id-sponsors:after {
-    clear: both;
-  }
-  /* line 800, ../sass/partials/_panels.scss */
-  .region-footer .view-id-sponsors .views-row-1 {
-    float: left;
-    width: 50%;
-    margin-left: 0%;
-    margin-right: -50%;
-    padding-left: 0;
-    padding-right: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-  /* line 804, ../sass/partials/_panels.scss */
-  .region-footer .view-id-sponsors .views-row-2 {
-    float: left;
-    width: 50%;
-    margin-left: 50%;
-    margin-right: -100%;
-    padding-left: 0;
-    padding-right: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-  /* line 808, ../sass/partials/_panels.scss */
-  .region-footer .view-id-sponsors .views-row-3 {
-    clear: left;
-    float: left;
-    width: 50%;
-    margin-left: 0%;
-    margin-right: -50%;
-    padding-left: 0;
-    padding-right: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-  /* line 813, ../sass/partials/_panels.scss */
-  .region-footer .view-id-sponsors .views-row-4 {
-    clear: left;
-    float: left;
-    width: 50%;
-    margin-left: 50%;
-    margin-right: -100%;
-    padding-left: 0;
-    padding-right: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
+/* line 796, ../sass/partials/_panels.scss */
+.region-footer .view-id-sponsors .views-row {
+  float: left;
+  width: 25%;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+  word-wrap: break-word;
 }
-@media all and (min-width: 700px) {
-  /* line 52, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
-  .region-footer .view-id-sponsors:before, .region-footer .view-id-sponsors:after {
-    content: "";
-    display: table;
-  }
-  /* line 56, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
-  .region-footer .view-id-sponsors:after {
-    clear: both;
-  }
-  /* line 825, ../sass/partials/_panels.scss */
-  .region-footer .view-id-sponsors .views-row-1 {
-    float: left;
-    width: 25%;
-    margin-left: 0%;
-    margin-right: -25%;
-    padding-left: 0;
-    padding-right: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-  /* line 829, ../sass/partials/_panels.scss */
-  .region-footer .view-id-sponsors .views-row-2 {
-    float: left;
-    width: 25%;
-    margin-left: 25%;
-    margin-right: -50%;
-    padding-left: 0;
-    padding-right: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-  /* line 833, ../sass/partials/_panels.scss */
-  .region-footer .view-id-sponsors .views-row-3 {
-    float: left;
-    width: 25%;
-    margin-left: 50%;
-    margin-right: -75%;
-    padding-left: 0;
-    padding-right: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-  /* line 837, ../sass/partials/_panels.scss */
-  .region-footer .view-id-sponsors .view-row-4 {
-    float: left;
-    width: 25%;
-    margin-left: 75%;
-    margin-right: -100%;
-    padding-left: 0;
-    padding-right: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
+@media screen and (max-width: 700px) {
+  /* line 796, ../sass/partials/_panels.scss */
+  .region-footer .view-id-sponsors .views-row {
+    width: 50%;
   }
 }
 
@@ -1793,8 +1665,8 @@ ul.primary.tabs {
     width: 50%;
     margin-left: 0%;
     margin-right: -50%;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1808,8 +1680,8 @@ ul.primary.tabs {
     width: 50%;
     margin-left: 50%;
     margin-right: -100%;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1992,12 +1864,12 @@ ul.primary.tabs {
   margin-top: 10px;
   max-width: 100%;
 }
-/* line 127, ../sass/partials/_timeline.scss */
+/* line 114, ../sass/partials/_timeline.scss */
 .timeline-border .event:nth-child(2n) {
   float: left;
   clear: left;
 }
-/* line 132, ../sass/partials/_timeline.scss */
+/* line 119, ../sass/partials/_timeline.scss */
 .timeline-border .event:before {
   content: "";
   width: 7px;
@@ -2014,7 +1886,7 @@ ul.primary.tabs {
   -o-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 145, ../sass/partials/_timeline.scss */
+/* line 132, ../sass/partials/_timeline.scss */
 .timeline-border .event:nth-child(2n):before {
   right: -12.75%;
   /* reset the standard declaration I defined before*/
@@ -2022,7 +1894,7 @@ ul.primary.tabs {
   top: 65px;
 }
 @media all and (min-width: 650px) {
-  /* line 151, ../sass/partials/_timeline.scss */
+  /* line 138, ../sass/partials/_timeline.scss */
   .timeline-border .event:after {
     display: block;
     content: ' ';
@@ -2034,7 +1906,7 @@ ul.primary.tabs {
     top: 41px;
   }
 }
-/* line 165, ../sass/partials/_timeline.scss */
+/* line 152, ../sass/partials/_timeline.scss */
 .timeline-border .event:nth-child(2n):after {
   right: -9%;
   /* reset the standard declaration I defined before*/
@@ -2042,7 +1914,7 @@ ul.primary.tabs {
   top: 71px;
   width: 7.5%;
 }
-/* line 174, ../sass/partials/_timeline.scss */
+/* line 161, ../sass/partials/_timeline.scss */
 .timeline-border .bookend {
   font-size: 26px;
   font-weight: bold;
@@ -2051,29 +1923,29 @@ ul.primary.tabs {
   z-index: 100;
 }
 @media screen and (max-width: 615px) {
-  /* line 174, ../sass/partials/_timeline.scss */
+  /* line 161, ../sass/partials/_timeline.scss */
   .timeline-border .bookend {
     text-align: center;
     width: 100%;
   }
-  /* line 184, ../sass/partials/_timeline.scss */
+  /* line 171, ../sass/partials/_timeline.scss */
   .timeline-border .bookend span {
     display: block;
     background: #FFF;
   }
 }
-/* line 193, ../sass/partials/_timeline.scss */
+/* line 180, ../sass/partials/_timeline.scss */
 .timeline-border .bookend-top {
   top: -.5em;
 }
-/* line 196, ../sass/partials/_timeline.scss */
+/* line 183, ../sass/partials/_timeline.scss */
 .timeline-border .bookend-bottom {
   z-index: 10;
   bottom: -.5em;
   color: #FF0000;
 }
 @media all and (min-width: 616px) {
-  /* line 204, ../sass/partials/_timeline.scss */
+  /* line 191, ../sass/partials/_timeline.scss */
   .timeline-border .bookend {
     font-size: 26px;
     font-weight: bold;
@@ -2081,7 +1953,7 @@ ul.primary.tabs {
     position: absolute;
     z-index: 100;
   }
-  /* line 211, ../sass/partials/_timeline.scss */
+  /* line 198, ../sass/partials/_timeline.scss */
   .timeline-border .bookend:after {
     content: "";
     width: 11px;
@@ -2091,24 +1963,24 @@ ul.primary.tabs {
     position: absolute;
     border-radius: 10px;
   }
-  /* line 223, ../sass/partials/_timeline.scss */
+  /* line 210, ../sass/partials/_timeline.scss */
   .timeline-border .bookend-top {
     top: -.5em;
     right: 52%;
   }
-  /* line 226, ../sass/partials/_timeline.scss */
+  /* line 213, ../sass/partials/_timeline.scss */
   .timeline-border .bookend-top:after {
     top: .25em;
     right: -15.15%;
   }
-  /* line 231, ../sass/partials/_timeline.scss */
+  /* line 218, ../sass/partials/_timeline.scss */
   .timeline-border .bookend-bottom {
     z-index: 10;
     bottom: -.5em;
     left: 52.35%;
     color: #FF0000;
   }
-  /* line 236, ../sass/partials/_timeline.scss */
+  /* line 223, ../sass/partials/_timeline.scss */
   .timeline-border .bookend-bottom:after {
     top: .25em;
     left: -15.15%;
