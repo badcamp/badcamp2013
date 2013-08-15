@@ -330,11 +330,10 @@ span.field-label {
 }
 /* line 257, ../sass/pages.scss */
 #footer #block-block-1 {
-  border-top: solid 1px;
   color: #777777;
   font-size: 14px;
 }
-/* line 261, ../sass/pages.scss */
+/* line 260, ../sass/pages.scss */
 #footer #block-block-1 p {
   margin: 5px;
 }
@@ -342,7 +341,7 @@ span.field-label {
 /*
  * Page bottom
  */
-/* line 271, ../sass/pages.scss */
+/* line 270, ../sass/pages.scss */
 .region-bottom {
   /* Wrapper for any blocks placed in the page bottom region */
 }
