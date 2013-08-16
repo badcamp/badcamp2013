@@ -17,8 +17,18 @@ a {
 }
 
 /* line 18, ../sass/partials/_colors.scss */
+a.attendee-username {
+  color: #7EC0D6;
+}
+
+/* line 22, ../sass/partials/_colors.scss */
 a:hover {
   text-decoration: underline;
+}
+
+/* line 29, ../sass/partials/_colors.scss */
+.front .pane-events a {
+  color: white;
 }
 
 /* line 9, ../sass/blocks.scss */

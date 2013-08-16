@@ -17,8 +17,18 @@ a {
 }
 
 /* line 18, ../sass/partials/_colors.scss */
+a.attendee-username {
+  color: #7EC0D6;
+}
+
+/* line 22, ../sass/partials/_colors.scss */
 a:hover {
   text-decoration: underline;
+}
+
+/* line 29, ../sass/partials/_colors.scss */
+.front .pane-events a {
+  color: white;
 }
 
 /* line 8, ../sass/forms.scss */
@@ -225,14 +235,4 @@ a.submit-button {
 #user-register-form .form-submit:hover,
 a.submit-button:hover {
   background-color: #000;
-}
-
-/* remove the broken throbbers */
-html.js input.form-autocomplete {
-  background-image: none;
-}
-
-/* hack to make author field look a bit better */
-.form-item-field-speakers-und-0-uid label {
-  display: none;
 }
