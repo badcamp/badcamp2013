@@ -592,14 +592,19 @@ if (defined('PANTHEON_ENVIRONMENT')) {
   $conf['page_cache_invoke_hooks'] = FALSE;
 }
 
-// Redirect multiple subdomains to a single domain.
-if (isset($_SERVER['PANTHEON_ENVIRONMENT']) &&
-  $_SERVER['PANTHEON_ENVIRONMENT'] === 'live') {
-  if (in_array($_SERVER['HTTP_HOST'], array(
-    'badcamp.net',
-  ))) {
-    header('HTTP/1.0 301 Moved Permanently');
-    header('Location: http://2013.badcamp.net'. $_SERVER['REQUEST_URI']);
-    exit();
-  }
-}
+$db_url = 'mysqli://root:root@localhost/badcamp2013';
+$databases = array (
+  'default' => 
+  array (
+    'default' => 
+    array (
+      'driver' => 'mysql',
+      'database' => 'badcamp2013',
+      'username' => 'root',
+      'password' => 'root',
+      'host' => 'localhost',
+      'port' => '',
+    ),
+  ),
+);
+$drupal_hash_salt = 'YET_xo4zWgrc9jacqnzI8WBI8Xz6Ht18Bfut9BeIFHM';

@@ -1629,6 +1629,48 @@ ul.primary.tabs {
   }
 }
 
+/*darius' random css*/
+/* line 820, ../sass/partials/_panels.scss */
+.front .pane-1 {
+  -moz-box-sizing: border-box;
+  float: left;
+  margin-left: 0;
+  margin-right: -50%;
+  padding-left: 0;
+  padding-right: 10px;
+  width: 50%;
+  word-wrap: break-word;
+}
+/* line 831, ../sass/partials/_panels.scss */
+.front .pane-1 .pane-content {
+  background: url("../images/featured.png") no-repeat scroll 0 0/100% auto transparent;
+  min-height: 200px;
+}
+/* line 837, ../sass/partials/_panels.scss */
+.front .pane-1 .eventhighlights {
+  width: 50%;
+  margin-left: 50%;
+  padding: 20px;
+}
+/* line 843, ../sass/partials/_panels.scss */
+.front .pane-1 a {
+  color: white;
+  text-decoration: underline;
+}
+/* line 844, ../sass/partials/_panels.scss */
+.front .pane-1 p {
+  color: white;
+}
+/* line 845, ../sass/partials/_panels.scss */
+.front .pane-1 .large {
+  font-size: 215%;
+  color: white;
+  font-weight: bold;
+  float: left;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+
 /* line 6, ../sass/partials/_homepage.scss */
 .front {
   /* Highlighst and Facts panes */
@@ -1725,7 +1767,7 @@ ul.primary.tabs {
 /* line 79, ../sass/partials/_homepage.scss */
 .front .pane-attendees-panel-pane-2 {
   clear: both;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 /* line 84, ../sass/partials/_homepage.scss */
 .front .pane-speakers-panel-pane-1 {
