@@ -737,9 +737,19 @@ span.field-label {
   position: relative;
   -webkit-transition: -webkit-transform 300ms ease;
   -webkit-transform: translate3d(0, 0, 0);
+  /* 
+    When mobile nav is open, overflow some elements
+    that have negative margin that impedees into the mobile 
+    navigation. 
+   */
+}
+/* line 25, ../sass/partials/_menu.scss */
+#page.open #content,
+#page.open #footer {
+  overflow: hidden;
 }
 
-/* line 23, ../sass/partials/_menu.scss */
+/* line 34, ../sass/partials/_menu.scss */
 #navigation .block-menu-block h2,
 #navigation .block-menu-block a {
   font-size: 1.25em;
@@ -747,49 +757,35 @@ span.field-label {
   padding-bottom: -5px;
   /* This moves the dropdown menu*/
 }
-/* line 29, ../sass/partials/_menu.scss */
+/* line 40, ../sass/partials/_menu.scss */
 #navigation .block-menu-block h2 {
   text-transform: uppercase;
   float: left;
   border: none;
 }
-/* line 36, ../sass/partials/_menu.scss */
+/* line 47, ../sass/partials/_menu.scss */
 #navigation .block-menu-block h2,
 #navigation .block-menu-block .menu-block-wrapper {
   display: inline-block;
 }
-/* line 42, ../sass/partials/_menu.scss */
+/* line 53, ../sass/partials/_menu.scss */
 #navigation .block-menu-block a:link {
   text-decoration: none;
 }
-/* line 45, ../sass/partials/_menu.scss */
+/* line 56, ../sass/partials/_menu.scss */
 #navigation .block-menu-block a:hover {
   color: #0077a5;
 }
 
-/* line 49, ../sass/partials/_menu.scss */
-#page {
-  /* 
-    When mobile nav is open, overflow some elements
-    that have negative margin that impedees into the mobile 
-    navigation. 
-   */
-}
-/* line 57, ../sass/partials/_menu.scss */
-#page.open #content,
-#page.open #footer {
-  overflow: hidden;
-}
-
 @media all and (max-width: 820px) {
-  /* line 68, ../sass/partials/_menu.scss */
+  /* line 65, ../sass/partials/_menu.scss */
   #mobile-nav-button,
   #navigation h2,
   #navigation ul {
     padding: .15em;
   }
 
-  /* line 72, ../sass/partials/_menu.scss */
+  /* line 69, ../sass/partials/_menu.scss */
   #mobile-nav-button {
     position: absolute;
     left: 0;
@@ -800,20 +796,20 @@ span.field-label {
     text-align: center;
   }
 
-  /* line 82, ../sass/partials/_menu.scss */
+  /* line 79, ../sass/partials/_menu.scss */
   #navigation {
     margin: 0 0 1em 0;
     background: #1c1c1c;
     padding: 0;
     height: 40px;
   }
-  /* line 88, ../sass/partials/_menu.scss */
+  /* line 85, ../sass/partials/_menu.scss */
   #navigation h2 {
     margin-left: 2em;
     margin-top: 3px;
     color: #fff;
   }
-  /* line 94, ../sass/partials/_menu.scss */
+  /* line 91, ../sass/partials/_menu.scss */
   #navigation ul.menu {
     overflow: hidden;
     position: absolute;
@@ -822,63 +818,63 @@ span.field-label {
     width: 250px;
     margin: 0;
   }
-  /* line 103, ../sass/partials/_menu.scss */
+  /* line 100, ../sass/partials/_menu.scss */
   #navigation li {
     display: block;
     float: none;
   }
-  /* line 109, ../sass/partials/_menu.scss */
+  /* line 106, ../sass/partials/_menu.scss */
   #navigation li.last {
     border: 0;
   }
-  /* line 114, ../sass/partials/_menu.scss */
+  /* line 111, ../sass/partials/_menu.scss */
   #navigation a {
     display: block;
     padding: .5em 1em;
     color: #fff;
   }
-  /* line 119, ../sass/partials/_menu.scss */
+  /* line 116, ../sass/partials/_menu.scss */
   #navigation a:hover {
     text-decoration: none;
     background: #1c1c1c;
   }
-  /* line 124, ../sass/partials/_menu.scss */
+  /* line 121, ../sass/partials/_menu.scss */
   #navigation a:before {
     content: "-";
     float: right;
   }
 
   /* mobile menu transitions */
-  /* line 133, ../sass/partials/_menu.scss */
+  /* line 130, ../sass/partials/_menu.scss */
   #mobile-nav-button.open {
     background: #d00;
   }
 
-  /* line 137, ../sass/partials/_menu.scss */
+  /* line 134, ../sass/partials/_menu.scss */
   #page.open {
     -webkit-transform: translate3d(250px, 0, 0);
   }
 }
 @media all and (min-width: 820px) {
-  /* line 148, ../sass/partials/_menu.scss */
+  /* line 145, ../sass/partials/_menu.scss */
   #mobile-nav-button {
     display: none;
   }
 
-  /* line 152, ../sass/partials/_menu.scss */
+  /* line 149, ../sass/partials/_menu.scss */
   #navigation {
     border-top: 5px solid #1c1c1c;
     border-bottom: 1px solid #1c1c1c;
   }
-  /* line 156, ../sass/partials/_menu.scss */
+  /* line 153, ../sass/partials/_menu.scss */
   #navigation h2 {
     color: #1c1c1c;
   }
-  /* line 161, ../sass/partials/_menu.scss */
+  /* line 158, ../sass/partials/_menu.scss */
   #navigation ul.menu li {
     float: left;
   }
-  /* line 168, ../sass/partials/_menu.scss */
+  /* line 165, ../sass/partials/_menu.scss */
   #navigation h2:after,
   #navigation li:after {
     content: "/";
@@ -887,20 +883,26 @@ span.field-label {
     text-align: center;
     font-weight: normal;
   }
-  /* line 176, ../sass/partials/_menu.scss */
+  /* line 173, ../sass/partials/_menu.scss */
   #navigation li.last:after {
     content: "";
   }
-  /* line 180, ../sass/partials/_menu.scss */
+  /* line 177, ../sass/partials/_menu.scss */
   #navigation a {
     color: #1c1c1c;
   }
-  /* line 183, ../sass/partials/_menu.scss */
+  /* line 180, ../sass/partials/_menu.scss */
   #navigation a:hover {
     text-decoration: underline;
   }
 }
-/* line 13, ../sass/partials/_panels.scss */
+/* line 6, ../sass/partials/_panels.scss */
+body {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 19, ../sass/partials/_panels.scss */
 #block-views-sponsors-block-1 h2 {
   margin-left: -50%;
   padding-left: 50%;
@@ -911,19 +913,19 @@ span.field-label {
   font-size: 1.17em;
 }
 
-/* line 27, ../sass/partials/_panels.scss */
+/* line 33, ../sass/partials/_panels.scss */
 .front #main {
   background: #000;
   color: #fff;
 }
-/* line 32, ../sass/partials/_panels.scss */
+/* line 38, ../sass/partials/_panels.scss */
 .front h2,
 .front h3 {
   color: #7EC0D6;
   font-size: 22px;
 }
 
-/* line 39, ../sass/partials/_panels.scss */
+/* line 45, ../sass/partials/_panels.scss */
 #main {
   background: #fff;
   color: #555;
@@ -934,7 +936,7 @@ span.field-label {
   Speakers, attendees etc. 
   
 */
-/* line 54, ../sass/partials/_panels.scss */
+/* line 60, ../sass/partials/_panels.scss */
 .view-id-attendees .view-content .item-list .attendee-display-name, .views_slideshow_liquidcarousel_main .liquid .speaker-name {
   font-size: 1em;
   border-bottom: 1px solid #797878;
@@ -943,13 +945,13 @@ span.field-label {
   font-weight: bold;
 }
 
-/* line 66, ../sass/partials/_panels.scss */
+/* line 72, ../sass/partials/_panels.scss */
 .view-id-attendees .view-content .item-list ul, .view-id-attendees .view-content .item-list ul li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 72, ../sass/partials/_panels.scss */
+/* line 78, ../sass/partials/_panels.scss */
 .view-id-attendees .view-content .item-list ul li {
   border-bottom: 1px solid #999;
   float: left;
@@ -957,56 +959,56 @@ span.field-label {
   margin-bottom: 20px;
   width: 50%;
 }
-/* line 79, ../sass/partials/_panels.scss */
+/* line 85, ../sass/partials/_panels.scss */
 .view-id-attendees .view-content .item-list ul li img {
   width: 100%;
   height: auto;
   max-height: 210px;
   max-width: 210px;
 }
-/* line 87, ../sass/partials/_panels.scss */
+/* line 93, ../sass/partials/_panels.scss */
 .view-id-attendees .view-content .item-list .attendee {
   padding-right: 10px;
 }
-/* line 91, ../sass/partials/_panels.scss */
+/* line 97, ../sass/partials/_panels.scss */
 .view-id-attendees .view-content .item-list .attendee-photo a {
   display: block;
   line-height: 0;
   margin-bottom: 10px;
 }
 @media all and (max-width: 500px) {
-  /* line 102, ../sass/partials/_panels.scss */
+  /* line 108, ../sass/partials/_panels.scss */
   .view-id-attendees .view-content .item-list li:nth-child(2n+2) .attendee {
     padding-right: 0;
   }
 }
 @media all and (min-width: 501px) and (max-width: 759px) {
-  /* line 109, ../sass/partials/_panels.scss */
+  /* line 115, ../sass/partials/_panels.scss */
   .view-id-attendees .view-content .item-list ul li {
     width: 33%;
   }
-  /* line 112, ../sass/partials/_panels.scss */
+  /* line 118, ../sass/partials/_panels.scss */
   .view-id-attendees .view-content .item-list li:nth-child(3n+3) .attendee {
     padding-right: 0;
   }
 }
 @media all and (min-width: 760px) {
-  /* line 119, ../sass/partials/_panels.scss */
+  /* line 125, ../sass/partials/_panels.scss */
   .view-id-attendees .view-content .item-list ul li {
     width: 20%;
   }
-  /* line 122, ../sass/partials/_panels.scss */
+  /* line 128, ../sass/partials/_panels.scss */
   .view-id-attendees .view-content .item-list li:nth-child(5n+5) .attendee {
     padding-right: 0;
   }
 }
 
 /* responsive Slider ( mainly the one found on home page ) */
-/* line 144, ../sass/partials/_panels.scss */
+/* line 150, ../sass/partials/_panels.scss */
 .views_slideshow_liquidcarousel_main .liquid .wrapper ul li {
   min-height: 325px;
 }
-/* line 156, ../sass/partials/_panels.scss */
+/* line 162, ../sass/partials/_panels.scss */
 .views_slideshow_liquidcarousel_main .previous,
 .views_slideshow_liquidcarousel_main .next {
   height: 207px;
@@ -1015,16 +1017,16 @@ span.field-label {
   white-space: nowrap;
   width: 37px;
 }
-/* line 164, ../sass/partials/_panels.scss */
+/* line 170, ../sass/partials/_panels.scss */
 .views_slideshow_liquidcarousel_main .previous {
   background: #333333 url("../images/arrow-left.png") no-repeat center center;
 }
-/* line 168, ../sass/partials/_panels.scss */
+/* line 174, ../sass/partials/_panels.scss */
 .views_slideshow_liquidcarousel_main .next {
   background: #333333 url("../images/arrow-right.png") no-repeat center center;
 }
 
-/* line 173, ../sass/partials/_panels.scss */
+/* line 179, ../sass/partials/_panels.scss */
 #page-title {
   color: #fff;
   background-color: #313337;
@@ -1033,32 +1035,32 @@ span.field-label {
 }
 
 /* Some pages we will hide the title but keep the title; i know this is acheap way. */
-/* line 184, ../sass/partials/_panels.scss */
+/* line 190, ../sass/partials/_panels.scss */
 .page-about #page-title {
   display: none;
 }
 
 @media all and (max-width: 700px) {
-  /* line 194, ../sass/partials/_panels.scss */
+  /* line 200, ../sass/partials/_panels.scss */
   .signup .field-name-field-first-name,
   .signup .form-item-name,
   .signup .form-item-pass-pass1 {
     float: none;
   }
 
-  /* line 200, ../sass/partials/_panels.scss */
+  /* line 206, ../sass/partials/_panels.scss */
   .signup .field-name-field-last-name,
   .signup .form-item-mail,
   .signup .form-item-pass-pass2 {
     float: none;
   }
 
-  /* line 204, ../sass/partials/_panels.scss */
+  /* line 210, ../sass/partials/_panels.scss */
   .signup #user-register-form .form-item {
     width: 20em;
   }
 
-  /* line 213, ../sass/partials/_panels.scss */
+  /* line 219, ../sass/partials/_panels.scss */
   .signup #user-register-form input.username,
   .signup #user-register-form input#edit-mail,
   .signup #user-register-form input.password-field,
@@ -1068,19 +1070,19 @@ span.field-label {
     width: 20em;
   }
 
-  /* line 216, ../sass/partials/_panels.scss */
+  /* line 222, ../sass/partials/_panels.scss */
   .pane-user-signup, .registration-steps, .signup .messages {
     margin-left: 5%;
     margin-right: 5%;
   }
 
-  /* line 221, ../sass/partials/_panels.scss */
+  /* line 227, ../sass/partials/_panels.scss */
   .signup #user-register-form .form-submit {
     float: none;
     clear: both;
   }
 
-  /* line 227, ../sass/partials/_panels.scss */
+  /* line 233, ../sass/partials/_panels.scss */
   .signup .field-name-field-interest-jobs,
   .signup .field-name-field-interest-volunteering {
     float: none;
@@ -1088,40 +1090,40 @@ span.field-label {
     margin-top: 0;
   }
 
-  /* line 233, ../sass/partials/_panels.scss */
+  /* line 239, ../sass/partials/_panels.scss */
   .registration-steps .registration.two {
     margin: 0 22%;
   }
 
-  /* line 237, ../sass/partials/_panels.scss */
+  /* line 243, ../sass/partials/_panels.scss */
   .registration-steps {
     background: none;
   }
 }
-/* line 245, ../sass/partials/_panels.scss */
+/* line 251, ../sass/partials/_panels.scss */
 #sponsors-page .panel-pane {
   clear: both;
 }
-/* line 249, ../sass/partials/_panels.scss */
+/* line 255, ../sass/partials/_panels.scss */
 #sponsors-page .view-sponsors {
   clear: both;
 }
-/* line 252, ../sass/partials/_panels.scss */
+/* line 258, ../sass/partials/_panels.scss */
 #sponsors-page .view-sponsors .views-row {
   float: left;
   margin: 10px;
 }
-/* line 256, ../sass/partials/_panels.scss */
+/* line 262, ../sass/partials/_panels.scss */
 #sponsors-page .view-sponsors .views-row .views-field-title {
   text-align: center;
 }
-/* line 259, ../sass/partials/_panels.scss */
+/* line 265, ../sass/partials/_panels.scss */
 #sponsors-page .view-sponsors .views-row .views-field-title a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 272, ../sass/partials/_panels.scss */
+/* line 278, ../sass/partials/_panels.scss */
 .icon-flickr,
 .icon-twitter,
 .icon-facebook {
@@ -1132,74 +1134,74 @@ span.field-label {
   height: 27px;
   padding-left: 30px;
 }
-/* line 280, ../sass/partials/_panels.scss */
+/* line 286, ../sass/partials/_panels.scss */
 .icon-flickr:hover,
 .icon-twitter:hover,
 .icon-facebook:hover {
   opacity: .4;
 }
 
-/* line 283, ../sass/partials/_panels.scss */
+/* line 289, ../sass/partials/_panels.scss */
 .icon-flickr {
   background-image: url("../images/flickr-icon.png");
 }
 
-/* line 287, ../sass/partials/_panels.scss */
+/* line 293, ../sass/partials/_panels.scss */
 .icon-twitter {
   background-image: url("../images/twitter-icon.png");
 }
 
-/* line 291, ../sass/partials/_panels.scss */
+/* line 297, ../sass/partials/_panels.scss */
 .icon-facebook {
   background-image: url("../images/facebook-icon.png");
 }
 
-/* line 295, ../sass/partials/_panels.scss */
+/* line 301, ../sass/partials/_panels.scss */
 #user-profile-view .field-label {
   width: 190px;
 }
 
-/* line 299, ../sass/partials/_panels.scss */
+/* line 305, ../sass/partials/_panels.scss */
 #user-profile-view .field-item {
   max-width: 600px;
 }
 
-/* line 303, ../sass/partials/_panels.scss */
+/* line 309, ../sass/partials/_panels.scss */
 #user-profile-view .field {
   border-top: solid 1px #DDDDDD;
   padding-top: 10px;
   padding-bottom: 30px;
 }
 
-/* line 309, ../sass/partials/_panels.scss */
+/* line 315, ../sass/partials/_panels.scss */
 #user-profile-view .field-name-field-featured-headshot {
   border-top: 0;
   padding: 0;
 }
 
-/* line 314, ../sass/partials/_panels.scss */
+/* line 320, ../sass/partials/_panels.scss */
 #user-profile-view h2 {
   color: #000;
 }
 
-/* line 318, ../sass/partials/_panels.scss */
+/* line 324, ../sass/partials/_panels.scss */
 #user-profile-view .field-name-field-title-role {
   border: 0;
   margin-top: -30px;
 }
 
-/* line 323, ../sass/partials/_panels.scss */
+/* line 329, ../sass/partials/_panels.scss */
 ul.primary.tabs a:link {
   background: none;
   border: 0;
 }
 
-/* line 328, ../sass/partials/_panels.scss */
+/* line 334, ../sass/partials/_panels.scss */
 ul.primary.tabs a.active {
   border-bottom: solid 5px #CA4D00;
 }
 
-/* line 332, ../sass/partials/_panels.scss */
+/* line 338, ../sass/partials/_panels.scss */
 ul.primary.tabs li {
   background: none;
   border: 0;
@@ -1207,39 +1209,39 @@ ul.primary.tabs li {
   margin: 0;
 }
 
-/* line 339, ../sass/partials/_panels.scss */
+/* line 345, ../sass/partials/_panels.scss */
 ul.primary.tabs {
   border-bottom: solid 1px #000;
   padding: 0;
   margin: 20px 0;
 }
 
-/* line 345, ../sass/partials/_panels.scss */
+/* line 351, ../sass/partials/_panels.scss */
 .view-camp-user-social-media-links .item-list ul {
   padding: 0;
 }
-/* line 347, ../sass/partials/_panels.scss */
+/* line 353, ../sass/partials/_panels.scss */
 .view-camp-user-social-media-links .item-list ul li {
   list-style: none;
 }
 
-/* line 357, ../sass/partials/_panels.scss */
+/* line 363, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page .views-field-title,
 .view-summits-by-day.landing-page .views-field-field-summary {
   float: left;
   width: 570px;
 }
-/* line 362, ../sass/partials/_panels.scss */
+/* line 368, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page .views-field-field-summary {
   margin-bottom: 30px;
 }
-/* line 366, ../sass/partials/_panels.scss */
+/* line 372, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page .views-field-field-venue-1 {
   float: left;
   margin-top: -22px;
   margin-left: 30px;
 }
-/* line 371, ../sass/partials/_panels.scss */
+/* line 377, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page h3 {
   padding: 4px 20px;
   margin-bottom: 30px;
@@ -1249,23 +1251,23 @@ ul.primary.tabs {
   border-bottom: 0;
   clear: both;
 }
-/* line 381, ../sass/partials/_panels.scss */
+/* line 387, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page h4 {
   margin: 10px 0 0;
   font-weight: 600;
   margin-top: 30px;
 }
-/* line 385, ../sass/partials/_panels.scss */
+/* line 391, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page h4 a {
   color: black;
   text-decoration: underline;
 }
-/* line 390, ../sass/partials/_panels.scss */
+/* line 396, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page .item-list ul {
   padding: 0;
   margin: 0 0 10px;
 }
-/* line 393, ../sass/partials/_panels.scss */
+/* line 399, ../sass/partials/_panels.scss */
 .view-summits-by-day.landing-page .item-list ul li {
   background: none;
   border: 0;
@@ -1276,18 +1278,18 @@ ul.primary.tabs {
   clear: both;
 }
 
-/* line 406, ../sass/partials/_panels.scss */
+/* line 412, ../sass/partials/_panels.scss */
 .pane-sponsors-panel-pane-5 {
   clear: both;
 }
 
-/* line 412, ../sass/partials/_panels.scss */
+/* line 418, ../sass/partials/_panels.scss */
 .view-display-id-panel_pane_5 .views-field-field-image {
   float: left;
   padding: 0 20px 0 0;
 }
 
-/* line 420, ../sass/partials/_panels.scss */
+/* line 426, ../sass/partials/_panels.scss */
 #proposed-sessions h3 {
   padding: 4px 20px;
   margin-bottom: 30px;
@@ -1298,17 +1300,17 @@ ul.primary.tabs {
   clear: both;
 }
 
-/* line 430, ../sass/partials/_panels.scss */
+/* line 436, ../sass/partials/_panels.scss */
 #proposed-sessions h2 {
   margin: 10px 0;
 }
 
-/* line 434, ../sass/partials/_panels.scss */
+/* line 440, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul {
   margin: 0;
   padding: 0;
 }
-/* line 437, ../sass/partials/_panels.scss */
+/* line 443, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li {
   list-style: none;
   clear: both;
@@ -1316,43 +1318,43 @@ ul.primary.tabs {
   margin: 10px 0 20px 0;
   min-height: 120px;
 }
-/* line 444, ../sass/partials/_panels.scss */
+/* line 450, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li .views-label-field-speakers-1 {
   font-weight: 600;
 }
-/* line 448, ../sass/partials/_panels.scss */
+/* line 454, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li .views-field {
   display: block;
   margin: 5px 0;
 }
-/* line 453, ../sass/partials/_panels.scss */
+/* line 459, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li .views-field-field-track-1,
 .view-id-session_schedule ul li .views-field-field-skill-level {
   float: left;
   margin-right: 10px;
 }
-/* line 458, ../sass/partials/_panels.scss */
+/* line 464, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li .views-field-title {
   font-weight: bold;
   max-width: 500px;
   line-height: 20px;
 }
-/* line 464, ../sass/partials/_panels.scss */
+/* line 470, ../sass/partials/_panels.scss */
 .view-id-session_schedule ul li a {
   color: #000;
   text-decoration: underline;
   margin: 0 0 5px;
 }
 
-/* line 473, ../sass/partials/_panels.scss */
+/* line 479, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid .form-item:not(.form-submit) {
   border-bottom: 0;
 }
-/* line 477, ../sass/partials/_panels.scss */
+/* line 483, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid .form-type-bef-link {
   float: left;
 }
-/* line 486, ../sass/partials/_panels.scss */
+/* line 492, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-17 a,
 .views-widget-filter-field_track_tid #edit-field-track-tid-18 a,
 .views-widget-filter-field_track_tid #edit-field-track-tid-46 a,
@@ -1371,7 +1373,7 @@ ul.primary.tabs {
   line-height: 16px;
   color: #000;
 }
-/* line 499, ../sass/partials/_panels.scss */
+/* line 505, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-17 a:hover,
 .views-widget-filter-field_track_tid #edit-field-track-tid-18 a:hover,
 .views-widget-filter-field_track_tid #edit-field-track-tid-46 a:hover,
@@ -1380,51 +1382,51 @@ ul.primary.tabs {
 .views-widget-filter-field_track_tid #edit-field-track-tid-19 a:hover {
   text-decoration: none;
 }
-/* line 506, ../sass/partials/_panels.scss */
+/* line 512, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-17 a {
   background-position: 61% 119%;
 }
-/* line 511, ../sass/partials/_panels.scss */
+/* line 517, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-17:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-17.selected a {
   background-position: 61% 0%;
 }
-/* line 518, ../sass/partials/_panels.scss */
+/* line 524, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-18 a {
   background-position: 82% 119%;
 }
-/* line 523, ../sass/partials/_panels.scss */
+/* line 529, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-18:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-18.selected a {
   background-position: 82% 0%;
 }
-/* line 531, ../sass/partials/_panels.scss */
+/* line 537, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-46 a {
   background-position: 101.8% 119.5%;
 }
-/* line 536, ../sass/partials/_panels.scss */
+/* line 542, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-46:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-46.selected a {
   background-position: 100% 0%;
 }
-/* line 544, ../sass/partials/_panels.scss */
+/* line 550, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-20 a {
   background-position: -3% 119%;
 }
-/* line 549, ../sass/partials/_panels.scss */
+/* line 555, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-20:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-20.selected a {
   background-position: -3% 0%;
 }
-/* line 557, ../sass/partials/_panels.scss */
+/* line 563, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-19 a {
   background-position: 17% 119%;
 }
-/* line 562, ../sass/partials/_panels.scss */
+/* line 568, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-19:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-19.selected a {
   background-position: 17% 0%;
 }
-/* line 570, ../sass/partials/_panels.scss */
+/* line 576, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-29 a {
   background-position: 39% 119%;
 }
-/* line 575, ../sass/partials/_panels.scss */
+/* line 581, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-29:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-29.selected a {
   background-position: 39% 0%;
 }
@@ -1434,13 +1436,13 @@ ul.primary.tabs {
 	Job Board
 
 \*-------------------------------------------*/
-/* line 592, ../sass/partials/_panels.scss */
+/* line 598, ../sass/partials/_panels.scss */
 .view-job-opportunities .view-content ul {
   margin: 0;
   padding: 0;
   width: 100%;
 }
-/* line 598, ../sass/partials/_panels.scss */
+/* line 604, ../sass/partials/_panels.scss */
 .view-job-opportunities .view-content ul li {
   list-style: none;
   border-bottom: 1px solid #bbb;
@@ -1449,17 +1451,17 @@ ul.primary.tabs {
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
-/* line 612, ../sass/partials/_panels.scss */
+/* line 618, ../sass/partials/_panels.scss */
 .view-job-opportunities .view-content ul li .views-label {
   display: none;
 }
-/* line 616, ../sass/partials/_panels.scss */
+/* line 622, ../sass/partials/_panels.scss */
 .view-job-opportunities .view-content ul li .views-field-field-image {
   float: left;
   width: 20%;
   line-height: 1em;
 }
-/* line 622, ../sass/partials/_panels.scss */
+/* line 628, ../sass/partials/_panels.scss */
 .view-job-opportunities .view-content ul li .views-field-title {
   padding: 3em 0 0 0;
   width: 80%;
@@ -1471,7 +1473,7 @@ ul.primary.tabs {
 	Plugin Pane Styles
 
 \*-------------------------------------------*/
-/* line 641, ../sass/partials/_panels.scss */
+/* line 647, ../sass/partials/_panels.scss */
 .pane-center-styled-content .pane-title, .center-title-only .pane-title, .pane-full-width-content .pane-title, .panel-pane.about-header .pane-content:after .pane-title, .panel-pane.pane-venue-location > .pane-content:after .pane-title {
   text-align: center;
   border: none;
@@ -1488,20 +1490,20 @@ ul.primary.tabs {
   width: 1.4em;
 }
 
-/* line 653, ../sass/partials/_panels.scss */
+/* line 659, ../sass/partials/_panels.scss */
 .pane-center-styled-content .pane-content, .pane-full-width-content .pane-content, .panel-pane.about-header .pane-content:after .pane-content, .panel-pane.pane-venue-location > .pane-content:after .pane-content {
   text-align: center;
 }
-/* line 655, ../sass/partials/_panels.scss */
+/* line 661, ../sass/partials/_panels.scss */
 .pane-center-styled-content .pane-content p, .pane-full-width-content .pane-content p, .panel-pane.about-header .pane-content:after .pane-content p, .panel-pane.pane-venue-location > .pane-content:after .pane-content p {
   margin: 0 0 1.5em;
 }
 
-/* line 675, ../sass/partials/_panels.scss */
+/* line 681, ../sass/partials/_panels.scss */
 .pane-full-width-content, .panel-pane.about-header .pane-content:after, .panel-pane.pane-venue-location > .pane-content:after {
   background-color: #000;
 }
-/* line 682, ../sass/partials/_panels.scss */
+/* line 688, ../sass/partials/_panels.scss */
 .pane-full-width-content .pane-title, .panel-pane.about-header .pane-content:after .pane-title, .panel-pane.pane-venue-location > .pane-content:after .pane-title {
   color: #7EBFD6;
 }
@@ -1512,18 +1514,18 @@ ul.primary.tabs {
   text-align: center;
   width: 1.4em;
 }
-/* line 687, ../sass/partials/_panels.scss */
+/* line 693, ../sass/partials/_panels.scss */
 .pane-full-width-content .pane-content, .panel-pane.about-header .pane-content:after .pane-content, .panel-pane.pane-venue-location > .pane-content:after .pane-content {
   color: #FFF;
   font-size: 18px;
 }
-/* line 690, ../sass/partials/_panels.scss */
+/* line 696, ../sass/partials/_panels.scss */
 .pane-full-width-content .pane-content p, .panel-pane.about-header .pane-content:after .pane-content p, .panel-pane.pane-venue-location > .pane-content:after .pane-content p {
   font-weight: 100;
 }
 
 /* END PLUGIN PANE STYLES -------------------*/
-/* line 699, ../sass/partials/_panels.scss */
+/* line 705, ../sass/partials/_panels.scss */
 .panel-pane.about-header .pane-content:after {
   display: block;
   content: "";
@@ -1532,7 +1534,7 @@ ul.primary.tabs {
   background: url("../images/about1.jpg") no-repeat top center;
 }
 
-/* line 713, ../sass/partials/_panels.scss */
+/* line 719, ../sass/partials/_panels.scss */
 .panel-pane.pane-venue-location > .pane-content:after {
   display: block;
   content: "";
@@ -1541,24 +1543,24 @@ ul.primary.tabs {
   background: url("../images/about2.jpg") no-repeat top center;
 }
 
-/* line 727, ../sass/partials/_panels.scss */
+/* line 733, ../sass/partials/_panels.scss */
 .about-facts {
   background-image: url(../images/bg-facts.jpg);
   background-repeat: no-repeat;
   background-position: bottom center;
   padding-bottom: 3em;
 }
-/* line 733, ../sass/partials/_panels.scss */
+/* line 739, ../sass/partials/_panels.scss */
 .about-facts .pane-title {
   margin-bottom: 1em;
 }
-/* line 739, ../sass/partials/_panels.scss */
+/* line 745, ../sass/partials/_panels.scss */
 .about-facts .fact-one,
 .about-facts .fact-two,
 .about-facts .fact-three {
   color: #FFF;
 }
-/* line 741, ../sass/partials/_panels.scss */
+/* line 747, ../sass/partials/_panels.scss */
 .about-facts .fact-one h3,
 .about-facts .fact-two h3,
 .about-facts .fact-three h3 {
@@ -1566,20 +1568,20 @@ ul.primary.tabs {
   line-height: 1em;
   color: #FFF;
 }
-/* line 748, ../sass/partials/_panels.scss */
+/* line 754, ../sass/partials/_panels.scss */
 .about-facts .fact-one:before {
   content: "Connect";
 }
-/* line 751, ../sass/partials/_panels.scss */
+/* line 757, ../sass/partials/_panels.scss */
 .about-facts .fact-two:before {
   content: "Learn";
 }
-/* line 754, ../sass/partials/_panels.scss */
+/* line 760, ../sass/partials/_panels.scss */
 .about-facts .fact-three:before {
   content: "Inspire";
 }
 @media screen and (min-width: 768px) {
-  /* line 763, ../sass/partials/_panels.scss */
+  /* line 769, ../sass/partials/_panels.scss */
   .about-facts .fact-one,
   .about-facts .fact-two,
   .about-facts .fact-three {
@@ -1588,32 +1590,32 @@ ul.primary.tabs {
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 727, ../sass/partials/_panels.scss */
+  /* line 733, ../sass/partials/_panels.scss */
   .about-facts {
     background-size: 100%;
   }
 }
 
-/* line 779, ../sass/partials/_panels.scss */
+/* line 785, ../sass/partials/_panels.scss */
 .region-footer .views-field-title {
   margin: 1.5em 1em 0 1em;
   border-bottom: 1px solid #000;
 }
-/* line 782, ../sass/partials/_panels.scss */
+/* line 788, ../sass/partials/_panels.scss */
 .region-footer .views-field-title a {
   font-weight: bold;
   color: #000;
   text-decoration: none;
 }
-/* line 789, ../sass/partials/_panels.scss */
+/* line 795, ../sass/partials/_panels.scss */
 .region-footer img {
   padding: 0 1em 1em 1em;
 }
-/* line 793, ../sass/partials/_panels.scss */
+/* line 799, ../sass/partials/_panels.scss */
 .region-footer h2 {
   border: none;
 }
-/* line 799, ../sass/partials/_panels.scss */
+/* line 805, ../sass/partials/_panels.scss */
 .region-footer .view-id-sponsors .views-row {
   float: left;
   width: 25%;
@@ -1623,14 +1625,14 @@ ul.primary.tabs {
   word-wrap: break-word;
 }
 @media screen and (max-width: 700px) {
-  /* line 799, ../sass/partials/_panels.scss */
+  /* line 805, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row {
     width: 50%;
   }
 }
 
 /*darius' random css*/
-/* line 820, ../sass/partials/_panels.scss */
+/* line 826, ../sass/partials/_panels.scss */
 .front .pane-1 {
   -moz-box-sizing: border-box;
   float: left;
@@ -1641,27 +1643,27 @@ ul.primary.tabs {
   width: 50%;
   word-wrap: break-word;
 }
-/* line 831, ../sass/partials/_panels.scss */
+/* line 837, ../sass/partials/_panels.scss */
 .front .pane-1 .pane-content {
   background: url("../images/featured.png") no-repeat scroll 0 0/100% auto transparent;
   min-height: 200px;
 }
-/* line 837, ../sass/partials/_panels.scss */
+/* line 843, ../sass/partials/_panels.scss */
 .front .pane-1 .eventhighlights {
   width: 50%;
   margin-left: 50%;
   padding: 20px;
 }
-/* line 843, ../sass/partials/_panels.scss */
+/* line 849, ../sass/partials/_panels.scss */
 .front .pane-1 a {
   color: white;
   text-decoration: underline;
 }
-/* line 844, ../sass/partials/_panels.scss */
+/* line 850, ../sass/partials/_panels.scss */
 .front .pane-1 p {
   color: white;
 }
-/* line 845, ../sass/partials/_panels.scss */
+/* line 851, ../sass/partials/_panels.scss */
 .front .pane-1 .large {
   font-size: 215%;
   color: white;

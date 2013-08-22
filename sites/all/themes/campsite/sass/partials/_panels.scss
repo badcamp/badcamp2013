@@ -2,6 +2,12 @@
 // Panels-specific layout code
 //
 
+
+body {
+  width: 100%;
+  overflow: hidden;
+}
+
 #page {
   // clearfix instead of overflow hidden. 
   // overflow hidden causes mobile menu not to show. 
