@@ -2542,7 +2542,7 @@ function badcamp_panels_default_page_manager_pages() {
       'admin_title' => 'Four Image Promo',
       'title' => '',
       'body' => '&nbsp;',
-      'format' => 'plain_text',
+      'format' => 'full_html',
       'substitute' => TRUE,
     );
     $pane->cache = array();
@@ -2551,7 +2551,7 @@ function badcamp_panels_default_page_manager_pages() {
     );
     $pane->css = array(
       'css_id' => 'four-image-promo',
-      'css_class' => 'four-image-promo',
+      'css_class' => 'four-image-promo pane-full-width-content',
     );
     $pane->extras = array();
     $pane->position = 1;
@@ -2607,16 +2607,25 @@ function badcamp_panels_default_page_manager_pages() {
     $pane = new stdClass();
     $pane->pid = 'new-68';
     $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'speakers-panel_pane_1';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'admin_title' => 'three image promo',
+      'title' => '',
+      'body' => '&nbsp;',
+      'format' => 'full_html',
+      'substitute' => TRUE,
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => 'three-image-promo',
+      'css_class' => 'three-image-promo pane-full-width-content',
+    );
     $pane->extras = array();
     $pane->position = 4;
     $pane->locks = array();
@@ -2624,6 +2633,30 @@ function badcamp_panels_default_page_manager_pages() {
     $display->panels['middle'][4] = 'new-68';
     $pane = new stdClass();
     $pane->pid = 'new-69';
+    $pane->panel = 'middle';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => 'Responsive Vertical Event Timeline',
+      'title' => '',
+      'body' => '<div class="timeline-border"><div class="bookend bookend-top"><span>Eager Arrival</span></div><div class="line">&nbsp;</div><div class="day first"><span>Thursday</span></div><div class="event"><h3>Free Drupal Training</h3><ul><li><a href="/events/drupal-immersion-beginners-thursday">Drupal Immersion for Beginners</a></li><li><a href="/events/level-your-themer-thursday">Level Up Your Themer</a></li><li><a href="/events/drupal-development-best-practices-building-sites-pantheon-thursday">Drupal Development Best Practices &amp; Building Sites on Pantheon</a></li><li><a href="/events/enjoy-drupal-site-builder-basics-thursday">Enjoy Drupal: Site Builder Basics</a></li><li><a href="/events/drupal-performance-and-scalability-dream-team">Drupal Performance and Scalability with the Dream Team</a></li><li><a href="/events/open-atrium-2">Open Atrium 2</a></li></ul></div><div class="event"><h3>Drupal Summits</h3><ul><li><a href="/events/drupal-non-profit-summit">Drupal Non Profit Summit</a></li><li><a href="/events/drupal-devops-summit">Drupal DevOps Summit</a></li><li><a href="/events/drupal-ecommerce-summit">Drupal eCommerce Summit</a></li></ul></div><div class="day"><span>Friday</span></div><div class="event"><h3>Drupal Summits</h3><ul><li><a href="/events/mobile-drupal-summit">Mobile Drupal Summit</a></li><li><a href="/events/higher-education-summit">Higher Education Summit</a></li><li><a href="/events/drupal-ui-ux-summit">Drupal UI / UX Summit</a></li><li><a href="/events/drupal-product-summit">Drupal Product Summit</a></li></ul></div><div class="event"><h3>Free Drupal Training</h3><ul><li><a href="/events/drupal-immersion-beginners-friday">Drupal Immersion for Beginners</a></li><li><a href="/events/whats-new-drupal-8-friday">What\'s New in Drupal 8</a></li><li><a href="/events/level-your-themer-friday">Level Up Your Themer</a></li><li><a href="/events/building-multilingual-sites-drupal-7-friday">Building Multilingual Sites with Drupal 7</a></li><li><a href="/events/drupal-development-best-practices-building-sites-pantheon-friday">Drupal Development Best Practices &amp; Building Sites on Pantheon</a></li><li><a href="/events/enjoy-drupal-site-builder-basics-friday">Enjoy Drupal: Site Builder Basics</a></li></ul></div><div class="event featured"><h3><a href="/events/drupal-trivia-night">Trivia Night!</a></h3>8PM International House</div><div class="day"><span>Saturday</span></div><div class="event"><h3><a href="/BOFs">Birds of a Feather meetings</a></h3><p>Ad-hoc, open sessions about topics organized by attendees during the event.</p></div><div class="event"><h3>BADCamp Sessions</h3><p>A full day of speakers from throughout the community, presenting topics and ideas along the following themes:</p><ul><li><a href="/tracks/business-community">Business &amp; Community</a></li><li><a href="/tracks/code-develop">Code &amp; Development</a></li><li><a href="/tracks/core-conversation">Core Conversation</a></li><li><a href="/tracks/design-theme-ux">Design, Theme + UX</a></li><li><a href="/tracks/devops-performance">DevOps &amp; Performance</a></li><li><a href="/tracks/site-building-using-drupal">Site Building &amp; Using Drupal</a></li></ul></div><div class="event featured"><h3><a href="/events/big-bad-party">The BADCamp Party!</a></h3><p>9pm Marsh Theatre<br /> Berkeley, CA</p></div><div class="day"><span>Sunday</span></div><div class="event"><h3><a href="/sprints">Core Developer Sprint</a></h3><p>Gather at the Anna Head Alumnae Hall for core conversations, and to sprint on Drupal 8</p></div><div class="event"><h3>BADCamp Sessions</h3><p>A full day of speakers from throughout the community, presenting topics and ideas along the following themes:</p><ul><li><a href="/tracks/business-community">Business &amp; Community</a></li><li><a href="/tracks/code-develop">Code &amp; Development</a></li><li><a href="/tracks/core-conversation">Core Conversation</a></li><li><a href="/tracks/design-theme-ux">Design, Theme + UX</a></li><li><a href="/tracks/devops-performance">DevOps &amp; Performance</a></li><li><a href="/tracks/site-building-using-drupal">Site Building &amp; Using Drupal</a></li></ul></div><div class="event"><h3><a href="/BOFs">Birds of a Feather meetings</a></h3><p>Ad-hoc, open sessions about topics organized by attendees during the event.</p></div><div class="bookend bookend-bottom"><span>Leave inspired.</span></div></div>',
+      'format' => 'full_html',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 5;
+    $pane->locks = array();
+    $display->content['new-69'] = $pane;
+    $display->panels['middle'][5] = 'new-69';
+    $pane = new stdClass();
+    $pane->pid = 'new-70';
     $pane->panel = 'middle';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -2643,33 +2676,6 @@ function badcamp_panels_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 5;
-    $pane->locks = array();
-    $display->content['new-69'] = $pane;
-    $display->panels['middle'][5] = 'new-69';
-    $pane = new stdClass();
-    $pane->pid = 'new-70';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'three image promo',
-      'title' => '',
-      'body' => '&nbsp;',
-      'format' => 'plain_text',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => 'three-image-promo',
-      'css_class' => 'three-image-promo',
-    );
-    $pane->extras = array();
     $pane->position = 6;
     $pane->locks = array();
     $display->content['new-70'] = $pane;
@@ -2677,17 +2683,11 @@ function badcamp_panels_default_page_manager_pages() {
     $pane = new stdClass();
     $pane->pid = 'new-71';
     $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'attendees-panel_pane_2';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Responsive Vertical Event Timeline',
-      'title' => '',
-      'body' => '<div class="timeline-border"><div class="bookend bookend-top"><span>Eager Arrival</span></div><div class="line">&nbsp;</div><div class="day first"><span>Thursday</span></div><div class="event"><h3>Free Drupal Training</h3><ul><li><a href="/events/drupal-immersion-beginners-thursday">Drupal Immersion for Beginners</a></li><li><a href="/events/level-your-themer-thursday">Level Up Your Themer</a></li><li><a href="/events/drupal-development-best-practices-building-sites-pantheon-thursday">Drupal Development Best Practices &amp; Building Sites on Pantheon</a></li><li><a href="/events/enjoy-drupal-site-builder-basics-thursday">Enjoy Drupal: Site Builder Basics</a></li><li><a href="/events/drupal-performance-and-scalability-dream-team">Drupal Performance and Scalability with the Dream Team</a></li><li><a href="/events/open-atrium-2">Open Atrium 2</a></li></ul></div><div class="event"><h3>Drupal Summits</h3><ul><li><a href="/events/drupal-non-profit-summit">Drupal Non Profit Summit</a></li><li><a href="/events/drupal-devops-summit">Drupal DevOps Summit</a></li><li><a href="/events/drupal-ecommerce-summit">Drupal eCommerce Summit</a></li></ul></div><div class="day"><span>Friday</span></div><div class="event"><h3>Drupal Summits</h3><ul><li><a href="/events/mobile-drupal-summit">Mobile Drupal Summit</a></li><li><a href="/events/higher-education-summit">Higher Education Summit</a></li><li><a href="/events/drupal-ui-ux-summit">Drupal UI / UX Summit</a></li><li><a href="/events/drupal-product-summit">Drupal Product Summit</a></li></ul></div><div class="event"><h3>Free Drupal Training</h3><ul><li><a href="/events/drupal-immersion-beginners-friday">Drupal Immersion for Beginners</a></li><li><a href="/events/whats-new-drupal-8-friday">What\'s New in Drupal 8</a></li><li><a href="/events/level-your-themer-friday">Level Up Your Themer</a></li><li><a href="/events/building-multilingual-sites-drupal-7-friday">Building Multilingual Sites with Drupal 7</a></li><li><a href="/events/drupal-development-best-practices-building-sites-pantheon-friday">Drupal Development Best Practices &amp; Building Sites on Pantheon</a></li><li><a href="/events/enjoy-drupal-site-builder-basics-friday">Enjoy Drupal: Site Builder Basics</a></li></ul></div><div class="event featured"><h3><a href="/events/drupal-trivia-night">Trivia Night!</a></h3>8PM International House</div><div class="day"><span>Saturday</span></div><div class="event"><h3><a href="/BOFs">Birds of a Feather meetings</a></h3><p>Ad-hoc, open sessions about topics organized by attendees during the event.</p></div><div class="event"><h3>BADCamp Sessions</h3><p>A full day of speakers from throughout the community, presenting topics and ideas along the following themes:</p><ul><li><a href="/tracks/business-community">Business &amp; Community</a></li><li><a href="/tracks/code-develop">Code &amp; Development</a></li><li><a href="/tracks/core-conversation">Core Conversation</a></li><li><a href="/tracks/design-theme-ux">Design, Theme + UX</a></li><li><a href="/tracks/devops-performance">DevOps &amp; Performance</a></li><li><a href="/tracks/site-building-using-drupal">Site Building &amp; Using Drupal</a></li></ul></div><div class="event featured"><h3><a href="/events/big-bad-party">The BADCamp Party!</a></h3><p>9pm Marsh Theatre<br /> Berkeley, CA</p></div><div class="day"><span>Sunday</span></div><div class="event"><h3><a href="/sprints">Core Developer Sprint</a></h3><p>Gather at the Anna Head Alumnae Hall for core conversations, and to sprint on Drupal 8</p></div><div class="event"><h3>BADCamp Sessions</h3><p>A full day of speakers from throughout the community, presenting topics and ideas along the following themes:</p><ul><li><a href="/tracks/business-community">Business &amp; Community</a></li><li><a href="/tracks/code-develop">Code &amp; Development</a></li><li><a href="/tracks/core-conversation">Core Conversation</a></li><li><a href="/tracks/design-theme-ux">Design, Theme + UX</a></li><li><a href="/tracks/devops-performance">DevOps &amp; Performance</a></li><li><a href="/tracks/site-building-using-drupal">Site Building &amp; Using Drupal</a></li></ul></div><div class="event"><h3><a href="/BOFs">Birds of a Feather meetings</a></h3><p>Ad-hoc, open sessions about topics organized by attendees during the event.</p></div><div class="bookend bookend-bottom"><span>Leave inspired.</span></div></div>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
+    $pane->configuration = array();
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -3331,8 +3331,8 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->pid = 'new-89';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
-    $pane->subtype = 'speakers-panel_pane_1';
-    $pane->shown = FALSE;
+    $pane->subtype = 'attendees-panel_pane_2';
+    $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
     $pane->cache = array();
@@ -3347,24 +3347,6 @@ function badcamp_panels_default_page_manager_pages() {
     $display->panels['middle'][3] = 'new-89';
     $pane = new stdClass();
     $pane->pid = 'new-90';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'attendees-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 4;
-    $pane->locks = array();
-    $display->content['new-90'] = $pane;
-    $display->panels['middle'][4] = 'new-90';
-    $pane = new stdClass();
-    $pane->pid = 'new-91';
     $pane->panel = 'middle';
     $pane->type = 'events';
     $pane->subtype = 'events';
@@ -3398,12 +3380,12 @@ function badcamp_panels_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 5;
+    $pane->position = 4;
     $pane->locks = array();
-    $display->content['new-91'] = $pane;
-    $display->panels['middle'][5] = 'new-91';
+    $display->content['new-90'] = $pane;
+    $display->panels['middle'][4] = 'new-90';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-89';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['home_page'] = $page;
@@ -3456,7 +3438,7 @@ function badcamp_panels_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-92';
+    $pane->pid = 'new-91';
     $pane->panel = 'middle';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -3482,10 +3464,10 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-92'] = $pane;
-    $display->panels['middle'][0] = 'new-92';
+    $display->content['new-91'] = $pane;
+    $display->panels['middle'][0] = 'new-91';
     $pane = new stdClass();
-    $pane->pid = 'new-93';
+    $pane->pid = 'new-92';
     $pane->panel = 'middle';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -3509,10 +3491,10 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-93'] = $pane;
-    $display->panels['middle'][1] = 'new-93';
+    $display->content['new-92'] = $pane;
+    $display->panels['middle'][1] = 'new-92';
     $pane = new stdClass();
-    $pane->pid = 'new-94';
+    $pane->pid = 'new-93';
     $pane->panel = 'middle';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -3547,10 +3529,10 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-94'] = $pane;
-    $display->panels['middle'][2] = 'new-94';
+    $display->content['new-93'] = $pane;
+    $display->panels['middle'][2] = 'new-93';
     $pane = new stdClass();
-    $pane->pid = 'new-95';
+    $pane->pid = 'new-94';
     $pane->panel = 'middle';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -3574,10 +3556,10 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $display->content['new-95'] = $pane;
-    $display->panels['middle'][3] = 'new-95';
+    $display->content['new-94'] = $pane;
+    $display->panels['middle'][3] = 'new-94';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-93';
+  $display->title_pane = 'new-92';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['individual_sponsorship'] = $page;
@@ -3630,7 +3612,7 @@ function badcamp_panels_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-96';
+    $pane->pid = 'new-95';
     $pane->panel = 'middle';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -3656,10 +3638,10 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-96'] = $pane;
-    $display->panels['middle'][0] = 'new-96';
+    $display->content['new-95'] = $pane;
+    $display->panels['middle'][0] = 'new-95';
     $pane = new stdClass();
-    $pane->pid = 'new-97';
+    $pane->pid = 'new-96';
     $pane->panel = 'middle';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -3683,10 +3665,10 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-97'] = $pane;
-    $display->panels['middle'][1] = 'new-97';
+    $display->content['new-96'] = $pane;
+    $display->panels['middle'][1] = 'new-96';
     $pane = new stdClass();
-    $pane->pid = 'new-98';
+    $pane->pid = 'new-97';
     $pane->panel = 'middle';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -3721,10 +3703,10 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-98'] = $pane;
-    $display->panels['middle'][2] = 'new-98';
+    $display->content['new-97'] = $pane;
+    $display->panels['middle'][2] = 'new-97';
     $pane = new stdClass();
-    $pane->pid = 'new-99';
+    $pane->pid = 'new-98';
     $pane->panel = 'middle';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -3748,10 +3730,10 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $display->content['new-99'] = $pane;
-    $display->panels['middle'][3] = 'new-99';
+    $display->content['new-98'] = $pane;
+    $display->panels['middle'][3] = 'new-98';
     $pane = new stdClass();
-    $pane->pid = 'new-100';
+    $pane->pid = 'new-99';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
     $pane->subtype = 'individual_sponsors-panel_pane_1';
@@ -3766,10 +3748,10 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 4;
     $pane->locks = array();
-    $display->content['new-100'] = $pane;
-    $display->panels['middle'][4] = 'new-100';
+    $display->content['new-99'] = $pane;
+    $display->panels['middle'][4] = 'new-99';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-97';
+  $display->title_pane = 'new-96';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['individual_sponsorshup'] = $page;
@@ -3823,7 +3805,7 @@ function badcamp_panels_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-101';
+    $pane->pid = 'new-100';
     $pane->panel = 'left';
     $pane->type = 'views_panes';
     $pane->subtype = 'session_schedule-panel_pane_3';
@@ -3838,10 +3820,10 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-101'] = $pane;
-    $display->panels['left'][0] = 'new-101';
+    $display->content['new-100'] = $pane;
+    $display->panels['left'][0] = 'new-100';
     $pane = new stdClass();
-    $pane->pid = 'new-102';
+    $pane->pid = 'new-101';
     $pane->panel = 'right';
     $pane->type = 'block';
     $pane->subtype = 'block-4';
@@ -3859,10 +3841,10 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-102'] = $pane;
-    $display->panels['right'][0] = 'new-102';
+    $display->content['new-101'] = $pane;
+    $display->panels['right'][0] = 'new-101';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-101';
+  $display->title_pane = 'new-100';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['proposed_sessions'] = $page;
@@ -3918,7 +3900,7 @@ function badcamp_panels_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-103';
+    $pane->pid = 'new-102';
     $pane->panel = 'middle';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -3939,8 +3921,8 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-103'] = $pane;
-    $display->panels['middle'][0] = 'new-103';
+    $display->content['new-102'] = $pane;
+    $display->panels['middle'][0] = 'new-102';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -3998,7 +3980,7 @@ function badcamp_panels_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-104';
+    $pane->pid = 'new-103';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
     $pane->subtype = 'speakers-panel_pane_1';
@@ -4013,10 +3995,10 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-104'] = $pane;
-    $display->panels['middle'][0] = 'new-104';
+    $display->content['new-103'] = $pane;
+    $display->panels['middle'][0] = 'new-103';
     $pane = new stdClass();
-    $pane->pid = 'new-105';
+    $pane->pid = 'new-104';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
     $pane->subtype = 'attendees-panel_pane_1';
@@ -4031,8 +4013,8 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-105'] = $pane;
-    $display->panels['middle'][1] = 'new-105';
+    $display->content['new-104'] = $pane;
+    $display->panels['middle'][1] = 'new-104';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -4090,7 +4072,7 @@ function badcamp_panels_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-106';
+    $pane->pid = 'new-105';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
     $pane->subtype = 'sponsors-panel_pane_1';
@@ -4107,10 +4089,10 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-106'] = $pane;
-    $display->panels['middle'][0] = 'new-106';
+    $display->content['new-105'] = $pane;
+    $display->panels['middle'][0] = 'new-105';
     $pane = new stdClass();
-    $pane->pid = 'new-107';
+    $pane->pid = 'new-106';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
     $pane->subtype = 'sponsors-panel_pane_2';
@@ -4125,10 +4107,10 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-107'] = $pane;
-    $display->panels['middle'][1] = 'new-107';
+    $display->content['new-106'] = $pane;
+    $display->panels['middle'][1] = 'new-106';
     $pane = new stdClass();
-    $pane->pid = 'new-108';
+    $pane->pid = 'new-107';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
     $pane->subtype = 'sponsors-panel_pane_3';
@@ -4143,10 +4125,10 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-108'] = $pane;
-    $display->panels['middle'][2] = 'new-108';
+    $display->content['new-107'] = $pane;
+    $display->panels['middle'][2] = 'new-107';
     $pane = new stdClass();
-    $pane->pid = 'new-109';
+    $pane->pid = 'new-108';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
     $pane->subtype = 'sponsors-panel_pane_4';
@@ -4161,8 +4143,8 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $display->content['new-109'] = $pane;
-    $display->panels['middle'][3] = 'new-109';
+    $display->content['new-108'] = $pane;
+    $display->panels['middle'][3] = 'new-108';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -4220,7 +4202,7 @@ function badcamp_panels_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-110';
+    $pane->pid = 'new-109';
     $pane->panel = 'middle';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -4241,8 +4223,8 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-110'] = $pane;
-    $display->panels['middle'][0] = 'new-110';
+    $display->content['new-109'] = $pane;
+    $display->panels['middle'][0] = 'new-109';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -4311,7 +4293,7 @@ function badcamp_panels_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-111';
+    $pane->pid = 'new-110';
     $pane->panel = 'middle';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -4337,10 +4319,10 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-111'] = $pane;
-    $display->panels['middle'][0] = 'new-111';
+    $display->content['new-110'] = $pane;
+    $display->panels['middle'][0] = 'new-110';
     $pane = new stdClass();
-    $pane->pid = 'new-112';
+    $pane->pid = 'new-111';
     $pane->panel = 'middle';
     $pane->type = 'user_signup';
     $pane->subtype = 'user_signup';
@@ -4355,10 +4337,10 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-112'] = $pane;
-    $display->panels['middle'][1] = 'new-112';
+    $display->content['new-111'] = $pane;
+    $display->panels['middle'][1] = 'new-111';
     $pane = new stdClass();
-    $pane->pid = 'new-113';
+    $pane->pid = 'new-112';
     $pane->panel = 'middle';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -4379,8 +4361,8 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-113'] = $pane;
-    $display->panels['middle'][2] = 'new-113';
+    $display->content['new-112'] = $pane;
+    $display->panels['middle'][2] = 'new-112';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
