@@ -8,17 +8,12 @@
   @extend .clearfix; 
 }
 
-// Top Sponsors
-#block-views-sponsors-block-1 {
-  h2 {
-    margin-left: -50%;
-    padding-left: 50%;
-    margin-right: -50%;
-    padding-right: 50%;
-    color: #fff;
-    background-color: #aaa;
-    font-size: 1.17em;
-  }
+// Footer titles.
+#footer h2 {
+  color: #fff;
+  background-color: #aaa;
+  font-size: 1.17em;
+  @extend %full-width-title;
 }
 
 // Regions and their colors
@@ -170,8 +165,8 @@
   }
 }
 
-#page-title{
-  @extend %force-full-width;
+#page-title {
+  @extend %full-width-title;
   color: #fff;
   background-color: #313337;
   font-size: 1.8em;
@@ -673,10 +668,13 @@ ul.primary.tabs{
 
 // Full width panes that need to stretch to the edge
 .pane-full-width-content {
-  @extend %force-full-width;
   @extend %center-styled-pane-title;
   @extend %center-styled-pane-content;
   background-color: #000;
+  margin-left: -50%;
+  padding-left: 50%;
+  margin-right: -50%;
+  padding-right: 50%;
 
 
   .pane-title {
@@ -696,6 +694,11 @@ ul.primary.tabs{
 /* END PLUGIN PANE STYLES -------------------*/
 
 // Main About header
+.panel-pane.about-header h2 {
+  color: white;
+  border-bottom: none;
+  padding-bottom: 0;
+}
 .panel-pane.about-header .pane-content:after {
   display: block;
   content: "";
@@ -732,6 +735,7 @@ ul.primary.tabs{
 
   .pane-title {
     margin-bottom: 1em;
+    color: white;
   }
 
   .fact-one,

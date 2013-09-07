@@ -75,14 +75,17 @@
   }
 }
 
-/* 
-  This is used to pull the restricted width elements out to be more full width.
+/**
+ * Common CSS for full-width titles. Markup requires an inner span.
  */
-%force-full-width {
-  margin-left: -50%;
-  padding-left: 50%;
-  margin-right: -50%;
-  padding-right: 50%;
+%full-width-title {
+  span {
+    max-width: 1200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 

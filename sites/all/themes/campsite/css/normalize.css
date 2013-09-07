@@ -9,8 +9,8 @@
    Also: @see http://meiert.com/en/blog/20080419/reset-style-sheets-are-bad/
          @see http://snook.ca/archives/html_and_css/no_css_reset/
    ========================================================================== */
-/* 
-  This is used to pull the restricted width elements out to be more full width.
+/**
+ * Common CSS for full-width titles. Markup requires an inner span.
  */
 /* line 9, ../sass/partials/_colors.scss */
 body {
