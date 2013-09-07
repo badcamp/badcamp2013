@@ -2482,7 +2482,7 @@ function badcamp_panels_default_page_manager_pages() {
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
     'body_classes_to_add' => '',
-    'css_id' => '',
+    'css_id' => 'about-badcamp',
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
@@ -2520,7 +2520,7 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
-      'style' => 'full_width_content',
+      'style' => 'default',
     );
     $pane->css = array(
       'css_id' => '',
@@ -2542,7 +2542,7 @@ function badcamp_panels_default_page_manager_pages() {
       'admin_title' => 'Four Image Promo',
       'title' => '',
       'body' => '&nbsp;',
-      'format' => 'full_html',
+      'format' => 'plain_text',
       'substitute' => TRUE,
     );
     $pane->cache = array();
@@ -2658,7 +2658,7 @@ function badcamp_panels_default_page_manager_pages() {
       'admin_title' => 'three image promo',
       'title' => '',
       'body' => '&nbsp;',
-      'format' => 'full_html',
+      'format' => 'plain_text',
       'substitute' => TRUE,
     );
     $pane->cache = array();
@@ -2716,7 +2716,7 @@ function badcamp_panels_default_page_manager_pages() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
-      'style' => 'full_width_content',
+      'style' => 'default',
     );
     $pane->css = array(
       'css_id' => '',
