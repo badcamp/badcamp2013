@@ -4,7 +4,7 @@
 
 .badcamp-2col .panel-col-first { 
   float: left;
-  width: 898px;
+  width: 74%;
 }
 
 .badcamp-2col .panel-col-first .inside { 
@@ -13,7 +13,7 @@
 
 .badcamp-2col .panel-col-last { 
   float: left; 
-  width: 278px; 
+  width: 25%; 
 }
 
 .badcamp-2col .panel-col-last .inside { 
