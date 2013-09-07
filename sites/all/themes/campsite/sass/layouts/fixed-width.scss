@@ -58,7 +58,7 @@ $zen-auto-include-item-base: false;
 #navigation,
 .region-sidebar-first,
 .region-sidebar-second,
-#footer {
+#footer .content {
   @include zen-grid-item-base();
 }
 
@@ -68,7 +68,7 @@ $zen-auto-include-item-base: false;
 
 #header,
 #main,
-#footer {
+#footer .content {
   @include zen-grid-container();
 }
 

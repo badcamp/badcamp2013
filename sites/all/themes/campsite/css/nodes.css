@@ -4,8 +4,8 @@
  *
  * Style anything that isn't in the $content variable.
  */
-/* 
-  This is used to pull the restricted width elements out to be more full width.
+/**
+ * Common CSS for full-width titles. Markup requires an inner span.
  */
 /* line 9, ../sass/partials/_colors.scss */
 body {

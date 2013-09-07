@@ -8,8 +8,8 @@
  *
  * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
  */
-/* 
-  This is used to pull the restricted width elements out to be more full width.
+/**
+ * Common CSS for full-width titles. Markup requires an inner span.
  */
 /* line 9, ../../sass/partials/_colors.scss */
 body {
@@ -49,7 +49,7 @@ a:hover {
 #navigation,
 .region-sidebar-first,
 .region-sidebar-second,
-#footer {
+#footer .content {
   padding-left: 10px;
   padding-right: 10px;
   border: 0 !important;
@@ -63,15 +63,15 @@ a:hover {
 #header:before, #header:after,
 #main:before,
 #main:after,
-#footer:before,
-#footer:after {
+#footer .content:before,
+#footer .content:after {
   content: "";
   display: table;
 }
 /* line 56, ../../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 #header:after,
 #main:after,
-#footer:after {
+#footer .content:after {
   clear: both;
 }
 

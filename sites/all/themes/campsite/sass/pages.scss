@@ -150,6 +150,10 @@ h2.comment-form, /* Comment form heading */
 h3.title { /* Comment title */
   margin: 0;
 }
+h2.pane-title {
+  margin: 0;
+  padding: 16px 0;
+}
 
 tr.even { /* Some tables have rows marked even or odd. */
   /* background-color: #eee; */ /* Drupal core uses a #eee background */
@@ -253,15 +257,15 @@ span.field-label { /* The inline field label used by the Fences module */
  */
 
 #footer {
-	margin-top:50px;
+  margin-top: 50px;
 
-	#block-block-1{
-		color:#777777;
-		font-size:14px;
-		p{
-			margin:5px;
-		}
-	}
+  #block-block-1 {
+    color: #777777;
+    font-size: 14px;
+    p {
+      margin: 5px;
+    }
+  }
 }
 
 /*
@@ -271,7 +275,7 @@ span.field-label { /* The inline field label used by the Fences module */
 .region-bottom { /* Wrapper for any blocks placed in the page bottom region */
 }
 
-@import "partials/header";            
+@import "partials/header";
 @import "partials/menu";
 @import "partials/panels";
 @import "partials/homepage";

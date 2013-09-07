@@ -29,6 +29,11 @@ local.settings.php
 *.log
 *.sql
 
+# IDE files #
+#############
+.project
+.idea
+
 # OS generated files #
 ######################
 .DS_Store*
