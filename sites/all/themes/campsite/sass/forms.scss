@@ -5,37 +5,36 @@
 
 @import "base";
 
-input:not([type=submit]):not([type=file]) {
+input:not([type=submit]) {
   border: none;
   background: #EBF0FA;
   padding: 7px 5px;
   line-height: 1em;
   margin-bottom: 3px;
+  width: 100%;
 }
 
-input[type="button"], 
-input[type="submit"], 
-input[type="reset"], 
-input[type="file"] {
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
   padding: 10px 15px;
   margin: 0;
   line-height: 1em;
   background: #000;
   color: #FFF;
-  border: none;   
+  border: none;
 }
 
+input[type="file"],
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
 
 .form-item { /* Wrapper for a form element (or group of form elements) and its label */
   margin: 1.5em 0;
-  
-
-
-
-  
-  &:not(.form-submit) {
-    border-bottom:  1px solid #999;
-  }
+  border-bottom:  1px solid #999;
+  width: 100%;
 
   input.error,
   textarea.error,
@@ -64,6 +63,29 @@ input[type="file"] {
   .form-checkboxes & ,
   .form-radios & { /* Pack groups of checkboxes and radio buttons closer together */
     margin: 0; /* Drupal core uses "0.4em 0" */
+  }
+
+}
+
+.form-type-select,
+.form-submit {
+  border-bottom: 0
+}
+
+#field-speakers-add-more-wrapper .form-item {
+  border-bottom: 0;
+}
+
+.form-item-field-speakers-und-0-uid label {
+  display: none;
+}
+
+table.field-multiple-table {
+  tbody {
+    border: 0;
+  }
+  tr {
+    background-color: transparent;
   }
 }
 
@@ -151,6 +173,10 @@ form {
     border-top: 1px solid #ccc;
   }
 
+  tr {
+    border: 0
+  }
+
   tr.even {
     background-color: #fff;
   }
@@ -180,20 +206,34 @@ td.menu-disabled {
 
 #user-register-form .form-submit,
 a.submit-button{
-	background-image: url('../images/corner-arrow.png');
-	background-repeat: no-repeat;
-	background-position: top right;
-	background-color: rgba(110, 110, 110, 0.8);
-	font-weight: bold;
-	color: rgb(244, 245, 150);
-	padding: 10px;
-	display: block;
-	text-decoration: none;
-	white-space: nowrap;
-	overflow: hidden;
+  background-image: url('../images/corner-arrow.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: rgba(110, 110, 110, 0.8);
+  font-weight: bold;
+  color: rgb(244, 245, 150);
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #user-register-form .form-submit:hover,
 a.submit-button:hover{
-	background-color:#000;
+  background-color:#000;
+}
+
+.draggable a.tabledrag-handle {
+  margin-left: 0;
+
+  .handle {
+     width: auto;
+     height: auto;
+     margin: 0 0.5em;
+   }
+}
+
+html.js input.form-autocomplete {
+  background-position: 100% 11px;
 }

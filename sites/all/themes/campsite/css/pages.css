@@ -38,18 +38,8 @@ a {
 }
 
 /* line 18, ../sass/partials/_colors.scss */
-a.attendee-username {
-  color: #7EC0D6;
-}
-
-/* line 22, ../sass/partials/_colors.scss */
 a:hover {
   text-decoration: underline;
-}
-
-/* line 29, ../sass/partials/_colors.scss */
-.front .pane-events a {
-  color: white;
 }
 
 /* line 12, ../sass/pages.scss */
@@ -1431,7 +1421,7 @@ ul.primary.tabs {
 
 /*-------------------------------------------*\
 
-	Job Board
+  Job Board
 
 \*-------------------------------------------*/
 /* line 592, ../sass/partials/_panels.scss */
@@ -1468,7 +1458,7 @@ ul.primary.tabs {
 /* END JOB BOARD STYLES -------------------*/
 /*-------------------------------------------*\
 
-	Plugin Pane Styles
+  Plugin Pane Styles
 
 \*-------------------------------------------*/
 /* line 641, ../sass/partials/_panels.scss */
@@ -1629,51 +1619,10 @@ ul.primary.tabs {
   }
 }
 
-/*darius' random css*/
-/* line 820, ../sass/partials/_panels.scss */
-.front .pane-1 {
-  -moz-box-sizing: border-box;
-  float: left;
-  margin-left: 0;
-  margin-right: -50%;
-  padding-left: 0;
-  padding-right: 10px;
-  width: 50%;
-  word-wrap: break-word;
-}
-/* line 831, ../sass/partials/_panels.scss */
-.front .pane-1 .pane-content {
-  background: url("../images/featured.png") no-repeat scroll 0 0/100% auto transparent;
-  min-height: 200px;
-}
-/* line 837, ../sass/partials/_panels.scss */
-.front .pane-1 .eventhighlights {
-  width: 50%;
-  margin-left: 50%;
-  padding: 20px;
-}
-/* line 843, ../sass/partials/_panels.scss */
-.front .pane-1 a {
-  color: white;
-  text-decoration: underline;
-}
-/* line 844, ../sass/partials/_panels.scss */
-.front .pane-1 p {
-  color: white;
-}
-/* line 845, ../sass/partials/_panels.scss */
-.front .pane-1 .large {
-  font-size: 215%;
-  color: white;
-  font-weight: bold;
-  float: left;
-  line-height: 40px;
-  padding-bottom: 10px;
-}
-
 /* line 6, ../sass/partials/_homepage.scss */
 .front {
   /* Highlighst and Facts panes */
+  /* Top left custom pane */
   /* Featured Attendees pane */
   /* Event highlight */
   /* Events at a glance pane */
@@ -1764,26 +1713,70 @@ ul.primary.tabs {
     clear: left;
   }
 }
-/* line 79, ../sass/partials/_homepage.scss */
+/* line 77, ../sass/partials/_homepage.scss */
+.front .pane-1 {
+  -moz-box-sizing: border-box;
+  float: left;
+  margin-left: 0;
+  margin-right: -50%;
+  padding-left: 0;
+  padding-right: 10px;
+  width: 50%;
+  word-wrap: break-word;
+}
+/* line 87, ../sass/partials/_homepage.scss */
+.front .pane-1 .pane-content {
+  background: url("../images/featured.png") no-repeat scroll 0 0/100% auto transparent;
+  min-height: 200px;
+}
+/* line 91, ../sass/partials/_homepage.scss */
+.front .pane-1 .pane-content p {
+  color: white;
+}
+/* line 95, ../sass/partials/_homepage.scss */
+.front .pane-1 .pane-content .eventhighlights {
+  width: 50%;
+  margin-left: 50%;
+  padding: 20px;
+}
+/* line 100, ../sass/partials/_homepage.scss */
+.front .pane-1 .pane-content .eventhighlights a {
+  color: white;
+  text-decoration: underline;
+}
+/* line 104, ../sass/partials/_homepage.scss */
+.front .pane-1 .pane-content .eventhighlights .large {
+  font-size: 215%;
+  color: white;
+  font-weight: bold;
+  float: left;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+/* line 118, ../sass/partials/_homepage.scss */
 .front .pane-attendees-panel-pane-2 {
   clear: both;
   padding-top: 40px;
 }
-/* line 84, ../sass/partials/_homepage.scss */
+/* line 123, ../sass/partials/_homepage.scss */
 .front .pane-speakers-panel-pane-1 {
   padding-top: 10px;
 }
-/* line 90, ../sass/partials/_homepage.scss */
+/* line 128, ../sass/partials/_homepage.scss */
 .front .view-id-speakers .views-row {
   float: left;
 }
-/* line 101, ../sass/partials/_homepage.scss */
+/* line 131, ../sass/partials/_homepage.scss */
+.front .view-id-speakers a.attendee-username {
+  color: #7EC0D6;
+}
+/* line 138, ../sass/partials/_homepage.scss */
 .front #content .highlight-text p {
   color: #fff;
   padding: 0;
   margin: 0;
 }
-/* line 107, ../sass/partials/_homepage.scss */
+/* line 144, ../sass/partials/_homepage.scss */
 .front .highlight-photo {
   background: url(../images/featured.png);
   background-size: 100%;
@@ -1791,40 +1784,44 @@ ul.primary.tabs {
   background-repeat: no-repeat;
   min-height: 200px;
 }
-/* line 115, ../sass/partials/_homepage.scss */
+/* line 152, ../sass/partials/_homepage.scss */
 .front .highlight-text {
   float: right;
   width: 50%;
   padding: 10px;
   color: #fff;
 }
-/* line 121, ../sass/partials/_homepage.scss */
+/* line 158, ../sass/partials/_homepage.scss */
 .front .highlight-text h3 {
   color: #fff;
 }
-/* line 129, ../sass/partials/_homepage.scss */
+/* line 166, ../sass/partials/_homepage.scss */
 .front .pane-events {
   clear: both;
 }
-/* line 133, ../sass/partials/_homepage.scss */
+/* line 170, ../sass/partials/_homepage.scss */
 .front .pane-events h3 {
   color: #fff;
   text-decoration: underline;
   font-weight: 400;
   font-size: 20px;
 }
-/* line 139, ../sass/partials/_homepage.scss */
+/* line 176, ../sass/partials/_homepage.scss */
+.front .pane-events a {
+  color: white;
+}
+/* line 179, ../sass/partials/_homepage.scss */
 .front .pane-events p {
   margin: 0;
 }
-/* line 142, ../sass/partials/_homepage.scss */
+/* line 182, ../sass/partials/_homepage.scss */
 .front .pane-events ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 @media all and (min-width: 700px) {
-  /* line 146, ../sass/partials/_homepage.scss */
+  /* line 186, ../sass/partials/_homepage.scss */
   .front .pane-events ul li {
     width: 33%;
     float: left;
@@ -1832,7 +1829,7 @@ ul.primary.tabs {
     padding-right: 1em;
   }
 }
-/* line 157, ../sass/partials/_homepage.scss */
+/* line 197, ../sass/partials/_homepage.scss */
 .front #footer {
   margin-top: 0px;
 }
