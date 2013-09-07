@@ -28,3 +28,14 @@
 .badcamp-2col .panel-separator {
   margin: 0 0 1em 0;
 }
+
+@media all and (max-width: 800px) {
+  .badcamp-2col .panel-col-first { 
+    float: none;
+    width: 100%;
+  }
+  .badcamp-2col .panel-col-last { 
+    float: none;
+    width: 100%;
+  }
+}
