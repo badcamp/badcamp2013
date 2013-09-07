@@ -1466,7 +1466,7 @@ ul.primary.tabs {
 
 \*-------------------------------------------*/
 /* line 637, ../sass/partials/_panels.scss */
-.pane-center-styled-content .pane-title, .center-title-only .pane-title, .pane-full-width-content .pane-title, .panel-pane.about-header .pane-content:after .pane-title, .panel-pane.pane-venue-location > .pane-content:after .pane-title {
+.pane-center-styled-content .pane-title, .center-title-only .pane-title, .pane-full-width-content .pane-title, #about-badcamp .four-image-promo .pane-title, #about-badcamp .three-image-promo .pane-title {
   text-align: center;
   border: none;
   font-size: 43px;
@@ -1475,7 +1475,7 @@ ul.primary.tabs {
   line-height: 1.25em;
 }
 /* line 70, ../sass/partials/_custom.scss */
-.pane-center-styled-content .pane-title:after, .center-title-only .pane-title:after, .pane-full-width-content .pane-title:after, .panel-pane.about-header .pane-content:after .pane-title:after, .panel-pane.pane-venue-location > .pane-content:after .pane-title:after {
+.pane-center-styled-content .pane-title:after, .center-title-only .pane-title:after, .pane-full-width-content .pane-title:after, #about-badcamp .four-image-promo .pane-title:after, #about-badcamp .three-image-promo .pane-title:after {
   content: "/.";
   display: inline-block;
   text-align: center;
@@ -1483,143 +1483,60 @@ ul.primary.tabs {
 }
 
 /* line 649, ../sass/partials/_panels.scss */
-.pane-center-styled-content .pane-content, .pane-full-width-content .pane-content, .panel-pane.about-header .pane-content:after .pane-content, .panel-pane.pane-venue-location > .pane-content:after .pane-content {
+.pane-center-styled-content .pane-content, .pane-full-width-content .pane-content, #about-badcamp .four-image-promo .pane-content, #about-badcamp .three-image-promo .pane-content {
   text-align: center;
 }
 /* line 651, ../sass/partials/_panels.scss */
-.pane-center-styled-content .pane-content p, .pane-full-width-content .pane-content p, .panel-pane.about-header .pane-content:after .pane-content p, .panel-pane.pane-venue-location > .pane-content:after .pane-content p {
+.pane-center-styled-content .pane-content p, .pane-full-width-content .pane-content p, #about-badcamp .four-image-promo .pane-content p, #about-badcamp .three-image-promo .pane-content p {
   margin: 0 0 1.5em;
 }
 
 /* line 671, ../sass/partials/_panels.scss */
-.pane-full-width-content, .panel-pane.about-header .pane-content:after, .panel-pane.pane-venue-location > .pane-content:after {
+.pane-full-width-content, #about-badcamp .four-image-promo, #about-badcamp .three-image-promo {
   background-color: #000;
-  margin-left: -50%;
-  padding-left: 50%;
-  margin-right: -50%;
-  padding-right: 50%;
 }
-/* line 681, ../sass/partials/_panels.scss */
-.pane-full-width-content .pane-title, .panel-pane.about-header .pane-content:after .pane-title, .panel-pane.pane-venue-location > .pane-content:after .pane-title {
+/* line 676, ../sass/partials/_panels.scss */
+.pane-full-width-content .pane-title, #about-badcamp .four-image-promo .pane-title, #about-badcamp .three-image-promo .pane-title {
   color: #7EBFD6;
 }
 /* line 70, ../sass/partials/_custom.scss */
-.pane-full-width-content .pane-title:after, .panel-pane.about-header .pane-content:after .pane-title:after, .panel-pane.pane-venue-location > .pane-content:after .pane-title:after {
+.pane-full-width-content .pane-title:after, #about-badcamp .four-image-promo .pane-title:after, #about-badcamp .three-image-promo .pane-title:after {
   content: "/.";
   display: inline-block;
   text-align: center;
   width: 1.4em;
 }
-/* line 686, ../sass/partials/_panels.scss */
-.pane-full-width-content .pane-content, .panel-pane.about-header .pane-content:after .pane-content, .panel-pane.pane-venue-location > .pane-content:after .pane-content {
+/* line 681, ../sass/partials/_panels.scss */
+.pane-full-width-content .pane-content, #about-badcamp .four-image-promo .pane-content, #about-badcamp .three-image-promo .pane-content {
   color: #FFF;
   font-size: 18px;
 }
-/* line 689, ../sass/partials/_panels.scss */
-.pane-full-width-content .pane-content p, .panel-pane.about-header .pane-content:after .pane-content p, .panel-pane.pane-venue-location > .pane-content:after .pane-content p {
+/* line 684, ../sass/partials/_panels.scss */
+.pane-full-width-content .pane-content p, #about-badcamp .four-image-promo .pane-content p, #about-badcamp .three-image-promo .pane-content p {
   font-weight: 100;
 }
 
 /* END PLUGIN PANE STYLES -------------------*/
-/* line 698, ../sass/partials/_panels.scss */
-.panel-pane.about-header h2 {
-  color: white;
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-/* line 703, ../sass/partials/_panels.scss */
-.panel-pane.about-header .pane-content:after {
-  display: block;
-  content: "";
-  width: 100%;
-  min-height: 307px;
-  background: url("../images/about1.jpg") no-repeat top center;
-}
-
-/* line 717, ../sass/partials/_panels.scss */
-.panel-pane.pane-venue-location > .pane-content:after {
-  display: block;
-  content: "";
-  width: 100%;
-  min-height: 369px;
-  background: url("../images/about2.jpg") no-repeat top center;
-}
-
-/* line 731, ../sass/partials/_panels.scss */
-.about-facts {
-  background-image: url(../images/bg-facts.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  padding-bottom: 3em;
-}
-/* line 737, ../sass/partials/_panels.scss */
-.about-facts .pane-title {
-  margin-bottom: 1em;
-  color: white;
-}
-/* line 744, ../sass/partials/_panels.scss */
-.about-facts .fact-one,
-.about-facts .fact-two,
-.about-facts .fact-three {
-  color: #FFF;
-}
-/* line 746, ../sass/partials/_panels.scss */
-.about-facts .fact-one h3,
-.about-facts .fact-two h3,
-.about-facts .fact-three h3 {
-  font-size: 76px;
-  line-height: 1em;
-  color: #FFF;
-}
-/* line 753, ../sass/partials/_panels.scss */
-.about-facts .fact-one:before {
-  content: "Connect";
-}
-/* line 756, ../sass/partials/_panels.scss */
-.about-facts .fact-two:before {
-  content: "Learn";
-}
-/* line 759, ../sass/partials/_panels.scss */
-.about-facts .fact-three:before {
-  content: "Inspire";
-}
-@media screen and (min-width: 768px) {
-  /* line 768, ../sass/partials/_panels.scss */
-  .about-facts .fact-one,
-  .about-facts .fact-two,
-  .about-facts .fact-three {
-    width: 33.33333%;
-    float: left;
-  }
-}
-@media screen and (min-width: 1500px) {
-  /* line 731, ../sass/partials/_panels.scss */
-  .about-facts {
-    background-size: 100%;
-  }
-}
-
-/* line 784, ../sass/partials/_panels.scss */
+/* line 694, ../sass/partials/_panels.scss */
 .region-footer .views-field-title {
   margin: 1.5em 1em 0 1em;
   border-bottom: 1px solid #000;
 }
-/* line 787, ../sass/partials/_panels.scss */
+/* line 697, ../sass/partials/_panels.scss */
 .region-footer .views-field-title a {
   font-weight: bold;
   color: #000;
   text-decoration: none;
 }
-/* line 794, ../sass/partials/_panels.scss */
+/* line 704, ../sass/partials/_panels.scss */
 .region-footer img {
   padding: 0 1em 1em 1em;
 }
-/* line 798, ../sass/partials/_panels.scss */
+/* line 708, ../sass/partials/_panels.scss */
 .region-footer h2 {
   border: none;
 }
-/* line 804, ../sass/partials/_panels.scss */
+/* line 714, ../sass/partials/_panels.scss */
 .region-footer .view-id-sponsors .views-row {
   float: left;
   width: 25%;
@@ -1629,7 +1546,7 @@ ul.primary.tabs {
   word-wrap: break-word;
 }
 @media screen and (max-width: 700px) {
-  /* line 804, ../sass/partials/_panels.scss */
+  /* line 714, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row {
     width: 50%;
   }
@@ -1848,6 +1765,111 @@ ul.primary.tabs {
 /* line 197, ../sass/partials/_homepage.scss */
 .front #footer {
   margin-top: 0px;
+}
+
+/* line 1, ../sass/partials/_about_panel.scss */
+body.page-about #content {
+  padding: 0;
+  margin: 0;
+  width: auto;
+  max-width: none;
+}
+/* line 9, ../sass/partials/_about_panel.scss */
+body.page-about #content .pane-title,
+body.page-about #content .panel-pane .pane-content {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 10px;
+}
+
+/* line 18, ../sass/partials/_about_panel.scss */
+#about-badcamp .about-header h2 {
+  color: white;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+/* line 23, ../sass/partials/_about_panel.scss */
+#about-badcamp .about-header {
+  background: black;
+}
+/* line 25, ../sass/partials/_about_panel.scss */
+#about-badcamp .about-header p {
+  margin: 0;
+  padding-bottom: 24px;
+}
+/* line 30, ../sass/partials/_about_panel.scss */
+#about-badcamp .four-image-promo {
+  display: block;
+  height: 0;
+  padding-bottom: 21%;
+  margin-bottom: 12px;
+  background: black url("../images/about1.jpg") no-repeat top center;
+  background-size: 100% auto;
+}
+/* line 41, ../sass/partials/_about_panel.scss */
+#about-badcamp .three-image-promo {
+  display: block;
+  height: 0;
+  padding-bottom: 22%;
+  background: url("../images/about2.jpg") no-repeat top center;
+  background-size: 100% auto;
+}
+/* line 55, ../sass/partials/_about_panel.scss */
+#about-badcamp .about-facts {
+  background-image: url(../images/bg-facts.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding-bottom: 3em;
+}
+/* line 61, ../sass/partials/_about_panel.scss */
+#about-badcamp .about-facts .pane-content {
+  overflow: hidden;
+}
+/* line 65, ../sass/partials/_about_panel.scss */
+#about-badcamp .about-facts .pane-title {
+  margin-bottom: 1em;
+  color: white;
+}
+/* line 72, ../sass/partials/_about_panel.scss */
+#about-badcamp .about-facts .fact-one,
+#about-badcamp .about-facts .fact-two,
+#about-badcamp .about-facts .fact-three {
+  color: #FFF;
+}
+/* line 74, ../sass/partials/_about_panel.scss */
+#about-badcamp .about-facts .fact-one h3,
+#about-badcamp .about-facts .fact-two h3,
+#about-badcamp .about-facts .fact-three h3 {
+  font-size: 76px;
+  line-height: 1em;
+  color: #FFF;
+}
+/* line 81, ../sass/partials/_about_panel.scss */
+#about-badcamp .about-facts .fact-one:before {
+  content: "Connect";
+}
+/* line 84, ../sass/partials/_about_panel.scss */
+#about-badcamp .about-facts .fact-two:before {
+  content: "Learn";
+}
+/* line 87, ../sass/partials/_about_panel.scss */
+#about-badcamp .about-facts .fact-three:before {
+  content: "Inspire";
+}
+@media screen and (min-width: 768px) {
+  /* line 96, ../sass/partials/_about_panel.scss */
+  #about-badcamp .about-facts .fact-one,
+  #about-badcamp .about-facts .fact-two,
+  #about-badcamp .about-facts .fact-three {
+    width: 33.33333%;
+    float: left;
+  }
+}
+@media screen and (min-width: 1500px) {
+  /* line 55, ../sass/partials/_about_panel.scss */
+  #about-badcamp .about-facts {
+    background-size: 100%;
+  }
 }
 
 /* line 4, ../sass/partials/_timeline.scss */

@@ -1,0 +1,107 @@
+body.page-about #content {
+  // Layout. This page overrides Zen Grids.
+  padding: 0;
+  margin: 0;
+  width: auto;
+  max-width: none;
+
+  .pane-title,
+  .panel-pane .pane-content {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 10px;
+  }
+}
+
+#about-badcamp {
+  // Main About header
+  .about-header h2 {
+    color: white;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .about-header {
+    background: black;
+    p {
+      margin: 0;
+      padding-bottom: 24px
+    };
+  }
+  .four-image-promo {
+    display: block;
+    height: 0;
+    padding-bottom: 21%;
+    margin-bottom: 12px;
+    background: black url('../images/about1.jpg') no-repeat top center;
+    background-size: 100% auto;
+    @extend .pane-full-width-content;
+  }
+
+  // pane-venue-location Images
+  .three-image-promo {
+    display: block;
+    height: 0;
+    padding-bottom: 22%;
+    background: url('../images/about2.jpg') no-repeat top center;
+    background-size: 100% auto;
+    @extend .pane-full-width-content;
+    // @media screen and (min-width: 1500px) {
+    //  background-size: 100%;
+    //  height: auto;
+    // }
+  }
+
+
+  .about-facts {
+    background-image: url(../images/bg-facts.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-bottom: 3em;
+
+    .pane-content {
+      @include clearfix();
+    }
+
+    .pane-title {
+      margin-bottom: 1em;
+      color: white;
+    }
+
+    .fact-one,
+    .fact-two,
+    .fact-three {
+      color: #FFF;
+      h3 {
+        font-size: 76px;
+        line-height: 1em;
+        color: #FFF;
+      }
+    }
+
+    .fact-one:before {
+      content: "Connect";
+    }
+    .fact-two:before {
+      content: "Learn";
+    }
+    .fact-three:before {
+      content: "Inspire";
+    }
+
+
+
+    @media screen and (min-width: 768px) {
+      .fact-one,
+      .fact-two,
+      .fact-three {
+        width: 33.33333%;
+        float: left;
+      }
+    }
+
+
+    @media screen and (min-width: 1500px) {
+      background-size: 100%;
+    }
+  }
+}
