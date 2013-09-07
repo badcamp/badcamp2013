@@ -604,19 +604,4 @@ if (isset($_SERVER['PANTHEON_ENVIRONMENT']) &&
   }
 }
 
-$db_url = 'mysqli://root:root@localhost/badcamp2013';
-$databases = array (
-  'default' => 
-  array (
-    'default' => 
-    array (
-      'driver' => 'mysql',
-      'database' => 'badcamp2013',
-      'username' => 'root',
-      'password' => 'root',
-      'host' => 'localhost',
-      'port' => '',
-    ),
-  ),
-);
 $drupal_hash_salt = 'YET_xo4zWgrc9jacqnzI8WBI8Xz6Ht18Bfut9BeIFHM';
