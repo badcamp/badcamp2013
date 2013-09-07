@@ -5,7 +5,7 @@
 #page {
   // clearfix instead of overflow hidden. 
   // overflow hidden causes mobile menu not to show. 
-  @extend .clearfix; 
+  @extend .clearfix !optional;
 }
 
 // Footer titles.
@@ -466,11 +466,12 @@ ul.primary.tabs{
 .views-widget-filter-field_track_tid{
   
   .form-item:not(.form-submit) {
-  border-bottom: 0;
+    border-bottom: 0;
   }
   
   .form-type-bef-link{
     float:left;
+    width: 20%;
   }
   
   #edit-field-track-tid-17 a,
@@ -480,7 +481,7 @@ ul.primary.tabs{
   #edit-field-track-tid-29 a,
   #edit-field-track-tid-19 a{
     background: #fff url('../images/session-icons.png') no-repeat;
-    margin: 20px;
+    margin: 20px 35px;
     padding: 20px;
     display: block;
     height: 100px;

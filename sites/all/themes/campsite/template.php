@@ -249,7 +249,5 @@ function campsite_form_user_login_block_alter(&$form) {
   $form['name']['#attributes']['placeholder'] = 'Username';
   $form['pass']['#attributes']['placeholder'] = 'Password';
   $form['actions']['submit']['#value'] = 'Login';
-
-
 }
 

@@ -1344,8 +1344,9 @@ ul.primary.tabs {
 /* line 472, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid .form-type-bef-link {
   float: left;
+  width: 20%;
 }
-/* line 481, ../sass/partials/_panels.scss */
+/* line 482, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-17 a,
 .views-widget-filter-field_track_tid #edit-field-track-tid-18 a,
 .views-widget-filter-field_track_tid #edit-field-track-tid-46 a,
@@ -1353,7 +1354,7 @@ ul.primary.tabs {
 .views-widget-filter-field_track_tid #edit-field-track-tid-29 a,
 .views-widget-filter-field_track_tid #edit-field-track-tid-19 a {
   background: white url("../images/session-icons.png") no-repeat;
-  margin: 20px;
+  margin: 20px 35px;
   padding: 20px;
   display: block;
   height: 100px;
@@ -1364,7 +1365,7 @@ ul.primary.tabs {
   line-height: 16px;
   color: #000;
 }
-/* line 494, ../sass/partials/_panels.scss */
+/* line 495, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-17 a:hover,
 .views-widget-filter-field_track_tid #edit-field-track-tid-18 a:hover,
 .views-widget-filter-field_track_tid #edit-field-track-tid-46 a:hover,
@@ -1373,51 +1374,51 @@ ul.primary.tabs {
 .views-widget-filter-field_track_tid #edit-field-track-tid-19 a:hover {
   text-decoration: none;
 }
-/* line 501, ../sass/partials/_panels.scss */
+/* line 502, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-17 a {
   background-position: 61% 119%;
 }
-/* line 506, ../sass/partials/_panels.scss */
+/* line 507, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-17:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-17.selected a {
   background-position: 61% 0%;
 }
-/* line 513, ../sass/partials/_panels.scss */
+/* line 514, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-18 a {
   background-position: 82% 119%;
 }
-/* line 518, ../sass/partials/_panels.scss */
+/* line 519, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-18:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-18.selected a {
   background-position: 82% 0%;
 }
-/* line 526, ../sass/partials/_panels.scss */
+/* line 527, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-46 a {
   background-position: 101.8% 119.5%;
 }
-/* line 531, ../sass/partials/_panels.scss */
+/* line 532, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-46:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-46.selected a {
   background-position: 100% 0%;
 }
-/* line 539, ../sass/partials/_panels.scss */
+/* line 540, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-20 a {
   background-position: -3% 119%;
 }
-/* line 544, ../sass/partials/_panels.scss */
+/* line 545, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-20:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-20.selected a {
   background-position: -3% 0%;
 }
-/* line 552, ../sass/partials/_panels.scss */
+/* line 553, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-19 a {
   background-position: 17% 119%;
 }
-/* line 557, ../sass/partials/_panels.scss */
+/* line 558, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-19:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-19.selected a {
   background-position: 17% 0%;
 }
-/* line 565, ../sass/partials/_panels.scss */
+/* line 566, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-29 a {
   background-position: 39% 119%;
 }
-/* line 570, ../sass/partials/_panels.scss */
+/* line 571, ../sass/partials/_panels.scss */
 .views-widget-filter-field_track_tid #edit-field-track-tid-29:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-29.selected a {
   background-position: 39% 0%;
 }
@@ -1427,13 +1428,13 @@ ul.primary.tabs {
   Job Board
 
 \*-------------------------------------------*/
-/* line 587, ../sass/partials/_panels.scss */
+/* line 588, ../sass/partials/_panels.scss */
 .view-job-opportunities .view-content ul {
   margin: 0;
   padding: 0;
   width: 100%;
 }
-/* line 593, ../sass/partials/_panels.scss */
+/* line 594, ../sass/partials/_panels.scss */
 .view-job-opportunities .view-content ul li {
   list-style: none;
   border-bottom: 1px solid #bbb;
@@ -1442,17 +1443,17 @@ ul.primary.tabs {
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
-/* line 607, ../sass/partials/_panels.scss */
+/* line 608, ../sass/partials/_panels.scss */
 .view-job-opportunities .view-content ul li .views-label {
   display: none;
 }
-/* line 611, ../sass/partials/_panels.scss */
+/* line 612, ../sass/partials/_panels.scss */
 .view-job-opportunities .view-content ul li .views-field-field-image {
   float: left;
   width: 20%;
   line-height: 1em;
 }
-/* line 617, ../sass/partials/_panels.scss */
+/* line 618, ../sass/partials/_panels.scss */
 .view-job-opportunities .view-content ul li .views-field-title {
   padding: 3em 0 0 0;
   width: 80%;
@@ -1464,7 +1465,7 @@ ul.primary.tabs {
   Plugin Pane Styles
 
 \*-------------------------------------------*/
-/* line 636, ../sass/partials/_panels.scss */
+/* line 637, ../sass/partials/_panels.scss */
 .pane-center-styled-content .pane-title, .center-title-only .pane-title, .pane-full-width-content .pane-title, .panel-pane.about-header .pane-content:after .pane-title, .panel-pane.pane-venue-location > .pane-content:after .pane-title {
   text-align: center;
   border: none;
@@ -1481,16 +1482,16 @@ ul.primary.tabs {
   width: 1.4em;
 }
 
-/* line 648, ../sass/partials/_panels.scss */
+/* line 649, ../sass/partials/_panels.scss */
 .pane-center-styled-content .pane-content, .pane-full-width-content .pane-content, .panel-pane.about-header .pane-content:after .pane-content, .panel-pane.pane-venue-location > .pane-content:after .pane-content {
   text-align: center;
 }
-/* line 650, ../sass/partials/_panels.scss */
+/* line 651, ../sass/partials/_panels.scss */
 .pane-center-styled-content .pane-content p, .pane-full-width-content .pane-content p, .panel-pane.about-header .pane-content:after .pane-content p, .panel-pane.pane-venue-location > .pane-content:after .pane-content p {
   margin: 0 0 1.5em;
 }
 
-/* line 670, ../sass/partials/_panels.scss */
+/* line 671, ../sass/partials/_panels.scss */
 .pane-full-width-content, .panel-pane.about-header .pane-content:after, .panel-pane.pane-venue-location > .pane-content:after {
   background-color: #000;
   margin-left: -50%;
@@ -1498,7 +1499,7 @@ ul.primary.tabs {
   margin-right: -50%;
   padding-right: 50%;
 }
-/* line 680, ../sass/partials/_panels.scss */
+/* line 681, ../sass/partials/_panels.scss */
 .pane-full-width-content .pane-title, .panel-pane.about-header .pane-content:after .pane-title, .panel-pane.pane-venue-location > .pane-content:after .pane-title {
   color: #7EBFD6;
 }
@@ -1509,25 +1510,25 @@ ul.primary.tabs {
   text-align: center;
   width: 1.4em;
 }
-/* line 685, ../sass/partials/_panels.scss */
+/* line 686, ../sass/partials/_panels.scss */
 .pane-full-width-content .pane-content, .panel-pane.about-header .pane-content:after .pane-content, .panel-pane.pane-venue-location > .pane-content:after .pane-content {
   color: #FFF;
   font-size: 18px;
 }
-/* line 688, ../sass/partials/_panels.scss */
+/* line 689, ../sass/partials/_panels.scss */
 .pane-full-width-content .pane-content p, .panel-pane.about-header .pane-content:after .pane-content p, .panel-pane.pane-venue-location > .pane-content:after .pane-content p {
   font-weight: 100;
 }
 
 /* END PLUGIN PANE STYLES -------------------*/
-/* line 697, ../sass/partials/_panels.scss */
+/* line 698, ../sass/partials/_panels.scss */
 .panel-pane.about-header h2 {
   color: white;
   border-bottom: none;
   padding-bottom: 0;
 }
 
-/* line 702, ../sass/partials/_panels.scss */
+/* line 703, ../sass/partials/_panels.scss */
 .panel-pane.about-header .pane-content:after {
   display: block;
   content: "";
@@ -1536,7 +1537,7 @@ ul.primary.tabs {
   background: url("../images/about1.jpg") no-repeat top center;
 }
 
-/* line 716, ../sass/partials/_panels.scss */
+/* line 717, ../sass/partials/_panels.scss */
 .panel-pane.pane-venue-location > .pane-content:after {
   display: block;
   content: "";
@@ -1545,25 +1546,25 @@ ul.primary.tabs {
   background: url("../images/about2.jpg") no-repeat top center;
 }
 
-/* line 730, ../sass/partials/_panels.scss */
+/* line 731, ../sass/partials/_panels.scss */
 .about-facts {
   background-image: url(../images/bg-facts.jpg);
   background-repeat: no-repeat;
   background-position: bottom center;
   padding-bottom: 3em;
 }
-/* line 736, ../sass/partials/_panels.scss */
+/* line 737, ../sass/partials/_panels.scss */
 .about-facts .pane-title {
   margin-bottom: 1em;
   color: white;
 }
-/* line 743, ../sass/partials/_panels.scss */
+/* line 744, ../sass/partials/_panels.scss */
 .about-facts .fact-one,
 .about-facts .fact-two,
 .about-facts .fact-three {
   color: #FFF;
 }
-/* line 745, ../sass/partials/_panels.scss */
+/* line 746, ../sass/partials/_panels.scss */
 .about-facts .fact-one h3,
 .about-facts .fact-two h3,
 .about-facts .fact-three h3 {
@@ -1571,20 +1572,20 @@ ul.primary.tabs {
   line-height: 1em;
   color: #FFF;
 }
-/* line 752, ../sass/partials/_panels.scss */
+/* line 753, ../sass/partials/_panels.scss */
 .about-facts .fact-one:before {
   content: "Connect";
 }
-/* line 755, ../sass/partials/_panels.scss */
+/* line 756, ../sass/partials/_panels.scss */
 .about-facts .fact-two:before {
   content: "Learn";
 }
-/* line 758, ../sass/partials/_panels.scss */
+/* line 759, ../sass/partials/_panels.scss */
 .about-facts .fact-three:before {
   content: "Inspire";
 }
 @media screen and (min-width: 768px) {
-  /* line 767, ../sass/partials/_panels.scss */
+  /* line 768, ../sass/partials/_panels.scss */
   .about-facts .fact-one,
   .about-facts .fact-two,
   .about-facts .fact-three {
@@ -1593,32 +1594,32 @@ ul.primary.tabs {
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 730, ../sass/partials/_panels.scss */
+  /* line 731, ../sass/partials/_panels.scss */
   .about-facts {
     background-size: 100%;
   }
 }
 
-/* line 783, ../sass/partials/_panels.scss */
+/* line 784, ../sass/partials/_panels.scss */
 .region-footer .views-field-title {
   margin: 1.5em 1em 0 1em;
   border-bottom: 1px solid #000;
 }
-/* line 786, ../sass/partials/_panels.scss */
+/* line 787, ../sass/partials/_panels.scss */
 .region-footer .views-field-title a {
   font-weight: bold;
   color: #000;
   text-decoration: none;
 }
-/* line 793, ../sass/partials/_panels.scss */
+/* line 794, ../sass/partials/_panels.scss */
 .region-footer img {
   padding: 0 1em 1em 1em;
 }
-/* line 797, ../sass/partials/_panels.scss */
+/* line 798, ../sass/partials/_panels.scss */
 .region-footer h2 {
   border: none;
 }
-/* line 803, ../sass/partials/_panels.scss */
+/* line 804, ../sass/partials/_panels.scss */
 .region-footer .view-id-sponsors .views-row {
   float: left;
   width: 25%;
@@ -1628,7 +1629,7 @@ ul.primary.tabs {
   word-wrap: break-word;
 }
 @media screen and (max-width: 700px) {
-  /* line 803, ../sass/partials/_panels.scss */
+  /* line 804, ../sass/partials/_panels.scss */
   .region-footer .view-id-sponsors .views-row {
     width: 50%;
   }
