@@ -29,11 +29,16 @@
       border-right:solid 1px #797878;
     }
     
-    div .fact-one{
-      padding-left:0;
+    div .fact-one {
+      padding-top: 24px;
+      padding-left: 0;
     }
-    div .fact-three{
-      border-right:0;
+    div .fact-two  {
+      padding-top: 24px;
+    }
+    div .fact-three {
+      padding-top: 24px;
+      border-right: 0;
     }
     h3 {
       font-size: 50px;
@@ -53,51 +58,45 @@
       min-height: 100px;
       color:#fff;
     }
-    
-  }  
+
+  }
   
-  // big viewport  
-  @media all and (min-width: 900px) {     
-    .pane-highlights {          
-      @include zen-grid-item(2,1);
+  // big viewport
+  @media all and (min-width: 900px) {
+    .pane-highlights {
+      @include zen-grid-item(2, 1);
       padding-right: 10px; // for the little gap-toothed look from the comp :)
     }
-    
+
     .pane-facts {
-      @include zen-grid-item(2,3);
+      @include zen-grid-item(2, 3);
       padding-left: 30px;
     }
-    
+
     .pane-speakers-panel-pane-1 {
       @include zen-clear();
     }
   }
  
   /* Top left custom pane */
-  .pane-1{
-    -moz-box-sizing: border-box;
-    float: left;
-    margin-left: 0;
-    margin-right: -50%;
-    padding-left: 0;
-    padding-right: 10px;
-    width: 50%;
-    word-wrap: break-word;
+  .pane-highlights {
 
     .pane-content{
-      background: url("../images/featured.png") no-repeat scroll 0 0 / 100% auto transparent;
-      min-height:200px;
+      background: url("../images/featured-jjeff.png") no-repeat scroll 0 bottom / auto 100% black;
+      min-height: 200px;
 
-      p{
+      p {
         color:white;
       }
 
       .eventhighlights {
-        width:50%;
-        margin-left:50%;
-        padding:20px;
+        width: 50%;
+        margin: 0 0 0 50%;
+        padding: 20px;
+        background: url(../images/background-transparent-blue.png) repeat;
+        min-height: 240px;
 
-        a{
+        a {
           color:white;
           text-decoration:underline;
         }

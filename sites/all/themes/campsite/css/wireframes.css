@@ -7,23 +7,23 @@
 /**
  * Common CSS for full-width titles. Markup requires an inner span.
  */
-/* line 9, ../sass/partials/_colors.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_colors\.scss}line{font-family:\000039}}
 body {
   color: #333333;
 }
 
-/* line 13, ../sass/partials/_colors.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_colors\.scss}line{font-family:\0000313}}
 a {
   color: #0077A5;
   text-decoration: none;
 }
 
-/* line 18, ../sass/partials/_colors.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_colors\.scss}line{font-family:\0000318}}
 a:hover {
   text-decoration: underline;
 }
 
-/* line 19, ../sass/wireframes.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/wireframes\.scss}line{font-family:\0000319}}
 .with-wireframes #header,
 .with-wireframes #main,
 .with-wireframes #content,

@@ -46,13 +46,12 @@ li a.active {
 
 #navigation {
   /* overflow: hidden; */ /* Sometimes you want to prevent overlapping with main div. */
+  white-space: nowrap;
 
   .block {
     margin-bottom: 0;
-  }
-
-  .block-menu .block-title,
-  .block-menu-block .block-title {
+    text-align: left;
+    overflow: hidden;
   }
 
   ul.links, /* Main menu and secondary menu links */

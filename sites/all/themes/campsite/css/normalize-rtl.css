@@ -2,18 +2,18 @@
 /**
  * Common CSS for full-width titles. Markup requires an inner span.
  */
-/* line 9, ../sass/partials/_colors.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_colors\.scss}line{font-family:\000039}}
 body {
   color: #333333;
 }
 
-/* line 13, ../sass/partials/_colors.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_colors\.scss}line{font-family:\0000313}}
 a {
   color: #0077A5;
   text-decoration: none;
 }
 
-/* line 18, ../sass/partials/_colors.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_colors\.scss}line{font-family:\0000318}}
 a:hover {
   text-decoration: underline;
 }
@@ -24,7 +24,7 @@ a:hover {
 /*
  * Addresses margins set differently in IE6/7
  */
-/* line 14, ../sass/normalize-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/normalize-rtl\.scss}line{font-family:\0000314}}
 dd {
   margin: 0 30px 0 0;
 }
@@ -32,7 +32,7 @@ dd {
 /*
  * Addresses paddings set differently in IE6/7
  */
-/* line 25, ../sass/normalize-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/normalize-rtl\.scss}line{font-family:\0000325}}
 menu,
 ol,
 ul,
@@ -49,7 +49,7 @@ ul,
 /* =============================================================================
    Tables
    ========================================================================== */
-/* line 48, ../sass/normalize-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/normalize-rtl\.scss}line{font-family:\0000348}}
 th {
   text-align: right;
 }

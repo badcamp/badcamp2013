@@ -83,212 +83,212 @@ function badcamp_panels_default_page_manager_handlers() {
   $display->title = '';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-1';
-    $pane->panel = 'left';
-    $pane->type = 'node_content';
-    $pane->subtype = 'node_content';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'links' => 1,
-      'no_extras' => 0,
-      'override_title' => 0,
-      'override_title_text' => '',
-      'identifier' => '',
-      'link' => 0,
-      'leave_node_title' => 0,
-      'build_mode' => 'full',
-      'context' => 'argument_entity_id:node_1',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-1'] = $pane;
-    $display->panels['left'][0] = 'new-1';
-    $pane = new stdClass();
-    $pane->pid = 'new-2';
-    $pane->panel = 'left';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'sponsors-panel_pane_5';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-2'] = $pane;
-    $display->panels['left'][1] = 'new-2';
-    $pane = new stdClass();
-    $pane->pid = 'new-3';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_day';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'list_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 1,
-      'override_title_text' => 'Details',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['right'][0] = 'new-3';
-    $pane = new stdClass();
-    $pane->pid = 'new-4';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_date';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'date_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'format_type' => 'time',
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_to' => '',
-        'fromto' => 'both',
-      ),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => 'Details',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['right'][1] = 'new-4';
-    $pane = new stdClass();
-    $pane->pid = 'new-5';
-    $pane->panel = 'right';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Signup',
-      'title' => '',
-      'body' => '<p><a class="submit-button" style="width:120px;" href="/event-request">Signup</a></p>',
-      'format' => 'full_html',
-      'substitute' => 1,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['right'][2] = 'new-5';
-    $pane = new stdClass();
-    $pane->pid = 'new-6';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'taxonomy_term:field_map';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'relationship_entity_from_field:field_venue-node-taxonomy_term_1',
-      'override_title' => 1,
-      'override_title_text' => 'Map',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $display->content['new-6'] = $pane;
-    $display->panels['right'][3] = 'new-6';
-    $pane = new stdClass();
-    $pane->pid = 'new-7';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_venue';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'taxonomy_term_reference_link',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 4;
-    $pane->locks = array();
-    $display->content['new-7'] = $pane;
-    $display->panels['right'][4] = 'new-7';
-    $pane = new stdClass();
-    $pane->pid = 'new-8';
-    $pane->panel = 'right';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'summits_by_day-panel_pane_3';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 5;
-    $pane->locks = array();
-    $display->content['new-8'] = $pane;
-    $display->panels['right'][5] = 'new-8';
+  $pane = new stdClass();
+  $pane->pid = 'new-1';
+  $pane->panel = 'left';
+  $pane->type = 'node_content';
+  $pane->subtype = 'node_content';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'links' => 1,
+    'no_extras' => 0,
+    'override_title' => 0,
+    'override_title_text' => '',
+    'identifier' => '',
+    'link' => 0,
+    'leave_node_title' => 0,
+    'build_mode' => 'full',
+    'context' => 'argument_entity_id:node_1',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-1'] = $pane;
+  $display->panels['left'][0] = 'new-1';
+  $pane = new stdClass();
+  $pane->pid = 'new-2';
+  $pane->panel = 'left';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'sponsors-panel_pane_5';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-2'] = $pane;
+  $display->panels['left'][1] = 'new-2';
+  $pane = new stdClass();
+  $pane->pid = 'new-3';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_day';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'list_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 1,
+    'override_title_text' => 'Details',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-3'] = $pane;
+  $display->panels['right'][0] = 'new-3';
+  $pane = new stdClass();
+  $pane->pid = 'new-4';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_date';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'date_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(
+      'format_type' => 'time',
+      'multiple_number' => '',
+      'multiple_from' => '',
+      'multiple_to' => '',
+      'fromto' => 'both',
+    ),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 0,
+    'override_title_text' => 'Details',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-4'] = $pane;
+  $display->panels['right'][1] = 'new-4';
+  $pane = new stdClass();
+  $pane->pid = 'new-5';
+  $pane->panel = 'right';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Signup',
+    'title' => '',
+    'body' => '<p><a class="submit-button" style="width:120px;" href="/event-request">Signup</a></p>',
+    'format' => 'full_html',
+    'substitute' => 1,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $display->content['new-5'] = $pane;
+  $display->panels['right'][2] = 'new-5';
+  $pane = new stdClass();
+  $pane->pid = 'new-6';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'taxonomy_term:field_map';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'text_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'relationship_entity_from_field:field_venue-node-taxonomy_term_1',
+    'override_title' => 1,
+    'override_title_text' => 'Map',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $display->content['new-6'] = $pane;
+  $display->panels['right'][3] = 'new-6';
+  $pane = new stdClass();
+  $pane->pid = 'new-7';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_venue';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'taxonomy_term_reference_link',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 4;
+  $pane->locks = array();
+  $display->content['new-7'] = $pane;
+  $display->panels['right'][4] = 'new-7';
+  $pane = new stdClass();
+  $pane->pid = 'new-8';
+  $pane->panel = 'right';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'summits_by_day-panel_pane_3';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 5;
+  $pane->locks = array();
+  $display->content['new-8'] = $pane;
+  $display->panels['right'][5] = 'new-8';
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-5';
   $handler->conf['display'] = $display;
@@ -366,215 +366,215 @@ function badcamp_panels_default_page_manager_handlers() {
   $display->title = '';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-9';
-    $pane->panel = 'left';
-    $pane->type = 'node_content';
-    $pane->subtype = 'node_content';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'links' => 1,
-      'no_extras' => 0,
-      'override_title' => 0,
-      'override_title_text' => '',
-      'identifier' => '',
-      'link' => 0,
-      'leave_node_title' => 0,
-      'build_mode' => 'full',
-      'context' => 'argument_entity_id:node_1',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-9'] = $pane;
-    $display->panels['left'][0] = 'new-9';
-    $pane = new stdClass();
-    $pane->pid = 'new-10';
-    $pane->panel = 'left';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'sponsors-panel_pane_5';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => 'Training Sponsor',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-10'] = $pane;
-    $display->panels['left'][1] = 'new-10';
-    $pane = new stdClass();
-    $pane->pid = 'new-11';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_day';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'list_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 1,
-      'override_title_text' => 'Details',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-11'] = $pane;
-    $display->panels['right'][0] = 'new-11';
-    $pane = new stdClass();
-    $pane->pid = 'new-12';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_date';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'date_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'format_type' => 'time',
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_to' => '',
-        'fromto' => 'both',
-      ),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => 'Details',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-12'] = $pane;
-    $display->panels['right'][1] = 'new-12';
-    $pane = new stdClass();
-    $pane->pid = 'new-13';
-    $pane->panel = 'right';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Registration button',
-      'title' => '',
-      'body' => '<p><a class="submit-button" style="width:120px;" href="/event-request">Signup</a></p>',
-      'format' => 'full_html',
-      'substitute' => 1,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-13'] = $pane;
-    $display->panels['right'][2] = 'new-13';
-    $pane = new stdClass();
-    $pane->pid = 'new-14';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'taxonomy_term:field_map';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'relationship_entity_from_field:field_venue-node-taxonomy_term_1',
-      'override_title' => 1,
-      'override_title_text' => 'Map',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $display->content['new-14'] = $pane;
-    $display->panels['right'][3] = 'new-14';
-    $pane = new stdClass();
-    $pane->pid = 'new-15';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_venue';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'taxonomy_term_reference_link',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 4;
-    $pane->locks = array();
-    $display->content['new-15'] = $pane;
-    $display->panels['right'][4] = 'new-15';
-    $pane = new stdClass();
-    $pane->pid = 'new-16';
-    $pane->panel = 'right';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'summits_by_day-panel_pane_4';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 5;
-    $pane->locks = array();
-    $display->content['new-16'] = $pane;
-    $display->panels['right'][5] = 'new-16';
+  $pane = new stdClass();
+  $pane->pid = 'new-9';
+  $pane->panel = 'left';
+  $pane->type = 'node_content';
+  $pane->subtype = 'node_content';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'links' => 1,
+    'no_extras' => 0,
+    'override_title' => 0,
+    'override_title_text' => '',
+    'identifier' => '',
+    'link' => 0,
+    'leave_node_title' => 0,
+    'build_mode' => 'full',
+    'context' => 'argument_entity_id:node_1',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-9'] = $pane;
+  $display->panels['left'][0] = 'new-9';
+  $pane = new stdClass();
+  $pane->pid = 'new-10';
+  $pane->panel = 'left';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'sponsors-panel_pane_5';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'override_title' => 1,
+    'override_title_text' => 'Training Sponsor',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-10'] = $pane;
+  $display->panels['left'][1] = 'new-10';
+  $pane = new stdClass();
+  $pane->pid = 'new-11';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_day';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'list_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 1,
+    'override_title_text' => 'Details',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-11'] = $pane;
+  $display->panels['right'][0] = 'new-11';
+  $pane = new stdClass();
+  $pane->pid = 'new-12';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_date';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'date_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(
+      'format_type' => 'time',
+      'multiple_number' => '',
+      'multiple_from' => '',
+      'multiple_to' => '',
+      'fromto' => 'both',
+    ),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 0,
+    'override_title_text' => 'Details',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-12'] = $pane;
+  $display->panels['right'][1] = 'new-12';
+  $pane = new stdClass();
+  $pane->pid = 'new-13';
+  $pane->panel = 'right';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Registration button',
+    'title' => '',
+    'body' => '<p><a class="submit-button" style="width:120px;" href="/event-request">Signup</a></p>',
+    'format' => 'full_html',
+    'substitute' => 1,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $display->content['new-13'] = $pane;
+  $display->panels['right'][2] = 'new-13';
+  $pane = new stdClass();
+  $pane->pid = 'new-14';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'taxonomy_term:field_map';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'text_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'relationship_entity_from_field:field_venue-node-taxonomy_term_1',
+    'override_title' => 1,
+    'override_title_text' => 'Map',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $display->content['new-14'] = $pane;
+  $display->panels['right'][3] = 'new-14';
+  $pane = new stdClass();
+  $pane->pid = 'new-15';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_venue';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'taxonomy_term_reference_link',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 4;
+  $pane->locks = array();
+  $display->content['new-15'] = $pane;
+  $display->panels['right'][4] = 'new-15';
+  $pane = new stdClass();
+  $pane->pid = 'new-16';
+  $pane->panel = 'right';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'summits_by_day-panel_pane_4';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 5;
+  $pane->locks = array();
+  $display->content['new-16'] = $pane;
+  $display->panels['right'][5] = 'new-16';
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-9';
   $handler->conf['display'] = $display;
@@ -652,188 +652,188 @@ function badcamp_panels_default_page_manager_handlers() {
   $display->title = '';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-17';
-    $pane->panel = 'left';
-    $pane->type = 'node_content';
-    $pane->subtype = 'node_content';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'links' => 1,
-      'no_extras' => 0,
-      'override_title' => 0,
-      'override_title_text' => '',
-      'identifier' => '',
-      'link' => 0,
-      'leave_node_title' => 0,
-      'build_mode' => 'full',
-      'context' => 'argument_entity_id:node_1',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-17'] = $pane;
-    $display->panels['left'][0] = 'new-17';
-    $pane = new stdClass();
-    $pane->pid = 'new-18';
-    $pane->panel = 'left';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'sponsors-panel_pane_6';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-18'] = $pane;
-    $display->panels['left'][1] = 'new-18';
-    $pane = new stdClass();
-    $pane->pid = 'new-19';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_day';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'list_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 1,
-      'override_title_text' => 'Details',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-19'] = $pane;
-    $display->panels['right'][0] = 'new-19';
-    $pane = new stdClass();
-    $pane->pid = 'new-20';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_date';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'date_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'format_type' => 'time',
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_to' => '',
-        'fromto' => 'both',
-      ),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => 'Details',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-20'] = $pane;
-    $display->panels['right'][1] = 'new-20';
-    $pane = new stdClass();
-    $pane->pid = 'new-21';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'taxonomy_term:field_map';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'relationship_entity_from_field:field_venue-node-taxonomy_term_1',
-      'override_title' => 1,
-      'override_title_text' => 'Map',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-21'] = $pane;
-    $display->panels['right'][2] = 'new-21';
-    $pane = new stdClass();
-    $pane->pid = 'new-22';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_venue';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'taxonomy_term_reference_link',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $display->content['new-22'] = $pane;
-    $display->panels['right'][3] = 'new-22';
-    $pane = new stdClass();
-    $pane->pid = 'new-23';
-    $pane->panel = 'right';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'summits_by_day-panel_pane_5';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 4;
-    $pane->locks = array();
-    $display->content['new-23'] = $pane;
-    $display->panels['right'][4] = 'new-23';
+  $pane = new stdClass();
+  $pane->pid = 'new-17';
+  $pane->panel = 'left';
+  $pane->type = 'node_content';
+  $pane->subtype = 'node_content';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'links' => 1,
+    'no_extras' => 0,
+    'override_title' => 0,
+    'override_title_text' => '',
+    'identifier' => '',
+    'link' => 0,
+    'leave_node_title' => 0,
+    'build_mode' => 'full',
+    'context' => 'argument_entity_id:node_1',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-17'] = $pane;
+  $display->panels['left'][0] = 'new-17';
+  $pane = new stdClass();
+  $pane->pid = 'new-18';
+  $pane->panel = 'left';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'sponsors-panel_pane_6';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-18'] = $pane;
+  $display->panels['left'][1] = 'new-18';
+  $pane = new stdClass();
+  $pane->pid = 'new-19';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_day';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'list_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 1,
+    'override_title_text' => 'Details',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-19'] = $pane;
+  $display->panels['right'][0] = 'new-19';
+  $pane = new stdClass();
+  $pane->pid = 'new-20';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_date';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'date_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(
+      'format_type' => 'time',
+      'multiple_number' => '',
+      'multiple_from' => '',
+      'multiple_to' => '',
+      'fromto' => 'both',
+    ),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 0,
+    'override_title_text' => 'Details',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-20'] = $pane;
+  $display->panels['right'][1] = 'new-20';
+  $pane = new stdClass();
+  $pane->pid = 'new-21';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'taxonomy_term:field_map';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'text_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'relationship_entity_from_field:field_venue-node-taxonomy_term_1',
+    'override_title' => 1,
+    'override_title_text' => 'Map',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $display->content['new-21'] = $pane;
+  $display->panels['right'][2] = 'new-21';
+  $pane = new stdClass();
+  $pane->pid = 'new-22';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_venue';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'taxonomy_term_reference_link',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $display->content['new-22'] = $pane;
+  $display->panels['right'][3] = 'new-22';
+  $pane = new stdClass();
+  $pane->pid = 'new-23';
+  $pane->panel = 'right';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'summits_by_day-panel_pane_5';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 4;
+  $pane->locks = array();
+  $display->content['new-23'] = $pane;
+  $display->panels['right'][4] = 'new-23';
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-17';
   $handler->conf['display'] = $display;
@@ -911,170 +911,170 @@ function badcamp_panels_default_page_manager_handlers() {
   $display->title = '';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-24';
-    $pane->panel = 'left';
-    $pane->type = 'node_content';
-    $pane->subtype = 'node_content';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'links' => 1,
-      'no_extras' => 0,
-      'override_title' => 0,
-      'override_title_text' => '',
-      'identifier' => '',
-      'link' => 0,
-      'leave_node_title' => 0,
-      'build_mode' => 'full',
-      'context' => 'argument_entity_id:node_1',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-24'] = $pane;
-    $display->panels['left'][0] = 'new-24';
-    $pane = new stdClass();
-    $pane->pid = 'new-25';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_day';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'list_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 1,
-      'override_title_text' => 'Details',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-25'] = $pane;
-    $display->panels['right'][0] = 'new-25';
-    $pane = new stdClass();
-    $pane->pid = 'new-26';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_date';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'date_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'format_type' => 'time',
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_to' => '',
-        'fromto' => 'both',
-      ),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => 'Details',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-26'] = $pane;
-    $display->panels['right'][1] = 'new-26';
-    $pane = new stdClass();
-    $pane->pid = 'new-27';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'taxonomy_term:field_map';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'relationship_entity_from_field:field_venue-node-taxonomy_term_1',
-      'override_title' => 1,
-      'override_title_text' => 'Map',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-27'] = $pane;
-    $display->panels['right'][2] = 'new-27';
-    $pane = new stdClass();
-    $pane->pid = 'new-28';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_venue';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'taxonomy_term_reference_link',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $display->content['new-28'] = $pane;
-    $display->panels['right'][3] = 'new-28';
-    $pane = new stdClass();
-    $pane->pid = 'new-29';
-    $pane->panel = 'right';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'summits_by_day-panel_pane_6';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 4;
-    $pane->locks = array();
-    $display->content['new-29'] = $pane;
-    $display->panels['right'][4] = 'new-29';
+  $pane = new stdClass();
+  $pane->pid = 'new-24';
+  $pane->panel = 'left';
+  $pane->type = 'node_content';
+  $pane->subtype = 'node_content';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'links' => 1,
+    'no_extras' => 0,
+    'override_title' => 0,
+    'override_title_text' => '',
+    'identifier' => '',
+    'link' => 0,
+    'leave_node_title' => 0,
+    'build_mode' => 'full',
+    'context' => 'argument_entity_id:node_1',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-24'] = $pane;
+  $display->panels['left'][0] = 'new-24';
+  $pane = new stdClass();
+  $pane->pid = 'new-25';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_day';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'list_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 1,
+    'override_title_text' => 'Details',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-25'] = $pane;
+  $display->panels['right'][0] = 'new-25';
+  $pane = new stdClass();
+  $pane->pid = 'new-26';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_date';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'date_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(
+      'format_type' => 'time',
+      'multiple_number' => '',
+      'multiple_from' => '',
+      'multiple_to' => '',
+      'fromto' => 'both',
+    ),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 0,
+    'override_title_text' => 'Details',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-26'] = $pane;
+  $display->panels['right'][1] = 'new-26';
+  $pane = new stdClass();
+  $pane->pid = 'new-27';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'taxonomy_term:field_map';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'text_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'relationship_entity_from_field:field_venue-node-taxonomy_term_1',
+    'override_title' => 1,
+    'override_title_text' => 'Map',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $display->content['new-27'] = $pane;
+  $display->panels['right'][2] = 'new-27';
+  $pane = new stdClass();
+  $pane->pid = 'new-28';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_venue';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'taxonomy_term_reference_link',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $display->content['new-28'] = $pane;
+  $display->panels['right'][3] = 'new-28';
+  $pane = new stdClass();
+  $pane->pid = 'new-29';
+  $pane->panel = 'right';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'summits_by_day-panel_pane_6';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 4;
+  $pane->locks = array();
+  $display->content['new-29'] = $pane;
+  $display->panels['right'][4] = 'new-29';
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-24';
   $handler->conf['display'] = $display;
@@ -1128,80 +1128,80 @@ function badcamp_panels_default_page_manager_handlers() {
   $display->title = '';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-30';
-    $pane->panel = 'left';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<h3 style="margin:0px;" >%node:field_sponsor_level Sponsor</h3>',
-      'format' => 'full_html',
-      'substitute' => 1,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-30'] = $pane;
-    $display->panels['left'][0] = 'new-30';
-    $pane = new stdClass();
-    $pane->pid = 'new-31';
-    $pane->panel = 'left';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_description';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-31'] = $pane;
-    $display->panels['left'][1] = 'new-31';
-    $pane = new stdClass();
-    $pane->pid = 'new-32';
-    $pane->panel = 'right';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'sponsors-panel_pane_7';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'arguments' => array(
-        'nid' => '',
-      ),
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-32'] = $pane;
-    $display->panels['right'][0] = 'new-32';
+  $pane = new stdClass();
+  $pane->pid = 'new-30';
+  $pane->panel = 'left';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => '',
+    'title' => '',
+    'body' => '<h3 style="margin:0px;" >%node:field_sponsor_level Sponsor</h3>',
+    'format' => 'full_html',
+    'substitute' => 1,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-30'] = $pane;
+  $display->panels['left'][0] = 'new-30';
+  $pane = new stdClass();
+  $pane->pid = 'new-31';
+  $pane->panel = 'left';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_description';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'text_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 1,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-31'] = $pane;
+  $display->panels['left'][1] = 'new-31';
+  $pane = new stdClass();
+  $pane->pid = 'new-32';
+  $pane->panel = 'right';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'sponsors-panel_pane_7';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'arguments' => array(
+      'nid' => '',
+    ),
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-32'] = $pane;
+  $display->panels['right'][0] = 'new-32';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1264,221 +1264,221 @@ function badcamp_panels_default_page_manager_handlers() {
   $display->title = '';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-33';
-    $pane->panel = 'left';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_description';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 1,
-      'override_title_text' => '%node:title ',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-33'] = $pane;
-    $display->panels['left'][0] = 'new-33';
-    $pane = new stdClass();
-    $pane->pid = 'new-34';
-    $pane->panel = 'left';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_files';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'title',
-      'formatter' => 'file_table',
-      'delta_limit' => '0',
-      'delta_offset' => '0',
-      'delta_reversed' => 0,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-34'] = $pane;
-    $display->panels['left'][1] = 'new-34';
-    $pane = new stdClass();
-    $pane->pid = 'new-35';
-    $pane->panel = 'left';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_video';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-35'] = $pane;
-    $display->panels['left'][2] = 'new-35';
-    $pane = new stdClass();
-    $pane->pid = 'new-36';
-    $pane->panel = 'left';
-    $pane->type = 'node_comments';
-    $pane->subtype = 'node_comments';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'mode' => '1',
-      'comments_per_page' => '10',
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $display->content['new-36'] = $pane;
-    $display->panels['left'][3] = 'new-36';
-    $pane = new stdClass();
-    $pane->pid = 'new-37';
-    $pane->panel = 'left';
-    $pane->type = 'node_comment_form';
-    $pane->subtype = 'node_comment_form';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'anon_links' => 0,
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 4;
-    $pane->locks = array();
-    $display->content['new-37'] = $pane;
-    $display->panels['left'][4] = 'new-37';
-    $pane = new stdClass();
-    $pane->pid = 'new-38';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_speakers';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'title',
-      'formatter' => 'user_reference_default',
-      'delta_limit' => '0',
-      'delta_offset' => '0',
-      'delta_reversed' => 0,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 1,
-      'override_title_text' => 'Speaker(s)',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-38'] = $pane;
-    $display->panels['right'][0] = 'new-38';
-    $pane = new stdClass();
-    $pane->pid = 'new-39';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_track';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'title',
-      'formatter' => 'taxonomy_term_reference_link',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 1,
-      'override_title_text' => 'Track',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-39'] = $pane;
-    $display->panels['right'][1] = 'new-39';
-    $pane = new stdClass();
-    $pane->pid = 'new-40';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_skill_level';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'title',
-      'formatter' => 'taxonomy_term_reference_link',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 1,
-      'override_title_text' => 'Skill Level',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-40'] = $pane;
-    $display->panels['right'][2] = 'new-40';
+  $pane = new stdClass();
+  $pane->pid = 'new-33';
+  $pane->panel = 'left';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_description';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'text_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 1,
+    'override_title_text' => '%node:title ',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-33'] = $pane;
+  $display->panels['left'][0] = 'new-33';
+  $pane = new stdClass();
+  $pane->pid = 'new-34';
+  $pane->panel = 'left';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_files';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'title',
+    'formatter' => 'file_table',
+    'delta_limit' => '0',
+    'delta_offset' => '0',
+    'delta_reversed' => 0,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-34'] = $pane;
+  $display->panels['left'][1] = 'new-34';
+  $pane = new stdClass();
+  $pane->pid = 'new-35';
+  $pane->panel = 'left';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_video';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'text_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $display->content['new-35'] = $pane;
+  $display->panels['left'][2] = 'new-35';
+  $pane = new stdClass();
+  $pane->pid = 'new-36';
+  $pane->panel = 'left';
+  $pane->type = 'node_comments';
+  $pane->subtype = 'node_comments';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'mode' => '1',
+    'comments_per_page' => '10',
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $display->content['new-36'] = $pane;
+  $display->panels['left'][3] = 'new-36';
+  $pane = new stdClass();
+  $pane->pid = 'new-37';
+  $pane->panel = 'left';
+  $pane->type = 'node_comment_form';
+  $pane->subtype = 'node_comment_form';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'anon_links' => 0,
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 4;
+  $pane->locks = array();
+  $display->content['new-37'] = $pane;
+  $display->panels['left'][4] = 'new-37';
+  $pane = new stdClass();
+  $pane->pid = 'new-38';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_speakers';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'title',
+    'formatter' => 'user_reference_default',
+    'delta_limit' => '0',
+    'delta_offset' => '0',
+    'delta_reversed' => 0,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 1,
+    'override_title_text' => 'Speaker(s)',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-38'] = $pane;
+  $display->panels['right'][0] = 'new-38';
+  $pane = new stdClass();
+  $pane->pid = 'new-39';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_track';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'title',
+    'formatter' => 'taxonomy_term_reference_link',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 1,
+    'override_title_text' => 'Track',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-39'] = $pane;
+  $display->panels['right'][1] = 'new-39';
+  $pane = new stdClass();
+  $pane->pid = 'new-40';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_skill_level';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'title',
+    'formatter' => 'taxonomy_term_reference_link',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 1,
+    'override_title_text' => 'Skill Level',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $display->content['new-40'] = $pane;
+  $display->panels['right'][2] = 'new-40';
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1532,123 +1532,123 @@ function badcamp_panels_default_page_manager_handlers() {
   $display->title = '%term:name';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-41';
-    $pane->panel = 'left';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'taxonomy_term:field_image';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'image',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'image_style' => 'location_lg',
-        'image_link' => '',
-      ),
-      'context' => 'argument_term_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-41'] = $pane;
-    $display->panels['left'][0] = 'new-41';
-    $pane = new stdClass();
-    $pane->pid = 'new-42';
-    $pane->panel = 'left';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'taxonomy_term-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-42'] = $pane;
-    $display->panels['left'][1] = 'new-42';
-    $pane = new stdClass();
-    $pane->pid = 'new-43';
-    $pane->panel = 'right';
-    $pane->type = 'term_description';
-    $pane->subtype = 'term_description';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'context' => 'argument_term_1',
-      'override_title' => 1,
-      'override_title_text' => 'Location',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-43'] = $pane;
-    $display->panels['right'][0] = 'new-43';
-    $pane = new stdClass();
-    $pane->pid = 'new-44';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'taxonomy_term:field_map';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_term_1',
-      'override_title' => 1,
-      'override_title_text' => 'Map',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-44'] = $pane;
-    $display->panels['right'][1] = 'new-44';
-    $pane = new stdClass();
-    $pane->pid = 'new-45';
-    $pane->panel = 'right';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'terms-panel_pane_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-45'] = $pane;
-    $display->panels['right'][2] = 'new-45';
+  $pane = new stdClass();
+  $pane->pid = 'new-41';
+  $pane->panel = 'left';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'taxonomy_term:field_image';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'image',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(
+      'image_style' => 'location_lg',
+      'image_link' => '',
+    ),
+    'context' => 'argument_term_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-41'] = $pane;
+  $display->panels['left'][0] = 'new-41';
+  $pane = new stdClass();
+  $pane->pid = 'new-42';
+  $pane->panel = 'left';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'taxonomy_term-panel_pane_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-42'] = $pane;
+  $display->panels['left'][1] = 'new-42';
+  $pane = new stdClass();
+  $pane->pid = 'new-43';
+  $pane->panel = 'right';
+  $pane->type = 'term_description';
+  $pane->subtype = 'term_description';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'context' => 'argument_term_1',
+    'override_title' => 1,
+    'override_title_text' => 'Location',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-43'] = $pane;
+  $display->panels['right'][0] = 'new-43';
+  $pane = new stdClass();
+  $pane->pid = 'new-44';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'taxonomy_term:field_map';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'text_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_term_1',
+    'override_title' => 1,
+    'override_title_text' => 'Map',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-44'] = $pane;
+  $display->panels['right'][1] = 'new-44';
+  $pane = new stdClass();
+  $pane->pid = 'new-45';
+  $pane->panel = 'right';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'terms-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $display->content['new-45'] = $pane;
+  $display->panels['right'][2] = 'new-45';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-42';
   $handler->conf['display'] = $display;
@@ -1704,67 +1704,67 @@ function badcamp_panels_default_page_manager_handlers() {
   $display->title = '%term:name';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-46';
-    $pane->panel = 'left';
-    $pane->type = 'term_description';
-    $pane->subtype = 'term_description';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'context' => 'argument_term_1',
-      'override_title' => 1,
-      'override_title_text' => '<none>',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-46'] = $pane;
-    $display->panels['left'][0] = 'new-46';
-    $pane = new stdClass();
-    $pane->pid = 'new-47';
-    $pane->panel = 'left';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'summits_by_day-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-47'] = $pane;
-    $display->panels['left'][1] = 'new-47';
-    $pane = new stdClass();
-    $pane->pid = 'new-48';
-    $pane->panel = 'right';
-    $pane->type = 'block';
-    $pane->subtype = 'block-4';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => 'Important Dates',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-48'] = $pane;
-    $display->panels['right'][0] = 'new-48';
+  $pane = new stdClass();
+  $pane->pid = 'new-46';
+  $pane->panel = 'left';
+  $pane->type = 'term_description';
+  $pane->subtype = 'term_description';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'context' => 'argument_term_1',
+    'override_title' => 1,
+    'override_title_text' => '<none>',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-46'] = $pane;
+  $display->panels['left'][0] = 'new-46';
+  $pane = new stdClass();
+  $pane->pid = 'new-47';
+  $pane->panel = 'left';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'summits_by_day-panel_pane_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-47'] = $pane;
+  $display->panels['left'][1] = 'new-47';
+  $pane = new stdClass();
+  $pane->pid = 'new-48';
+  $pane->panel = 'right';
+  $pane->type = 'block';
+  $pane->subtype = 'block-4';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'override_title' => 1,
+    'override_title_text' => 'Important Dates',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-48'] = $pane;
+  $display->panels['right'][0] = 'new-48';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1806,289 +1806,289 @@ function badcamp_panels_default_page_manager_handlers() {
   $display->title = '%user:field-first-name %user:field-last-name';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-49';
-    $pane->panel = 'left';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'About User Name /.',
-      'title' => 'About %user:field-first-name %user:field-last-name /.',
-      'body' => '<span></span>',
-      'format' => 'filtered_html',
-      'substitute' => 1,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-49'] = $pane;
-    $display->panels['left'][0] = 'new-49';
-    $pane = new stdClass();
-    $pane->pid = 'new-50';
-    $pane->panel = 'left';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'user:field_title_role';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'inline',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:user_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-50'] = $pane;
-    $display->panels['left'][1] = 'new-50';
-    $pane = new stdClass();
-    $pane->pid = 'new-51';
-    $pane->panel = 'left';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'user:field_organization';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'inline',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:user_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-51'] = $pane;
-    $display->panels['left'][2] = 'new-51';
-    $pane = new stdClass();
-    $pane->pid = 'new-52';
-    $pane->panel = 'left';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'user:field_bio';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'inline',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:user_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $display->content['new-52'] = $pane;
-    $display->panels['left'][3] = 'new-52';
-    $pane = new stdClass();
-    $pane->pid = 'new-53';
-    $pane->panel = 'left';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'user:field_drupal_username';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'inline',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:user_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 4;
-    $pane->locks = array();
-    $display->content['new-53'] = $pane;
-    $display->panels['left'][4] = 'new-53';
-    $pane = new stdClass();
-    $pane->pid = 'new-54';
-    $pane->panel = 'left';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'user:field_interests';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'inline',
-      'formatter' => 'taxonomy_term_reference_plain',
-      'delta_limit' => '0',
-      'delta_offset' => '0',
-      'delta_reversed' => 0,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:user_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 5;
-    $pane->locks = array();
-    $display->content['new-54'] = $pane;
-    $display->panels['left'][5] = 'new-54';
-    $pane = new stdClass();
-    $pane->pid = 'new-55';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'user:field_featured_headshot';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'image',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'image_style' => 'headshot_user_profile',
-        'image_link' => '',
-      ),
-      'context' => 'argument_entity_id:user_1',
-      'override_title' => 1,
-      'override_title_text' => 'Attendee Pic /.',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-55'] = $pane;
-    $display->panels['right'][0] = 'new-55';
-    $pane = new stdClass();
-    $pane->pid = 'new-56';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'user:field_individual_sponsor';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'list_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:user_1',
-      'override_title' => 1,
-      'override_title_text' => '<none>',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-56'] = $pane;
-    $display->panels['right'][1] = 'new-56';
-    $pane = new stdClass();
-    $pane->pid = 'new-57';
-    $pane->panel = 'right';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'camp_user_social_media_links-panel_pane_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'context' => array(
-        0 => 'argument_entity_id:user_1',
-      ),
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-57'] = $pane;
-    $display->panels['right'][2] = 'new-57';
-    $pane = new stdClass();
-    $pane->pid = 'new-58';
-    $pane->panel = 'right';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'compare_users',
-          'settings' => array(
-            'equality' => '1',
-          ),
-          'context' => array(
-            0 => 'logged-in-user',
-            1 => 'argument_entity_id:user_1',
-          ),
-          'not' => FALSE,
+  $pane = new stdClass();
+  $pane->pid = 'new-49';
+  $pane->panel = 'left';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'About User Name /.',
+    'title' => 'About %user:field-first-name %user:field-last-name /.',
+    'body' => '<span></span>',
+    'format' => 'filtered_html',
+    'substitute' => 1,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-49'] = $pane;
+  $display->panels['left'][0] = 'new-49';
+  $pane = new stdClass();
+  $pane->pid = 'new-50';
+  $pane->panel = 'left';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'user:field_title_role';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'inline',
+    'formatter' => 'text_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:user_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-50'] = $pane;
+  $display->panels['left'][1] = 'new-50';
+  $pane = new stdClass();
+  $pane->pid = 'new-51';
+  $pane->panel = 'left';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'user:field_organization';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'inline',
+    'formatter' => 'text_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:user_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $display->content['new-51'] = $pane;
+  $display->panels['left'][2] = 'new-51';
+  $pane = new stdClass();
+  $pane->pid = 'new-52';
+  $pane->panel = 'left';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'user:field_bio';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'inline',
+    'formatter' => 'text_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:user_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $display->content['new-52'] = $pane;
+  $display->panels['left'][3] = 'new-52';
+  $pane = new stdClass();
+  $pane->pid = 'new-53';
+  $pane->panel = 'left';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'user:field_drupal_username';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'inline',
+    'formatter' => 'text_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:user_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 4;
+  $pane->locks = array();
+  $display->content['new-53'] = $pane;
+  $display->panels['left'][4] = 'new-53';
+  $pane = new stdClass();
+  $pane->pid = 'new-54';
+  $pane->panel = 'left';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'user:field_interests';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'inline',
+    'formatter' => 'taxonomy_term_reference_plain',
+    'delta_limit' => '0',
+    'delta_offset' => '0',
+    'delta_reversed' => 0,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:user_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 5;
+  $pane->locks = array();
+  $display->content['new-54'] = $pane;
+  $display->panels['left'][5] = 'new-54';
+  $pane = new stdClass();
+  $pane->pid = 'new-55';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'user:field_featured_headshot';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'image',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(
+      'image_style' => 'headshot_user_profile',
+      'image_link' => '',
+    ),
+    'context' => 'argument_entity_id:user_1',
+    'override_title' => 1,
+    'override_title_text' => 'Attendee Pic /.',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-55'] = $pane;
+  $display->panels['right'][0] = 'new-55';
+  $pane = new stdClass();
+  $pane->pid = 'new-56';
+  $pane->panel = 'right';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'user:field_individual_sponsor';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'list_default',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(),
+    'context' => 'argument_entity_id:user_1',
+    'override_title' => 1,
+    'override_title_text' => '<none>',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-56'] = $pane;
+  $display->panels['right'][1] = 'new-56';
+  $pane = new stdClass();
+  $pane->pid = 'new-57';
+  $pane->panel = 'right';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'camp_user_social_media_links-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'context' => array(
+      0 => 'argument_entity_id:user_1',
+    ),
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $display->content['new-57'] = $pane;
+  $display->panels['right'][2] = 'new-57';
+  $pane = new stdClass();
+  $pane->pid = 'new-58';
+  $pane->panel = 'right';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array(
+    'plugins' => array(
+      0 => array(
+        'name' => 'compare_users',
+        'settings' => array(
+          'equality' => '1',
         ),
+        'context' => array(
+          0 => 'logged-in-user',
+          1 => 'argument_entity_id:user_1',
+        ),
+        'not' => FALSE,
       ),
-    );
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<p><a class="submit-button" style="width:180px;" href="/individual-sponsor">Sponsor BadCamp</a></p>',
-      'format' => 'full_html',
-      'substitute' => 1,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $display->content['new-58'] = $pane;
-    $display->panels['right'][3] = 'new-58';
+    ),
+  );
+  $pane->configuration = array(
+    'admin_title' => '',
+    'title' => '',
+    'body' => '<p><a class="submit-button" style="width:180px;" href="/individual-sponsor">Sponsor BadCamp</a></p>',
+    'format' => 'full_html',
+    'substitute' => 1,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $display->content['new-58'] = $pane;
+  $display->panels['right'][3] = 'new-58';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -2162,31 +2162,31 @@ function badcamp_panels_default_page_manager_pages() {
   $display->title = '';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-59';
-    $pane->panel = 'center';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => 'Sessions submissions are open! Sessions are welcome from anyone in the community along this year\'s tracks. Sessions are 50 min long with 10 min for Q&A. Sessions are welcome for people of all levels. The last day to submit a session is <span style="text-decoration: line-through;"><strong>September 1</strong></span><strong> &nbsp;</strong><strong>Extended to Sept 15</strong>.<a href="/proposed-sessions"> See proposed sessions.</a><h3>Tracks</h3> Business + Community<br> Code + Develop <br>Core Conversation<br> Design, Theme + UX <br>DevOps + Performance <br>Site Building + Using Drupal<br>
+  $pane = new stdClass();
+  $pane->pid = 'new-59';
+  $pane->panel = 'center';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => '',
+    'title' => '',
+    'body' => 'Sessions submissions are open! Sessions are welcome from anyone in the community along this year\'s tracks. Sessions are 50 min long with 10 min for Q&A. Sessions are welcome for people of all levels. The last day to submit a session is <span style="text-decoration: line-through;"><strong>September 1</strong></span><strong> &nbsp;</strong><strong>Extended to Sept 15</strong>.<a href="/proposed-sessions"> See proposed sessions.</a><h3>Tracks</h3> Business + Community<br> Code + Develop <br>Core Conversation<br> Design, Theme + UX <br>DevOps + Performance <br>Site Building + Using Drupal<br>
 <p><a class="submit-button" style="width:165px;" href="/node/add/session"> Submit a session</a></p>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-59'] = $pane;
-    $display->panels['center'][0] = 'new-59';
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-59'] = $pane;
+  $display->panels['center'][0] = 'new-59';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -2238,30 +2238,30 @@ function badcamp_panels_default_page_manager_pages() {
   $display->title = 'Submit a Session!';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-60';
-    $pane->panel = 'center';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<p>Sessions submissions are open, from now until <strong><span style="text-decoration: line-through;">September 1</span> September 15</strong>. Sessions are welcome from anyone in the community along this year\'s tracks. Sessions are 50 min long with 10 min for Q&amp;A. Sessions will be targeted at users of all levels. <a href="/proposed-sessions">See proposed sessions.</a></p><h3>Tracks</h3><p>Business + Community<br /> Code + Develop <br />Core Conversation<br /> Design, Theme + UX <br />DevOps + Performance <br />Site Building + Using Drupal</p><h3>To submit a session please <a href="http://2013.badcamp.net/signup">register</a> or <a href="http://2013.badcamp.net/user?destination=/node/add/session">sign-in</a>.</h3>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-60'] = $pane;
-    $display->panels['center'][0] = 'new-60';
+  $pane = new stdClass();
+  $pane->pid = 'new-60';
+  $pane->panel = 'center';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => '',
+    'title' => '',
+    'body' => '<p>Sessions submissions are open, from now until <strong><span style="text-decoration: line-through;">September 1</span> September 15</strong>. Sessions are welcome from anyone in the community along this year\'s tracks. Sessions are 50 min long with 10 min for Q&amp;A. Sessions will be targeted at users of all levels. <a href="/proposed-sessions">See proposed sessions.</a></p><h3>Tracks</h3><p>Business + Community<br /> Code + Develop <br />Core Conversation<br /> Design, Theme + UX <br />DevOps + Performance <br />Site Building + Using Drupal</p><h3>To submit a session please <a href="http://2013.badcamp.net/signup">register</a> or <a href="http://2013.badcamp.net/user?destination=/node/add/session">sign-in</a>.</h3>',
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-60'] = $pane;
+  $display->panels['center'][0] = 'new-60';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-60';
   $handler->conf['display'] = $display;
@@ -2318,30 +2318,30 @@ function badcamp_panels_default_page_manager_pages() {
   $display->title = 'Birds of a Feather';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-61';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<h1 id="page-title" class="title">&nbsp;</h1><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>Birds of a Feather (or BoFs) are informal gatherings of like-minded individuals who wish to discuss a certain topic without a pre-planned agenda. BoFs are a great place to meet other members of the community with similar interests.</p><p>BoFs allow groups to meet and discuss issues relating to regular conference sessions or get together as a group of like-minded individuals to talk about common problems. BoFs can be serious, and a great way to gather the people you’ve been working remotely with on a project in a space to deep dive on a topic, but they can also be fun as well!</p><h3>BoF Guidelines</h3><ul><li>Be respectful of pre-scheduled BoFs. If the rooms are all reserved, meet in the hallway!</li><li>BoF rooms will be shared. Please be considerate of other groups in the room.</li><li>Collaborate! If there are similar topics scheduled, contact the BoF owner to see if you can combine your topics. Alternately, if your BoF gets too large, it’s ok to splinter!</li><li>Does your BoF complement an existing session? Talk to the session owner about plugging your BoF at their session if yours comes later!</li><li>Don\'t abuse the BoFs. Sales, product demos or promotional sounding BoFs will be cancelled.</li><li>Have fun and learn! The BoFs exist to provide attendees with an inclusive, informal environment in which to share ideas freely.</li></ul><h3>When can I schedule a BoF?</h3><p>BoFs may be scheduled Saturday-Sunday during regular session times and lunch.</p><p>Want to schedule a BOF? There will be a chalk board up at registration and all weekend.</p></div></div></div>',
-      'format' => 'filtered_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-61'] = $pane;
-    $display->panels['middle'][0] = 'new-61';
+  $pane = new stdClass();
+  $pane->pid = 'new-61';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => '',
+    'title' => '',
+    'body' => '<h1 id="page-title" class="title">&nbsp;</h1><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>Birds of a Feather (or BoFs) are informal gatherings of like-minded individuals who wish to discuss a certain topic without a pre-planned agenda. BoFs are a great place to meet other members of the community with similar interests.</p><p>BoFs allow groups to meet and discuss issues relating to regular conference sessions or get together as a group of like-minded individuals to talk about common problems. BoFs can be serious, and a great way to gather the people you’ve been working remotely with on a project in a space to deep dive on a topic, but they can also be fun as well!</p><h3>BoF Guidelines</h3><ul><li>Be respectful of pre-scheduled BoFs. If the rooms are all reserved, meet in the hallway!</li><li>BoF rooms will be shared. Please be considerate of other groups in the room.</li><li>Collaborate! If there are similar topics scheduled, contact the BoF owner to see if you can combine your topics. Alternately, if your BoF gets too large, it’s ok to splinter!</li><li>Does your BoF complement an existing session? Talk to the session owner about plugging your BoF at their session if yours comes later!</li><li>Don\'t abuse the BoFs. Sales, product demos or promotional sounding BoFs will be cancelled.</li><li>Have fun and learn! The BoFs exist to provide attendees with an inclusive, informal environment in which to share ideas freely.</li></ul><h3>When can I schedule a BoF?</h3><p>BoFs may be scheduled Saturday-Sunday during regular session times and lunch.</p><p>Want to schedule a BOF? There will be a chalk board up at registration and all weekend.</p></div></div></div>',
+    'format' => 'filtered_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-61'] = $pane;
+  $display->panels['middle'][0] = 'new-61';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -2395,58 +2395,58 @@ function badcamp_panels_default_page_manager_pages() {
   $display->title = 'Drupal Jobs';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-62';
-    $pane->panel = 'middle';
-    $pane->type = 'views';
-    $pane->subtype = 'job_opportunities';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_pager_settings' => 0,
-      'use_pager' => 0,
-      'nodes_per_page' => '0',
-      'pager_id' => '0',
-      'offset' => '0',
-      'more_link' => 0,
-      'feed_icons' => 0,
-      'panel_args' => 0,
-      'link_to_view' => 0,
-      'args' => '',
-      'url' => '',
-      'display' => 'default',
-      'override_title' => 1,
-      'override_title_text' => '<none>',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-      'style' => 'center_styled_content',
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-62'] = $pane;
-    $display->panels['middle'][0] = 'new-62';
-    $pane = new stdClass();
-    $pane->pid = 'new-63';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'job_opportunities-panel_pane_2';
-    $pane->shown = FALSE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-63'] = $pane;
-    $display->panels['middle'][1] = 'new-63';
+  $pane = new stdClass();
+  $pane->pid = 'new-62';
+  $pane->panel = 'middle';
+  $pane->type = 'views';
+  $pane->subtype = 'job_opportunities';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'override_pager_settings' => 0,
+    'use_pager' => 0,
+    'nodes_per_page' => '0',
+    'pager_id' => '0',
+    'offset' => '0',
+    'more_link' => 0,
+    'feed_icons' => 0,
+    'panel_args' => 0,
+    'link_to_view' => 0,
+    'args' => '',
+    'url' => '',
+    'display' => 'default',
+    'override_title' => 1,
+    'override_title_text' => '<none>',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+    'style' => 'center_styled_content',
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-62'] = $pane;
+  $display->panels['middle'][0] = 'new-62';
+  $pane = new stdClass();
+  $pane->pid = 'new-63';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'job_opportunities-panel_pane_2';
+  $pane->shown = FALSE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-63'] = $pane;
+  $display->panels['middle'][1] = 'new-63';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -2503,251 +2503,251 @@ function badcamp_panels_default_page_manager_pages() {
   $display->title = 'This is BADCamp';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-64';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'About BADCamp text',
-      'title' => 'This is BADCamp',
-      'body' => '<p>The Bay Area Drupal Camp is a gathering of like-minded people to discuss and learn about Drupal, an open-source content management system that is powering more of the web every year. In its 7th year, BADCamp provides four days of training, summits, sprints, sessions, BOFs, networking, career opportunities and more!</p>',
-      'format' => 'filtered_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-      'style' => 'default',
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'about-header',
-    );
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-64'] = $pane;
-    $display->panels['middle'][0] = 'new-64';
-    $pane = new stdClass();
-    $pane->pid = 'new-65';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Four Image Promo',
-      'title' => '',
-      'body' => '&nbsp;',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => 'four-image-promo',
-      'css_class' => 'four-image-promo pane-full-width-content',
-    );
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-65'] = $pane;
-    $display->panels['middle'][1] = 'new-65';
-    $pane = new stdClass();
-    $pane->pid = 'new-66';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Venue & Location TITLE',
-      'title' => 'Venue & Location',
-      'body' => '<p>University of California, Berkeley</p>',
-      'format' => 'filtered_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-      'style' => 'center_styled_content',
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-66'] = $pane;
-    $display->panels['middle'][2] = 'new-66';
-    $pane = new stdClass();
-    $pane->pid = 'new-67';
-    $pane->panel = 'middle';
-    $pane->type = 'panels_mini';
-    $pane->subtype = 'venue_location';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $display->content['new-67'] = $pane;
-    $display->panels['middle'][3] = 'new-67';
-    $pane = new stdClass();
-    $pane->pid = 'new-68';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'three image promo',
-      'title' => '',
-      'body' => '&nbsp;',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => 'three-image-promo',
-      'css_class' => 'three-image-promo pane-full-width-content',
-    );
-    $pane->extras = array();
-    $pane->position = 4;
-    $pane->locks = array();
-    $display->content['new-68'] = $pane;
-    $display->panels['middle'][4] = 'new-68';
-    $pane = new stdClass();
-    $pane->pid = 'new-69';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Responsive Vertical Event Timeline',
-      'title' => '',
-      'body' => '<div class="timeline-border"><div class="bookend bookend-top"><span>Eager Arrival</span></div><div class="line">&nbsp;</div><div class="day first"><span>Thursday</span></div><div class="event"><h3>Free Drupal Training</h3><ul><li><a href="/events/drupal-immersion-beginners-thursday">Drupal Immersion for Beginners</a></li><li><a href="/events/level-your-themer-thursday">Level Up Your Themer</a></li><li><a href="/events/drupal-development-best-practices-building-sites-pantheon-thursday">Drupal Development Best Practices &amp; Building Sites on Pantheon</a></li><li><a href="/events/enjoy-drupal-site-builder-basics-thursday">Enjoy Drupal: Site Builder Basics</a></li><li><a href="/events/drupal-performance-and-scalability-dream-team">Drupal Performance and Scalability with the Dream Team</a></li><li><a href="/events/open-atrium-2">Open Atrium 2</a></li></ul></div><div class="event"><h3>Drupal Summits</h3><ul><li><a href="/events/drupal-non-profit-summit">Drupal Non Profit Summit</a></li><li><a href="/events/drupal-devops-summit">Drupal DevOps Summit</a></li><li><a href="/events/drupal-ecommerce-summit">Drupal eCommerce Summit</a></li></ul></div><div class="day"><span>Friday</span></div><div class="event"><h3>Drupal Summits</h3><ul><li><a href="/events/mobile-drupal-summit">Mobile Drupal Summit</a></li><li><a href="/events/higher-education-summit">Higher Education Summit</a></li><li><a href="/events/drupal-ui-ux-summit">Drupal UI / UX Summit</a></li><li><a href="/events/drupal-product-summit">Drupal Product Summit</a></li></ul></div><div class="event"><h3>Free Drupal Training</h3><ul><li><a href="/events/drupal-immersion-beginners-friday">Drupal Immersion for Beginners</a></li><li><a href="/events/whats-new-drupal-8-friday">What\'s New in Drupal 8</a></li><li><a href="/events/level-your-themer-friday">Level Up Your Themer</a></li><li><a href="/events/building-multilingual-sites-drupal-7-friday">Building Multilingual Sites with Drupal 7</a></li><li><a href="/events/drupal-development-best-practices-building-sites-pantheon-friday">Drupal Development Best Practices &amp; Building Sites on Pantheon</a></li><li><a href="/events/enjoy-drupal-site-builder-basics-friday">Enjoy Drupal: Site Builder Basics</a></li></ul></div><div class="event featured"><h3><a href="/events/drupal-trivia-night">Trivia Night!</a></h3>8PM International House</div><div class="day"><span>Saturday</span></div><div class="event"><h3><a href="/BOFs">Birds of a Feather meetings</a></h3><p>Ad-hoc, open sessions about topics organized by attendees during the event.</p></div><div class="event"><h3>BADCamp Sessions</h3><p>A full day of speakers from throughout the community, presenting topics and ideas along the following themes:</p><ul><li><a href="/tracks/business-community">Business &amp; Community</a></li><li><a href="/tracks/code-develop">Code &amp; Development</a></li><li><a href="/tracks/core-conversation">Core Conversation</a></li><li><a href="/tracks/design-theme-ux">Design, Theme + UX</a></li><li><a href="/tracks/devops-performance">DevOps &amp; Performance</a></li><li><a href="/tracks/site-building-using-drupal">Site Building &amp; Using Drupal</a></li></ul></div><div class="event featured"><h3><a href="/events/big-bad-party">The BADCamp Party!</a></h3><p>9pm Marsh Theatre<br /> Berkeley, CA</p></div><div class="day"><span>Sunday</span></div><div class="event"><h3><a href="/sprints">Core Developer Sprint</a></h3><p>Gather at the Anna Head Alumnae Hall for core conversations, and to sprint on Drupal 8</p></div><div class="event"><h3>BADCamp Sessions</h3><p>A full day of speakers from throughout the community, presenting topics and ideas along the following themes:</p><ul><li><a href="/tracks/business-community">Business &amp; Community</a></li><li><a href="/tracks/code-develop">Code &amp; Development</a></li><li><a href="/tracks/core-conversation">Core Conversation</a></li><li><a href="/tracks/design-theme-ux">Design, Theme + UX</a></li><li><a href="/tracks/devops-performance">DevOps &amp; Performance</a></li><li><a href="/tracks/site-building-using-drupal">Site Building &amp; Using Drupal</a></li></ul></div><div class="event"><h3><a href="/BOFs">Birds of a Feather meetings</a></h3><p>Ad-hoc, open sessions about topics organized by attendees during the event.</p></div><div class="bookend bookend-bottom"><span>Leave inspired.</span></div></div>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 5;
-    $pane->locks = array();
-    $display->content['new-69'] = $pane;
-    $display->panels['middle'][5] = 'new-69';
-    $pane = new stdClass();
-    $pane->pid = 'new-70';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Timeline Title bar',
-      'title' => 'Timeline',
-      'body' => '<p>University of California, Berkeley</p>',
-      'format' => 'filtered_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-      'style' => 'center_styled_content',
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 6;
-    $pane->locks = array();
-    $display->content['new-70'] = $pane;
-    $display->panels['middle'][6] = 'new-70';
-    $pane = new stdClass();
-    $pane->pid = 'new-71';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'attendees-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 7;
-    $pane->locks = array();
-    $display->content['new-71'] = $pane;
-    $display->panels['middle'][7] = 'new-71';
-    $pane = new stdClass();
-    $pane->pid = 'new-72';
-    $pane->panel = 'middle';
-    $pane->type = 'facts';
-    $pane->subtype = 'facts';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'one-number' => '1652',
-      'one-string' => 'Registered Attendees in 2012',
-      'two-number' => '817',
-      'two-string' => 'People trained on Drupal since 2007',
-      'three-number' => '133',
-      'three-string' => 'Events to attend at BADCamp 2013',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-      'style' => 'default',
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'about-facts ',
-    );
-    $pane->extras = array();
-    $pane->position = 8;
-    $pane->locks = array();
-    $display->content['new-72'] = $pane;
-    $display->panels['middle'][8] = 'new-72';
-    $pane = new stdClass();
-    $pane->pid = 'new-73';
-    $pane->panel = 'middle';
-    $pane->type = 'panels_mini';
-    $pane->subtype = 'lower_page_super_nav';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 9;
-    $pane->locks = array();
-    $display->content['new-73'] = $pane;
-    $display->panels['middle'][9] = 'new-73';
+  $pane = new stdClass();
+  $pane->pid = 'new-64';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'About BADCamp text',
+    'title' => 'This is BADCamp',
+    'body' => '<p>The Bay Area Drupal Camp is a gathering of like-minded people to discuss and learn about Drupal, an open-source content management system that is powering more of the web every year. In its 7th year, BADCamp provides four days of training, summits, sprints, sessions, BOFs, networking, career opportunities and more!</p>',
+    'format' => 'filtered_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+    'style' => 'default',
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'about-header',
+  );
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-64'] = $pane;
+  $display->panels['middle'][0] = 'new-64';
+  $pane = new stdClass();
+  $pane->pid = 'new-65';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Four Image Promo',
+    'title' => '',
+    'body' => '&nbsp;',
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => 'four-image-promo',
+    'css_class' => 'four-image-promo pane-full-width-content',
+  );
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-65'] = $pane;
+  $display->panels['middle'][1] = 'new-65';
+  $pane = new stdClass();
+  $pane->pid = 'new-66';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Venue & Location TITLE',
+    'title' => 'Venue & Location',
+    'body' => '<p>University of California, Berkeley</p>',
+    'format' => 'filtered_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+    'style' => 'center_styled_content',
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $display->content['new-66'] = $pane;
+  $display->panels['middle'][2] = 'new-66';
+  $pane = new stdClass();
+  $pane->pid = 'new-67';
+  $pane->panel = 'middle';
+  $pane->type = 'panels_mini';
+  $pane->subtype = 'venue_location';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'override_title' => 1,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $display->content['new-67'] = $pane;
+  $display->panels['middle'][3] = 'new-67';
+  $pane = new stdClass();
+  $pane->pid = 'new-68';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'three image promo',
+    'title' => '',
+    'body' => '&nbsp;',
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => 'three-image-promo',
+    'css_class' => 'three-image-promo pane-full-width-content',
+  );
+  $pane->extras = array();
+  $pane->position = 4;
+  $pane->locks = array();
+  $display->content['new-68'] = $pane;
+  $display->panels['middle'][4] = 'new-68';
+  $pane = new stdClass();
+  $pane->pid = 'new-69';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'attendees-panel_pane_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 5;
+  $pane->locks = array();
+  $display->content['new-69'] = $pane;
+  $display->panels['middle'][5] = 'new-69';
+  $pane = new stdClass();
+  $pane->pid = 'new-70';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Timeline Title bar',
+    'title' => 'Timeline',
+    'body' => '<p>University of California, Berkeley</p>',
+    'format' => 'filtered_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+    'style' => 'center_styled_content',
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 6;
+  $pane->locks = array();
+  $display->content['new-70'] = $pane;
+  $display->panels['middle'][6] = 'new-70';
+  $pane = new stdClass();
+  $pane->pid = 'new-71';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Responsive Vertical Event Timeline',
+    'title' => '',
+    'body' => '<div class="timeline-border"><div class="bookend bookend-top"><span>Eager Arrival</span></div><div class="line">&nbsp;</div><div class="day first"><span>Thursday</span></div><div class="event"><h3>Free Drupal Training</h3><ul><li><a href="/events/drupal-immersion-beginners-thursday">Drupal Immersion for Beginners</a></li><li><a href="/events/level-your-themer-thursday">Level Up Your Themer</a></li><li><a href="/events/drupal-development-best-practices-building-sites-pantheon-thursday">Drupal Development Best Practices &amp; Building Sites on Pantheon</a></li><li><a href="/events/enjoy-drupal-site-builder-basics-thursday">Enjoy Drupal: Site Builder Basics</a></li><li><a href="/events/drupal-performance-and-scalability-dream-team">Drupal Performance and Scalability with the Dream Team</a></li><li><a href="/events/open-atrium-2">Open Atrium 2</a></li></ul></div><div class="event"><h3>Drupal Summits</h3><ul><li><a href="/events/drupal-non-profit-summit">Drupal Non Profit Summit</a></li><li><a href="/events/drupal-devops-summit">Drupal DevOps Summit</a></li><li><a href="/events/drupal-ecommerce-summit">Drupal eCommerce Summit</a></li></ul></div><div class="day"><span>Friday</span></div><div class="event"><h3>Drupal Summits</h3><ul><li><a href="/events/mobile-drupal-summit">Mobile Drupal Summit</a></li><li><a href="/events/higher-education-summit">Higher Education Summit</a></li><li><a href="/events/drupal-ui-ux-summit">Drupal UI / UX Summit</a></li><li><a href="/events/drupal-product-summit">Drupal Product Summit</a></li></ul></div><div class="event"><h3>Free Drupal Training</h3><ul><li><a href="/events/drupal-immersion-beginners-friday">Drupal Immersion for Beginners</a></li><li><a href="/events/whats-new-drupal-8-friday">What\'s New in Drupal 8</a></li><li><a href="/events/level-your-themer-friday">Level Up Your Themer</a></li><li><a href="/events/building-multilingual-sites-drupal-7-friday">Building Multilingual Sites with Drupal 7</a></li><li><a href="/events/drupal-development-best-practices-building-sites-pantheon-friday">Drupal Development Best Practices &amp; Building Sites on Pantheon</a></li><li><a href="/events/enjoy-drupal-site-builder-basics-friday">Enjoy Drupal: Site Builder Basics</a></li></ul></div><div class="event featured"><h3><a href="/events/drupal-trivia-night">Trivia Night!</a></h3>8PM International House</div><div class="day"><span>Saturday</span></div><div class="event"><h3><a href="/BOFs">Birds of a Feather meetings</a></h3><p>Ad-hoc, open sessions about topics organized by attendees during the event.</p></div><div class="event"><h3>BADCamp Sessions</h3><p>A full day of speakers from throughout the community, presenting topics and ideas along the following themes:</p><ul><li><a href="/tracks/business-community">Business &amp; Community</a></li><li><a href="/tracks/code-develop">Code &amp; Development</a></li><li><a href="/tracks/core-conversation">Core Conversation</a></li><li><a href="/tracks/design-theme-ux">Design, Theme + UX</a></li><li><a href="/tracks/devops-performance">DevOps &amp; Performance</a></li><li><a href="/tracks/site-building-using-drupal">Site Building &amp; Using Drupal</a></li></ul></div><div class="event featured"><h3><a href="/events/big-bad-party">The BADCamp Party!</a></h3><p>9pm Marsh Theatre<br /> Berkeley, CA</p></div><div class="day"><span>Sunday</span></div><div class="event"><h3><a href="/sprints">Core Developer Sprint</a></h3><p>Gather at the Anna Head Alumnae Hall for core conversations, and to sprint on Drupal 8</p></div><div class="event"><h3>BADCamp Sessions</h3><p>A full day of speakers from throughout the community, presenting topics and ideas along the following themes:</p><ul><li><a href="/tracks/business-community">Business &amp; Community</a></li><li><a href="/tracks/code-develop">Code &amp; Development</a></li><li><a href="/tracks/core-conversation">Core Conversation</a></li><li><a href="/tracks/design-theme-ux">Design, Theme + UX</a></li><li><a href="/tracks/devops-performance">DevOps &amp; Performance</a></li><li><a href="/tracks/site-building-using-drupal">Site Building &amp; Using Drupal</a></li></ul></div><div class="event"><h3><a href="/BOFs">Birds of a Feather meetings</a></h3><p>Ad-hoc, open sessions about topics organized by attendees during the event.</p></div><div class="bookend bookend-bottom"><span>Leave inspired.</span></div></div>',
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 7;
+  $pane->locks = array();
+  $display->content['new-71'] = $pane;
+  $display->panels['middle'][7] = 'new-71';
+  $pane = new stdClass();
+  $pane->pid = 'new-72';
+  $pane->panel = 'middle';
+  $pane->type = 'facts';
+  $pane->subtype = 'facts';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'one-number' => '1652',
+    'one-string' => 'Registered Attendees in 2012',
+    'two-number' => '817',
+    'two-string' => 'People trained on Drupal since 2007',
+    'three-number' => '133',
+    'three-string' => 'Events to attend at BADCamp 2013',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+    'style' => 'default',
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'about-facts ',
+  );
+  $pane->extras = array();
+  $pane->position = 8;
+  $pane->locks = array();
+  $display->content['new-72'] = $pane;
+  $display->panels['middle'][8] = 'new-72';
+  $pane = new stdClass();
+  $pane->pid = 'new-73';
+  $pane->panel = 'middle';
+  $pane->type = 'panels_mini';
+  $pane->subtype = 'lower_page_super_nav';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 9;
+  $pane->locks = array();
+  $display->content['new-73'] = $pane;
+  $display->panels['middle'][9] = 'new-73';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -2815,138 +2815,138 @@ function badcamp_panels_default_page_manager_pages() {
   $display->title = 'Signup';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-74';
-    $pane->panel = 'center';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Event request info',
-      'title' => '',
-      'body' => '<h1 style="text-align: center;">Event Request /.</h1><p class="p1" style="text-align: center;">Please choose which daily events you would like to attend. You may return to this page at any time and change your choices. Training and summit signups indicate interest and you will be emailed to confirm your signup.</p>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-74'] = $pane;
-    $display->panels['center'][0] = 'new-74';
-    $pane = new stdClass();
-    $pane->pid = 'new-75';
-    $pane->panel = 'center';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'event_request-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'arguments' => array(
-        'field_date_value' => '2013-10-24',
-      ),
-      'override_title' => 1,
-      'override_title_text' => 'Thursday events',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'thursday-events',
-    );
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-75'] = $pane;
-    $display->panels['center'][1] = 'new-75';
-    $pane = new stdClass();
-    $pane->pid = 'new-76';
-    $pane->panel = 'center';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'event_request-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'arguments' => array(
-        'field_date_value' => '2013-10-25',
-      ),
-      'override_title' => 1,
-      'override_title_text' => 'Friday events',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'friday-events',
-    );
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-76'] = $pane;
-    $display->panels['center'][2] = 'new-76';
-    $pane = new stdClass();
-    $pane->pid = 'new-77';
-    $pane->panel = 'center';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'event_request-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'arguments' => array(
-        'field_date_value' => '2013-10-26',
-      ),
-      'override_title' => 1,
-      'override_title_text' => 'Saturday events',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'saturday-events',
-    );
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $display->content['new-77'] = $pane;
-    $display->panels['center'][3] = 'new-77';
-    $pane = new stdClass();
-    $pane->pid = 'new-78';
-    $pane->panel = 'center';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'event_request-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'arguments' => array(
-        'field_date_value' => '2013-10-27',
-      ),
-      'override_title' => 1,
-      'override_title_text' => 'Sunday events',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'sunday-events',
-    );
-    $pane->extras = array();
-    $pane->position = 4;
-    $pane->locks = array();
-    $display->content['new-78'] = $pane;
-    $display->panels['center'][4] = 'new-78';
+  $pane = new stdClass();
+  $pane->pid = 'new-74';
+  $pane->panel = 'center';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Event request info',
+    'title' => '',
+    'body' => '<h1 style="text-align: center;">Event Request /.</h1><p class="p1" style="text-align: center;">Please choose which daily events you would like to attend. You may return to this page at any time and change your choices. Training and summit signups indicate interest and you will be emailed to confirm your signup.</p>',
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-74'] = $pane;
+  $display->panels['center'][0] = 'new-74';
+  $pane = new stdClass();
+  $pane->pid = 'new-75';
+  $pane->panel = 'center';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'event_request-panel_pane_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'arguments' => array(
+      'field_date_value' => '2013-10-24',
+    ),
+    'override_title' => 1,
+    'override_title_text' => 'Thursday events',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'thursday-events',
+  );
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-75'] = $pane;
+  $display->panels['center'][1] = 'new-75';
+  $pane = new stdClass();
+  $pane->pid = 'new-76';
+  $pane->panel = 'center';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'event_request-panel_pane_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'arguments' => array(
+      'field_date_value' => '2013-10-25',
+    ),
+    'override_title' => 1,
+    'override_title_text' => 'Friday events',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'friday-events',
+  );
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $display->content['new-76'] = $pane;
+  $display->panels['center'][2] = 'new-76';
+  $pane = new stdClass();
+  $pane->pid = 'new-77';
+  $pane->panel = 'center';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'event_request-panel_pane_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'arguments' => array(
+      'field_date_value' => '2013-10-26',
+    ),
+    'override_title' => 1,
+    'override_title_text' => 'Saturday events',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'saturday-events',
+  );
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $display->content['new-77'] = $pane;
+  $display->panels['center'][3] = 'new-77';
+  $pane = new stdClass();
+  $pane->pid = 'new-78';
+  $pane->panel = 'center';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'event_request-panel_pane_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'arguments' => array(
+      'field_date_value' => '2013-10-27',
+    ),
+    'override_title' => 1,
+    'override_title_text' => 'Sunday events',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'sunday-events',
+  );
+  $pane->extras = array();
+  $pane->position = 4;
+  $pane->locks = array();
+  $display->content['new-78'] = $pane;
+  $display->panels['center'][4] = 'new-78';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -3014,195 +3014,195 @@ function badcamp_panels_default_page_manager_pages() {
   $display->title = 'Registration';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-79';
-    $pane->panel = 'center';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Registration Steps',
-      'title' => '',
-      'body' => '<div class="registration one"><div class="step-number">1</div> Step 1</div>
+  $pane = new stdClass();
+  $pane->pid = 'new-79';
+  $pane->panel = 'center';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Registration Steps',
+    'title' => '',
+    'body' => '<div class="registration one"><div class="step-number">1</div> Step 1</div>
 <div class="registration two"><div class="step-number active">2</div> Step 2</div>
 <div class="registration three"><div class="step-number">3</div> Step 3</div>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'registration-steps',
-    );
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-79'] = $pane;
-    $display->panels['center'][0] = 'new-79';
-    $pane = new stdClass();
-    $pane->pid = 'new-80';
-    $pane->panel = 'center';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Event request info',
-      'title' => '',
-      'body' => '<h1 style="text-align: center;">Event Request</h1><p class="p1 info">Please choose which daily events you would like to attend. You may return to this page at any time and change your choices. Training and summit signups indicate interest and you will be emailed to confirm your signup.</p>
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'registration-steps',
+  );
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-79'] = $pane;
+  $display->panels['center'][0] = 'new-79';
+  $pane = new stdClass();
+  $pane->pid = 'new-80';
+  $pane->panel = 'center';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Event request info',
+    'title' => '',
+    'body' => '<h1 style="text-align: center;">Event Request</h1><p class="p1 info">Please choose which daily events you would like to attend. You may return to this page at any time and change your choices. Training and summit signups indicate interest and you will be emailed to confirm your signup.</p>
 <a class="submit-button" style="width:120px; float:right;" href="/individual-sponsor-registration">Skip</a><br>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-80'] = $pane;
-    $display->panels['center'][1] = 'new-80';
-    $pane = new stdClass();
-    $pane->pid = 'new-81';
-    $pane->panel = 'center';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'event_request-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'arguments' => array(
-        'field_date_value' => '2013-10-24',
-      ),
-      'override_title' => 1,
-      'override_title_text' => 'Thursday events',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'thursday-events',
-    );
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-81'] = $pane;
-    $display->panels['center'][2] = 'new-81';
-    $pane = new stdClass();
-    $pane->pid = 'new-82';
-    $pane->panel = 'center';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'event_request-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'arguments' => array(
-        'field_date_value' => '2013-10-25',
-      ),
-      'override_title' => 1,
-      'override_title_text' => 'Friday events',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'friday-events',
-    );
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $display->content['new-82'] = $pane;
-    $display->panels['center'][3] = 'new-82';
-    $pane = new stdClass();
-    $pane->pid = 'new-83';
-    $pane->panel = 'center';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'event_request-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'arguments' => array(
-        'field_date_value' => '2013-10-26',
-      ),
-      'override_title' => 1,
-      'override_title_text' => 'Saturday events',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'saturday-events',
-    );
-    $pane->extras = array();
-    $pane->position = 4;
-    $pane->locks = array();
-    $display->content['new-83'] = $pane;
-    $display->panels['center'][4] = 'new-83';
-    $pane = new stdClass();
-    $pane->pid = 'new-84';
-    $pane->panel = 'center';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'event_request-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'arguments' => array(
-        'field_date_value' => '2013-10-27',
-      ),
-      'override_title' => 1,
-      'override_title_text' => 'Sunday events',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'sunday-events',
-    );
-    $pane->extras = array();
-    $pane->position = 5;
-    $pane->locks = array();
-    $display->content['new-84'] = $pane;
-    $display->panels['center'][5] = 'new-84';
-    $pane = new stdClass();
-    $pane->pid = 'new-85';
-    $pane->panel = 'center';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<a class="submit-button" style="width:120px; float:right;" href="/individual-sponsor-registration">Next</a>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'next-button',
-    );
-    $pane->extras = array();
-    $pane->position = 6;
-    $pane->locks = array();
-    $display->content['new-85'] = $pane;
-    $display->panels['center'][6] = 'new-85';
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-80'] = $pane;
+  $display->panels['center'][1] = 'new-80';
+  $pane = new stdClass();
+  $pane->pid = 'new-81';
+  $pane->panel = 'center';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'event_request-panel_pane_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'arguments' => array(
+      'field_date_value' => '2013-10-24',
+    ),
+    'override_title' => 1,
+    'override_title_text' => 'Thursday events',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'thursday-events',
+  );
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $display->content['new-81'] = $pane;
+  $display->panels['center'][2] = 'new-81';
+  $pane = new stdClass();
+  $pane->pid = 'new-82';
+  $pane->panel = 'center';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'event_request-panel_pane_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'arguments' => array(
+      'field_date_value' => '2013-10-25',
+    ),
+    'override_title' => 1,
+    'override_title_text' => 'Friday events',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'friday-events',
+  );
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $display->content['new-82'] = $pane;
+  $display->panels['center'][3] = 'new-82';
+  $pane = new stdClass();
+  $pane->pid = 'new-83';
+  $pane->panel = 'center';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'event_request-panel_pane_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'arguments' => array(
+      'field_date_value' => '2013-10-26',
+    ),
+    'override_title' => 1,
+    'override_title_text' => 'Saturday events',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'saturday-events',
+  );
+  $pane->extras = array();
+  $pane->position = 4;
+  $pane->locks = array();
+  $display->content['new-83'] = $pane;
+  $display->panels['center'][4] = 'new-83';
+  $pane = new stdClass();
+  $pane->pid = 'new-84';
+  $pane->panel = 'center';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'event_request-panel_pane_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'arguments' => array(
+      'field_date_value' => '2013-10-27',
+    ),
+    'override_title' => 1,
+    'override_title_text' => 'Sunday events',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'sunday-events',
+  );
+  $pane->extras = array();
+  $pane->position = 5;
+  $pane->locks = array();
+  $display->content['new-84'] = $pane;
+  $display->panels['center'][5] = 'new-84';
+  $pane = new stdClass();
+  $pane->pid = 'new-85';
+  $pane->panel = 'center';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => '',
+    'title' => '',
+    'body' => '<a class="submit-button" style="width:120px; float:right;" href="/individual-sponsor-registration">Next</a>',
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'next-button',
+  );
+  $pane->extras = array();
+  $pane->position = 6;
+  $pane->locks = array();
+  $display->content['new-85'] = $pane;
+  $display->panels['center'][6] = 'new-85';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -3256,136 +3256,160 @@ function badcamp_panels_default_page_manager_pages() {
   $display->title = '';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-86';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Event highlights',
-      'title' => 'Event highlights',
-      'body' => '<p class="eventhighlights"><span class="large">Speak at BADCamp!</span> <a class="submitasession" href="/node/add/session">Submit a session</a> or apply to <a class="drupalsummit" href="/summit-speaker-application">speak at a Drupal Summit.</a> Deadline extended to <strong>Sept 15</strong>.</p>',
-      'format' => 'filtered_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-86'] = $pane;
-    $display->panels['middle'][0] = 'new-86';
-    $pane = new stdClass();
-    $pane->pid = 'new-87';
-    $pane->panel = 'middle';
-    $pane->type = 'highlights';
-    $pane->subtype = 'highlights';
-    $pane->shown = FALSE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'heading' => 'BADCamp Summits',
-      'subheading' => 'October 24th-25th 9am-5pm ',
-      'link' => '/summits',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-87'] = $pane;
-    $display->panels['middle'][1] = 'new-87';
-    $pane = new stdClass();
-    $pane->pid = 'new-88';
-    $pane->panel = 'middle';
-    $pane->type = 'facts';
-    $pane->subtype = 'facts';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'one-number' => '1652',
-      'one-string' => 'Attendees in 2012',
-      'two-number' => '817',
-      'two-string' => 'People trained in Drupal since 2007',
-      'three-number' => '$0.00',
-      'three-string' => 'Cost of each BADCamp ticket',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-88'] = $pane;
-    $display->panels['middle'][2] = 'new-88';
-    $pane = new stdClass();
-    $pane->pid = 'new-89';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'attendees-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $display->content['new-89'] = $pane;
-    $display->panels['middle'][3] = 'new-89';
-    $pane = new stdClass();
-    $pane->pid = 'new-90';
-    $pane->panel = 'middle';
-    $pane->type = 'events';
-    $pane->subtype = 'events';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'one-title' => 'Free Drupal Training',
-      'one-blurb' => 'FREE Expert Drupal Training is back! On October 24th and 25th, we\'re proud to offer lessons from top Drupal Experts. Reserve your spot early!',
-      'two-title' => 'Sessions & Talks',
-      'two-blurb' => 'You\'ll learn something whether you\'re new to Drupal or already a pro. October 26th and 27th will be full of great sessions for all levels and interests.',
-      'three-title' => 'Summits',
-      'three-blurb' => 'Summits allow people in specific industries or with specific skill sets to dive deep into the issues that matter and collaborate freely.',
-      'four-title' => 'Contribution Sprints',
-      'four-blurb' => 'It\'s amazing what can happen when we bring everyone together. Get ready to give back to Drupal, and let\'s get some serious work accomplished.
+  $pane = new stdClass();
+  $pane->pid = 'new-86';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Event highlights',
+    'title' => 'Event highlights',
+    'body' => '<p class="eventhighlights"><span class="large">Speak at BADCamp!</span> <a class="submitasession" href="/node/add/session">Submit a session</a> or apply to <a class="drupalsummit" href="/summit-speaker-application">speak at a Drupal Summit.</a> Deadline extended to <strong>Sept 15</strong>.</p>',
+    'format' => 'filtered_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'pane-highlights',
+  );
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-86'] = $pane;
+  $display->panels['middle'][0] = 'new-86';
+  $pane = new stdClass();
+  $pane->pid = 'new-87';
+  $pane->panel = 'middle';
+  $pane->type = 'highlights';
+  $pane->subtype = 'highlights';
+  $pane->shown = FALSE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'heading' => 'BADCamp Summits',
+    'subheading' => 'October 24th-25th 9am-5pm ',
+    'link' => '/summits',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'pane-highlights',
+  );
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-87'] = $pane;
+  $display->panels['middle'][1] = 'new-87';
+  $pane = new stdClass();
+  $pane->pid = 'new-88';
+  $pane->panel = 'middle';
+  $pane->type = 'facts';
+  $pane->subtype = 'facts';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'one-number' => '1652',
+    'one-string' => 'Attendees in 2012',
+    'two-number' => '817',
+    'two-string' => 'People trained in Drupal since 2007',
+    'three-number' => '$0.00',
+    'three-string' => 'Cost of each BADCamp ticket',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $display->content['new-88'] = $pane;
+  $display->panels['middle'][2] = 'new-88';
+  $pane = new stdClass();
+  $pane->pid = 'new-89';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'speakers-panel_pane_1';
+  $pane->shown = FALSE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $display->content['new-89'] = $pane;
+  $display->panels['middle'][3] = 'new-89';
+  $pane = new stdClass();
+  $pane->pid = 'new-90';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'attendees-panel_pane_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 4;
+  $pane->locks = array();
+  $display->content['new-90'] = $pane;
+  $display->panels['middle'][4] = 'new-90';
+  $pane = new stdClass();
+  $pane->pid = 'new-91';
+  $pane->panel = 'middle';
+  $pane->type = 'events';
+  $pane->subtype = 'events';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'one-title' => 'Free Drupal Training',
+    'one-blurb' => 'FREE Expert Drupal Training is back! On October 24th and 25th, we\'re proud to offer lessons from top Drupal Experts. Reserve your spot early!',
+    'two-title' => 'Sessions & Talks',
+    'two-blurb' => 'You\'ll learn something whether you\'re new to Drupal or already a pro. October 26th and 27th will be full of great sessions for all levels and interests.',
+    'three-title' => 'Summits',
+    'three-blurb' => 'Summits allow people in specific industries or with specific skill sets to dive deep into the issues that matter and collaborate freely.',
+    'four-title' => 'Contribution Sprints',
+    'four-blurb' => 'It\'s amazing what can happen when we bring everyone together. Get ready to give back to Drupal, and let\'s get some serious work accomplished.
 ',
-      'five-title' => 'Networking',
-      'five-blurb' => 'Looking for a job? Looking to find great Drupal talent? BADCamp is a great place to find either. ',
-      'six-title' => 'Parties',
-      'six-blurb' => 'After a long day of learning you\'ll need to wind down at the great after-hours events we\'ve got planned. Come on out and make some new friends!',
-      'one-link' => 'training',
-      'two-link' => 'proposed-sessions',
-      'three-link' => 'summits',
-      'foru-link' => NULL,
-      'five-link' => 'drupal-jobs',
-      'six-link' => 'parties',
-      'four-link' => 'sprints',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 4;
-    $pane->locks = array();
-    $display->content['new-90'] = $pane;
-    $display->panels['middle'][4] = 'new-90';
+    'five-title' => 'Networking',
+    'five-blurb' => 'Looking for a job? Looking to find great Drupal talent? BADCamp is a great place to find either. ',
+    'six-title' => 'Parties',
+    'six-blurb' => 'After a long day of learning you\'ll need to wind down at the great after-hours events we\'ve got planned. Come on out and make some new friends!',
+    'one-link' => 'training',
+    'two-link' => 'proposed-sessions',
+    'three-link' => 'summits',
+    'foru-link' => NULL,
+    'five-link' => 'drupal-jobs',
+    'six-link' => 'parties',
+    'four-link' => 'sprints',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 5;
+  $pane->locks = array();
+  $display->content['new-91'] = $pane;
+  $display->panels['middle'][5] = 'new-91';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = '0';
+  $display->title_pane = 'new-89';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['home_page'] = $page;
@@ -3437,73 +3461,73 @@ function badcamp_panels_default_page_manager_pages() {
   $display->title = 'Individual Sponsorship';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-91';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Registration Steps',
-      'title' => '',
-      'body' => '<div class="registration one"><div class="step-number">1</div> Step 1</div>
+  $pane = new stdClass();
+  $pane->pid = 'new-92';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Registration Steps',
+    'title' => '',
+    'body' => '<div class="registration one"><div class="step-number">1</div> Step 1</div>
 <div class="registration two"><div class="step-number">2</div> Step 2</div>
 <div class="registration three"><div class="step-number active">3</div> Step 3</div>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'registration-steps',
-    );
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-91'] = $pane;
-    $display->panels['middle'][0] = 'new-91';
-    $pane = new stdClass();
-    $pane->pid = 'new-92';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Sponsor BADCamp',
-      'title' => '',
-      'body' => '<h1 style="text-align: center;">Sponsor BADCamp /.</h1><p>Do you think BADCamp is awesome? Would you be willing to pay for your ticket? If so, then you can give back to the camp by purchasing an individual sponsorship level most comfortable for you. As a bonus, all individual sponsors will receive a BADCamp T-Shirt.</p>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'individual-sponsor-info',
-    );
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-92'] = $pane;
-    $display->panels['middle'][1] = 'new-92';
-    $pane = new stdClass();
-    $pane->pid = 'new-93';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Sponsorship Levels',
-      'title' => '',
-      'body' => '<div class="sponsorship-level"><h4>Free, as in free beer</h4><p class="amount">$0.00</p><p><strong>No thanks</strong></p><p class="rewards"><strong>Rewards:</strong><ol><li>Hella Drupal Respect</li></ol></div><div class="sponsorship-level"><h4>Individual sponsor</h4><p class="amount">$25</p><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'registration-steps',
+  );
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-92'] = $pane;
+  $display->panels['middle'][0] = 'new-92';
+  $pane = new stdClass();
+  $pane->pid = 'new-93';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Sponsor BADCamp',
+    'title' => '',
+    'body' => '<h1 style="text-align: center;">Sponsor BADCamp /.</h1><p>Do you think BADCamp is awesome? Would you be willing to pay for your ticket? If so, then you can give back to the camp by purchasing an individual sponsorship level most comfortable for you. As a bonus, all individual sponsors will receive a BADCamp T-Shirt.</p>',
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'individual-sponsor-info',
+  );
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-93'] = $pane;
+  $display->panels['middle'][1] = 'new-93';
+  $pane = new stdClass();
+  $pane->pid = 'new-94';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Sponsorship Levels',
+    'title' => '',
+    'body' => '<div class="sponsorship-level"><h4>Free, as in free beer</h4><p class="amount">$0.00</p><p><strong>No thanks</strong></p><p class="rewards"><strong>Rewards:</strong><ol><li>Hella Drupal Respect</li></ol></div><div class="sponsorship-level"><h4>Individual sponsor</h4><p class="amount">$25</p><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="AH5WR7N58DV7N">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form><p class="rewards"><strong>Rewards:</strong><ol><li>Hella Drupal Respect</li><li>Stickers for badge</li><li>T-shirt</li></ol></div><div class="sponsorship-level"><h4>L33t sponsor</h4><p class="amount">$50</p><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -3518,48 +3542,48 @@ function badcamp_panels_default_page_manager_pages() {
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form><p class="rewards"><strong>Rewards:</strong><ol><li>Hella Drupal Respect</li><li>Stickers for badge</li><li>T-shirt</li><li>Hoodie</li></ol></div>
 ',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-93'] = $pane;
-    $display->panels['middle'][2] = 'new-93';
-    $pane = new stdClass();
-    $pane->pid = 'new-94';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Continue Button',
-      'title' => '',
-      'body' => '<a class="submit-button" style="width:120px; float:right;" href="/user">Finish</a><a class="submit-button" style="width:120px; float:right; margin-right:20px;" href="/event-request-registration">Go back</a>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'next-button',
-    );
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $display->content['new-94'] = $pane;
-    $display->panels['middle'][3] = 'new-94';
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $display->content['new-94'] = $pane;
+  $display->panels['middle'][2] = 'new-94';
+  $pane = new stdClass();
+  $pane->pid = 'new-95';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Continue Button',
+    'title' => '',
+    'body' => '<a class="submit-button" style="width:120px; float:right;" href="/user">Finish</a><a class="submit-button" style="width:120px; float:right; margin-right:20px;" href="/event-request-registration">Go back</a>',
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'next-button',
+  );
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $display->content['new-95'] = $pane;
+  $display->panels['middle'][3] = 'new-95';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-92';
+  $display->title_pane = 'new-93';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['individual_sponsorship'] = $page;
@@ -3611,73 +3635,73 @@ function badcamp_panels_default_page_manager_pages() {
   $display->title = 'Individual Sponsorship';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-95';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = FALSE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Registration Steps',
-      'title' => '',
-      'body' => '<div class="registration one"><div class="step-number">1</div> Step 1</div>
+  $pane = new stdClass();
+  $pane->pid = 'new-96';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = FALSE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Registration Steps',
+    'title' => '',
+    'body' => '<div class="registration one"><div class="step-number">1</div> Step 1</div>
 <div class="registration two"><div class="step-number">2</div> Step 2</div>
 <div class="registration three"><div class="step-number active">3</div> Step 3</div>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'registration-steps',
-    );
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-95'] = $pane;
-    $display->panels['middle'][0] = 'new-95';
-    $pane = new stdClass();
-    $pane->pid = 'new-96';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Sponsor BADCamp',
-      'title' => '',
-      'body' => '<h1 style="text-align: center;">Sponsor BADCamp /.</h1><p>Do you think BADCamp is awesome? Would you be willing to pay for your ticket? If so, then you can give back to the camp by purchasing an individual sponsorship level most comfortable for you. As a bonus, all individual sponsors will receive a BADCamp T-Shirt.</p>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'individual-sponsor-info',
-    );
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-96'] = $pane;
-    $display->panels['middle'][1] = 'new-96';
-    $pane = new stdClass();
-    $pane->pid = 'new-97';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Sponsorship Levels',
-      'title' => '',
-      'body' => '<div class="sponsorship-level"><h4>Free, as in free beer</h4><p class="amount">$0.00</p><p><strong>No thanks</strong></p><p class="rewards"><strong>Rewards:</strong><ol><li>Hella Drupal Respect</li></ol></div><div class="sponsorship-level"><h4>Individual sponsor</h4><p class="amount">$25</p><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'registration-steps',
+  );
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-96'] = $pane;
+  $display->panels['middle'][0] = 'new-96';
+  $pane = new stdClass();
+  $pane->pid = 'new-97';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Sponsor BADCamp',
+    'title' => '',
+    'body' => '<h1 style="text-align: center;">Sponsor BADCamp /.</h1><p>Do you think BADCamp is awesome? Would you be willing to pay for your ticket? If so, then you can give back to the camp by purchasing an individual sponsorship level most comfortable for you. As a bonus, all individual sponsors will receive a BADCamp T-Shirt.</p>',
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'individual-sponsor-info',
+  );
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-97'] = $pane;
+  $display->panels['middle'][1] = 'new-97';
+  $pane = new stdClass();
+  $pane->pid = 'new-98';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Sponsorship Levels',
+    'title' => '',
+    'body' => '<div class="sponsorship-level"><h4>Free, as in free beer</h4><p class="amount">$0.00</p><p><strong>No thanks</strong></p><p class="rewards"><strong>Rewards:</strong><ol><li>Hella Drupal Respect</li></ol></div><div class="sponsorship-level"><h4>Individual sponsor</h4><p class="amount">$25</p><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="AH5WR7N58DV7N">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form><p class="rewards"><strong>Rewards:</strong><ol><li>Hella Drupal Respect</li><li>Stickers for badge</li><li>T-shirt</li></ol></div><div class="sponsorship-level"><h4>L33t sponsor</h4><p class="amount">$50</p><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -3692,66 +3716,66 @@ function badcamp_panels_default_page_manager_pages() {
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form><p class="rewards"><strong>Rewards:</strong><ol><li>Hella Drupal Respect</li><li>Stickers for badge</li><li>T-shirt</li><li>Hoodie</li></ol></div>
 ',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-97'] = $pane;
-    $display->panels['middle'][2] = 'new-97';
-    $pane = new stdClass();
-    $pane->pid = 'new-98';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = FALSE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Continue Button',
-      'title' => '',
-      'body' => '<a class="submit-button" style="width:120px; float:right;" href="/user">Finish</a>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'next-button',
-    );
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $display->content['new-98'] = $pane;
-    $display->panels['middle'][3] = 'new-98';
-    $pane = new stdClass();
-    $pane->pid = 'new-99';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'individual_sponsors-panel_pane_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 4;
-    $pane->locks = array();
-    $display->content['new-99'] = $pane;
-    $display->panels['middle'][4] = 'new-99';
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $display->content['new-98'] = $pane;
+  $display->panels['middle'][2] = 'new-98';
+  $pane = new stdClass();
+  $pane->pid = 'new-99';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = FALSE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Continue Button',
+    'title' => '',
+    'body' => '<a class="submit-button" style="width:120px; float:right;" href="/user">Finish</a>',
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'next-button',
+  );
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $display->content['new-99'] = $pane;
+  $display->panels['middle'][3] = 'new-99';
+  $pane = new stdClass();
+  $pane->pid = 'new-100';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'individual_sponsors-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 4;
+  $pane->locks = array();
+  $display->content['new-100'] = $pane;
+  $display->panels['middle'][4] = 'new-100';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-96';
+  $display->title_pane = 'new-97';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['individual_sponsorshup'] = $page;
@@ -3804,47 +3828,47 @@ function badcamp_panels_default_page_manager_pages() {
   $display->title = 'Proposed Sessions';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-100';
-    $pane->panel = 'left';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'session_schedule-panel_pane_3';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-100'] = $pane;
-    $display->panels['left'][0] = 'new-100';
-    $pane = new stdClass();
-    $pane->pid = 'new-101';
-    $pane->panel = 'right';
-    $pane->type = 'block';
-    $pane->subtype = 'block-4';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => 'Important Dates',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-101'] = $pane;
-    $display->panels['right'][0] = 'new-101';
+  $pane = new stdClass();
+  $pane->pid = 'new-101';
+  $pane->panel = 'left';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'session_schedule-panel_pane_3';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-101'] = $pane;
+  $display->panels['left'][0] = 'new-101';
+  $pane = new stdClass();
+  $pane->pid = 'new-102';
+  $pane->panel = 'right';
+  $pane->type = 'block';
+  $pane->subtype = 'block-4';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'override_title' => 1,
+    'override_title_text' => 'Important Dates',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-102'] = $pane;
+  $display->panels['right'][0] = 'new-102';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-100';
+  $display->title_pane = 'new-101';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['proposed_sessions'] = $page;
@@ -3899,30 +3923,30 @@ function badcamp_panels_default_page_manager_pages() {
   $display->title = 'Session schedule';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-102';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<p>A complete session schedule will be posted after the selection process has ended.&nbsp; Please check back in early October.</p>',
-      'format' => 'filtered_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-102'] = $pane;
-    $display->panels['middle'][0] = 'new-102';
+  $pane = new stdClass();
+  $pane->pid = 'new-103';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => '',
+    'title' => '',
+    'body' => '<p>A complete session schedule will be posted after the selection process has ended.&nbsp; Please check back in early October.</p>',
+    'format' => 'filtered_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-103'] = $pane;
+  $display->panels['middle'][0] = 'new-103';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -3979,42 +4003,42 @@ function badcamp_panels_default_page_manager_pages() {
   $display->title = 'Attendees';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-103';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'speakers-panel_pane_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-103'] = $pane;
-    $display->panels['middle'][0] = 'new-103';
-    $pane = new stdClass();
-    $pane->pid = 'new-104';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'attendees-panel_pane_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-104'] = $pane;
-    $display->panels['middle'][1] = 'new-104';
+  $pane = new stdClass();
+  $pane->pid = 'new-104';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'speakers-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-104'] = $pane;
+  $display->panels['middle'][0] = 'new-104';
+  $pane = new stdClass();
+  $pane->pid = 'new-105';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'attendees-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-105'] = $pane;
+  $display->panels['middle'][1] = 'new-105';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -4071,80 +4095,80 @@ function badcamp_panels_default_page_manager_pages() {
   $display->title = 'Sponsors';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-105';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'sponsors-panel_pane_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'items_per_page' => '0',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-105'] = $pane;
-    $display->panels['middle'][0] = 'new-105';
-    $pane = new stdClass();
-    $pane->pid = 'new-106';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'sponsors-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-106'] = $pane;
-    $display->panels['middle'][1] = 'new-106';
-    $pane = new stdClass();
-    $pane->pid = 'new-107';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'sponsors-panel_pane_3';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-107'] = $pane;
-    $display->panels['middle'][2] = 'new-107';
-    $pane = new stdClass();
-    $pane->pid = 'new-108';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'sponsors-panel_pane_4';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $display->content['new-108'] = $pane;
-    $display->panels['middle'][3] = 'new-108';
+  $pane = new stdClass();
+  $pane->pid = 'new-106';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'sponsors-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'items_per_page' => '0',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-106'] = $pane;
+  $display->panels['middle'][0] = 'new-106';
+  $pane = new stdClass();
+  $pane->pid = 'new-107';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'sponsors-panel_pane_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-107'] = $pane;
+  $display->panels['middle'][1] = 'new-107';
+  $pane = new stdClass();
+  $pane->pid = 'new-108';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'sponsors-panel_pane_3';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $display->content['new-108'] = $pane;
+  $display->panels['middle'][2] = 'new-108';
+  $pane = new stdClass();
+  $pane->pid = 'new-109';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'sponsors-panel_pane_4';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $display->content['new-109'] = $pane;
+  $display->panels['middle'][3] = 'new-109';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -4201,30 +4225,30 @@ function badcamp_panels_default_page_manager_pages() {
   $display->title = 'Tickets and Registration';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-109';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<p>Tickets to badcamp are free as in beer.</p><p><a href="/signup">Register.</a></p>',
-      'format' => 'filtered_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-109'] = $pane;
-    $display->panels['middle'][0] = 'new-109';
+  $pane = new stdClass();
+  $pane->pid = 'new-110';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => '',
+    'title' => '',
+    'body' => '<p>Tickets to badcamp are free as in beer.</p><p><a href="/signup">Register.</a></p>',
+    'format' => 'filtered_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-110'] = $pane;
+  $display->panels['middle'][0] = 'new-110';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -4292,77 +4316,77 @@ function badcamp_panels_default_page_manager_pages() {
   $display->title = '';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-110';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Registration Steps',
-      'title' => '',
-      'body' => '<div class="registration one"><div class="step-number active">1</div> Step 1</div>
+  $pane = new stdClass();
+  $pane->pid = 'new-111';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Registration Steps',
+    'title' => '',
+    'body' => '<div class="registration one"><div class="step-number active">1</div> Step 1</div>
 <div class="registration two"><div class="step-number">2</div> Step 2</div>
 <div class="registration three"><div class="step-number">3</div> Step 3</div>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'registration-steps',
-    );
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-110'] = $pane;
-    $display->panels['middle'][0] = 'new-110';
-    $pane = new stdClass();
-    $pane->pid = 'new-111';
-    $pane->panel = 'middle';
-    $pane->type = 'user_signup';
-    $pane->subtype = 'user_signup';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-111'] = $pane;
-    $display->panels['middle'][1] = 'new-111';
-    $pane = new stdClass();
-    $pane->pid = 'new-112';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'NSA opt-in',
-      'title' => '',
-      'body' => '<p style="clear: both; max-width: 685px; margin: 0 auto;">When you register for the camp you will be added to our mailing list so we can keep you informed with the latest news.</p>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-112'] = $pane;
-    $display->panels['middle'][2] = 'new-112';
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'registration-steps',
+  );
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $display->content['new-111'] = $pane;
+  $display->panels['middle'][0] = 'new-111';
+  $pane = new stdClass();
+  $pane->pid = 'new-112';
+  $pane->panel = 'middle';
+  $pane->type = 'user_signup';
+  $pane->subtype = 'user_signup';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $display->content['new-112'] = $pane;
+  $display->panels['middle'][1] = 'new-112';
+  $pane = new stdClass();
+  $pane->pid = 'new-113';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'NSA opt-in',
+    'title' => '',
+    'body' => '<p style="clear: both; max-width: 685px; margin: 0 auto;">When you register for the camp you will be added to our mailing list so we can keep you informed with the latest news.</p>',
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $display->content['new-113'] = $pane;
+  $display->panels['middle'][2] = 'new-113';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

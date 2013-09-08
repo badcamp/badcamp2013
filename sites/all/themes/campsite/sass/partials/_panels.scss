@@ -137,7 +137,7 @@
   .liquid {
     // min-height: 207px;
     .wrapper ul li {
-      min-height: 325px;
+      min-height: 225px;
     }
     
     .speaker-name {
@@ -709,22 +709,19 @@ ul.primary.tabs{
     border: none;
   }
 
-    .view-id-sponsors {
+  .view-id-sponsors {
 
-      .views-row {
-        float: left;
-        width: 25%;
-        padding-left: 0;
-        padding-right: 0;
-        box-sizing: border-box;
-        word-wrap: break-word;
-        
-        @media screen and (max-width: 700px) {
-          width:50%;
-        }
-        
+    .views-row {
+      float: left;
+      width: 25%;
+      padding-left: 0;
+      padding-right: 0;
+      box-sizing: border-box;
+      word-wrap: break-word;
+      @media screen and (max-width: 700px) {
+        width: 50%;
       }
-      
     }
+  }
 
 }

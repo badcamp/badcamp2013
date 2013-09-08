@@ -7,24 +7,30 @@ body.page-about #content {
 
   .pane-title,
   .panel-pane .pane-content {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1200px;
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
 #about-badcamp {
   // Main About header
-  .about-header h2 {
-    color: white;
-    border-bottom: none;
-    padding-bottom: 0;
-  }
   .about-header {
     background: black;
+    @extend %center-styled-pane-title;
+    .pane-title {
+      color: #7EBFD6;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      border-bottom: none;
+    }
     p {
       margin: 0;
-      padding-bottom: 24px
+      padding-bottom: 24px;
+      color: white;
+      font-size: 18px;
     };
   }
   .four-image-promo {
@@ -51,30 +57,48 @@ body.page-about #content {
     // }
   }
 
+  // Featured attendees.
+  .pane-attendees-panel-pane-2 {
+    background: black;
+    color: white;
+    @extend %center-styled-pane-title;
+
+    .pane-title {
+      color: #7EBFD6;
+      margin: 0 auto 24px;
+    }
+  }
 
   .about-facts {
-    background-image: url(../images/bg-facts.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom center;
+    background: #343434 url(../images/bg-facts.jpg) no-repeat bottom center;
     padding-bottom: 3em;
+    @extend %center-styled-pane-title;
+
+    .pane-title {
+      color: #7EBFD6;
+      margin: 24px auto;
+    }
 
     .pane-content {
       @include clearfix();
-    }
-
-    .pane-title {
-      margin-bottom: 1em;
-      color: white;
     }
 
     .fact-one,
     .fact-two,
     .fact-three {
       color: #FFF;
+      text-align: center;
+      padding-top: 24px;
+      font-size: 20px;
+
       h3 {
-        font-size: 76px;
+        font-size: 110px;
         line-height: 1em;
         color: #FFF;
+      }
+      p {
+        margin: 0 auto;
+        max-width: 240px;
       }
     }
 
@@ -88,17 +112,15 @@ body.page-about #content {
       content: "Inspire";
     }
 
-
-
     @media screen and (min-width: 768px) {
       .fact-one,
       .fact-two,
       .fact-three {
         width: 33.33333%;
         float: left;
+        padding-top: 0;
       }
     }
-
 
     @media screen and (min-width: 1500px) {
       background-size: 100%;

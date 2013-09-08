@@ -1,0 +1,41 @@
+.badcamp-3col {
+/*  overflow: hidden;  */
+}
+
+@media all and (min-width: 768px) {
+  .badcamp-3col .panel-col-first {
+    float: left;
+    width: 33%;
+  }
+
+  .badcamp-3col .panel-col-first .inside {
+    margin: 0 3em 1em 0;
+  }
+
+  .badcamp-3col .panel-col-second {
+      float: left;
+      width: 33%;
+  }
+
+  .badcamp-3col .panel-col-second .inside {
+      margin: 0 3em 1em 0;
+  }
+
+  .badcamp-3col .panel-col-third {
+      float: left;
+      width: 33%;
+  }
+
+  .badcamp-3col .panel-col-third .inside {
+      margin: 0 3em 1em 0;
+  }
+}
+
+#panels-edit-display .panel-pane,
+#panels-edit-display .helperclass {
+  margin: .5em;
+}
+
+.badcamp-3col .panel-separator {
+  margin: 0 0 1em 0;
+}

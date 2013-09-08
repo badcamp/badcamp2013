@@ -58,8 +58,6 @@
  * - $page['help']: Dynamic help text, mostly for admin pages.
  * - $page['highlighted']: Items for the highlighted content region.
  * - $page['content']: The main content of the current page.
- * - $page['sidebar_first']: Items for the first sidebar.
- * - $page['sidebar_second']: Items for the second sidebar.
  * - $page['footer']: Items for the footer region.
  * - $page['bottom']: Items to appear at the bottom of the page below the footer.
  *
@@ -76,7 +74,7 @@
     <div id="usermenu">
       <?php print render($page['usermenu']); ?>
     </div><!-- /#usermenu -->
-    <div class="header-innner">
+    <div class="header-innner clearfix">
       <div id="top-navigation">
         <?php print render($page['top_navigation']); ?>
       </div><!-- /#top-navigation -->
@@ -147,19 +145,6 @@
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div><!-- /#content -->
-
-    <?php
-      // Render the sidebars to see if there's anything in them.
-      $sidebar_first  = render($page['sidebar_first']);
-      $sidebar_second = render($page['sidebar_second']);
-    ?>
-
-    <?php if ($sidebar_first || $sidebar_second): ?>
-      <aside class="sidebars">
-        <?php print $sidebar_first; ?>
-        <?php print $sidebar_second; ?>
-      </aside><!-- /.sidebars -->
-    <?php endif; ?>
 
   </div><!-- /#main -->
 
