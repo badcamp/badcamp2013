@@ -1,0 +1,8 @@
+name = BADCamp My Schedule
+description = Provides for a default view and a menu local task for users to see their personal schedule
+package = Custom
+core = 7.x
+version = 7.x-1.x
+
+dependencies[] = views
+stylesheets[all][] = css/badcamp_my_schedule.css

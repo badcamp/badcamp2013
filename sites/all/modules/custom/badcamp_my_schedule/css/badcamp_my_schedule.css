@@ -1,0 +1,23 @@
+.view-camp-my-schedule .attachment, .view-camp-my-schedule .h3 {
+    margin: 10px 0
+    box-sizing: border-box;
+    list-style-type: none;
+    display: block;
+    padding: 1em;
+    background: white;
+    z-index: 15;
+    color: #4d4d4d;
+    border: 1px solid #C1C1C1;
+    text-decoration: none;
+    -webkit-box-shadow: 1px 1px 0 #535353,2px 2px 0 #535353,3px 3px 0 #535353,4px 4px 0 #535353,5px 5px 0 #535353;
+    -moz-box-shadow: 1px 1px 0 #535353,2px 2px 0 #535353,3px 3px 0 #535353,4px 4px 0 #535353,5px 5px 0 #535353;
+    box-shadow: 1px 1px 0 #535353,2px 2px 0 #535353,3px 3px 0 #535353,4px 4px 0 #535353,5px 5px 0 #535353;
+    -webkit-transition: background 0.15s cubic-bezier(0.25,0.1,0.25,1);
+    -moz-transition: background 0.15s cubic-bezier(0.25,0.1,0.25,1);
+    -ms-transition: background 0.15s cubic-bezier(0.25,0.1,0.25,1);
+    -o-transition: background 0.15s cubic-bezier(0.25,0.1,0.25,1);
+    transition: background 0.15s cubic-bezier(0.25,0.1,0.25,1);
+}
+.view-camp-my-schedule h3 {
+    background: #e8e8e8;
+}
