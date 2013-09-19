@@ -412,7 +412,7 @@ ul.primary.tabs{
 
 // Exposed Sessions Tracks
 
-#proposed-sessions h3{
+#proposed-sessions h3 {
   padding: 4px 20px;
   margin-bottom: 30px;
   color: #000;
@@ -422,14 +422,15 @@ ul.primary.tabs{
   clear: both;
 }
 
-#proposed-sessions h2{
-  margin:10px 0;
+#proposed-sessions h2 {
+  margin: 10px 0;
+  padding: 0;
 }
 
-.view-id-session_schedule ul{
+.view-id-session_schedule ul {
   margin:0;
   padding:0;
-  li{
+  li {
     list-style:none;
     clear:both;
     border-bottom: solid 1px;

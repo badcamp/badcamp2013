@@ -1296,14 +1296,15 @@ ul.primary.tabs {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003425}}
 #proposed-sessions h2 {
   margin: 10px 0;
+  padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003429}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003430}}
 .view-id-session_schedule ul {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003432}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003433}}
 .view-id-session_schedule ul li {
   list-style: none;
   clear: both;
@@ -1311,44 +1312,44 @@ ul.primary.tabs {
   margin: 10px 0 20px 0;
   min-height: 120px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003439}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003440}}
 .view-id-session_schedule ul li .views-label-field-speakers-1 {
   font-weight: 600;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003443}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003444}}
 .view-id-session_schedule ul li .views-field {
   display: block;
   margin: 5px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003448}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003449}}
 .view-id-session_schedule ul li .views-field-field-track-1,
 .view-id-session_schedule ul li .views-field-field-skill-level {
   float: left;
   margin-right: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003453}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003454}}
 .view-id-session_schedule ul li .views-field-title {
   font-weight: bold;
   max-width: 500px;
   line-height: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003459}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003460}}
 .view-id-session_schedule ul li a {
   color: #000;
   text-decoration: underline;
   margin: 0 0 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003468}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003469}}
 .views-widget-filter-field_track_tid .form-item:not(.form-submit) {
   border-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003472}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003473}}
 .views-widget-filter-field_track_tid .form-type-bef-link {
   float: left;
   width: 20%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003482}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003483}}
 .views-widget-filter-field_track_tid #edit-field-track-tid-17 a,
 .views-widget-filter-field_track_tid #edit-field-track-tid-18 a,
 .views-widget-filter-field_track_tid #edit-field-track-tid-46 a,
@@ -1367,7 +1368,7 @@ ul.primary.tabs {
   line-height: 16px;
   color: #000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003495}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003496}}
 .views-widget-filter-field_track_tid #edit-field-track-tid-17 a:hover,
 .views-widget-filter-field_track_tid #edit-field-track-tid-18 a:hover,
 .views-widget-filter-field_track_tid #edit-field-track-tid-46 a:hover,
@@ -1376,51 +1377,51 @@ ul.primary.tabs {
 .views-widget-filter-field_track_tid #edit-field-track-tid-19 a:hover {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003502}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003503}}
 .views-widget-filter-field_track_tid #edit-field-track-tid-17 a {
   background-position: 61% 119%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003507}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003508}}
 .views-widget-filter-field_track_tid #edit-field-track-tid-17:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-17.selected a {
   background-position: 61% 0%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003514}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003515}}
 .views-widget-filter-field_track_tid #edit-field-track-tid-18 a {
   background-position: 82% 119%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003519}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003520}}
 .views-widget-filter-field_track_tid #edit-field-track-tid-18:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-18.selected a {
   background-position: 82% 0%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003527}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003528}}
 .views-widget-filter-field_track_tid #edit-field-track-tid-46 a {
   background-position: 101.8% 119.5%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003532}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003533}}
 .views-widget-filter-field_track_tid #edit-field-track-tid-46:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-46.selected a {
   background-position: 100% 0%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003540}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003541}}
 .views-widget-filter-field_track_tid #edit-field-track-tid-20 a {
   background-position: -3% 119%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003545}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003546}}
 .views-widget-filter-field_track_tid #edit-field-track-tid-20:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-20.selected a {
   background-position: -3% 0%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003553}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003554}}
 .views-widget-filter-field_track_tid #edit-field-track-tid-19 a {
   background-position: 17% 119%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003558}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003559}}
 .views-widget-filter-field_track_tid #edit-field-track-tid-19:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-19.selected a {
   background-position: 17% 0%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003566}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003567}}
 .views-widget-filter-field_track_tid #edit-field-track-tid-29 a {
   background-position: 39% 119%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003571}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003572}}
 .views-widget-filter-field_track_tid #edit-field-track-tid-29:hover a, .views-widget-filter-field_track_tid #edit-field-track-tid-29.selected a {
   background-position: 39% 0%;
 }
@@ -1430,13 +1431,13 @@ ul.primary.tabs {
   Job Board
 
 \*-------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003588}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003589}}
 .view-job-opportunities .view-content ul {
   margin: 0;
   padding: 0;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003594}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003595}}
 .view-job-opportunities .view-content ul li {
   list-style: none;
   border-bottom: 1px solid #bbb;
@@ -1445,17 +1446,17 @@ ul.primary.tabs {
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003608}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003609}}
 .view-job-opportunities .view-content ul li .views-label {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003612}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003613}}
 .view-job-opportunities .view-content ul li .views-field-field-image {
   float: left;
   width: 20%;
   line-height: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003618}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003619}}
 .view-job-opportunities .view-content ul li .views-field-title {
   padding: 3em 0 0 0;
   width: 80%;
@@ -1467,7 +1468,7 @@ ul.primary.tabs {
   Plugin Pane Styles
 
 \*-------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003637}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003638}}
 .pane-center-styled-content .pane-title, .center-title-only .pane-title, .pane-full-width-content .pane-title, #about-badcamp .four-image-promo .pane-title, #about-badcamp .three-image-promo .pane-title, #about-badcamp .about-header .pane-title, #about-badcamp .pane-attendees-panel-pane-2 .pane-title, #about-badcamp .about-facts .pane-title {
   text-align: center;
   border: none;
@@ -1484,20 +1485,20 @@ ul.primary.tabs {
   width: 1.4em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003649}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003650}}
 .pane-center-styled-content .pane-content, .pane-full-width-content .pane-content, #about-badcamp .four-image-promo .pane-content, #about-badcamp .three-image-promo .pane-content {
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003651}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003652}}
 .pane-center-styled-content .pane-content p, .pane-full-width-content .pane-content p, #about-badcamp .four-image-promo .pane-content p, #about-badcamp .three-image-promo .pane-content p {
   margin: 0 0 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003671}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003672}}
 .pane-full-width-content, #about-badcamp .four-image-promo, #about-badcamp .three-image-promo {
   background-color: #000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003676}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003677}}
 .pane-full-width-content .pane-title, #about-badcamp .four-image-promo .pane-title, #about-badcamp .three-image-promo .pane-title {
   color: #7EBFD6;
 }
@@ -1508,37 +1509,37 @@ ul.primary.tabs {
   text-align: center;
   width: 1.4em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003681}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003682}}
 .pane-full-width-content .pane-content, #about-badcamp .four-image-promo .pane-content, #about-badcamp .three-image-promo .pane-content {
   color: #FFF;
   font-size: 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003684}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003685}}
 .pane-full-width-content .pane-content p, #about-badcamp .four-image-promo .pane-content p, #about-badcamp .three-image-promo .pane-content p {
   font-weight: 100;
 }
 
 /* END PLUGIN PANE STYLES -------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003694}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003695}}
 .region-footer .views-field-title {
   margin: 1.5em 1em 0 1em;
   border-bottom: 1px solid #000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003697}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003698}}
 .region-footer .views-field-title a {
   font-weight: bold;
   color: #000;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003704}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003705}}
 .region-footer img {
   padding: 0 1em 1em 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003708}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003709}}
 .region-footer h2 {
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003714}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003715}}
 .region-footer .view-id-sponsors .views-row {
   float: left;
   width: 25%;
@@ -1548,7 +1549,7 @@ ul.primary.tabs {
   word-wrap: break-word;
 }
 @media screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003714}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003715}}
   .region-footer .view-id-sponsors .views-row {
     width: 50%;
   }
