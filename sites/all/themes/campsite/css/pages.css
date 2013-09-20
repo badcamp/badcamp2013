@@ -1647,7 +1647,7 @@ ul.primary.tabs {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_homepage\.scss}line{font-family:\0000384}}
 .front .pane-highlights .pane-content {
-  background: url("../images/featured-jjeff.png") no-repeat scroll 0 bottom/auto 100% black;
+  background: black url(/sites/all/themes/campsite/images/featured-jjeff.png) no-repeat left bottom;
   min-height: 200px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nate\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_homepage\.scss}line{font-family:\0000388}}
