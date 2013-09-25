@@ -234,14 +234,15 @@
 	padding: 0;
 	line-height: 0;
 	margin-bottom: 15px;
+	width: auto;
 }
 
 .sponsorship-level form{
 margin: 0;
 padding: 0;
-margin-top: -41px;
+margin-top: -10px;
 margin-left: -15px;
-height:126px;
+height:auto;
 }
 
 #content #individual-sponsor .sponsorship-level p.amount{
@@ -249,6 +250,7 @@ height:126px;
 	color:#26A6DF;
 	font-weight:600;
 	margin: 20px 0;
+	line-height: 1em;
 }
 
 .sponsorship-level{
