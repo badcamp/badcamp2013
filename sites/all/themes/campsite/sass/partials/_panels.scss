@@ -236,28 +236,47 @@
   
 // Sponsors
 
-#sponsors-page{
-  .panel-pane{
+#sponsors-page {
+  .panel-pane {
     clear:both;
   }
   
-  .view-sponsors{
+  .view-sponsors {
   clear:both;
   
-    .views-row{
+    .views-row {
       float:left;
-      margin:10px;
-      
-      .views-field-title{
+      width: 25%;
+
+      .views-field-field-image {
+        padding: 10px;
+        margin: 10px;
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .views-field-title {
         text-align:center;
-        
-        a{
-        color:#000;
-        text-decoration:none;
+        a {
+          color:#000;
+          text-decoration:none;
         }
       }
     }
   }
+
+  // Supporting Sponsors have smaller icons
+  // so we need to adjust.
+  .view-sponsors.view-display-id-panel_pane_4 {
+    .views-row {
+      width: 12.5%;
+    }
+  }
+
+
 }
 
 // User Profiles
