@@ -600,40 +600,34 @@ ul.primary.tabs{
 
 .view-job-opportunities .view-content {
 
-  ul {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
+  .job-board-row{
+    border-bottom: 1px solid #ccc;
+    padding:15px;
+    clear:both;
 
-  ul li {
-
-    list-style: none;
-    border-bottom: 1px solid #bbb;
-    display: block;
-    position: relative;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    &:after {
-      @extend %clearfix-after;
+    &:hover{
+      background:#FAFAFA;
     }
+    
+    a{
+      font-size:19px;
+    }
+    
+
   }
 
-
-  ul li .views-label { 
-    display: none;
+  .position{
+    min-height:75px;
   }
 
-  ul li .views-field-field-image {
+  .views-field-field-image{
+    margin-right: 3%;
     float: left;
-    width: 20%;
-    line-height: 1em;
   }
 
-  ul li .views-field-title {
-    padding: 3em 0 0 0;
-    width: 80%;
-  }  
+  .views-field-title{
+  clear:both;
+  }
 }
 /* END JOB BOARD STYLES -------------------*/
 
