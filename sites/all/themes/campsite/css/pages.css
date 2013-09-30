@@ -1352,6 +1352,7 @@ ul.primary.tabs {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003487}}
 .views-widget-filter-field_track_tid .form-type-bef-link {
   float: left;
+  clear: left;
   width: 20%;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_panels\.scss}line{font-family:\00003497}}
