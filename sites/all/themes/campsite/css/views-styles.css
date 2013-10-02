@@ -361,7 +361,6 @@ a:hover {
 }
 /*Carson's schedule stuff */
 .view-session-schedule .item-list h3 {
-    clear: left;
     color: #999;
     float: left;
     margin: 0;
@@ -369,7 +368,7 @@ a:hover {
     width: 10%;
     zoom: 1;
     font-size: 12px;
-    padding-right: 5px;
+    padding-right: 1%;
 }
 .view-session-schedule .view-grouping-header {
     line-height: 35px;
@@ -381,12 +380,17 @@ a:hover {
 }
 .view-session-schedule .item-list {
     margin-top: 20px;
+    float: left;
+    clear: left;
+    width: 100%;
 }
 .view-session-schedule .item-list ul {
     border-left: 2px solid rgba(0,0,0,.15);
-    margin: -1px 0 0 75px;
-    overflow: auto;
-    padding-left: 5px;
+    margin: 0;
+    padding-left: 1%;
+    float: left;
+    width: 85%;
+    display: block;
 }
 .view-session-schedule .item-list ul li {
     -moz-border-radius: 4px;
