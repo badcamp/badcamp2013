@@ -373,10 +373,14 @@ a:hover {
 .view-session-schedule .view-grouping-header {
     line-height: 35px;
     font-weight: bold;
+    float: left;
+    clear: left;
+    width: 99%;
 }
 .view-session-schedule .view-grouping-content {
     float: left;
     clear: both;
+    width: 100%;
 }
 .view-session-schedule .item-list {
     margin-top: 20px;
