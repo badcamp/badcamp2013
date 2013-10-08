@@ -421,17 +421,21 @@ a:hover {
     text-decoration: underline;
 }
 .view-session-schedule .item-list ul li.design-theme-ux {
-    background-color: #C4D82C;
+    background-color: #E1F073;
 }
 .view-session-schedule .item-list ul li.business-community {
-    background-color: #D0A7CE;
+    background-color: #E2BDE0;
 }
 .view-session-schedule .item-list ul li.code-develop {
-    background-color: #F4825D;
+    background-color: #F3A88F;
 }
 .view-session-schedule .item-list ul li.devops-performance {
-    background-color: #77C593;
+    background-color: #A1D5B4;
 }
 .view-session-schedule .item-list ul li.sitebuilding-usingdrupal {
-    background-color: #439BC9;
+    background-color: #77B1CF;
+}
+.views-widget-filter-field_track_tid #edit-field-track-tid-all {
+    width: 100%;
+    text-align: center;
 }
