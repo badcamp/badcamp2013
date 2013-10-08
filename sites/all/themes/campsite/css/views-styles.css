@@ -400,7 +400,6 @@ a:hover {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    cursor: pointer;
     display: block;
     margin: 0 12px 12px 0;
     padding: 2px 5px;
@@ -416,6 +415,8 @@ a:hover {
 }
 .view-session-schedule .item-list ul li a {
     text-decoration: none;
+    padding-left: 5px;
+    padding-right: 15px;
 }
 .view-session-schedule .item-list ul li a:hover {
     text-decoration: underline;
