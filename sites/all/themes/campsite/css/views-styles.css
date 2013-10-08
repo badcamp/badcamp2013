@@ -454,3 +454,6 @@ a:hover {
     padding-left: 30px;
     padding-top: 5px;
 }
+.views-widget-filter-field_skill_level_tid .form-type-bef-checkbox {
+    border-bottom: none;
+}
