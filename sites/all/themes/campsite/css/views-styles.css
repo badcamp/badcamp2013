@@ -413,6 +413,8 @@ a:hover {
 }
 .view-id-session_schedule ul li .views-field-title {
     font-weight: normal;
+    float: left;
+    max-width: 450px;
 }
 .view-id-session_schedule ul li .views-field-ops {
     text-align: right;
