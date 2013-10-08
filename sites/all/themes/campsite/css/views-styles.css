@@ -365,7 +365,7 @@ a:hover {
     float: left;
     margin: 0;
     text-align: right;
-    width: 10%;
+    width: 15%;
     zoom: 1;
     font-size: 12px;
     padding-right: 1%;
@@ -403,11 +403,13 @@ a:hover {
     cursor: pointer;
     display: block;
     margin: 0 12px 12px 0;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding: 2px 5px;
     position: relative;
     min-height: 10px;
     clear: none;
+}
+.view-id-session_schedule ul li {
+    border-bottom: none;
 }
 .view-id-session_schedule ul li .views-field-title {
     font-weight: normal;
