@@ -427,7 +427,7 @@ a:hover {
 .view-session-schedule .item-list ul li a:hover {
     text-decoration: underline;
 }
-.view-session-schedule .item-list ul li flag-registration a.unflag-action {
+.view-session-schedule .item-list ul li a.unflag-action {
     padding-left: 20px;
 }
 .view-session-schedule .item-list ul li.design-theme-ux {
