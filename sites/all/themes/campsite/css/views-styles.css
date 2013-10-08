@@ -440,3 +440,8 @@ a:hover {
     width: 100%;
     text-align: center;
 }
+.views-widget-filter-field_skill_level_tid select {
+    border: none;
+    padding-left: 30px;
+    padding-top: 5px;
+}
