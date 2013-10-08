@@ -404,6 +404,7 @@ a:hover {
     margin: 0 12px 12px 0;
     padding: 2px 5px;
     position: relative;
+    overflow: hidden;
     min-height: 10px;
     clear: none;
 }
@@ -412,6 +413,9 @@ a:hover {
 }
 .view-id-session_schedule ul li .views-field-title {
     font-weight: normal;
+}
+.view-id-session_schedule ul li .views-field-ops {
+    text-align: right;
 }
 .view-session-schedule .item-list ul li a {
     text-decoration: none;
