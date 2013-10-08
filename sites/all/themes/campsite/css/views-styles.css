@@ -411,13 +411,15 @@ a:hover {
 .view-id-session_schedule ul li {
     border-bottom: none;
 }
-.view-id-session_schedule ul li .views-field-title {
+.view-id-session_schedule ul li .views-field {
     font-weight: normal;
-    float: left;
-    max-width: 450px;
+    margin-right: 170px;
 }
 .view-id-session_schedule ul li .views-field-ops {
-    text-align: right;
+  float:right;
+  text-align: right;
+  width: 160px;
+  margin-right: 0;
 }
 .view-session-schedule .item-list ul li a {
     text-decoration: none;
