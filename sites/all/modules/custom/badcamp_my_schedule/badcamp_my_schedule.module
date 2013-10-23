@@ -5,6 +5,21 @@
  * view and menu for personal schedules
  */
 
+/**
+ * Implements hook_menu().
+ */
+function badcamp_my_schedule_menu() {
+  $items = array();
+  $items['user/my-schedule'] = array(
+    'title' => 'My Schedule',
+    'access callback' => 'user_access',
+    'access arguments' => array('access user profiles'),
+    'page callback' => '_my_schedule_redirect',
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
 function badcamp_my_schedule_menu_local_tasks_alter(&$data,$router_item,$root_path) {
     if ($router_item['path'] == 'user/%') {
         // Add a tab linking to user/%/schedule
@@ -32,4 +47,12 @@ function badcamp_my_schedule_views_api() {
         'api' => 3.0,
         'path' => drupal_get_path('module', 'badcamp_my_schedule') .'/includes'
     );
+}
+
+/**
+ * Callback for menu item.
+ */
+function _my_schedule_redirect() {
+  global $user;
+  drupal_goto('user/' . $user->uid . '/schedule');
 }
