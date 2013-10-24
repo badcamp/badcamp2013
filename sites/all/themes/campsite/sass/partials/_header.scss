@@ -1,12 +1,13 @@
 //
-// Header design elements 
+// Header design elements
 //
 
 /* Header  */
 #header {
   background: #F3F0FD url('../images/bg-header-sanfrancisco-v1.jpg') no-repeat bottom center;
   padding: 0;
-  max-width: 100%;
+  // max-width: 100%;
+  width: 100%;
   @media all and (min-width: 1960px) {
     background-size: 100%;
   }
@@ -15,7 +16,10 @@
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    padding: 0 10px;
+    @media all and (min-width: 860px) {
+      padding: 0 10px;
+    }
+
   }
 
 }
@@ -35,7 +39,7 @@
 
   &:after {
     // this is the fakey button which triggers the whole shebang to move
-       
+
     // eric put this here, i'm gonna leave it just in case
     // @extend %clearfix-after;
   }
@@ -44,21 +48,21 @@
     color: #fff;
     font-size: 1.2em;
   }
-  
+
   .form-item {
     border: none;
   }
-  
+
   input {
     width: 100%;
-    
+
     &.form-submit {
       width: auto;
     }
   }
 
   #block-user-login {
-      
+
     .form-submit {
       border: none;
       background: #888;
@@ -66,7 +70,7 @@
       padding: .33em .5em;
     }
   }
-  
+
   label {
     display: none;
   }
@@ -86,41 +90,41 @@
   .item-list {
     display: none;
   }
-  
+
   #edit-actions {
     margin: 0;
   }
-    
+
   @media all and (min-width: 600px) and (max-width: 960px) {
     $zen-column-count: 2;
-    
+
     &.usermenu-visible {
       //height: 300px;
       overflow: hidden;
     }
-    
+
     #block-block-3 {
       @include zen-grid-item(1,1);
     }
-    
+
     #block-user-login {
       @include zen-grid-item(1,2);
     }
   }
-  
-  
-  
+
+
+
   @media all and (min-width: 960px) {
     $zen-column-count: 5;
 
     &.usermenu-visible{
       height: 270px;
     }
-    
+
     #block-block-3 {
       @include zen-grid-item(2,2);
     }
-    
+
     #block-user-login {
       @include zen-grid-item(2,4);
     }
@@ -135,9 +139,9 @@
 }
 
 
-// User login: what you see at the top of the site 
+// User login: what you see at the top of the site
 #user-login-form {
-  .first-name, .form-item-name, .form-item-pass-pass1 { 
+  .first-name, .form-item-name, .form-item-pass-pass1 {
     float: none;
   }
 }
@@ -153,14 +157,14 @@
 }
 
 .not-logged-in {
-  
+
   .user-menu-toggler {
     display: block;
   }
 
   .user-account-link {
     display: none;;
-  }  
+  }
 }
 
 
@@ -299,7 +303,7 @@
   height: 14px;
   margin-top: -7px;
   margin-left: 0;
-  
+
   ul{
     padding:0;
     margin:0;
@@ -314,7 +318,7 @@
   .social {
     float:left;
   }
-  
+
   .user-menu-toggler,
   .user-account-link {
     padding-right: 1em;
