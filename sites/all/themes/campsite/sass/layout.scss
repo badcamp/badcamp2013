@@ -44,7 +44,8 @@ $zen-auto-include-item-base: false;
 .region-bottom {
   /* For screen sizes larger than 1200px, prevent excessively long lines of text
      by setting a max-width. */
-     width: 100%;
+     // width: 100%;
+     @include zen-grid-container();
 }
 
 /*

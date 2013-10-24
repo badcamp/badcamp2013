@@ -769,10 +769,10 @@ span.field-label {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\0000349}}
 #page {
-  /* 
+  /*
     When mobile nav is open, overflow some elements
-    that have negative margin that impedees into the mobile 
-    navigation. 
+    that have negative margin that impedees into the mobile
+    navigation.
    */
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\0000357}}
@@ -857,28 +857,29 @@ span.field-label {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\00003137}}
   #page.open {
     -webkit-transform: translate3d(250px, 0, 0);
+    width: calc(100% - 250px);
   }
 }
 @media all and (min-width: 860px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\00003148}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\00003150}}
   #mobile-nav-button {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\00003152}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\00003154}}
   #navigation {
     border-top: 5px solid #1c1c1c;
     border-bottom: 1px solid #1c1c1c;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\00003156}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\00003158}}
   #navigation h2 {
     color: #1c1c1c;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\00003163}}
   #navigation ul.menu li {
     float: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\00003168}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\00003170}}
   #navigation h2:after,
   #navigation li:after {
     content: "/";
@@ -887,15 +888,15 @@ span.field-label {
     text-align: center;
     font-weight: normal;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\00003176}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\00003178}}
   #navigation li.last:after {
     content: "";
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\00003180}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\00003182}}
   #navigation a {
     color: #1c1c1c;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\00003183}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/partials\/_menu\.scss}line{font-family:\00003185}}
   #navigation a:hover {
     text-decoration: underline;
   }
