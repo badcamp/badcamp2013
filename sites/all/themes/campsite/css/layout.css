@@ -35,6 +35,7 @@ a:hover {
 .region-bottom {
   /* For screen sizes larger than 1200px, prevent excessively long lines of text
      by setting a max-width. */
+  width: 100%;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000352}}
 #page:before, #page:after,
@@ -53,7 +54,7 @@ a:hover {
  * Apply the shared properties of grid items in a single, efficient ruleset.
  */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/layout\.scss}line{font-family:\0000361}}
-#header,
+#header > *,
 #content,
 #navigation,
 .region-sidebar-first,
@@ -95,14 +96,14 @@ a:hover {
  * Navigation bar
  */
 @media all and (min-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/layout\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/layout\.scss}line{font-family:\0000392}}
   #main {
     padding-top: 3em;
     /* Move all the children of #main down to make room. */
     position: relative;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/layout\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/steven\/Sites\/badcamp2013\/sites\/all\/themes\/campsite\/sass\/layout\.scss}line{font-family:\0000396}}
   #navigation {
     position: absolute;
     top: 0;

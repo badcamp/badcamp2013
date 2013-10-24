@@ -62,6 +62,9 @@
 
 
 @media all and (max-width: 860px) {
+  .qtip{
+    display: none !important;
+  }
 
   #mobile-nav-button,
   #navigation h2,
@@ -146,7 +149,6 @@
 }
 
 @media all and (min-width: 860px) {
-
   #mobile-nav-button {
     display: none;
   }
@@ -160,6 +162,8 @@
     }
 
     ul.menu {
+      display: block;
+      @include clearfix();
       li {
         float: left;
       }
@@ -188,3 +192,6 @@
     }
   }
 }
+
+
+
