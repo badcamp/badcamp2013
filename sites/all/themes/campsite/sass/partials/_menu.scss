@@ -94,14 +94,17 @@
       color: #fff;
     }
 
-    ul.menu {
-      overflow: hidden;
-      position: absolute;
-      top: 0;
-      left: -250px;
-      width: 250px;
-      margin: 0;
-    }
+    //
+    //Removing the old position
+
+    // ul.menu {
+    //   overflow: hidden;
+    //   position: absolute;
+    //   top: 0;
+    //   left: -250px;
+    //   width: 250px;
+    //   margin: 0;
+    // }
 
     li {
       display: block;
@@ -124,10 +127,10 @@
         background: $dark;
       }
 
-      &:before {
-        content: "-";
-        float: right;
-      }
+      // &:before {
+      //   content: "-";
+      //   float: right;
+      // }
     }
   }
 
@@ -137,15 +140,15 @@
     background: #d00;
   }
 
-  #page.open {
-    -webkit-transform: translate3d(250px, 0, 0);
-    // @TODO
-    // I need to clean this code up, there is a better way to do this for sure.
-    width: calc(100% - 250px);
-    #navigation ul.menu {
+  // #page.open {
+  //   -webkit-transform: translate3d(250px, 0, 0);
+  //   // @TODO
+  //   // I need to clean this code up, there is a better way to do this for sure.
+  //   width: calc(100% - 250px);
+  //   #navigation ul.menu {
 
-    }
-  }
+  //   }
+  // }
 }
 
 @media all and (min-width: 860px) {

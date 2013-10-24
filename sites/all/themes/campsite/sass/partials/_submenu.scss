@@ -1,0 +1,12 @@
+@media all and (max-width: 860px) {
+  .region-navigation{
+    background-color: $dark;
+    position: relative;
+    z-index: 1000;
+    overflow-y: hidden;
+    max-height: 41px;
+    .open &{
+      max-height: none;
+    }
+  }
+}
