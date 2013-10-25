@@ -326,19 +326,23 @@
   }
 
   .user-menu-toggler,
-  .user-account-link {
-    color: #fff;
+  .user-account-link{
     padding: 0.125em 0.5em;
-    &:hover,
-    &:focus{
-    color: darken(#fff, 5%);
-    text-decoration: underline;
+    &, & > a{
+      color: #fff;
+      &:hover,
+      &:focus{
+        color: darken(#fff, 5%);
+        text-decoration: underline;
+      }
     }
   }
   .social{
     display: none;
   }
-
+  .user-menu-toggler + .user-account-link{
+    display: none;
+  }
   @media all and (min-width: 860px) {
     // display:block;
     position: static;
@@ -347,6 +351,13 @@
     .social{
       display: list-item;
     }
+    .user-menu-toggler + .user-account-link{
+      display: block;
+    }
+    .not-logged-in .user-account-link{
+      display: none;
+    }
+    .user-account-link > a,
     .user-menu-toggler,
     .user-account-link {
       color: $dark;
