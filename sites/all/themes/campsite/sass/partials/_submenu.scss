@@ -1,10 +1,35 @@
+#block-menu-block-8{
+  display: none;
+}
 @media all and (max-width: 860px) {
-  #navigation{
-    // fill the total width of the parent container
-    margin: 0 -10px 1em -10px;
+  #header .header-innner{
+    padding: 0 0 0 0;
+  }
+
+  #header{
+     .block-menu-block {
+        .menu-block-wrapper{
+          display: block;
+        }
+     }
   }
   .region-navigation{
-    @include single-transition();
+    .menu a{
+      &:before{
+        content: "/ ";
+        font-weight: 100;
+      }
+      &:hover,
+      &:focus{
+        background: lighten($dark, 3%);
+        &:before{
+          color: #0077a5;
+        }
+      }
+    }
+  }
+
+  .region-navigation{
     background-color: $dark;
     position: relative;
     z-index: 9;
@@ -12,15 +37,26 @@
     max-height: 40px;
 
     .open &{
-      @include single-transition();
+      @include box-shadow(0px 0px 10px #333333);
       max-height: none;
+
+      .menu{
+        display: block;
+        overflow-y: auto;
+      }
     }
     .block-title{
       display: block !important;
       float:  none !important;
     }
     .menu{
-      display: block;
+      display: none;
     }
   }
+  #block-menu-block-8{
+    display: block;
+  }
 }
+
+
+
