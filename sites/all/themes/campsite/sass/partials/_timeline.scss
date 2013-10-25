@@ -12,13 +12,13 @@ $timeline-bg-entry: rgb(80,80,80);
   .line {
     position: absolute;
     width: 1px;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEElEQVQIW2NMTEz8z8gABAAPKwIlXWq1kgAAAABJRU5ErkJggg==);    
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEElEQVQIW2NMTEz8z8gABAAPKwIlXWq1kgAAAABJRU5ErkJggg==);
     height: 100%;
     left: 49.9%;
     top: 0;
     z-index: 5;
   }
-  
+
 
   .day {
     position:relative;
@@ -44,8 +44,8 @@ $timeline-bg-entry: rgb(80,80,80);
       margin: 0 auto;
     }
   }
-  
-  /* 
+
+  /*
     elements 1,(2),3,(4), etc.
     elements in brackets inherit these properties, some are overridden below (2n)
     beginning at 0
@@ -54,20 +54,20 @@ $timeline-bg-entry: rgb(80,80,80);
     position:relative;
     // text-align:center;
     float: right;
-    clear: right; 
+    clear: right;
     width: 45%;
     margin: 10px 0;
-    
+
     /* I want 40%, and not 45%! */
     box-sizing: border-box;
-    
+
     // border-radius: 5px;
     list-style-type: none;
     display: block;
     padding: 1em;
     background: white;
     z-index: 15;
-    
+
     color: $timeline-text-color;
     border: 1px solid #C1C1C1;
     text-decoration: none;
@@ -85,37 +85,37 @@ $timeline-bg-entry: rgb(80,80,80);
     -ms-transition: background .15s cubic-bezier(0.250, 0.100, 0.250, 1.000);
     -o-transition: background .15s cubic-bezier(0.250, 0.100, 0.250, 1.000);
     transition: background .15s cubic-bezier(0.250, 0.100, 0.250, 1.000);
-    
+
     &.featured {
       width: 100% ;
       text-align: center;
 
       background: lighten(#ccc,11%);
-      
+
       &:after, &:before {
         display: none;
       }
     }
-    
+
     @media all and (max-width: 600px) {
       width: 100%;
       margin: 0 0 1em 0;
-    }    
-    
+    }
+
     &.offset-first {
        margin-top: -1.5em;
     }
-    
+
     img {
       margin-top: 10px;
       max-width: 100%;
     }
-    
+
     &:nth-child(2n) {
       float: left;
-      clear: left; 
+      clear: left;
     }
-    
+
     &:before {
       content: "";
       width: 7px;
@@ -129,17 +129,21 @@ $timeline-bg-entry: rgb(80,80,80);
       @include border-radius(10px);
     }
 
-    &:nth-child(2n):before {
-      right: -12.75%;
-      /* reset the standard declaration I defined before*/
-      left: auto;
-      top: 65px;
+    //Was causing overflow on mobile.
+    @media (min-width: 800px){
+      &:nth-child(2n):before {
+        right: -12.75%;
+        /* reset the standard declaration I defined before*/
+        left: auto;
+        top: 65px;
+      }
     }
-    &:after {      
+
+    &:after {
       @media all and (min-width: 650px) {
         display: block;
         content: ' ';
-        height: 1px; 
+        height: 1px;
         width: 9%;
         background: #333;
         position:absolute;
@@ -147,7 +151,7 @@ $timeline-bg-entry: rgb(80,80,80);
         top: 41px;
       }
     }
-      
+
 
     &:nth-child(2n):after {
       right: -9%;
@@ -155,16 +159,16 @@ $timeline-bg-entry: rgb(80,80,80);
       left: auto;
       top: 71px;
       width: 7.5%;
-    }    
+    }
   }
-  
+
   .bookend {
     font-size: 26px;
     font-weight: bold;
     color: #009933;
     position: absolute;
     z-index:100;
-    
+
     @media screen and (max-width: 615px){
       text-align: center;
       width: 100%;
@@ -203,7 +207,7 @@ $timeline-bg-entry: rgb(80,80,80);
         display: block;
         position: absolute;
         border-radius: 10px;
-        
+
       }
     }
 
@@ -227,6 +231,6 @@ $timeline-bg-entry: rgb(80,80,80);
     }
   }
 
-  
+
 }
 
