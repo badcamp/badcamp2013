@@ -355,7 +355,7 @@
       display: block;
     }
     .not-logged-in .user-account-link{
-      display: none;
+      display: none !important;
     }
     .user-account-link > a,
     .user-menu-toggler,
