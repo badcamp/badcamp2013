@@ -3,8 +3,8 @@
 //
 
 #page {
-  // clearfix instead of overflow hidden. 
-  // overflow hidden causes mobile menu not to show. 
+  // clearfix instead of overflow hidden.
+  // overflow hidden causes mobile menu not to show.
   @extend .clearfix !optional;
 }
 
@@ -40,9 +40,9 @@
 
 
 
-/* 
-  Speakers, attendees etc. 
-  
+/*
+  Speakers, attendees etc.
+
 */
 
 // This is shared on the featured speakers and the attendees
@@ -57,7 +57,7 @@
 // likely I did this to much.
 .view-id-attendees {
   .view-content .item-list {
-    
+
     ul, ul li {
       list-style: none;
       margin: 0;
@@ -70,7 +70,7 @@
       height: 375px;
       margin-bottom: 20px;
       width: 50%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -82,25 +82,25 @@
     .attendee {
       padding-right: 10px;
     }
-    
+
     .attendee-photo a {
       display: block;
       line-height: 0;
       margin-bottom: 10px;
     }
-    
+
     .attendee-display-name {
       @extend %speaker-name;
     }
 
-    @media all and (max-width:500px) { 
+    @media all and (max-width:500px) {
       li:nth-child(2n+2) .attendee {
         padding-right: 0;
       }
     }
 
     // show 3 up
-    @media all and (min-width:501px) and (max-width: 759px) { 
+    @media all and (min-width:501px) and (max-width: 759px) {
       ul li {
         width: 33%;
       }
@@ -110,7 +110,7 @@
     }
 
     // show 5 up
-    @media all and (min-width:760px)  { 
+    @media all and (min-width:760px)  {
       ul li {
         width: 20%;
       }
@@ -139,7 +139,7 @@
     .wrapper ul li {
       min-height: 225px;
     }
-    
+
     .speaker-name {
       @extend %speaker-name;
     }
@@ -159,7 +159,7 @@
   .previous {
     background: #333 url('../images/arrow-left.png') no-repeat center center;
   }
-  
+
   .next {
     background: #333 url('../images/arrow-right.png') no-repeat center center;
   }
@@ -195,11 +195,11 @@
   .signup .form-item-pass-pass2{
     float:none;
   }
-  
+
   .signup #user-register-form .form-item {
     width:20em;
   }
-  
+
   .signup #user-register-form input.username,
   .signup #user-register-form input#edit-mail,
   .signup #user-register-form input.password-field,
@@ -212,38 +212,38 @@
     margin-left:5%;
     margin-right:5%;
   }
-  
+
   .signup #user-register-form .form-submit{
     float:none;
     clear:both;
   }
-  
+
   .signup .field-name-field-interest-jobs,
   .signup .field-name-field-interest-volunteering{
     float:none;
     margin-right:0;
     margin-top:0;
   }
-  
+
   .registration-steps .registration.two {
     margin: 0 22%;
   }
-  
+
   .registration-steps {
     background:none;
   }
 }
-  
+
 // Sponsors
 
 #sponsors-page {
   .panel-pane {
     clear:both;
   }
-  
+
   .view-sponsors {
   clear:both;
-  
+
     .views-row {
       float:left;
       width: 25%;
@@ -287,11 +287,11 @@
   background-repeat: no-repeat;
   display: inline-block;
   overflow: hidden;
-  width: 0;
-  height: 27px;
   padding-left: 30px;
-  
-   &:hover{opacity:.4;} 
+  width: 23px;
+  height: 22px;
+  @include hide-text();
+   &:hover{opacity:.4;}
 }
 
 .icon-flickr{
@@ -366,17 +366,17 @@ ul.primary.tabs{
 // Summit and training landing pages
 
 .view-summits-by-day.landing-page{
-  
+
   .views-field-title,
   .views-field-field-summary{
     float:left;
     width:570px;
   }
-  
+
   .views-field-field-summary{
     margin-bottom:30px;
   }
-  
+
   .views-field-field-venue-1{
     float:left;
     margin-top:-22px;
@@ -391,7 +391,7 @@ ul.primary.tabs{
     border-bottom: 0;
     clear: both;
   }
-  
+
   h4{
     margin:10px 0 0;
     font-weight:600;
@@ -422,10 +422,10 @@ ul.primary.tabs{
 }
 
 .view-display-id-panel_pane_5{
-  
+
   .views-field-field-image{
     float: left;
-    padding: 0 20px 0 0;  
+    padding: 0 20px 0 0;
   }
 }
 
@@ -450,11 +450,11 @@ ul.primary.tabs{
     border-bottom: solid 1px;
     margin: 10px 0 20px 0;
     min-height: 120px;
-    
+
     .views-label-field-speakers-1{
       font-weight:600;
     }
-    
+
      .views-field{
        display:block;
        margin:5px 0;
@@ -464,13 +464,13 @@ ul.primary.tabs{
       float:left;
       margin-right:10px;
     }
-    
+
     .views-field-title{
       font-weight:bold;
       max-width: 500px;
       line-height: 20px;
     }
-    
+
     a{
       color:#000;
       text-decoration:underline;
@@ -479,16 +479,16 @@ ul.primary.tabs{
   }
 }
 .views-widget-filter-field_track_tid{
-  
+
   .form-item:not(.form-submit) {
     border-bottom: 0;
   }
-  
+
   .form-type-bef-link{
     float:left;
     width: 20%;
   }
-  
+
   #edit-field-track-tid-17 a,
   #edit-field-track-tid-18 a,
   #edit-field-track-tid-46 a,
@@ -506,89 +506,89 @@ ul.primary.tabs{
     font-size: 15px;
     line-height: 16px;
     color:#000;
-    
+
     &:hover{
       text-decoration:none;
     }
   }
-  
+
   //Business+Community
   #edit-field-track-tid-17{
     a{
     background-position: 61% 119%;
     }
-    
+
     &:hover a,
     &.selected a{
       background-position: 61% 0%;
     }
   }
-  
+
   //Code+Develop
   #edit-field-track-tid-18{
     a{
     background-position: 82% 119%;
     }
-    
+
     &:hover a,
     &.selected a{
       background-position: 82% 0%;
     }
-    
+
   }
-  
+
   //Core Converstation
-  #edit-field-track-tid-46{ 
+  #edit-field-track-tid-46{
     a{
     background-position: 101.8% 119.5%;
     }
-    
+
     &:hover a,
     &.selected a{
       background-position: 100% 0%;
     }
   }
 
-  
+
   //Design, Theme + UX
   #edit-field-track-tid-20{
     a{
     background-position: -3% 119%;
     }
-    
+
     &:hover a,
     &.selected a{
       background-position: -3% 0%;
     }
   }
 
-  
+
   //Devops +Performance
   #edit-field-track-tid-19{
     a{
     background-position: 17% 119%;
     }
-    
+
     &:hover a,
     &.selected a{
       background-position: 17% 0%;
     }
   }
 
-  
+
   //Site building + using drupal
   #edit-field-track-tid-29{
     a{
     background-position: 39% 119%;
     }
-    
+
     &:hover a,
     &.selected a{
       background-position: 39% 0%;
     }
   }
 
-  
+
 }
 
 
@@ -608,11 +608,11 @@ ul.primary.tabs{
     &:hover{
       background:#FAFAFA;
     }
-    
+
     a{
       font-size:19px;
     }
-    
+
 
   }
 
@@ -671,7 +671,7 @@ ul.primary.tabs{
 
 }
 
-// use this class if you need to center titles 
+// use this class if you need to center titles
 .center-title-only {
   @extend %center-styled-pane-title;
 }

@@ -229,9 +229,9 @@ function STARTERKIT_preprocess_block(&$variables, $hook) {
 // adds viewport tags for touch devices
 function campsite_preprocess_html(&$vars) {
   $viewport = array(
-    '#tag' => 'meta', 
+    '#tag' => 'meta',
     '#attributes' => array(
-      'name' => 'viewport', 
+      'name' => 'viewport',
       'content' => 'width=device-width, initial-scale=1',
     ),
   );
@@ -245,7 +245,7 @@ function campsite_form_user_login_block_alter(&$form) {
 
   // Remove the links provided by Drupal.
   unset($form['links']);
-
+  dpm($form);
   $form['name']['#attributes']['placeholder'] = 'Username';
   $form['pass']['#attributes']['placeholder'] = 'Password';
   $form['actions']['submit']['#value'] = 'Login';
