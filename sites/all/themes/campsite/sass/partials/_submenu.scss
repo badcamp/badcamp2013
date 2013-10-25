@@ -1,12 +1,26 @@
 @media all and (max-width: 860px) {
+  #navigation{
+    // fill the total width of the parent container
+    margin: 0 -10px 1em -10px;
+  }
   .region-navigation{
+    @include single-transition();
     background-color: $dark;
     position: relative;
-    z-index: 1000;
+    z-index: 9;
     overflow-y: hidden;
-    max-height: 41px;
+    max-height: 40px;
+
     .open &{
+      @include single-transition();
       max-height: none;
+    }
+    .block-title{
+      display: block !important;
+      float:  none !important;
+    }
+    .menu{
+      display: block;
     }
   }
 }
