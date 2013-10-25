@@ -9,7 +9,7 @@
     @include zen-grid-container();
     $zen-column-count: 4;
     // $zen-gutter-width: 10px;
-    
+
     p{
       color:#ccc;
     }
@@ -17,18 +17,22 @@
 
 
   /* Highlighst and Facts panes */
-  
+
   .pane-facts {
-  
-    .pane-content > div {
-      float: left;
-      width: 33%;
-      padding:0 20px;
-      height: 150px;
-      overflow: hidden;
-      border-right:solid 1px #797878;
+    @media all and (min-width: 600px) {
+      p{
+        min-height: 100px;
+      }
+      .pane-content > div {
+        float: left;
+        width: 33%;
+        padding:0 20px;
+        height: 150px;
+        overflow: hidden;
+        border-right:solid 1px #797878;
+      }
     }
-    
+
     div .fact-one {
       padding-top: 24px;
       padding-left: 0;
@@ -43,24 +47,24 @@
     h3 {
       font-size: 50px;
       color:#fff;
-      
+
       @media all and (max-width: 600px) {
         font-size: 2em;
       }
-      
+
       line-height: 1em;
       margin: 0;
     }
-    
+
     p {
       font-size: 18px;
       margin: 0;
-      min-height: 100px;
+
       color:#fff;
     }
 
   }
-  
+
   // big viewport
   @media all and (min-width: 900px) {
     .pane-highlights {
@@ -77,7 +81,7 @@
       @include zen-clear();
     }
   }
- 
+
   /* Top left custom pane */
   .pane-highlights {
 
@@ -111,18 +115,18 @@
       }
     }
   }
-  
+
   /* Featured Attendees pane */
 
   .pane-attendees-panel-pane-2{
     clear:both;
     padding-top:40px;
   }
-  
+
   .pane-speakers-panel-pane-1{
     padding-top:10px;
   }
-  
+
   .view-id-speakers {
     .views-row {
       float: left;
@@ -133,7 +137,7 @@
   }
 
 /* Event highlight */
-  
+
 #content .highlight-text p {
    color:#fff;
    padding:0;
@@ -147,7 +151,7 @@
     background-repeat: no-repeat;
     min-height: 200px;
   }
- 
+
   .highlight-text{
     // margin-left: 294px;
     float: right;
@@ -158,21 +162,21 @@
       color:#fff;
     }
   }
- 
+
   /* Events at a glance pane */
 
 
   .pane-events {
-    
+
     clear: both;
-    
+
     h3{
       color: #fff;
       text-decoration: underline;
       font-weight: 400;
       font-size: 20px;
     }
-    a { 
+    a {
       color:white;
     }
     p {
@@ -180,9 +184,9 @@
     }
     ul {
       @include naked-list;
-            
+
       // **** REFACTOR THIS ****
-      li { 
+      li {
         @media all and (min-width: 700px) {
           width: 33%;
           float: left;
@@ -192,7 +196,7 @@
       }
     }
   }
-  
+
   #footer {
     margin-top: 0px;
   }
