@@ -37,13 +37,16 @@
 
   height: 0px;
   overflow: hidden;
-
+  .usermenu-visible &{
+    height: auto;
+  }
   &:after {
     // this is the fakey button which triggers the whole shebang to move
 
     // eric put this here, i'm gonna leave it just in case
     // @extend %clearfix-after;
   }
+
 
   h2 {
     color: #fff;
@@ -306,7 +309,7 @@
   top: 0;
   right: 0;
   z-index: 1001;
-  padding: 0.445em;
+  margin: 7px 5px;
   ul{
     padding:0;
     margin:0;
@@ -325,12 +328,12 @@
   .user-menu-toggler,
   .user-account-link {
     color: #fff;
-    padding: 0.125em 0.5em
-  }
-
-  .user-menu-toggler:hover{
+    padding: 0.125em 0.5em;
+    &:hover,
+    &:focus{
     color: darken(#fff, 5%);
     text-decoration: underline;
+    }
   }
   .social{
     display: none;
@@ -343,6 +346,14 @@
     padding: 0;
     .social{
       display: list-item;
+    }
+    .user-menu-toggler,
+    .user-account-link {
+      color: $dark;
+      &:hover,
+      &:focus{
+        color: $dark;
+      }
     }
   }
 
